@@ -24,10 +24,7 @@ body {
 :root {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
 
-  color-scheme: light dark;
   color: var(--color-secondary);
   background-color: var(--color-primary-dark);
 
@@ -45,4 +42,9 @@ body {
   /* Font colors */
   --color-grey-1: #f9f7f6;
   --color-grey-2: #aaa;
+
+  --bp-largest: 87.5em;
+  --bp-large: 62.5em;
+  --bp-medium: 50em;
+  --bp-small: 37.5em;
 }
