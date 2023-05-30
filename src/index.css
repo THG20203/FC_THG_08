@@ -46,7 +46,3 @@ body {
   --color-grey-1: #f9f7f6;
   --color-grey-2: #aaa;
 }
-
-#root > div {
-  display: grid;
-}
