@@ -1,7 +1,7 @@
 import React from "react";
 import "./FirstNavbar.scss";
 
-function FirstNavbar() {
+const FirstNavbar = () => {
   return (
     /* First Navbar section */
     /* Navbar container I've added in for background-color */
@@ -37,6 +37,6 @@ function FirstNavbar() {
       </div>
     </div>
   );
-}
+};
 
 export default FirstNavbar;

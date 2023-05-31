@@ -3,7 +3,7 @@ import "./SecondNavbar.scss";
 /* can import images like css files in react */
 import footballBadge from "../assets/images/identity/football-badge.png";
 
-function SecondNavbar() {
+const SecondNavbar = () => {
   return (
     <div className="second-nav__container">
       {/* logo of the football team */}
@@ -57,6 +57,6 @@ function SecondNavbar() {
       </nav>
     </div>
   );
-}
+};
 
 export default SecondNavbar;
