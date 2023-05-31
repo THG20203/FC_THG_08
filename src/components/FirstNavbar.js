@@ -10,18 +10,27 @@ const FirstNavbar = () => {
       <nav className="first-nav__content">
         <ul className="first-nav__list">
           <li className="first-nav__item">
+            <i className="fa-solid fa-key"></i>
             <a href="#" className="first-nav__link">
-              <i className="fa-solid fa-key"></i>Log In
+              Sign Up / Log In
             </a>
           </li>
           <li className="first-nav__item">
+            <i className="fa-solid fa-right-to-bracket"></i>
             <a href="#" className="first-nav__link">
-              <i className="fa-solid fa-right-to-bracket"></i>Register
+              Cart
             </a>
           </li>
           <li className="first-nav__item">
+            <i className="fa-solid fa-shield-halved"></i>
             <a href="#" className="first-nav__link">
-              <i className="fa-solid fa-shield-halved"></i>Generate Password
+              Generate Password
+            </a>
+          </li>
+          <li className="first-nav__item">
+            <i className="fa-solid fa-shield-halved"></i>
+            <a href="#" className="first-nav__link">
+              Wish List
             </a>
           </li>
         </ul>
