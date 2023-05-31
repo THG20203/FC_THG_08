@@ -1,8 +1,8 @@
 import React from "react";
-import classes from "./Home.module.css";
+import "./Home.scss";
 
 function HomePage() {
-  return <div className={classes.homeContainer}>My Home Page</div>;
+  return <div className="home-container">My Home Page</div>;
 }
 
 export default HomePage;
