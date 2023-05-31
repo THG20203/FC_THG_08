@@ -1,15 +1,13 @@
 import React from "react";
 import "./SecondNavbar.scss";
+/* can import images like css files in react */
+import footballBadge from "../assets/images/identity/football-badge.png";
 
 function SecondNavbar() {
   return (
     <div className="second-nav__container">
       {/* logo of the football team */}
-      <img
-        className="second-nav__badge"
-        src="img/identity/football-badge.png"
-        alt="badge"
-      />
+      <img className="second-nav__badge" src={footballBadge} alt="badge" />
       {/* styled burger menu for smaller devices */}
       <input
         type="checkbox"
