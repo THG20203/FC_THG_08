@@ -1,5 +1,13 @@
 import React from "react";
 import "./FirstNavbar.scss";
+/* For font awesome icons */
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faKey,
+  faRightToBracket,
+  faShieldHalved,
+} from "@fortawesome/free-solid-svg-icons";
 
 const FirstNavbar = () => {
   return (
@@ -10,8 +18,8 @@ const FirstNavbar = () => {
       <nav className="first-nav__content">
         <ul className="first-nav__list">
           <li className="first-nav__item">
-            <i className="fa-solid fa-key"></i>
             <a href="#" className="first-nav__link">
+              <FontAwesomeIcon icon={faKey}></FontAwesomeIcon>
               Sign Up / Log In
             </a>
           </li>
