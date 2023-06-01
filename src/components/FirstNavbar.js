@@ -5,8 +5,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faKey,
-  faRightToBracket,
-  faShieldHalved,
+  faCartShopping,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
 const FirstNavbar = () => {
@@ -26,18 +26,18 @@ const FirstNavbar = () => {
           <li className="first-nav__item">
             <i className="fa-solid fa-right-to-bracket"></i>
             <a href="#" className="first-nav__link">
+              <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
               Cart
             </a>
           </li>
           <li className="first-nav__item">
-            <i className="fa-solid fa-shield-halved"></i>
             <a href="#" className="first-nav__link">
               Generate Password
             </a>
           </li>
           <li className="first-nav__item">
-            <i className="fa-solid fa-shield-halved"></i>
             <a href="#" className="first-nav__link">
+              <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
               Wish List
             </a>
           </li>
