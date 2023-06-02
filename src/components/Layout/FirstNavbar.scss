@@ -10,6 +10,7 @@
     grid-template-rows: repeat(2, min-content);
     /* give sign up, cart etc a little space from the top of the container */
     margin-top: 1.6rem;
+    display: grid;
   }
   &__list {
     display: grid;
@@ -28,7 +29,7 @@
       in this case we are able to define the width for it */
     display: inline-block;
     /* center items in grid cells - need element to take up entire width of grid cell */
-    width: 100%;
+    width: max-content;
     text-align: center;
   }
   &__link span {
@@ -36,8 +37,6 @@
   }
   &__link i {
     font-size: 1.3rem;
-    /* providing some space on the right side */
-    margin-right: 0.3rem;
   }
 }
 .search {
@@ -88,4 +87,9 @@
     color: var(--color-grey-1);
     cursor: pointer;
   }
+}
+
+svg {
+  /* providing some space on the right side */
+  margin-right: 0.5rem;
 }

@@ -7,6 +7,7 @@ import {
   faKey,
   faCartShopping,
   faHeart,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 const FirstNavbar = () => {
@@ -32,11 +33,6 @@ const FirstNavbar = () => {
           </li>
           <li className="first-nav__item">
             <a href="#" className="first-nav__link">
-              Generate Password
-            </a>
-          </li>
-          <li className="first-nav__item">
-            <a href="#" className="first-nav__link">
               <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
               Wish List
             </a>
@@ -48,7 +44,7 @@ const FirstNavbar = () => {
         <form className="search__form">
           <input type="text" className="search__input" placeholder="Search" />
           <button className="search__btn">
-            <i className="fas fa-search"></i>
+            <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
           </button>
         </form>
       </div>

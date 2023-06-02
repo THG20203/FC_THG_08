@@ -1,7 +1,7 @@
 import React from "react";
 import "./SecondNavbar.scss";
 /* can import images like css files in react */
-import footballBadge from "../assets/images/identity/football-badge.png";
+import footballBadge from "../../assets/images/identity/football-badge.png";
 
 const SecondNavbar = () => {
   return (
