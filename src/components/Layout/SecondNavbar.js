@@ -19,7 +19,7 @@ const SecondNavbar = () => {
       </label>
       {/* background behind menu toggle */}
       <div className="second-nav__background">&nbsp;</div>
-      {/* Specific second nav */}
+      {/* Specificallly second nav content */}
       <nav className="second-nav__content">
         {/* list of items to select in second navbar */}
         <ul className="second-nav__list">
