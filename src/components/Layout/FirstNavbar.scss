@@ -36,12 +36,38 @@
     position: absolute;
     &::before {
       content: "";
-      width: 15px;
-      height: 5px;
-      background-color: #00bcd4;
+      width: 0;
+      height: 3px;
+      background-color: var(--color-grey-1);
       position: absolute;
       top: 90%;
       left: 0;
+      /* make the transform in the hover before to happen smoothly */
+      transition: all 0.5s;
+    }
+    &::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      background-color: var(--color-grey-2);
+      position: absolute;
+      top: 90%;
+      right: 0;
+      /* make the transform in the hover before to happen smoothly */
+      transition: all 0.5s;
+    }
+    &:hover::before {
+      /* as the grey line moves from left to right, becomes 50% of the width at the same time */
+      width: 50%;
+      /* move the lighter grey line from left to right */
+      transform: translateX(100%);
+    }
+    /* changing from before to after to target the darker grey line */
+    &:hover::after {
+      /* as the darker grey line moves from right to left, becomes 50% of the width at the same time */
+      width: 50%;
+      /* move the darker grey line from right to left. Negative 100% on X axis -> cause move to left not right */
+      transform: translateX(-100%);
     }
   }
   &__link span {
