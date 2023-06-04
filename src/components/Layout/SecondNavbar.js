@@ -50,7 +50,7 @@ const SecondNavbar = () => {
           </li>
           <li className="second-nav__item">
             <a href="#" className="second-nav__link">
-              Shop
+              FAQS
             </a>
           </li>
         </ul>
