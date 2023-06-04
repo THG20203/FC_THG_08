@@ -12,6 +12,7 @@
     margin-top: 1.6rem;
     display: grid;
   }
+  // li tag
   &__list {
     display: grid;
     /* minmax(10rem, 1fr); minimum width of each column is 10rem, max width of 1fr. autofit = as many 
@@ -20,6 +21,7 @@
     /* get rid of default bullets */
     list-style: none;
   }
+  //a tag
   &__link {
     /* get rid of default link styles */
     text-decoration: none;
@@ -31,6 +33,16 @@
     /* center items in grid cells - need element to take up entire width of grid cell */
     width: max-content;
     text-align: center;
+    position: absolute;
+    &::before {
+      content: "";
+      width: 15px;
+      height: 5px;
+      background-color: #00bcd4;
+      position: absolute;
+      top: 90%;
+      left: 0;
+    }
   }
   &__link span {
     font-size: 1.3rem;
