@@ -8,6 +8,7 @@ import {
   faCartShopping,
   faHeart,
   faSearch,
+  faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 
 const FirstNavbar = () => {
@@ -15,7 +16,7 @@ const FirstNavbar = () => {
     /* First Navbar section */
     /* Navbar container I've added in for background-color */
     <div className="first-nav__container">
-      {/* First Navbar content -- links with favicons section */}
+      {/* Specifically first Navbar content -- links with favicons section */}
       <nav className="first-nav__content">
         <ul className="first-nav__list">
           <li className="first-nav__item">
@@ -35,6 +36,12 @@ const FirstNavbar = () => {
             <a href="#" className="first-nav__link">
               <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
               Wish List
+            </a>
+          </li>
+          <li className="first-nav__item">
+            <a href="#" className="first-nav__link">
+              <FontAwesomeIcon icon={faQuestion}></FontAwesomeIcon>
+              FAQ's
             </a>
           </li>
         </ul>

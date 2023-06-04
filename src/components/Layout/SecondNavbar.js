@@ -12,9 +12,9 @@ const SecondNavbar = () => {
       <input
         type="checkbox"
         className="second-nav__checkbox"
-        id="navi-toggle"
+        id="second-navi--toggle"
       />
-      <label for="navi-toggle" className="second-nav__button">
+      <label htmlFor="second-navi--toggle" className="second-nav__button">
         <span className="second-nav__icon">&nbsp;</span>
       </label>
       {/* background behind menu toggle */}
@@ -50,7 +50,7 @@ const SecondNavbar = () => {
           </li>
           <li className="second-nav__item">
             <a href="#" className="second-nav__link">
-              FAQS
+              Shop
             </a>
           </li>
         </ul>
