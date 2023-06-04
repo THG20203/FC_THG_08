@@ -56,33 +56,7 @@
       grid-template-columns: 100%;
     }
   }
-  // a tag
   &__link {
-    /* display block to control size, make it bigger */
-    display: block;
-    position: relative;
-    transition: all 0.3s;
-    &:hover {
-      transform: scale(1.3);
-    }
-    /* background of links */
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--color-grey-2);
-      transition: 0.3s;
-      transform: scale(0);
-      /* change z-index -> so appears in front of background */
-      z-index: -1;
-    }
-    /* only want grey background to appear when we hover over the link */
-    &:hover::before {
-      transform: scale(1);
-    }
     text-transform: uppercase;
     /* get rid of list bullet points */
     text-decoration: none;
