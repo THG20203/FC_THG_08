@@ -5,10 +5,10 @@
     justify-items: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr) 70vw repeat(5, 1fr);
+    grid-template-columns: 5vw 80vw repeat(6, 1fr);
   }
   &__input {
-    grid-column: 2 / 8;
+    grid-column: 2 / 3;
     width: 100%;
     height: 3rem;
     padding: 1rem 0.3rem;
@@ -34,10 +34,10 @@
       transform: scale(1.2);
     }
     &--search {
-      grid-column: 8 / 9;
+      grid-column: 5 / 6;
     }
     &--question {
-      grid-column: 9 / 10;
+      grid-column: 6 / 7;
     }
   }
 }
