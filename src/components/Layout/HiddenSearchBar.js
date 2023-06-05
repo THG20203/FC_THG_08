@@ -3,31 +3,50 @@ import "./HiddenSearchBar.scss";
 /* For font awesome icons */
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuestion } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   // useState Code
   const [uiProps, setUiProps] = useState({
     background: "#0a19a1",
     shadow: "",
-    transition: "all .3s ease",
+    transition: "all 1s ease",
     opacity: 0,
-    showSearchIcon: true,
+    showJustIcon: true,
   });
+
+  let inputStyle = {
+    opacity: uiProps.opacity,
+  };
+
+  const showJustIcon = () => {
+    setUiProps({
+      opacity: 1,
+      showJustIcon: false,
+    });
+  };
 
   //JSX code
   return (
     <div className="hidden-searchbar__container">
       <input
+        style={inputStyle}
         className="hidden-searchbar__input"
         type="text"
         placeholder="Search..."
       />
       {/* if uiProps doesn't exist the search bar disappears */}
-      {!uiProps.showSearchIcon && (
+      {uiProps.showJustIcon ? (
         <FontAwesomeIcon
           className="hidden-searchbar__icon"
-          icon={faQuestion}
+          icon={faSearch}
+          onClick={showJustIcon}
+        ></FontAwesomeIcon>
+      ) : (
+        <FontAwesomeIcon
+          className="hidden-searchbar__icon"
+          icon={faSearch}
+          onClick={showJustIcon}
         ></FontAwesomeIcon>
       )}
     </div>
