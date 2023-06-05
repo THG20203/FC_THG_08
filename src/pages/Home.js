@@ -1,13 +1,13 @@
 import React from "react";
 import "./Home.scss";
-import FirstNavbar from "../components/Layout/FirstNavbar";
-import SecondNavbar from "../components/Layout/SecondNavbar";
+import Navbar from "../components/Layout/Navbar";
+import HiddenSearchBar from "../components/Layout/HiddenSearchBar";
 
 const HomePage = () => {
   return (
     <div className="home-container">
-      <FirstNavbar />
-      <SecondNavbar />
+      <HiddenSearchBar />
+      <Navbar />
     </div>
   );
 };
