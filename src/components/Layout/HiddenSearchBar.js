@@ -3,7 +3,11 @@ import "./HiddenSearchBar.scss";
 /* For font awesome icons */
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faQuestion } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faQuestionCircle,
+  faCirclePlay,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   // useState Code
@@ -50,7 +54,12 @@ const Sidebar = () => {
       )}
       <FontAwesomeIcon
         className="hidden-searchbar__icon hidden-searchbar__icon--question"
-        icon={faQuestion}
+        icon={faQuestionCircle}
+        onClick={showJustIcon}
+      ></FontAwesomeIcon>
+      <FontAwesomeIcon
+        className="hidden-searchbar__icon hidden-searchbar__icon--player"
+        icon={faCirclePlay}
         onClick={showJustIcon}
       ></FontAwesomeIcon>
     </div>
