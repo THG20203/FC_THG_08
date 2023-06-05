@@ -3,7 +3,7 @@ import "./HiddenSearchBar.scss";
 /* For font awesome icons */
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faQuestion } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   // useState Code
@@ -38,17 +38,22 @@ const Sidebar = () => {
       {/* if uiProps doesn't exist the search bar disappears */}
       {uiProps.showJustIcon ? (
         <FontAwesomeIcon
-          className="hidden-searchbar__icon"
+          className="hidden-searchbar__icon hidden-searchbar__icon--search"
           icon={faSearch}
           onClick={showJustIcon}
         ></FontAwesomeIcon>
       ) : (
         <FontAwesomeIcon
-          className="hidden-searchbar__icon"
+          className="hidden-searchbar__icon hidden-searchbar__icon--search"
           icon={faSearch}
           onClick={showJustIcon}
         ></FontAwesomeIcon>
       )}
+      <FontAwesomeIcon
+        className="hidden-searchbar__icon hidden-searchbar__icon--question"
+        icon={faQuestion}
+        onClick={showJustIcon}
+      ></FontAwesomeIcon>
     </div>
   );
 };
