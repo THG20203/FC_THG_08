@@ -1,14 +1,14 @@
 .hidden-searchbar {
   &__container {
-    display: grid;
     /* ensure hidden search bar  is full width across the page */
     grid-column: full-start / full-end;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(14, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 70vw repeat(5, 1fr);
   }
   &__input {
-    grid-column: 3 / 11;
+    grid-column: 2 / 8;
     width: 100%;
     height: 3rem;
     padding: 1rem 0.3rem;
@@ -28,16 +28,16 @@
   }
   &__icon {
     color: var(--color-grey-1);
-    font-size: 3rem;
+    font-size: 2rem;
     &:hover {
       cursor: pointer;
       transform: scale(1.2);
     }
     &--search {
-      grid-column: 12 / 13;
+      grid-column: 8 / 9;
     }
     &--question {
-      grid-column: 13 / 14;
+      grid-column: 9 / 10;
     }
   }
 }

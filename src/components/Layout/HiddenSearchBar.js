@@ -46,7 +46,6 @@ const Sidebar = () => {
         <FontAwesomeIcon
           className="hidden-searchbar__icon hidden-searchbar__icon--search"
           icon={faSearch}
-          onClick={showJustIcon}
         ></FontAwesomeIcon>
       )}
       <FontAwesomeIcon
