@@ -7,6 +7,7 @@ import {
   faSearch,
   faQuestionCircle,
   faCirclePlay,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
@@ -14,7 +15,7 @@ const Sidebar = () => {
   const [uiProps, setUiProps] = useState({
     background: "#0a19a1",
     shadow: "",
-    transition: "all 1s ease",
+    transition: "all 2s ease",
     opacity: 0,
     showJustIcon: true,
   });
@@ -60,6 +61,11 @@ const Sidebar = () => {
       <FontAwesomeIcon
         className="hidden-searchbar__icon hidden-searchbar__icon--player"
         icon={faCirclePlay}
+        onClick={showJustIcon}
+      ></FontAwesomeIcon>
+      <FontAwesomeIcon
+        className="hidden-searchbar__icon hidden-searchbar__icon--user"
+        icon={faUser}
         onClick={showJustIcon}
       ></FontAwesomeIcon>
     </div>

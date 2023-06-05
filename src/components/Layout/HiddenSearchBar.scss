@@ -55,5 +55,11 @@
         display: none;
       }
     }
+    &--user {
+      grid-column: 8 / 9;
+      @media only screen and (max-width: 37.5em) {
+        grid-column: 7 / 8;
+      }
+    }
   }
 }
