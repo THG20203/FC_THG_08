@@ -13,8 +13,6 @@ import {
 const Sidebar = () => {
   // useState Code
   const [uiProps, setUiProps] = useState({
-    background: "#0a19a1",
-    shadow: "",
     transition: "all 2s ease",
     opacity: 0,
     showJustIcon: true,

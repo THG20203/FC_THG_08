@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.scss";
 import Navbar from "../components/Layout/Navbar";
 import HiddenSearchBar from "../components/Layout/HiddenSearchBar";
