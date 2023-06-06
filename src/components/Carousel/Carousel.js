@@ -20,19 +20,19 @@ const Carousel = () => {
         <div class="slideshow__wrapper">
           <div class="slide">
             <img class="slide__image" src={trainingTop} />
-            {/* <h1 class="slide__header slide__header--1">Example 1</h1> */}
+            <h1 class="slide__header slide__header--1">Example 1</h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={conference} />
-            {/* <h1 class="slide__header slide__header--1">Example 2</h1> */}
+            <h1 class="slide__header slide__header--1">Example 2</h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={playerOneBanner} />
-            {/* <h1 class="slide__header slide__header--1">Example 3</h1> */}
+            <h1 class="slide__header slide__header--1">Example 3</h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={yearsBanner} />
-            {/* <h1 class="slide__header slide__header--1">Example 4</h1> */}
+            <h1 class="slide__header slide__header--1">Example 4</h1>
           </div>
         </div>
       </div>

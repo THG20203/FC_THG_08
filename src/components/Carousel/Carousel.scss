@@ -11,6 +11,7 @@
   height: 100%;
   /* failsafe to hide excess banner images */
   overflow: hidden;
+  position: relative;
   &__wrapper {
     /* display images in a row using flex */
     display: flex;
@@ -134,52 +135,41 @@
 
 .slide {
   &__btn {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 4rem;
+    height: 1rem;
+    border: 0.1rem solid var(--color-grey-1);
     background-color: var(--color-grey-1);
-    border: 0.2rem solid var(--color-grey-2);
-    border-radius: 50%;
     cursor: pointer;
     outline: none;
     position: absolute;
     top: 90%;
-    @media only screen and (max-width: 87.5em) {
-      top: 80%;
-    }
     /* perfect positioning horizontally */
     transform: translateX(-50%);
     /* want to put the buttons on top of the slideshow */
     z-index: 2;
-    @media only screen and (max-width: 87.5em) {
-      /* make buttons bigger on smaller devices so they're easier to click on phones */
-      width: 1.8rem;
-      height: 1.8rem;
-    }
     /* position absolute will put one button on top of another so need to move them individually */
-    /* remember the quarter of the way across the page is 25% so want 22, 24, 26 and 28 of the way across 
-      the viewport, to center it albeit in a slideshow spanning halfway the viewport 50vw */
     &--1 {
-      left: 22%;
-      @media only screen and (max-width: 87.5em) {
-        left: 38%;
+      left: 35%;
+      @media only screen and (max-width: 62.5em) {
+        left: 20%;
       }
     }
     &--2 {
-      left: 24%;
-      @media only screen and (max-width: 87.5em) {
-        left: 46%;
+      left: 45%;
+      @media only screen and (max-width: 62.5em) {
+        left: 40%;
       }
     }
     &--3 {
-      left: 26%;
-      @media only screen and (max-width: 87.5em) {
-        left: 54%;
+      left: 55%;
+      @media only screen and (max-width: 62.5em) {
+        left: 60%;
       }
     }
     &--4 {
-      left: 28%;
-      @media only screen and (max-width: 87.5em) {
-        left: 62%;
+      left: 65%;
+      @media only screen and (max-width: 62.5em) {
+        left: 80%;
       }
     }
   }
