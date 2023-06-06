@@ -1,7 +1,7 @@
 import React from "react";
 import "./Carousel.scss";
 /* can import images like css files in react */
-import trainingTop from "../../assets/images/training-top.png";
+import trainingTop from "../../assets/images/banners/training-top.png";
 import conference from "../../assets/images/banners/conference.png";
 import playerOneBanner from "../../assets/images/banners/player-one-banner.png";
 import yearsBanner from "../../assets/images/banners/130-years-banner.png";
