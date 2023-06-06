@@ -17,10 +17,6 @@
     height: 8rem;
     /* set margin from edge of page */
     margin: 1rem;
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.2);
-    }
   }
   /* inner being the links and the hamburger menu */
   &__content {
@@ -56,8 +52,10 @@
     /* ensure font is right font for titles */
     font-family: var(--font-display);
     @media only screen and (max-width: 62.5em) {
-      /* make it one column taking up 100% of the width of to the content which was 1 / 10 column */
-      grid-template-columns: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
     }
   }
   &__link {
