@@ -14,22 +14,46 @@ const IconNav = () => {
   //JSX code
   return (
     <div className="icon-navbar__container">
-      <FontAwesomeIcon
-        className="icon-navbar__icon icon-navbar__icon--cart"
-        icon={faCartShopping}
-      ></FontAwesomeIcon>
-      <FontAwesomeIcon
-        className="icon-navbar__icon icon-navbar__icon--question"
-        icon={faQuestionCircle}
-      ></FontAwesomeIcon>
-      <FontAwesomeIcon
-        className="icon-navbar__icon icon-navbar__icon--player"
-        icon={faCirclePlay}
-      ></FontAwesomeIcon>
-      <FontAwesomeIcon
-        className="icon-navbar__icon icon-navbar__icon--user"
-        icon={faUser}
-      ></FontAwesomeIcon>
+      {/* Cart div */}
+      <div className="icon-navbar__div icon-navbar__cart--div">
+        <FontAwesomeIcon
+          className="icon-navbar__icon"
+          icon={faCartShopping}
+        ></FontAwesomeIcon>
+        <a href="#" class="icon-navbar__link">
+          Cart (0)
+        </a>
+      </div>
+      {/* FAQ's div */}
+      <div className="icon-navbar__div icon-navbar__faqs--div">
+        <FontAwesomeIcon
+          className="icon-navbar__icon"
+          icon={faQuestionCircle}
+        ></FontAwesomeIcon>
+        <a href="#" class="icon-navbar__link">
+          FAQ's
+        </a>
+      </div>
+      {/* Videos div */}
+      <div className="icon-navbar__div icon-navbar__video--div">
+        <FontAwesomeIcon
+          className="icon-navbar__icon"
+          icon={faCirclePlay}
+        ></FontAwesomeIcon>
+        <a href="#" class="icon-navbar__link">
+          Videos
+        </a>
+      </div>
+      {/* Users div */}
+      <div className="icon-navbar__div icon-navbar__user--div">
+        <FontAwesomeIcon
+          className="icon-navbar__icon"
+          icon={faUser}
+        ></FontAwesomeIcon>
+        <a href="#" class="icon-navbar__link">
+          Sign Up / Login
+        </a>
+      </div>
     </div>
   );
 };
