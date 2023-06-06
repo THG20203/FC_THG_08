@@ -117,9 +117,15 @@
     &:hover::after {
       transform: scale(1);
     }
-    @media only screen and (max-width: 62.5em) {
+    @media only screen and (max-width: 87.5em) {
       /* links font size increase */
       font-size: 4rem;
+      /* smaller devices - blue background - so links need to be white */
+      color: var(--color-grey-1);
+    }
+    @media only screen and (max-width: 62.5em) {
+      /* links font size increase */
+      font-size: 3rem;
       /* smaller devices - blue background - so links need to be white */
       color: var(--color-grey-1);
     }
