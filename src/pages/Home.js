@@ -1,13 +1,15 @@
 import React from "react";
 import "./Home.scss";
-import IconNav from "../components/Layout/IconNav";
-import Navbar from "../components/Layout/Navbar";
+import IconNav from "../components/Navigation/IconNav";
+import Navbar from "../components/Navigation/Navbar";
+import Carousel from "../components/Carousel/Carousel";
 
 const HomePage = () => {
   return (
     <div className="home-container">
       <IconNav />
       <Navbar />
+      <Carousel />
     </div>
   );
 };
