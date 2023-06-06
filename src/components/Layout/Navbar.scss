@@ -17,6 +17,10 @@
     height: 8rem;
     /* set margin from edge of page */
     margin: 1rem;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
   }
   /* inner being the links and the hamburger menu */
   &__content {
