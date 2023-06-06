@@ -1,12 +1,12 @@
 import React from "react";
 import "./Home.scss";
+import IconNav from "../components/Layout/IconNav";
 import Navbar from "../components/Layout/Navbar";
-import HiddenSearchBar from "../components/Layout/HiddenSearchBar";
 
 const HomePage = () => {
   return (
     <div className="home-container">
-      <HiddenSearchBar />
+      <IconNav />
       <Navbar />
     </div>
   );
