@@ -11,13 +11,16 @@
   line-height: 1;
 }
 
+.heading-1--light {
+  font-size: 4rem;
+  color: var(--color-grey-1);
+  line-height: 1;
+}
+
 .heading-2 {
   @extend %heading;
   font-size: 3rem;
   line-height: 1;
-  &--light {
-    color: var(--color-grey-2);
-  }
 }
 
 .heading-3 {
@@ -30,22 +33,12 @@
 .heading-4 {
   @extend %heading;
   font-size: 1.8rem;
-
-  &--light {
-    color: var(--color-grey-2);
-  }
 }
 
 .paragraph-text {
   font-size: 1.5rem;
   @media only screen and (max-width: 62.5em) {
     font-size: 0.75rem;
-  }
-  &--uppercase {
-    text-transform: uppercase;
-  }
-  &--light {
-    color: var(--color-grey-1);
   }
 }
 

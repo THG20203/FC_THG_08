@@ -32,6 +32,7 @@
 }
 
 .slide {
+  position: relative;
   &__image {
     height: 100%;
     /* want the width to be half the viewport hence 50vw */
@@ -44,16 +45,62 @@
       width: 100vw;
     }
   }
-}
-
-.slide__image::after {
-  height: 100%;
-  width: 50vw;
-  background: linear-gradient(
-    rgba(249, 247, 246, 0.7),
-    rgba(249, 247, 246, 0.7)
-  );
-  z-index: 100;
+  &__image::after {
+    height: 100%;
+    width: 50vw;
+    background: linear-gradient(
+      rgba(249, 247, 246, 0.7),
+      rgba(249, 247, 246, 0.7)
+    );
+    z-index: 100;
+  }
+  &__header {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    right: 50%;
+    min-width: max-content;
+    transform: translate(-50%, -50%);
+  }
+  &__btn {
+    width: 4rem;
+    height: 1rem;
+    border: 0.1rem solid var(--color-grey-1);
+    background-color: var(--color-grey-1);
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 90%;
+    /* perfect positioning horizontally */
+    transform: translateX(-50%);
+    /* want to put the buttons on top of the slideshow */
+    z-index: 2;
+    /* position absolute will put one button on top of another so need to move them individually */
+    &--1 {
+      left: 35%;
+      @media only screen and (max-width: 62.5em) {
+        left: 20%;
+      }
+    }
+    &--2 {
+      left: 45%;
+      @media only screen and (max-width: 62.5em) {
+        left: 40%;
+      }
+    }
+    &--3 {
+      left: 55%;
+      @media only screen and (max-width: 62.5em) {
+        left: 60%;
+      }
+    }
+    &--4 {
+      left: 65%;
+      @media only screen and (max-width: 62.5em) {
+        left: 80%;
+      }
+    }
+  }
 }
 
 /* keyframes percentages? = percentage of the animation duration */
@@ -133,54 +180,12 @@
   }
 }
 
-.slide {
-  &__btn {
-    width: 4rem;
-    height: 1rem;
-    border: 0.1rem solid var(--color-grey-1);
-    background-color: var(--color-grey-1);
-    cursor: pointer;
-    outline: none;
-    position: absolute;
-    top: 90%;
-    /* perfect positioning horizontally */
-    transform: translateX(-50%);
-    /* want to put the buttons on top of the slideshow */
-    z-index: 2;
-    /* position absolute will put one button on top of another so need to move them individually */
-    &--1 {
-      left: 35%;
-      @media only screen and (max-width: 62.5em) {
-        left: 20%;
-      }
-    }
-    &--2 {
-      left: 45%;
-      @media only screen and (max-width: 62.5em) {
-        left: 40%;
-      }
-    }
-    &--3 {
-      left: 55%;
-      @media only screen and (max-width: 62.5em) {
-        left: 60%;
-      }
-    }
-    &--4 {
-      left: 65%;
-      @media only screen and (max-width: 62.5em) {
-        left: 80%;
-      }
-    }
-  }
-}
-
 /* first of all need to make sure its obvious which button we are focusing on when click it */
 .slide__btn:focus {
   background-color: var(--color-primary-dark);
 }
 
-.slide__btn--1:focus ~ .slideshow__wrapper {
+.slide__btn .slide__btn--1:focus ~ .slideshow__wrapper {
   /* in order to stop animation - need to write animation none */
   animation: none;
   /* when we focus on first button, we need to display first image */
