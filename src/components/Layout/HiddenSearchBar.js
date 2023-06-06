@@ -11,24 +11,60 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
+  // useState Code
+  const [uiProps, setUiProps] = useState({
+    transition: "all 2s ease",
+    opacity: 0,
+    showJustIcon: true,
+  });
+
+  let inputStyle = {
+    opacity: uiProps.opacity,
+  };
+
+  const showJustIcon = () => {
+    setUiProps({
+      opacity: 1,
+      showJustIcon: false,
+    });
+  };
+
   //JSX code
   return (
     <div className="hidden-searchbar__container">
-      <FontAwesomeIcon
-        className="hidden-searchbar__icon hidden-searchbar__icon--search"
-        icon={faSearch}
-      ></FontAwesomeIcon>
+      <input
+        style={inputStyle}
+        className="hidden-searchbar__input"
+        type="text"
+        placeholder="Search..."
+      />
+      {/* if uiProps doesn't exist the search bar disappears */}
+      {uiProps.showJustIcon ? (
+        <FontAwesomeIcon
+          className="hidden-searchbar__icon hidden-searchbar__icon--search"
+          icon={faSearch}
+          onClick={showJustIcon}
+        ></FontAwesomeIcon>
+      ) : (
+        <FontAwesomeIcon
+          className="hidden-searchbar__icon hidden-searchbar__icon--search"
+          icon={faSearch}
+        ></FontAwesomeIcon>
+      )}
       <FontAwesomeIcon
         className="hidden-searchbar__icon hidden-searchbar__icon--question"
         icon={faQuestionCircle}
+        onClick={showJustIcon}
       ></FontAwesomeIcon>
       <FontAwesomeIcon
         className="hidden-searchbar__icon hidden-searchbar__icon--player"
         icon={faCirclePlay}
+        onClick={showJustIcon}
       ></FontAwesomeIcon>
       <FontAwesomeIcon
         className="hidden-searchbar__icon hidden-searchbar__icon--user"
         icon={faUser}
+        onClick={showJustIcon}
       ></FontAwesomeIcon>
     </div>
   );
