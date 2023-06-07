@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./IconNav.scss";
 /* For font awesome icons */
 import { library } from "@fortawesome/fontawesome-svg-core";
