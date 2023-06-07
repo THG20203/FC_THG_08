@@ -3,6 +3,7 @@ import "./Home.scss";
 import IconNav from "../components/Navigation/IconNav";
 import Navbar from "../components/Navigation/Navbar";
 import Carousel from "../components/Carousel/Carousel";
+import Features from "../components/Features/Features";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <IconNav />
       <Navbar />
       <Carousel />
+      <Features />
     </div>
   );
 };

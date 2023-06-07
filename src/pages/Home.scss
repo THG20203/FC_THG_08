@@ -17,6 +17,6 @@
   /* why only name the columns and not the rows? in overall layout focus is generally on the columns 
   and not the rows - columns more important */
   @media only screen and (max-width: 87.5em) {
-    grid-template-rows: 6rem 10rem 120vh calc(100vh - 14rem) calc(100vh - 20rem);
+    grid-template-rows: 6rem 10rem calc(100vh - 14rem) calc(100vh - 20rem);
   }
 }
