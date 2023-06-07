@@ -3,7 +3,7 @@ import "./Carousel.scss";
 /* can import images like css files in react */
 import trainingTop from "../../assets/images/banners/training-top.png";
 import conference from "../../assets/images/banners/conference.png";
-import playerOneBanner from "../../assets/images/banners/player-one-banner.png";
+import mural from "../../assets/images/graffiti/mural.png";
 import yearsBanner from "../../assets/images/banners/130-years-banner.png";
 
 const Carousel = () => {
@@ -19,16 +19,16 @@ const Carousel = () => {
         {/* slideshow images */}
         <div class="slideshow__wrapper">
           <div class="slide">
-            <img class="slide__image" src={trainingTop} />
-            <h1 class="slide__header heading-1--light">Example 1 title text</h1>
+            <img class="slide__image" src={mural} />
+            <h1 class="slide__header heading-1--light">Example 3</h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={conference} />
             <h1 class="slide__header heading-1--light">Example 2</h1>
           </div>
           <div class="slide">
-            <img class="slide__image" src={playerOneBanner} />
-            <h1 class="slide__header heading-1--light">Example 3</h1>
+            <img class="slide__image" src={trainingTop} />
+            <h1 class="slide__header heading-1--light">Example 1 title text</h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={yearsBanner} />

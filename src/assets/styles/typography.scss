@@ -1,7 +1,7 @@
 //sass extend, cause all of these need same font-family and weight
 %heading {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .heading-1 {
@@ -12,6 +12,7 @@
 }
 
 .heading-1--light {
+  @extend %heading;
   font-size: 4rem;
   color: var(--color-grey-1);
   line-height: 1;
@@ -37,9 +38,6 @@
 
 .paragraph-text {
   font-size: 1.5rem;
-  @media only screen and (max-width: 62.5em) {
-    font-size: 0.75rem;
-  }
 }
 
 .btn {
