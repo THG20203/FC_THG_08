@@ -7,7 +7,6 @@ import {
   faUsers,
   faSoccerBall,
   faTicket,
-  faIcons,
   faMapPin,
   faHandshake,
   faTrophy,
