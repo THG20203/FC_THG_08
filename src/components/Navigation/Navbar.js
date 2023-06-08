@@ -26,7 +26,17 @@ const Navbar = () => {
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
+              Shop
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               Matches
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
+              Tickets
             </a>
           </li>
           <li className="nav__item">
@@ -37,16 +47,6 @@ const Navbar = () => {
           <li className="nav__item">
             <a href="#" className="nav__link">
               Culture
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="#" className="nav__link">
-              Tickets
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="#" className="nav__link">
-              Shop
             </a>
           </li>
         </ul>
