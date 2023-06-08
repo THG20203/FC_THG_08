@@ -59,8 +59,13 @@
     top: 80%;
     left: 50%;
     right: 50%;
-    min-width: max-content;
+    width: max-content;
     transform: translate(-50%, -50%);
+    @media only screen and (max-width: 62.5em) {
+      top: 75%;
+      width: 50vw;
+      text-align: center;
+    }
   }
   &__btn {
     width: 4rem;
