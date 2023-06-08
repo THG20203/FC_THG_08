@@ -24,15 +24,19 @@ const Carousel = () => {
           </div>
           <div class="slide">
             <img class="slide__image" src={conference} />
-            <h1 class="slide__header heading-1--light">Example 2</h1>
+            <h1 class="slide__header heading-1--light">
+              Ahead of the big final
+            </h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={trainingTop} />
-            <h1 class="slide__header heading-1--light">Example 1 title text</h1>
+            <h1 class="slide__header heading-1--light">
+              New training facility complete
+            </h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={yearsBanner} />
-            <h1 class="slide__header heading-1--light">Example 4</h1>
+            <h1 class="slide__header heading-1">130 years of our club</h1>
           </div>
         </div>
       </div>
