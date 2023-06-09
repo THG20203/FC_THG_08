@@ -62,9 +62,12 @@
     width: max-content;
     transform: translate(-50%, -50%);
     @media only screen and (max-width: 62.5em) {
-      top: 75%;
       width: 50vw;
       text-align: center;
+    }
+    @media only screen and (max-width: 37.5em) {
+      top: 70%;
+      font-size: 2.5rem;
     }
   }
   &__btn {
