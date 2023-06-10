@@ -24,7 +24,9 @@ const Carousel = () => {
           </div>
           <div class="slide">
             <img class="slide__image" src={conference} />
-            <h1 class="slide__header heading-1--light">Ahead of the final</h1>
+            <h1 class="slide__header heading-1--light">
+              Ahead of the big final
+            </h1>
           </div>
           <div class="slide">
             <img class="slide__image" src={trainingTop} />
