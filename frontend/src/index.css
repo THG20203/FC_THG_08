@@ -1,0 +1,47 @@
+:root {
+  --color-primary: #0c22e8; /* Brighter blue */
+  --color-primary-dark: #0a19a1; /* blue */
+
+  --color-secondary: #101d2c;
+
+  --color-grey-1: #f9f7f6;
+  --color-grey-2: #aaa;
+
+  /* FONT VARIABLES */
+  /* For general body */
+  --font-primary: "Nunito", sans-serif;
+  /* For titles */
+  --font-display: "Lato", sans-serif;
+
+  /* RESPONSIVE BREAKPOINTS */
+  /* largest breakpoint: 87.5em; 1400px divided by 16 (16 -> default font-size for a browser) */
+  /* large breakpoint: 62.5em; 1000px divided by 16 */
+  /* medium breakpoint: 50em; 800px divided by 16 */
+  /* small breakpoint: 37.5em; 600px divided by 16 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-grey-1);
+  color: var(--color-secondary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
