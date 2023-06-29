@@ -21,17 +21,17 @@ const Navbar = () => {
         <ul className="nav__list">
           <li className="nav__item">
             <a href="#" className="nav__link">
+              Home
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               Shop
             </a>
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
               Events
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="#" className="nav__link">
-              Latest
             </a>
           </li>
           <li className="nav__item">
