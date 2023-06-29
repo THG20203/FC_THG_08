@@ -1,0 +1,75 @@
+//sass extend, cause all of these need same font-family and weight
+%heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4rem;
+  color: var(--color-primary-dark);
+  line-height: 1;
+}
+
+.heading-1--light {
+  @extend %heading;
+  font-size: 4rem;
+  color: var(--color-grey-1);
+  line-height: 1;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.8rem;
+}
+
+.paragraph-text {
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-grey-1);
+  border: none;
+  border-radius: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+}
+
+//helper classes - mb stands for margin bottom
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 8rem;
+}
