@@ -50,15 +50,26 @@ async function writeData(data) {
 }
 
 //FUNCTION 3:
-
+/* getAll function is defined as an asynchronous function using the 
+async keyword */
 async function getAll() {
+  /* awaits the readData function to retrieve data from a file. The result 
+  of readData() is stored in the storedData variable.*/
   const storedData = await readData();
+  /* It checks if the storedData object has an events property using 
+  storedData.events. */
   if (!storedData.events) {
+    /* If the events property does not exist or is falsy, it throws a 
+    NotFoundError with an appropriate error message. NotFoundError imported
+    from "../util/errors" "Could not find any events." */
     throw new NotFoundError("Could not find any events.");
   }
+  /* If the events property exists and is truthy, it returns the value 
+  of storedData.events. */
   return storedData.events;
 }
 
+// FUNCTION 4
 async function get(id) {
   const storedData = await readData();
   if (!storedData.events || storedData.events.length === 0) {
@@ -73,12 +84,14 @@ async function get(id) {
   return event;
 }
 
+// FUNCTION 5
 async function add(data) {
   const storedData = await readData();
   storedData.events.unshift({ ...data, id: generateId() });
   await writeData(storedData);
 }
 
+//FUNCTION 6
 async function replace(id, data) {
   const storedData = await readData();
   if (!storedData.events || storedData.events.length === 0) {
@@ -95,6 +108,7 @@ async function replace(id, data) {
   await writeData(storedData);
 }
 
+// FUNCTION 7
 async function remove(id) {
   const storedData = await readData();
   const updatedData = storedData.events.filter((ev) => ev.id !== id);
