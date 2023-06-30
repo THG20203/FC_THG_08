@@ -49,7 +49,7 @@ async function writeData(data) {
   await fs.writeFile("events.json", JSON.stringify(data));
 }
 
-//FUNCTION 3:
+//FUNCTION 3 -> getAll data from file:
 /* getAll function is defined as an asynchronous function using the 
 async keyword */
 async function getAll() {
@@ -69,7 +69,7 @@ async function getAll() {
   return storedData.events;
 }
 
-// FUNCTION 4
+// FUNCTION 4 -> get data:
 async function get(id) {
   const storedData = await readData();
   if (!storedData.events || storedData.events.length === 0) {
@@ -84,14 +84,14 @@ async function get(id) {
   return event;
 }
 
-// FUNCTION 5
+// FUNCTION 5 -> add data:
 async function add(data) {
   const storedData = await readData();
   storedData.events.unshift({ ...data, id: generateId() });
   await writeData(storedData);
 }
 
-//FUNCTION 6
+//FUNCTION 6 -> replace data:
 async function replace(id, data) {
   const storedData = await readData();
   if (!storedData.events || storedData.events.length === 0) {
@@ -108,7 +108,7 @@ async function replace(id, data) {
   await writeData(storedData);
 }
 
-// FUNCTION 7
+// FUNCTION 7 -> remove data:
 async function remove(id) {
   const storedData = await readData();
   const updatedData = storedData.events.filter((ev) => ev.id !== id);
