@@ -70,24 +70,50 @@ async function getAll() {
 }
 
 // FUNCTION 4 -> get data:
+/* defines an asynchronous function called get. This function 
+takes an id parameter and uses the readData function to read 
+data from a file. */
+/* Then performs checks to find the event with the specified id 
+within the storedData. If the event is not found, it throws a 
+NotFoundError with an appropriate error message. Otherwise, it 
+returns the found event. */
+/* id represents the ID of the evnet you want to retrieve */
 async function get(id) {
+  /* awaits the readData function to retrieve data from a file. The result 
+  of readData() is stored in the storedData variable.*/
   const storedData = await readData();
+  /* It checks if storedData.events does not exist or has a length of zero. 
+  If so, it throws a NotFoundError with an appropriate error message. */
   if (!storedData.events || storedData.events.length === 0) {
     throw new NotFoundError("Could not find any events.");
   }
 
+  /* Function  uses the Array.prototype.find method to search for an 
+  event within storedData.events that matches the specified id. */
   const event = storedData.events.find((ev) => ev.id === id);
   if (!event) {
+    /* If no event is found, it throws a NotFoundError with an 
+    appropriate error message. */
     throw new NotFoundError("Could not find event for id " + id);
   }
 
+  /* If an event is found, it is stored in the event variable. */
   return event;
 }
 
 // FUNCTION 5 -> add data:
+/* asynchronous function called add. This function takes a data parameter. */
 async function add(data) {
+  /* awaits the readData function to retrieve data from a file. The result 
+  of readData() is stored in the storedData variable.*/
   const storedData = await readData();
+  /* It adds a new event to the beginning of the storedData.events array. 
+  The new event is created by spreading the data object and adding an id 
+  property generated using the generateId function */
   storedData.events.unshift({ ...data, id: generateId() });
+  /* After modifying the storedData, it uses the writeData function to 
+  write the updated data back to the file and awaits the operation to 
+  complete. */
   await writeData(storedData);
 }
 
