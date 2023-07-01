@@ -49,15 +49,34 @@ router.get("/", async (req, res, next) => {
 });
 
 // GET REQUEST 2:
+/*  route handler function for a GET request to retrieve an event by its ID. */
+/* The route handler is defined using the router.get() method, which 
+corresponds to a GET request. */
+/* The route pattern is "/:id", indicating that the route expects a parameter 
+called "id" in the request URL. */
 router.get("/:id", async (req, res, next) => {
+  /* Inside the route handler function, there is a try-catch block to handle 
+  any potential errors that may occur during the execution of the code. */
   try {
+    /* The get() function is called with req.params.id as an argument. 
+    It is assumed that there is a function called get() defined elsewhere,
+    which retrieves the event based on the provided ID. */
+    /* The result of the get() function is stored in the event variable 
+    using await since it is an asynchronous operation. */
     const event = await get(req.params.id);
+    /* If the retrieval is successful, the server responds with a 
+    JSON object containing the event information using res.json(). */
     res.json({ event: event });
+    /* In case of an error, the catch block is executed, and the error 
+    is passed to the next function, which delegates the error handling
+    to the next error-handling middleware or the default Express error 
+    handler. */
   } catch (error) {
     next(error);
   }
 });
 
+// POST REQUEST code:
 router.post("/", async (req, res, next) => {
   const data = req.body;
 
@@ -94,6 +113,7 @@ router.post("/", async (req, res, next) => {
   }
 });
 
+// PATCH code:
 router.patch("/:id", async (req, res, next) => {
   const data = req.body;
 
@@ -130,6 +150,7 @@ router.patch("/:id", async (req, res, next) => {
   }
 });
 
+// DELETE:
 router.delete("/:id", async (req, res, next) => {
   try {
     await remove(req.params.id);
@@ -139,4 +160,9 @@ router.delete("/:id", async (req, res, next) => {
   }
 });
 
+/* The code module.exports = router; is used to export the router instance
+so that it can be used in other files or modules. */
+/* By adding module.exports = router; at the end of the file, you are
+exporting the router object. This allows other modules or files that 
+require this module to access and use the defined routes. */
 module.exports = router;
