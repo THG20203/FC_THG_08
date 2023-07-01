@@ -87,9 +87,11 @@ router.post("/", async (req, res, next) => {
   /* An empty errors object is initialized to store validation errors. */
   let errors = {};
 
-  /* If there are any errors (i.e., the errors object is not empty), the 
-  server responds with a status code of 422 (Unprocessable Entity) and 
-  returns a JSON response containing the error message and the errors object. */
+  /* The isValidText, isValidDate, and isValidImageUrl functions are assumed 
+  to be defined elsewhere. These functions are used to validate the title,
+  description, date, and image fields of the updated event data. If any of 
+  these fields fail validation, an error message is added to the errors 
+  object. */
   if (!isValidText(data.title)) {
     errors.title = "Invalid title.";
   }
@@ -106,9 +108,9 @@ router.post("/", async (req, res, next) => {
     errors.image = "Invalid image.";
   }
 
-  /* If there are no validation errors, the add function is assumed to be 
-  defined elsewhere. It is called with the data object (containing the event details) 
-  as an argument. The add function is expected to save the event. */
+  /* If there are any errors (i.e., the errors object is not empty), the 
+  server responds with a status code of 422 (Unprocessable Entity) and 
+  returns a JSON response containing the error message and the errors object. */
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
       message: "Adding the event failed due to validation errors.",
@@ -116,10 +118,13 @@ router.post("/", async (req, res, next) => {
     });
   }
 
-  /* If the event is successfully saved, the server responds with a status code of 201 
-  (Created) and returns a JSON response with a success message and the event data. */
+  /* If there are no validation errors, the add function is assumed to be 
+  defined elsewhere. It is called with the data object (containing the event details) 
+  as an argument. The add function is expected to save the event. */
   try {
     await add(data);
+    /* If the event is successfully saved, the server responds with a status code of 201 
+    (Created) and returns a JSON response with a success message and the event data. */
     res.status(201).json({ message: "Event saved.", event: data });
   } catch (error) {
     next(error);
@@ -127,11 +132,21 @@ router.post("/", async (req, res, next) => {
 });
 
 // PATCH code:
+/* The code defines a PATCH route handler with a parameter :id, which represents 
+the ID of the event to be updated. */
+/* When a PATCH request is received, the handler function is executed. */
 router.patch("/:id", async (req, res, next) => {
+  /* The request body is accessed through req.body, which is assumed to contain 
+  the updated data for the event. */
   const data = req.body;
-
+  /* An empty errors object is initialized to store validation errors. */
   let errors = {};
 
+  /* The isValidText, isValidDate, and isValidImageUrl functions are assumed 
+  to be defined elsewhere. These functions are used to validate the title,
+  description, date, and image fields of the updated event data. If any of 
+  these fields fail validation, an error message is added to the errors 
+  object. */
   if (!isValidText(data.title)) {
     errors.title = "Invalid title.";
   }
@@ -148,6 +163,10 @@ router.patch("/:id", async (req, res, next) => {
     errors.image = "Invalid image.";
   }
 
+  /* If there are any errors (i.e., the errors object is not empty), the 
+  server responds with a status code of 422 (Unprocessable Entity) and 
+  returns a JSON response containing the error message and the errors 
+  object. */
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
       message: "Updating the event failed due to validation errors.",
@@ -155,10 +174,19 @@ router.patch("/:id", async (req, res, next) => {
     });
   }
 
+  /* If there are no validation errors, the replace function is assumed 
+  to be defined elsewhere. It is called with the req.params.id (the 
+  ID of the event to be updated) and the data object (containing the 
+  updated event details) as arguments. The replace function is expected 
+  to replace the existing event with the updated data. */
   try {
     await replace(req.params.id, data);
+    /* If the event is successfully updated, the server responds with a 
+    JSON response containing a success message and the updated event data. */
     res.json({ message: "Event updated.", event: data });
   } catch (error) {
+    /* If an error occurs during the update process, the error is 
+    passed to the next error-handling middleware using the next function. */
     next(error);
   }
 });
