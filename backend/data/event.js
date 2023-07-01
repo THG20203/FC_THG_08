@@ -118,26 +118,57 @@ async function add(data) {
 }
 
 //FUNCTION 6 -> replace data:
+/* The given code snippet shows an asynchronous function called 
+replace, which takes an id and data as parameters. */
 async function replace(id, data) {
+  /* awaits the readData function to retrieve data from a file. The result 
+  of readData() is stored in the storedData variable.*/
   const storedData = await readData();
+  /* If the retrieved storedData does not have an events property or if 
+  the events array is empty, it throws a NotFoundError with the message 
+  "Could not find any events." */
   if (!storedData.events || storedData.events.length === 0) {
     throw new NotFoundError("Could not find any events.");
   }
 
+  /* If there are events in the storedData, it searches for an event 
+  with a matching id in the events array using the findIndex method. */
   const index = storedData.events.findIndex((ev) => ev.id === id);
+  /* If the index is less than 0, it means that no event was found with the 
+  given id. */
   if (index < 0) {
+    /* In this case, it throws a NotFoundError with the message 
+    "Could not find event for id " concatenated with the id. */
     throw new NotFoundError("Could not find event for id " + id);
   }
 
+  /* If an event with the given id is found, it replaces the event at 
+  that index in the events array with a new object that combines the 
+  existing event's id with the properties from the data parameter. 
+  This is achieved by spreading data into a new object and explicitly 
+  setting the id property. */
   storedData.events[index] = { ...data, id };
 
+  /* Finally, the modified storedData is asynchronously written back 
+  using the writeData function, which likely updates the stored data 
+  in the database or any other relevant storage. */
   await writeData(storedData);
 }
 
 // FUNCTION 7 -> remove data:
+/* Asynchronous function called remove, which takes an id as a 
+parameter. */
 async function remove(id) {
+  /* awaits the readData function to retrieve data from a file. The result 
+  of readData() is stored in the storedData variable.*/
   const storedData = await readData();
+  /* It then filters the events array in storedData using the filter method. 
+  It keeps only the events whose id does not match the provided id. */
+  /* The filtered events are stored in the updatedData constant. */
   const updatedData = storedData.events.filter((ev) => ev.id !== id);
+  /* Finally, it asynchronously writes the updated data by calling the
+   writeData function with an object containing the events property 
+   set to the updatedData. */
   await writeData({ events: updatedData });
 }
 
