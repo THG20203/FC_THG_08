@@ -77,11 +77,19 @@ router.get("/:id", async (req, res, next) => {
 });
 
 // POST REQUEST code:
+/* The code defines a POST route handler for the root path ("/"). 
+When a POST request is received, the handler function is executed. */
 router.post("/", async (req, res, next) => {
+  /* The request body is accessed through req.body, which is assumed 
+  to contain data for an event. */
   const data = req.body;
 
+  /* An empty errors object is initialized to store validation errors. */
   let errors = {};
 
+  /* If there are any errors (i.e., the errors object is not empty), the 
+  server responds with a status code of 422 (Unprocessable Entity) and 
+  returns a JSON response containing the error message and the errors object. */
   if (!isValidText(data.title)) {
     errors.title = "Invalid title.";
   }
@@ -98,6 +106,9 @@ router.post("/", async (req, res, next) => {
     errors.image = "Invalid image.";
   }
 
+  /* If there are no validation errors, the add function is assumed to be 
+  defined elsewhere. It is called with the data object (containing the event details) 
+  as an argument. The add function is expected to save the event. */
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
       message: "Adding the event failed due to validation errors.",
@@ -105,6 +116,8 @@ router.post("/", async (req, res, next) => {
     });
   }
 
+  /* If the event is successfully saved, the server responds with a status code of 201 
+  (Created) and returns a JSON response with a success message and the event data. */
   try {
     await add(data);
     res.status(201).json({ message: "Event saved.", event: data });
