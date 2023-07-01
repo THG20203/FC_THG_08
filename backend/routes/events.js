@@ -36,12 +36,19 @@ router.get("/", async (req, res, next) => {
     to complete before proceeding further. The getAll function is assumed to 
     be an asynchronous function that retrieves events data from a data source. */
     const events = await getAll();
+    /* res.json({ events: events }); - This line sends a JSON response containing 
+    the events data. The res.json() method serializes the JavaScript object into 
+    JSON and sends it as the response to the client */
     res.json({ events: events });
   } catch (error) {
+    /* next(error); - If an error occurs within the try block, it is passed to 
+    the next function, which is used to pass control to the next error-handling 
+    middleware. This is a common pattern in Express to handle errors. */
     next(error);
   }
 });
 
+// GET REQUEST 2:
 router.get("/:id", async (req, res, next) => {
   try {
     const event = await get(req.params.id);
