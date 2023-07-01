@@ -192,11 +192,23 @@ router.patch("/:id", async (req, res, next) => {
 });
 
 // DELETE:
+/* The code defines a DELETE route handler with a parameter :id, which 
+represents the ID of the event to be deleted. When a DELETE request is 
+received, the handler function is executed. */
 router.delete("/:id", async (req, res, next) => {
   try {
+    /* The remove function is assumed to be defined elsewhere. It is 
+    called with req.params.id, which represents the ID of the event 
+    to be deleted. The remove function is expected to delete the event 
+    with the specified ID. */
     await remove(req.params.id);
+    /* If the event is successfully deleted, the server responds
+    with a JSON response containing a success message. */
     res.json({ message: "Event deleted." });
   } catch (error) {
+    /* If an error occurs during the deletion process, the error 
+    is passed to the next error-handling middleware using the 
+    next function. */
     next(error);
   }
 });
