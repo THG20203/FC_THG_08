@@ -2,10 +2,10 @@
   "events": [
     {
       "id": "e1",
-      "title": "A dummy event",
+      "title": "Community Football Fun Day",
       "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
+      "image": "./image/huddle.png",
+      "description": "Participants can look forward to friendly football matches, skill challenges, mini-tournaments, and interactive games."
     }
   ]
 }
