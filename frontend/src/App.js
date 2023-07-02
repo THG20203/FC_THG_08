@@ -1,5 +1,5 @@
 import React from "react";
-import HomePage from "./pages/Home";
+import HomePage from "./pages/HomePage";
 /* styles */
 import "./index.css";
 import "./assets/styles/typography.scss";
