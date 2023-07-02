@@ -1,7 +1,6 @@
 .home-container {
   display: grid;
   /* comments for the grid-template-rows */
-  /* 80% of the view-height, then min-content - smallest size of box without overflowing content. */
 
   grid-template-rows: 6rem 10rem calc(100vh - 14rem) min-content;
   grid-template-columns:
