@@ -4,8 +4,8 @@ import "./Culture.scss";
 import IconNav from "../components/Navigation/IconNav";
 import Navbar from "../components/Navigation/Navbar";
 /* images for culture page */
-import underpass from "../../assets/images/graffiti/underpass.png";
-import mural from "../../assets/images/graffiti/mural.png";
+import underpass from "../assets/images/graffiti/underpass.png";
+import mural from "../assets/images/graffiti/mural.png";
 
 const CulturePage = () => {
   return (
@@ -36,7 +36,6 @@ const CulturePage = () => {
           being considered as vandalism by some, the fans of FC THG 08 see it as
           a way to add to their club's and city's culture.
         </p>
-        <button className="btn">Find out more</button>
       </div>
     </div>
   );
