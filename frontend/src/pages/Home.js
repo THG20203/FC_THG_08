@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomePage.scss";
+import "./Home.scss";
 import IconNav from "../components/Navigation/IconNav";
 import Navbar from "../components/Navigation/Navbar";
 import Carousel from "../components/Carousel/Carousel";
