@@ -1,7 +1,7 @@
+// CULTURE MAIN CONTAINER
 .culture-container {
   display: grid;
   /* comments for the grid-template-rows */
-  /* 80% of the view-height, then min-content - smallest size of box without overflowing content. */
 
   grid-template-rows: 6rem 10rem calc(100vh - 14rem);
   grid-template-columns:
@@ -10,4 +10,78 @@
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+// STORY ITSELF
+.story {
+  &__pictures {
+    background-color: var(--color-primary);
+    grid-column: full-start / col-end 4;
+
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    //align image in the center of the container vertically.
+    // needs to be done cause images have aspect ratio - need to be aligned.
+    align-items: center;
+    @media only screen and (max-width: 87.5em) {
+      grid-column: full-start / full-end;
+      grid-row: 8 / 9;
+      padding: 5rem;
+    }
+  }
+  /* Set the styles for images */
+  &__img--1 {
+    width: 100%;
+    grid-row: 2 / 6;
+    grid-column: 1 / 5;
+    // we have a 6x6 grid so lets put this image starting on grid column 1 to end at grid column 3
+    @media only screen and (max-width: 87.5em) {
+      grid-column: 1 / 4;
+      // row - from the start to the end (could have used full-start / full end)
+      grid-row: 1 / -1;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__img--2 {
+    width: 110%;
+    z-index: 1;
+    grid-row: 1 / 5;
+    grid-column: 4 / 7;
+    /* large being 62.5em - 1000px */
+    @media only screen and (max-width: 87.5em) {
+      // row - from the start to the end (could have used full-start / full end)
+      grid-row: 1 / -1;
+      // don't want width of 110%
+      width: 100%;
+      height: 80%;
+    }
+  }
+
+  &__content {
+    background-color: var(--color-grey-1);
+    grid-column: col-start 5 / full-end;
+    padding: 5rem 8vw;
+    //using flex to center - only 1 dimensional - didn't need grid
+    display: flex;
+    flex-direction: column;
+    //vertically centered
+    justify-content: center;
+    align-items: flex-start;
+    /* large being 62.5em - 1000px */
+    // Could've done this with grid - display: grid, align-content: center
+    // equivalent of align-items? justify-items: start - align rows in grid
+    @media only screen and (max-width: 87.5em) {
+      grid-column: full-start / full-end;
+      // swap around the graffiti art description with the images below it
+      grid-row: 9 / 10;
+    }
+  }
+
+  &__text {
+    // ok to use margin-bottom here because story__text is not going to be a re usable element
+    margin-bottom: 4rem;
+  }
 }
