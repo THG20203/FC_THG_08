@@ -1,7 +1,9 @@
 import React from "react";
+/* page imports */
 import HomePage from "./pages/Home";
 import EventsPage from "./pages/Events";
 import EventDetailPage from "./pages/EventDetail";
+import NewEventPage from "./pages/NewEvent"
 import CulturePage from "./pages/Culture";
 
 /* styles */
