@@ -11,7 +11,7 @@ const Carousel = () => {
     <section className="carousel">
       <div className="slideshow">
         {/* slide buttons */}
-        <button class="slide__btn slide__btn--1"></button>
+        <button className="slide__btn slide__btn--1"></button>
         <button className="slide__btn slide__btn--2"></button>
         <button className="slide__btn slide__btn--3"></button>
         <button className="slide__btn slide__btn--4"></button>
