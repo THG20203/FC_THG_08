@@ -8,9 +8,11 @@ function EventForm({ method, event }) {
   }
 
   return (
-    <form className={classes.form}>
+    <form className="form">
       <p>
-        <label htmlFor="title">Title</label>
+        <label className="form_" htmlFor="title">
+          Title
+        </label>
         <input id="title" type="text" name="title" required />
       </p>
       <p>

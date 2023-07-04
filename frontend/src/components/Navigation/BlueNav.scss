@@ -1,0 +1,7 @@
+.icon-navbar {
+  &__container {
+    /* ensure hidden search bar  is full width across the page */
+    grid-column: full-start / full-end;
+    background-color: var(--color-primary-dark);
+  }
+}

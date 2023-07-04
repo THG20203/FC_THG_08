@@ -21,7 +21,7 @@ const Navbar = () => {
         <ul className="nav__list">
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Shop
+              Home
             </a>
           </li>
           <li className="nav__item">
@@ -31,17 +31,17 @@ const Navbar = () => {
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Latest
+              Newsletter
             </a>
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Tickets
+              Sign Up / Login
             </a>
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Matches
+              Shop
             </a>
           </li>
           <li className="nav__item">

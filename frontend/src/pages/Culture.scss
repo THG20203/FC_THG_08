@@ -15,15 +15,8 @@
 // STORY ITSELF
 .story {
   &__pictures {
+    background-color: var(--color-primary);
     grid-column: full-start / col-end 4;
-    background-image: linear-gradient(
-        rgba(12, 34, 232, 0.7),
-        rgba(10, 25, 161, 0.7)
-      ),
-      url("..//assets/images/graffiti/stadium-stand.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
     display: grid;
     grid-template-rows: repeat(6, 1fr);
