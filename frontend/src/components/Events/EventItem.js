@@ -1,4 +1,4 @@
-import classes from "./EventItem.module.css";
+import "./EventItem.scss";
 
 function EventItem({ event }) {
   function startDeleteHandler() {
@@ -6,12 +6,12 @@ function EventItem({ event }) {
   }
 
   return (
-    <article className={classes.event}>
+    <article className="event">
       <img src={event.image} alt={event.title} />
       <h1>{event.title}</h1>
       <time>{event.date}</time>
       <p>{event.description}</p>
-      <menu className={classes.actions}>
+      <menu className="actions">
         <a href="edit">Edit</a>
         <button onClick={startDeleteHandler}>Delete</button>
       </menu>
