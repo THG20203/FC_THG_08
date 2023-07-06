@@ -19,9 +19,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
-    children: [{ index: true, element: <HomePage /> }],
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "/culture", element: <CulturePage /> },
+    ],
   },
-  { path: "/culture", element: <CulturePage /> },
 ]);
 
 function App() {

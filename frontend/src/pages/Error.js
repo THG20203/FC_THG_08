@@ -2,7 +2,7 @@ import { useRouteError } from "react-router-dom";
 import BlueNav from "../components/Navigation/BlueNav";
 import Navbar from "../components/Navigation/Navbar";
 
-import PageContent from "../components/PageContent";
+import PageContent from "../components/Events/PageContent";
 
 const ErrorPage = () => {
   const error = useRouteError();

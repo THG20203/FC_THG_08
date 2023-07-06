@@ -1,8 +1,5 @@
 import React from "react";
 import "./Culture.scss";
-/* navbar components */
-import BlueNav from "../components/Navigation/BlueNav";
-import Navbar from "../components/Navigation/Navbar";
 /* images for culture page */
 import underpass from "../assets/images/graffiti/underpass.png";
 import mural from "../assets/images/graffiti/mural.png";
@@ -10,8 +7,6 @@ import mural from "../assets/images/graffiti/mural.png";
 const CulturePage = () => {
   return (
     <div className="culture-container">
-      <BlueNav />
-      <Navbar />
       {/* Story Pictures section */}
       <div className="story__pictures">
         <img className="story__img--1" src={underpass} />
