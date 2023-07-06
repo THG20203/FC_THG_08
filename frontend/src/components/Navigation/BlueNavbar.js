@@ -13,14 +13,14 @@ import {
 const BlueNavbar = () => {
   return (
     <div className="blue-navbar__container">
-      {/* FAQ's div */}
+      {/* Shopping div */}
       <div className="blue-navbar__div">
         <FontAwesomeIcon
           className="blue-navbar__icon"
-          icon={faQuestionCircle}
+          icon={faCartShopping}
         ></FontAwesomeIcon>
         <a href="#" class="blue-navbar__link">
-          FAQ's
+          Shop
         </a>
       </div>
       {/* Videos div */}
@@ -33,14 +33,14 @@ const BlueNavbar = () => {
           Videos
         </a>
       </div>
-      {/* Shopping div */}
+      {/* FAQ's div */}
       <div className="blue-navbar__div">
         <FontAwesomeIcon
           className="blue-navbar__icon"
-          icon={faCartShopping}
+          icon={faQuestionCircle}
         ></FontAwesomeIcon>
         <a href="#" class="blue-navbar__link">
-          Shop
+          FAQ's
         </a>
       </div>
       {/* Culture div */}
