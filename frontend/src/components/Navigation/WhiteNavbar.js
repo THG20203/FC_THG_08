@@ -36,12 +36,12 @@ const WhiteNavbar = () => {
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Sign Up / Login
+              Matches
             </a>
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Shop
+              Sign Up / Login
             </a>
           </li>
         </ul>
