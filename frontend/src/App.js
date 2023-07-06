@@ -1,15 +1,18 @@
 import React from "react";
-// PAGE IMPORTS
-/* Home Page */
-import HomePage from "./pages/Home";
-/* Events Page */
-import EventsPage from "./pages/Events";
-import CulturePage from "./pages/Culture";
-
 /* styles */
 import "./index.css";
 import "./assets/styles/typography.scss";
+/* Router and react-router-dom */
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+// PAGE IMPORTS
+/* Root Page import */
+/* Home Page */
+import HomePage from "./pages/Home";
+
+import CulturePage from "./pages/Culture";
+/* Events Page Imports */
+import EventsPage from "./pages/Events";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
