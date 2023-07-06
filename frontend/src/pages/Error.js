@@ -1,6 +1,6 @@
 import { useRouteError } from "react-router-dom";
-import BlueNav from "../components/Navigation/BlueNav";
-import Navbar from "../components/Navigation/Navbar";
+import BlueNavbar from "../components/Navigation/BlueNavbar";
+import WhiteNavbar from "../components/Navigation/WhiteNavbar";
 
 import PageContent from "../components/Events/PageContent";
 
@@ -21,8 +21,8 @@ const ErrorPage = () => {
 
   return (
     <>
-      <BlueNav />
-      <Navbar />
+      <BlueNavbar />
+      <WhiteNavbar />
       <PageContent title={title}>
         <p>{message}</p>
       </PageContent>

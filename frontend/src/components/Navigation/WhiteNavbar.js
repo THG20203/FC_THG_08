@@ -1,9 +1,9 @@
 import React from "react";
-import "./Navbar.scss";
+import "./WhiteNavbar.scss";
 /* can import images like css files in react */
 import footballBadge from "../../assets/images/identity/football-badge.png";
 
-const Navbar = () => {
+const WhiteNavbar = () => {
   return (
     <div className="nav__container">
       {/* logo of the football team */}
@@ -55,4 +55,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default WhiteNavbar;

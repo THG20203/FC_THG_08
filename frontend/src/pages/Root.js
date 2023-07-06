@@ -1,12 +1,12 @@
 import { Outlet, useNavigation } from "react-router-dom";
-import BlueNav from "../components/Navigation/BlueNav";
-import Navbar from "../components/Navigation/Navbar";
+import BlueNavbar from "../components/Navigation/BlueNavbar";
+import WhiteNavbar from "../components/Navigation/WhiteNavbar";
 
 const RootLayout = () => {
   return (
     <>
-      <BlueNav />
-      <Navbar />
+      <BlueNavbar />
+      <WhiteNavbar />
       <main>
         <Outlet />
       </main>
