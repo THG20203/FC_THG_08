@@ -1,5 +1,7 @@
 .icon-navbar {
   &__container {
     background-color: var(--color-primary-dark);
+    height: 6rem;
+    display: flex;
   }
 }
