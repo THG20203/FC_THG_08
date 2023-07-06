@@ -44,11 +44,6 @@ const WhiteNavbar = () => {
               Shop
             </a>
           </li>
-          <li className="nav__item">
-            <a href="#" className="nav__link">
-              Culture
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
