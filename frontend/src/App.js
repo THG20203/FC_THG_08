@@ -6,17 +6,21 @@ import "./assets/styles/typography.scss";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 // PAGE IMPORTS
-/* Root Page import */
-/* Home Page */
+/* Root & Error Page Import */
+import RootLayout from "./pages/Root";
+import ErrorPage from "./pages/Error";
+/* Main Navbar Imports (Excluding events) */
 import HomePage from "./pages/Home";
-
 import CulturePage from "./pages/Culture";
 /* Events Page Imports */
-import EventsPage from "./pages/Events";
 
 const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
-  { path: "/events", element: <EventsPage /> },
+  {
+    path: "/",
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
+    children: [{ index: true, element: <HomePage /> }],
+  },
   { path: "/culture", element: <CulturePage /> },
 ]);
 
