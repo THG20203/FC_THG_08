@@ -8,7 +8,7 @@ function EventForm({ method, event }) {
   }
 
   return (
-    <form className="form">
+    <form className="event-form">
       <p>
         <label htmlFor="title">Title</label>
         <input id="title" type="text" name="title" required />
@@ -25,7 +25,7 @@ function EventForm({ method, event }) {
         <label htmlFor="description">Description</label>
         <textarea id="description" name="description" rows="5" required />
       </p>
-      <div className="actions">
+      <div className="event-form__actions">
         <button type="button" onClick={cancelHandler}>
           Cancel
         </button>

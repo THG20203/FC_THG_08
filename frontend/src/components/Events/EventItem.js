@@ -6,12 +6,12 @@ function EventItem({ event }) {
   }
 
   return (
-    <article className="event">
+    <article className="event-item">
       <img src={event.image} alt={event.title} />
       <h1>{event.title}</h1>
       <time>{event.date}</time>
       <p>{event.description}</p>
-      <menu className="actions">
+      <menu className="event-item__actions">
         <a href="edit">Edit</a>
         <button onClick={startDeleteHandler}>Delete</button>
       </menu>

@@ -1,15 +1,15 @@
-import classes from "./EventsList.module.css";
+import "./EventsList.scss";
 
 function EventsList({ events }) {
   return (
-    <div className={classes.events}>
+    <div className="events-list__container">
       <h1>All Events</h1>
-      <ul className={classes.list}>
+      <ul className="events-list__list">
         {events.map((event) => (
-          <li key={event.id} className={classes.item}>
+          <li key={event.id} className="events-list__item">
             <a href="...">
               <img src={event.image} alt={event.title} />
-              <div className={classes.content}>
+              <div className="events-list__content">
                 <h2>{event.title}</h2>
                 <time>{event.date}</time>
               </div>
