@@ -46,7 +46,7 @@ const BlueNavbar = () => {
       </div>
       {/* Culture div */}
       <div className="blue-navbar__div">
-        <NavLink to="/Culture" className="blue-navbar__link">
+        <NavLink to="/culture" className="blue-navbar__link">
           <FontAwesomeIcon
             className="blue-navbar__icon"
             icon={faEarthEurope}
