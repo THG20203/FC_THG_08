@@ -41,6 +41,11 @@ const WhiteNavbar = () => {
           </li>
           <li className="nav__item">
             <a href="#" className="nav__link">
+              Ticket
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
               Sign Up
             </a>
           </li>
