@@ -36,7 +36,7 @@ const BlueNavbar = () => {
       </div>
       {/* FAQ's div */}
       <div className="blue-navbar__div">
-        <NavLink to="#" className="blue-navbar__link">
+        <NavLink to="/faqs" className="blue-navbar__link">
           <FontAwesomeIcon
             className="blue-navbar__icon"
             icon={faQuestionCircle}
