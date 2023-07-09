@@ -1,0 +1,18 @@
+.faq {
+  &__header {
+    margin: 5rem 0;
+    text-align: center;
+  }
+  &__container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    /* want smooth transition when open / close or expand and collapse */
+    transition: 0.3s ease;
+  }
+}

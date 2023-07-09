@@ -8,10 +8,10 @@ import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons";
 const FaqPage = () => {
   return (
     <>
-      <h1 className="heading-1">Frequently Asked Questions</h1>
+      <h1 className="faq__header heading-1">Frequently Asked Questions</h1>
 
       {/* FAQ question 1 */}
-      <div className="faq-container">
+      <div className="faq__container">
         {/* whichever ones are active have a class of active */}
         <div className="faq-box active">
           <h3 className="faq-box__title heading-3">
@@ -31,7 +31,7 @@ const FaqPage = () => {
       </div>
 
       {/* FAQ question 2 */}
-      <div className="faq-container">
+      <div className="faq__container">
         {/* whichever ones are active have a class of active */}
         <div className="faq-box active">
           <h3 className="faq-box__title heading-3">
@@ -49,7 +49,7 @@ const FaqPage = () => {
       </div>
 
       {/* FAQ question 3 */}
-      <div className="faq-container">
+      <div className="faq__container">
         {/* whichever ones are active have a class of active */}
         <div className="faq-box active">
           <h3 className="faq-box__title heading-3">
