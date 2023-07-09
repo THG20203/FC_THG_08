@@ -14,7 +14,7 @@ const FaqPage = () => {
       <div className="faq__container">
         {/* whichever ones are active have a class of active */}
         <div className="faq-box active">
-          <div className="fa-box__content">
+          <div className="faq-box__content">
             <h3 className="faq-box__title heading-3 mb-sm">
               Where can I buy a season ticket?
             </h3>
@@ -23,7 +23,7 @@ const FaqPage = () => {
               to be registered on and be in possession of a membership card.
               Alternatively, you can go to the Stadium Office.
             </p>
-            <button>
+            <button className="faq-toggle">
               <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
               <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
             </button>
@@ -34,8 +34,8 @@ const FaqPage = () => {
       {/* FAQ question 2 */}
       <div className="faq__container">
         {/* whichever ones are active have a class of active */}
-        <div className="faq-box active">
-          <div className="fa-box__content">
+        <div className="faq-box">
+          <div className="faq-box__content">
             <h3 className="faq-box__title heading-3 mb-sm">
               What games are included in the season ticket?
             </h3>
@@ -43,7 +43,7 @@ const FaqPage = () => {
               The season ticket includes all home games in the 2023-24 league
               season.
             </p>
-            <button>
+            <button className="faq-toggle">
               <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
               <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
             </button>
@@ -54,8 +54,8 @@ const FaqPage = () => {
       {/* FAQ question 3 */}
       <div className="faq__container">
         {/* whichever ones are active have a class of active */}
-        <div className="faq-box active">
-          <div className="fa-box__content">
+        <div className="faq-box">
+          <div className="faq-box__content">
             <h3 className="faq-box__title heading-3 mb-sm">
               How do I sign up as a FC THG08 member?
             </h3>
@@ -63,7 +63,7 @@ const FaqPage = () => {
               For information and how to purchase a club membership, please
               visit the sign up page.
             </p>
-            <button>
+            <button className="faq-toggle">
               <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
               <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
             </button>
