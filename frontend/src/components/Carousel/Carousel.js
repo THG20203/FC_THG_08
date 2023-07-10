@@ -19,23 +19,23 @@ const Carousel = () => {
         {/* slideshow images */}
         <div className="slideshow__wrapper">
           <div className="slide">
-            <img className="slide__image" src={mural} />
+            <img className="slide__image" src={mural} alt="mural" />
             <h1 className="slide__header heading-1--light">Example 3</h1>
           </div>
           <div className="slide">
-            <img className="slide__image" src={conference} />
+            <img className="slide__image" src={conference} alt="conference" />
             <h1 className="slide__header heading-1--light">
               Ahead of the big final
             </h1>
           </div>
           <div className="slide">
-            <img className="slide__image" src={trainingTop} />
+            <img className="slide__image" src={trainingTop} alt="trainingtop" />
             <h1 className="slide__header heading-1--light">
               New training facility
             </h1>
           </div>
           <div className="slide">
-            <img className="slide__image" src={yearsBanner} />
+            <img className="slide__image" src={yearsBanner} alt="yearsbanner" />
             <h1 className="slide__header heading-1">130 years of our club</h1>
           </div>
         </div>

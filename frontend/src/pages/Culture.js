@@ -9,8 +9,8 @@ const CulturePage = () => {
     <div className="culture-container">
       {/* Story Pictures section */}
       <div className="story__pictures">
-        <img className="story__img--1" src={underpass} />
-        <img className="story__img--2" src={mural} />
+        <img className="story__img--1" src={underpass} alt="underpass" />
+        <img className="story__img--2" src={mural} alt="mural" />
       </div>
 
       {/* Story Content section */}

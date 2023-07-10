@@ -1,7 +1,6 @@
 import React from "react";
 import "./FAQ.scss";
 /* For font awesome icons */
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons";
 

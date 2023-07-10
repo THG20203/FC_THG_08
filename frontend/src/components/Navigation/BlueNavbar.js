@@ -2,7 +2,6 @@ import React from "react";
 import "./BlueNavbar.scss";
 import { NavLink } from "react-router-dom";
 /* For font awesome icons */
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
