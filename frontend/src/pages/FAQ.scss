@@ -30,7 +30,7 @@ body {
 
 .faq-box {
   &__content {
-    padding: 4rem;
+    padding: 5rem;
   }
   &__text {
     display: none;
@@ -51,12 +51,23 @@ body {
   font-size: 1.6rem;
   padding: 0;
   position: absolute;
-  top: 30px;
-  right: 30px;
-  height: 30px;
-  width: 30px;
+  top: 2rem;
+  right: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
-.faq-box.active .faq-toggle .fa-times {
-  display: none;
+.faq-box .faq-toggle {
+  &__times {
+    display: none;
+  }
 }
+
+/* provide x button if its active */
+.faq-box.active .faq-toggle {
+  &__times {
+    display: block;
+  }
+}
+
+/* remove the chevron if its active */

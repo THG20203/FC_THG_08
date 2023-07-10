@@ -24,8 +24,14 @@ const FaqPage = () => {
               Alternatively, you can go to the Stadium Office.
             </p>
             <button className="faq-toggle">
-              <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
-              <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="faq-toggle__chevron"
+                icon={faChevronDown}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="faq-toggle__times"
+                icon={faTimes}
+              ></FontAwesomeIcon>
             </button>
           </div>
         </div>
@@ -44,8 +50,14 @@ const FaqPage = () => {
               season.
             </p>
             <button className="faq-toggle">
-              <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
-              <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="faq-toggle__chevron"
+                icon={faChevronDown}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="faq-toggle__times"
+                icon={faTimes}
+              ></FontAwesomeIcon>
             </button>
           </div>
         </div>
@@ -64,8 +76,14 @@ const FaqPage = () => {
               visit the sign up page.
             </p>
             <button className="faq-toggle">
-              <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
-              <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="faq-toggle__chevron"
+                icon={faChevronDown}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className="faq-toggle__times"
+                icon={faTimes}
+              ></FontAwesomeIcon>
             </button>
           </div>
         </div>
