@@ -1,7 +1,9 @@
 .progress {
   &-content {
-    background-color: var(--color-grey-1);
+    background-color: blue;
     height: 50rem;
+    width: 100%;
+    z-index: 10;
   }
   &-container {
     /* display flex -> go in a row */
@@ -21,7 +23,6 @@
       transform: translateY(-50%);
       height: 4px;
       width: 100%;
-      z-index: -1;
     }
   }
 
@@ -33,13 +34,12 @@
   width: 0%;
   /* make the line in the middle vertically */
   transform: translateY(-50%);
-  z-index: -1;
   transition: 0.4s ease;
 }
 
 .circle {
-  background-color: white;
-  color: #999;
+  background-color: var(--color-grey-1);
+  color: var(--color-grey-2);
   border-radius: 50%;
   height: 30px;
   width: 30px;
