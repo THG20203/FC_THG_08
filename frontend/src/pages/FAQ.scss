@@ -8,29 +8,28 @@ body {
     margin: 4rem 0;
     text-align: center;
   }
-  &__container {
+  &-container {
     max-width: 800px;
-    margin: 4rem auto;
-    @media only screen and (max-width: 50em) {
-      margin: 4rem;
-    }
-    background-color: transparent;
-    border: 1px solid var(--color-primary-dark);
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    /* want smooth transition when open / close or expand and collapse */
-    transition: 0.3s ease;
-    & .active {
-      background-color: white;
-      position: relative;
-    }
+    margin: 0 auto;
   }
 }
 
 .faq-box {
-  &__content {
-    padding: 5rem;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  /* want smooth transition when open / close or expand and collapse */
+  transition: 0.3s ease;
+  margin: 4rem auto;
+  padding: 4rem;
+  @media only screen and (max-width: 50em) {
+    margin: 4rem;
+  }
+  &.active {
+    background-color: white;
+    position: relative;
   }
   &__text {
     display: none;

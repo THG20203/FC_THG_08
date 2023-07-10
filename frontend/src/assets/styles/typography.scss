@@ -18,6 +18,13 @@
   line-height: 1;
 }
 
+.heading-1--dark {
+  @extend %heading;
+  font-size: 4rem;
+  color: var(--color-secondary);
+  line-height: 1;
+}
+
 .heading-2 {
   @extend %heading;
   font-size: 3rem;
