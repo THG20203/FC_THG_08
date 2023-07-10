@@ -33,16 +33,6 @@ const BlueNavbar = () => {
           <span>Videos</span>
         </NavLink>
       </div>
-      {/* FAQ's div */}
-      <div className="blue-navbar__div">
-        <NavLink to="/faqs" className="blue-navbar__link">
-          <FontAwesomeIcon
-            className="blue-navbar__icon"
-            icon={faQuestionCircle}
-          ></FontAwesomeIcon>
-          <span>FAQ's</span>
-        </NavLink>
-      </div>
       {/* Culture div */}
       <div className="blue-navbar__div">
         <NavLink to="/culture" className="blue-navbar__link">
@@ -51,6 +41,16 @@ const BlueNavbar = () => {
             icon={faEarthEurope}
           ></FontAwesomeIcon>
           <span>Culture</span>
+        </NavLink>
+      </div>
+      {/* FAQ's div */}
+      <div className="blue-navbar__div">
+        <NavLink to="/faqs" className="blue-navbar__link">
+          <FontAwesomeIcon
+            className="blue-navbar__icon"
+            icon={faQuestionCircle}
+          ></FontAwesomeIcon>
+          <span>FAQ's</span>
         </NavLink>
       </div>
     </div>
