@@ -17,7 +17,7 @@ toggles.forEach((toggle) => {
 
 const FaqPage = () => {
   return (
-    <>
+    <section className="faq__section">
       <h1 className="faq__header heading-1--dark">
         Frequently Asked Questions
       </h1>
@@ -87,7 +87,7 @@ const FaqPage = () => {
           </button>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
