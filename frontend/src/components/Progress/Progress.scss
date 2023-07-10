@@ -1,9 +1,8 @@
 .progress {
   &-content {
     background-color: blue;
-    height: 50rem;
-    width: 100%;
-    z-index: 10;
+    height: 30rem;
+    width: 80vw;
   }
   &-container {
     /* display flex -> go in a row */
@@ -14,6 +13,7 @@
     margin-bottom: 3rem;
     max-width: 100%;
     width: 600px;
+
     &::before {
       content: "";
       background-color: var(--color-grey-1);
