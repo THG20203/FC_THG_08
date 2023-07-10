@@ -1,11 +1,12 @@
 import React from "react";
 import "./History.scss";
+import Progress from "../../components/Progress/Progress";
 
 const HistoryPage = () => {
   return (
-    <div>
-      <h1>History Page</h1>
-    </div>
+    <>
+      <Progress />;
+    </>
   );
 };
 
