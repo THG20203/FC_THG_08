@@ -1,14 +1,46 @@
 .progress {
   &-content {
     background-color: var(--color-grey-1);
+    height: 50rem;
   }
   &-container {
+    /* display flex -> go in a row */
     display: flex;
     justify-content: space-between;
-    /* */
+    /* position relative, so we can position others inside it absolute */
     position: relative;
     margin-bottom: 3rem;
     max-width: 100%;
     width: 600px;
+    &::before {
+      content: "";
+      background-color: var(--color-grey-1);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 100%;
+      z-index: -1;
+    }
   }
+
+  background-color: var(--color-primary-dark);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  /* make the line in the middle vertically */
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: white;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
