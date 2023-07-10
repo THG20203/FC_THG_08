@@ -44,6 +44,7 @@ body {
 .faq-toggle {
   background-color: transparent;
   border: 0;
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -66,8 +67,19 @@ body {
 /* provide x button if its active */
 .faq-box.active .faq-toggle {
   &__times {
+    color: var(--color-grey-1);
     display: block;
   }
 }
 
 /* remove the chevron if its active */
+.faq-box.active .faq-toggle {
+  &__chevron-down {
+    display: none;
+  }
+}
+
+/* give active toggle a background */
+.faq-box.active .faq-toggle {
+  background-color: var(--color-grey-2);
+}

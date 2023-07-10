@@ -25,7 +25,7 @@ const FaqPage = () => {
             </p>
             <button className="faq-toggle">
               <FontAwesomeIcon
-                className="faq-toggle__chevron"
+                className="faq-toggle__chevron-down"
                 icon={faChevronDown}
               ></FontAwesomeIcon>
               <FontAwesomeIcon
@@ -51,7 +51,7 @@ const FaqPage = () => {
             </p>
             <button className="faq-toggle">
               <FontAwesomeIcon
-                className="faq-toggle__chevron"
+                className="faq-toggle__chevron-down"
                 icon={faChevronDown}
               ></FontAwesomeIcon>
               <FontAwesomeIcon
@@ -77,7 +77,7 @@ const FaqPage = () => {
             </p>
             <button className="faq-toggle">
               <FontAwesomeIcon
-                className="faq-toggle__chevron"
+                className="faq-toggle__chevron-down"
                 icon={faChevronDown}
               ></FontAwesomeIcon>
               <FontAwesomeIcon
