@@ -72,13 +72,10 @@
     //vertically centered
     justify-content: center;
     align-items: flex-start;
-    /* large being 62.5em - 1000px */
     // Could've done this with grid - display: grid, align-content: center
     // equivalent of align-items? justify-items: start - align rows in grid
     @media only screen and (max-width: 87.5em) {
       grid-column: full-start / full-end;
-      // swap around the graffiti art description with the images below it
-      grid-row: 9 / 10;
     }
   }
 
