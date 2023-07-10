@@ -1,10 +1,8 @@
 import React from "react";
 import "./Culture.scss";
 /* images for culture page */
-import underpass from "../assets/images/graffiti/underpass.png";
-import mural from "../assets/images/graffiti/mural.png";
-/* import progress bars */
-import Progress from "../components/Progress/Progress";
+import underpass from "../../assets/images/graffiti/underpass.png";
+import mural from "../../assets/images/graffiti/mural.png";
 
 const CulturePage = () => {
   return (
@@ -34,7 +32,6 @@ const CulturePage = () => {
           a way to add to their club's and city's culture.
         </p>
       </div>
-      <Progress />
     </div>
   );
 };

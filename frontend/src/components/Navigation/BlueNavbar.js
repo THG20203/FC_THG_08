@@ -7,6 +7,7 @@ import {
   faCartShopping,
   faQuestionCircle,
   faCirclePlay,
+  faHistory,
   faEarthEurope,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,14 +34,14 @@ const BlueNavbar = () => {
           <span>Videos</span>
         </NavLink>
       </div>
-      {/* Culture div */}
+      {/* History div */}
       <div className="blue-navbar__div">
-        <NavLink to="/culture" className="blue-navbar__link">
+        <NavLink to="/history" className="blue-navbar__link">
           <FontAwesomeIcon
             className="blue-navbar__icon"
-            icon={faEarthEurope}
+            icon={faHistory}
           ></FontAwesomeIcon>
-          <span>Culture</span>
+          <span>History</span>
         </NavLink>
       </div>
       {/* FAQ's div */}
@@ -51,6 +52,16 @@ const BlueNavbar = () => {
             icon={faQuestionCircle}
           ></FontAwesomeIcon>
           <span>FAQ's</span>
+        </NavLink>
+      </div>
+      {/* Culture div */}
+      <div className="blue-navbar__div">
+        <NavLink to="/culture" className="blue-navbar__link">
+          <FontAwesomeIcon
+            className="blue-navbar__icon"
+            icon={faEarthEurope}
+          ></FontAwesomeIcon>
+          <span>Culture</span>
         </NavLink>
       </div>
     </div>

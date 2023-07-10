@@ -9,10 +9,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 /* Root & Error Page Import */
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
+/* BlueNavBar Imports */
+import HistoryPage from "./pages/blueNavPages/History";
+import FaqPage from "./pages/blueNavPages/FAQ";
+import CulturePage from "./pages/blueNavPages/Culture";
 /* Main Navbar Imports (Excluding events) */
 import HomePage from "./pages/Home";
-import FaqPage from "./pages/FAQ";
-import CulturePage from "./pages/Culture";
 /* Events Page Imports */
 
 const router = createBrowserRouter([
@@ -22,6 +24,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: "history", element: <HistoryPage /> },
       { path: "faqs", element: <FaqPage /> },
       { path: "culture", element: <CulturePage /> },
     ],

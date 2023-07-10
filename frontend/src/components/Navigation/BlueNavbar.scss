@@ -5,6 +5,9 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    @media only screen and (max-width: 62.5em) {
+      justify-content: center;
+    }
   }
   &__div {
     margin: 0 2rem;
