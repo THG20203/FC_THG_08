@@ -1,6 +1,6 @@
 import React from "react";
 import "./History.scss";
-import Progress from "../../components/Progress/Progress";
+import Progress from "../../components/History/Progress";
 
 const HistoryPage = () => {
   return (

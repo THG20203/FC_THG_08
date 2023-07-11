@@ -11,10 +11,10 @@ const Progress = () => {
         <div className="circle">3</div>
         <div className="circle">4</div>
       </div>
-      <button className="btn" id="prev">
-        Previous
+      <button className="btn button-progress" id="prev">
+        Prev
       </button>
-      <button className="btn" id="next">
+      <button className="btn button-progress" id="next">
         Next
       </button>
     </div>

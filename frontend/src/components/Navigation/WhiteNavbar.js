@@ -1,5 +1,6 @@
 import React from "react";
 import "./WhiteNavbar.scss";
+import { NavLink } from "react-router-dom";
 /* can import images like css files in react */
 import footballBadge from "../../assets/images/identity/football-badge.png";
 
@@ -20,34 +21,34 @@ const WhiteNavbar = () => {
         {/* list of items to select in second navbar */}
         <ul className="nav__list">
           <li className="nav__item">
-            <a href="#" className="nav__link">
+            <NavLink to="/" className="nav__link">
               Home
-            </a>
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a href="#" className="nav__link">
+            <NavLink to="#" className="nav__link">
               Events
-            </a>
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a href="#" className="nav__link">
+            <NavLink to="#" className="nav__link">
               Newsletter
-            </a>
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a href="#" className="nav__link">
-              Matches
-            </a>
+            <NavLink to="myclub" className="nav__link">
+              My Club
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a href="#" className="nav__link">
+            <NavLink to="#" className="nav__link">
               Tickets
-            </a>
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a href="#" className="nav__link">
+            <NavLink to="#" className="nav__link">
               Sign Up
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
