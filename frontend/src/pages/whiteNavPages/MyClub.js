@@ -5,7 +5,6 @@ import ExpenseItem from "../../components/MyClub/ExpenseItem";
 const MyClub = () => {
   return (
     <div className="my-club__container">
-      <div>MyClub test</div>
       <ExpenseItem />
     </div>
   );
