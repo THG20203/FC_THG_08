@@ -15,11 +15,21 @@
     flex-flow: column-reverse;
     justify-content: flex-start;
     flex: 1;
+    @media screen and (max-width: 37.5em) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
   }
   &__title {
     flex: 1;
     margin: 0 1rem;
+    font-size: 1rem;
     color: var(--color-grey-1);
+    @media screen and (max-width: 37.5em) {
+      font-size: 1.25rem;
+    }
   }
   &__price {
     font-size: 1rem;
@@ -29,23 +39,9 @@
     border: 1px solid var(--color-grey-1);
     padding: 0.5rem;
     border-radius: 12px;
-  }
-}
-
-@media (min-width: 580px) {
-  .expense-item__description {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex: 1;
-  }
-
-  .expense-item__description h2 {
-    font-size: 1.25rem;
-  }
-
-  .expense-item__price {
-    font-size: 1.25rem;
-    padding: 0.5rem 1.5rem;
+    @media screen and (max-width: 37.5em) {
+      font-size: 1.25rem;
+      padding: 0.5rem 1.5rem;
+    }
   }
 }
