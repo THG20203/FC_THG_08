@@ -1,3 +1,5 @@
+import "./ExpenseItem.scss";
+
 const ExpenseItem = () => {
   return (
     <div>
