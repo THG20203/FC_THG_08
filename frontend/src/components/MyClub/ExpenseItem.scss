@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  margin: 1rem 0rem;
+  margin: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   background-color: var(--color-secondary);
@@ -13,10 +13,12 @@
     align-items: center;
     flex: 1;
     justify-content: start;
+    margin: 0 2rem;
+    column-gap: 2rem;
     @media screen and (max-width: 37.5em) {
+      flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      flex: 1;
+      row-gap: 1rem;
     }
   }
   &__title {
@@ -24,6 +26,7 @@
     @media screen and (max-width: 37.5em) {
       flex: 1;
       margin: 0 1rem;
+      text-align: center;
     }
   }
   &__price {
