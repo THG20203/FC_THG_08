@@ -6,17 +6,14 @@
   margin: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-secondary);
   &__description {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
-    align-items: flex-end;
-    flex-flow: column-reverse;
-    justify-content: flex-start;
     flex: 1;
+    justify-content: space-around;
     @media screen and (max-width: 37.5em) {
-      flex-direction: row;
       align-items: center;
       justify-content: flex-start;
       flex: 1;
