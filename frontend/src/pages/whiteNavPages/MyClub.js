@@ -6,6 +6,8 @@ const MyClub = () => {
   return (
     <div className="my-club__container">
       <ExpenseItem />
+      <ExpenseItem />
+      <ExpenseItem />
     </div>
   );
 };
