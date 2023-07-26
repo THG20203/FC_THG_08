@@ -1,13 +1,13 @@
 import React from "react";
-
-import "./ExpenseItem.scss";
+import ExpenseDate from "./ExpenseDate";
 import Card from "./Card";
+import "./ExpenseItem.scss";
 
 function ExpenseItem = () => {
 
   return (
     <Card className="expense-item">
-      <div className="paragraph-text">{expenseDate.toISOString()}</div>
+      <ExpenseDate />
       <div className="expense-item__description">
         <h3 className="expense-item__title heading-3">{expenseTitle}</h3>
         <div className="expense-item__price paragraph-text">
