@@ -4,15 +4,12 @@ import Card from "./Card";
 import "./ExpenseItem.scss";
 
 function ExpenseItem = () => {
-
   return (
     <Card className="expense-item">
       <ExpenseDate />
       <div className="expense-item__description">
-        <h3 className="expense-item__title heading-3">{expenseTitle}</h3>
-        <div className="expense-item__price paragraph-text">
-          ${expenseAmount}
-        </div>
+        <h3 className="expense-item__title heading-3"></h3>
+        <div className="expense-item__price paragraph-text"></div>
       </div>
     </Card>
   );
