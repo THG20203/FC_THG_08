@@ -1,13 +1,11 @@
 import React from "react";
 import "./MyClub.scss";
-import ExpenseItem from "../../components/MyClub/ExpenseItem";
+import Expenses from "../../components/MyClub/Expenses";
 
 const MyClub = () => {
   return (
     <div className="my-club__container">
-      <ExpenseItem />
-      <ExpenseItem />
-      <ExpenseItem />
+      <Expenses />
     </div>
   );
 };
