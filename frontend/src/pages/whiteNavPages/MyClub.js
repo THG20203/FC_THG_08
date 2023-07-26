@@ -27,7 +27,7 @@ const MyClub = () => {
 
   return (
     <div className="my-club__container">
-      <Expenses />
+      <Expenses items={expenses} />
     </div>
   );
 };
