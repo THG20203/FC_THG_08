@@ -14,6 +14,8 @@ every component we use, like props in ExpenseItem. Typically named props */
 const ExpenseItem = (props) => {
   return (
     <Card className="expense-item">
+      {/* Set the date prop -> used props.date in ExpenseDate.js. Think where the date data is,
+      its in MyClub.js. Value= props.date. Now we're funelling data through multiple components. */}
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
         <h3 className="expense-item__title heading-3">{props.title}</h3>
