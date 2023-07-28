@@ -16,9 +16,9 @@ const ExpenseDate = (props) => {
 
   return (
     <div className="expense-date">
+      <div className="paragraph-text">{day}</div>
       <div className="paragraph-text">{month}</div>
       <div className="paragraph-text">{year}</div>
-      <div className="paragraph-text">{day}</div>
     </div>
   );
 };
