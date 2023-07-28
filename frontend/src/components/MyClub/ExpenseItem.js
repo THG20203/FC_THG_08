@@ -20,7 +20,7 @@ const ExpenseItem = (props) => {
       <div className="expense-item__description">
         <h3 className="expense-item__title heading-3">{props.title}</h3>
         <div className="expense-item__price paragraph-text">
-          ${props.amount}
+          £{props.amount}
         </div>
       </div>
     </Card>
