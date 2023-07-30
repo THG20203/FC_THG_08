@@ -1,26 +1,31 @@
 import React from "react";
 import "./MyClub.scss";
-import Expenses from "../../components/MyClub/Expenses";
+import Expenses from "../../components/Expenses/Expenses";
 
 const MyClub = () => {
   const expenses = [
     {
       id: "e1",
-      title: "Toilet Paper",
-      amount: 94.12,
-      date: new Date(2020, 7, 14),
+      title: "FC THG08 Cap",
+      amount: 25.5,
+      date: new Date(2023, 5, 1),
     },
-    { id: "e2", title: "New TV", amount: 799.49, date: new Date(2021, 2, 12) },
+    {
+      id: "e2",
+      title: "Overhead Hoodie",
+      amount: 40.0,
+      date: new Date(2022, 2, 12),
+    },
     {
       id: "e3",
-      title: "Car Insurance",
-      amount: 294.67,
-      date: new Date(2021, 2, 28),
+      title: "Replica Home Shirt",
+      amount: 85.0,
+      date: new Date(2022, 5, 28),
     },
     {
       id: "e4",
-      title: "New Desk",
-      amount: 450,
+      title: "Replica Away Shirt",
+      amount: 60.0,
       date: new Date(2021, 5, 12),
     },
   ];
