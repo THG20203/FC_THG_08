@@ -1,7 +1,7 @@
 .features {
   /* features go from center-start to center-end - beginning to end of centre 8 grid */
   grid-column: center-start / center-end;
-  margin: 5rem;
+  margin: 10rem;
   /* making features grid item a grid container */
   display: grid;
   align-content: center;
@@ -13,7 +13,7 @@
   align-items: start;
   /* large being 87.5em - 1400px */
   @media only screen and (max-width: 87.5em) {
-    margin: 5rem 0;
+    margin: 10rem 0;
   }
 }
 
