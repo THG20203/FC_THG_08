@@ -1,6 +1,6 @@
 import "./Contact.scss";
 
-const contact = [
+const contacts = [
   {
     title: "General Inquiries",
     description:
@@ -30,8 +30,8 @@ const Contact = () => {
       </header>
       <ul id="contacts">
         <li className="contact-list">
-          <h4 className="heading-4">TODO: TITLE</h4>
-          <p className="paragraph-text">TODO: DESCRIPTION</p>
+          <h4 className="heading-4">{contacts[0].title}</h4>
+          <p className="paragraph-text">{contacts[0].description}</p>
         </li>
       </ul>
     </div>

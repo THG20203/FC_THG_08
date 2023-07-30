@@ -10,7 +10,7 @@ header {
 
 #contacts {
   max-width: 50rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -33,10 +33,15 @@ header {
     gap: 1rem;
     background: linear-gradient(#0c22e8, #0a19a1);
     color: var(--color-grey-1);
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 6px;
     box-shadow: 0 2px 20px rgba(143, 87, 239, 0.2);
-    width: 33%;
     transition: all 0.2s;
   }
+}
+
+.contact-list:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+  box-shadow: 0 2px 30px rgba(244, 240, 240, 0.4);
 }
