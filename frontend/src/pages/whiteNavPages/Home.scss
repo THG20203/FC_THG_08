@@ -1,7 +1,7 @@
 .home-container {
   display: grid;
   /* comments for the grid-template-rows */
-  grid-template-rows: calc(100vh - 16rem) 50vh min-content;
+  grid-template-rows: calc(100vh - 16rem) min-content min-content;
   grid-template-columns:
     [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,

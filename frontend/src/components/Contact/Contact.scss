@@ -9,17 +9,20 @@ header {
 }
 
 #contacts {
-  max-width: 50rem;
+  max-width: 100rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+  }
 }
 
 .contact {
   display: grid;
   grid-column: full-start / full-end;
-  padding: 10rem;
+  padding: 5vw;
   background-color: var(--color-secondary);
   color: var(--color-grey-1);
   &-header {
