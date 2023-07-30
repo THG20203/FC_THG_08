@@ -18,7 +18,7 @@ const ExpenseItem = (props) => {
       its in MyClub.js. Value= props.date. Now we're funelling data through multiple components. */}
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
-        <h3 className="expense-item__title heading-3">{props.title}</h3>
+        <h4 className="expense-item__title heading-4">{props.title}</h4>
         <div className="expense-item__price paragraph-text">
           £{props.amount}
         </div>

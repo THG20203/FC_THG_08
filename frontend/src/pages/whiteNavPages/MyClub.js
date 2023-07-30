@@ -7,7 +7,7 @@ const MyClub = () => {
     {
       id: "e1",
       title: "FC THG08 Cap",
-      amount: 25.5,
+      amount: 25.0,
       date: new Date(2023, 5, 1),
     },
     {
