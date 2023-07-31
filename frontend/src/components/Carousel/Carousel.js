@@ -5,6 +5,14 @@ import trainingTop from "../../assets/images/banners/training-top.png";
 import conference from "../../assets/images/banners/conference.png";
 import mural from "../../assets/images/graffiti/mural.png";
 import yearsBanner from "../../assets/images/banners/130-years-banner.png";
+import SlideItem from "./SlideItem";
+
+const slide = [
+  { image: mural, alt: "Mural", heading: "Example 3" },
+  { image: conference, alt: "Conference", heading: "Ahead of the big final" },
+  { image: trainingTop, alt: "Training Top", heading: "New training facility" },
+  { image: yearsBanner, alt: "Years Banner", heading: "130 years of our club" },
+];
 
 const Carousel = () => {
   return (
@@ -18,26 +26,26 @@ const Carousel = () => {
 
         {/* slideshow images */}
         <div className="slideshow__wrapper">
-          <div className="slide">
-            <img className="slide__image" src={mural} alt="mural" />
-            <h1 className="slide__header heading-1--light">Example 3</h1>
-          </div>
-          <div className="slide">
-            <img className="slide__image" src={conference} alt="conference" />
-            <h1 className="slide__header heading-1--light">
-              Ahead of the big final
-            </h1>
-          </div>
-          <div className="slide">
-            <img className="slide__image" src={trainingTop} alt="trainingtop" />
-            <h1 className="slide__header heading-1--light">
-              New training facility
-            </h1>
-          </div>
-          <div className="slide">
-            <img className="slide__image" src={yearsBanner} alt="yearsbanner" />
-            <h1 className="slide__header heading-1">130 years of our club</h1>
-          </div>
+          <SlideItem
+            image={slide[0].image}
+            alt={slide[0].alt}
+            heading={slide[0].heading}
+          />
+          <SlideItem
+            image={slide[1].image}
+            alt={slide[1].alt}
+            heading={slide[1].heading}
+          />
+          <SlideItem
+            image={slide[2].image}
+            alt={slide[2].alt}
+            heading={slide[2].heading}
+          />
+          <SlideItem
+            image={slide[3].image}
+            alt={slide[3].alt}
+            heading={slide[3].heading}
+          />
         </div>
       </div>
     </section>
