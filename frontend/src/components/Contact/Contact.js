@@ -30,7 +30,18 @@ const Contact = () => {
         </h4>
       </header>
       <ul id="contacts">
-        <ContactList />
+        <ContactList
+          title={contacts[0].title}
+          description={contacts[0].description}
+        />
+        <ContactList
+          title={contacts[1].title}
+          description={contacts[1].description}
+        />
+        <ContactList
+          title={contacts[2].title}
+          description={contacts[2].description}
+        />
       </ul>
     </div>
   );
