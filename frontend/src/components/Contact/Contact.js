@@ -1,13 +1,14 @@
 import "./Contact.scss";
+import ContactList from "./ContactList";
 
 const contacts = [
   {
     title: "General Inquiries",
     description:
-      "For any general inquiries or questions about FC THG08, we are here to assist you. Whether you want to learn more about the club's history, membership options, or upcoming events, our dedicated support team is just an email away.",
+      "For any general inquiries or questions about FC THG08, we are here to assist you. If you want to learn more about the club's history, membership options, or upcoming events, our dedicated support team is just an email away.",
   },
   {
-    title: "Membership Support",
+    title: "Support",
     description:
       "Are you a proud member of FC THG08? Our Membership Support team is available to address any queries related to your membership experience. Whether you need assistance with renewals, benefits, or personalized club merchandise, we're here to provide help.",
   },
@@ -29,18 +30,7 @@ const Contact = () => {
         </h4>
       </header>
       <ul id="contacts">
-        <li className="contact-list">
-          <h4 className="heading-4">{contacts[0].title}</h4>
-          <p className="paragraph-text">{contacts[0].description}</p>
-        </li>
-        <li className="contact-list">
-          <h4 className="heading-4">{contacts[1].title}</h4>
-          <p className="paragraph-text">{contacts[1].description}</p>
-        </li>
-        <li className="contact-list">
-          <h4 className="heading-4">{contacts[2].title}</h4>
-          <p className="paragraph-text">{contacts[2].description}</p>
-        </li>
+        <ContactList />
       </ul>
     </div>
   );
