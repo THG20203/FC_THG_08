@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./FAQ.scss";
 /* For font awesome icons */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-/* parentNode is used to access the parent element of the clicked toggle element. 
-Parent of faq-toggle is faq-box -> has active applied styles */
-
-const toggles = document.querySelectorAll(".faq-toggle");
-
-toggles.forEach((toggle) => {
-  toggle.addEventListener("click", () => {
-    toggle.parentNode.classList.toggle("active");
-  });
-});
-
 const FaqPage = () => {
+  /* Apply it in a useEffect with an empty dependency array. This will trigger the useEffect
+  to rim once on load */
+  /* JS outside of the component doesn't like tp run because React doesn't know about it. 
+  So structure should be: React.useEffect(function to run, []) */
+  useEffect(() => {
+    /* parentNode is used to access the parent element of the clicked toggle element. 
+  Parent of faq-toggle is faq-box -> has active applied styles */
+    const toggles = document.querySelectorAll(".faq-toggle");
+
+    toggles.forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        toggle.parentNode.classList.toggle("active");
+      });
+    });
+
+    return () => {
+      /* Clean up & remove the events is good practice */
+      toggles.forEach((toggle) => {
+        toggle.removeEventListener("click", () => {
+          toggle.parentNode.classList.toggle("active");
+        });
+      });
+    };
+  }, []);
+
   return (
     <section className="faq__section">
       <h1 className="faq__header heading-1--dark">

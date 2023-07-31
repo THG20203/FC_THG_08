@@ -1,10 +1,9 @@
 header {
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -22,7 +21,7 @@ header {
 .contact {
   display: grid;
   grid-column: full-start / full-end;
-  padding: 5vw;
+  padding: 7vh;
   background-color: var(--color-secondary);
   color: var(--color-grey-1);
   &-header {
