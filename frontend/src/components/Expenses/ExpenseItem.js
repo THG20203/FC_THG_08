@@ -23,6 +23,7 @@ const ExpenseItem = (props) => {
           £{props.amount}
         </div>
       </div>
+      <button>Change Title</button>
     </Card>
   );
 };
