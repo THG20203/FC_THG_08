@@ -10,9 +10,12 @@ const ExpenseItem = (props) => {
     /* useState returns an array where the first value is the variable itself (initial value), second
     element in the array is updating function. We can use array destructuring to store both 
     elements in seperate varialbes or consts. Order matters */
-    /* First argument 'title' = pointer at that managed value, */
+    /* First argument = pointer at that managed value */
+    /* Second argument is a function we can use to later update/ set a new value. We want to call 
+    whole ExpneseItem function again when our state changes. */
+    /* useState always returns an array with two elements */
   }
-  const [title, setTitle] = useState();
+  const [] = useState();
 
   return (
     <Card className="expense-item">
@@ -38,4 +41,11 @@ i.e the parent component -> Expense.js. Answer = parameters */
   /* rather than writing title, amount, date to represent what we get from the parent 
 component, we write one parameter, props. React will ensure we get one parameter in
 every component we use, like props in ExpenseItem. Typically named props */
+}
+
+{
+  // useState NOTES:
+  /* Calling the function in the second argument does not just recieve a new value, but 
+  the component function in which you call the state updating function will be executed 
+  again. */
 }
