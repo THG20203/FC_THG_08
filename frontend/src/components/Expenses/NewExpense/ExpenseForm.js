@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ExpenseForm.scss";
 
 const ExpenseForm = () => {
-  /* because we pass titleChangeHanlder function to react through onChange prop,
+  /* useState -> initial value = empty string */
+  /* then use destructuring to get our two elements, currently entered title and 
+  following the convention 'setEnteredTitle' (a function for updating the state). */
+  const [enteredTitle, setEnteredTitle] = useState("");
+
+  /* because we pass titleChangeHandler function to react through onChange prop,
   React will make sure we will get event object when change event occurs  */
   /* 'target' field in object -> points to dom element for which event occured,
   and input element in turn has long list of properties which I can read and set. */
@@ -10,7 +15,7 @@ const ExpenseForm = () => {
   /* value property holds the current value of this input at the point in time this event
   occurs. */
   const titleChangeHandler = (event) => {
-    console.log(event.target.value);
+    setEnteredTitle(event.target.value);
   };
 
   return (
