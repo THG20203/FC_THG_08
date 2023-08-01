@@ -47,6 +47,8 @@
     display: grid;
     /* align items on page horizontally */
     justify-items: center;
+    /* align items on page vertically */
+    align-items: center;
     /* organise list items in columns with a minimum width of 10rem, max width 1fr */
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     /* get rid of bullet points */
@@ -61,6 +63,7 @@
     }
   }
   &__item {
+    display: grid;
     @media only screen and (max-width: 62.5em) {
       margin: 1rem;
     }
@@ -126,6 +129,10 @@
     }
     &:hover::after {
       transform: scale(1);
+    }
+    @media (min-width: 62.5em) and (max-width: 87.5em) {
+      /* reducing font size cause of problem with the newsletter word in nav link being too long */
+      font-size: 1.7rem;
     }
     @media only screen and (max-width: 62.5em) {
       /* links font size slight decrease so don't overlap with button */
