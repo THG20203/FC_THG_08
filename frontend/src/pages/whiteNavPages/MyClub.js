@@ -34,8 +34,8 @@ const MyClub = () => {
 
   return (
     <div className="my-club__container">
-      <NewExpense />
       <div className="expenses-content">
+        <NewExpense />
         <Expenses items={expenses} />
       </div>
       <Contact />
