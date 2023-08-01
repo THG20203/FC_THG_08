@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./ExpenseItem.scss";
 
 const ExpenseItem = (props) => {
@@ -12,7 +12,7 @@ const ExpenseItem = (props) => {
     elements in seperate varialbes or consts. Order matters */
     /* First argument = pointer at that managed value */
     /* Second argument is a function we can use to later update/ set a new value. We want to call 
-    whole ExpneseItem function again when our state changes. */
+    whole ExpenseItem function again when our state changes. */
     /* useState always returns an array with two elements */
   }
   const [] = useState();
@@ -48,4 +48,7 @@ every component we use, like props in ExpenseItem. Typically named props */
   /* Calling the function in the second argument does not just recieve a new value, but 
   the component function in which you call the state updating function will be executed 
   again. */
+  /* useState seperated on a per component basis so would only update one of the 
+  ExpenseItem components if button in one clicked, even though we have 4 in the Expense 
+  component. */
 }

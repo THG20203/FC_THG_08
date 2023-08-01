@@ -1,6 +1,6 @@
 import React from "react";
 import "./MyClub.scss";
-import Expenses from "../../components/Expenses/Expenses";
+import Expenses from "../../components/Expenses/ExpensesOutput/Expenses";
 import Contact from "../../components/Contact/Contact";
 
 const MyClub = () => {
