@@ -60,6 +60,14 @@
       text-align: center;
     }
   }
+  &__item {
+    @media only screen and (max-width: 62.5em) {
+      margin: 1rem;
+    }
+    @media only screen and (max-width: 20em) {
+      margin-bottom: 1rem;
+    }
+  }
   &__link {
     transition: 0.5s;
     position: relative;
@@ -164,6 +172,11 @@
     position: relative;
     /* move toggle to the end horizontally*/
     justify-self: end;
+    @media only screen and (max-width: 20em) {
+      /*set width and height of hamburger */
+      width: 6rem;
+      height: 6rem;
+    }
 
     &:hover {
       background-color: var(--color-primary-dark);
