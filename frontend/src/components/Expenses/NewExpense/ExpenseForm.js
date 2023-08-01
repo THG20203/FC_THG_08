@@ -6,16 +6,21 @@ const ExpenseForm = () => {
     <form>
       <div className="new-expense__controls">
         <div className="new-expense__control">
-          <label>Title</label>
-          <input type="text" />
+          <label className="heading-4">Club Shop Item</label>
+          <input className="paragraph-text" type="text" />
         </div>
         <div className="new-expense__control">
-          <label>Amount</label>
-          <input type="number" min="0.01" step="0.01" />
+          <label className="heading-4">Amount</label>
+          <input
+            className="paragraph-text"
+            type="number"
+            min="0.01"
+            step="0.01"
+          />
         </div>
         <div className="new-expense__control">
-          <label>Date</label>
-          <input type="date" min="2019-01-01" />
+          <label className="heading-4">Date of Purchase</label>
+          <input className="paragraph-text" type="date" min="2019-01-01" />
         </div>
       </div>
       <div className="new-expense__actions">

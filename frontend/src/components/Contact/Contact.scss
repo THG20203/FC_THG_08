@@ -24,6 +24,9 @@ header {
   padding: 7vh;
   background-color: var(--color-secondary);
   color: var(--color-grey-1);
+  @media only screen and (max-width: 20em) {
+    padding: 2vh;
+  }
   &-header {
     margin-bottom: 2rem;
   }
