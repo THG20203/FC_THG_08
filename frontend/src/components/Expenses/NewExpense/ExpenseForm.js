@@ -2,8 +2,15 @@ import React from "react";
 import "./ExpenseForm.scss";
 
 const ExpenseForm = () => {
-  const titleChangeHandler = () => {
-    console.log("Title Changed");
+  /* because we pass titleChangeHanlder function to react through onChange prop,
+  React will make sure we will get event object when change event occurs  */
+  /* 'target' field in object -> points to dom element for which event occured,
+  and input element in turn has long list of properties which I can read and set. */
+  /* Most important of target -> input elements is the value property */
+  /* value property holds the current value of this input at the point in time this event
+  occurs. */
+  const titleChangeHandler = (event) => {
+    console.log(event.target.value);
   };
 
   return (
