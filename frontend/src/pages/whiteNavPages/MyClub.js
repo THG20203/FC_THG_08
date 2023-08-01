@@ -1,6 +1,7 @@
 import React from "react";
 import "./MyClub.scss";
 import Expenses from "../../components/Expenses/ExpensesOutput/Expenses";
+import NewExpense from "../../components/Expenses/NewExpense/NewExpense";
 import Contact from "../../components/Contact/Contact";
 
 const MyClub = () => {
@@ -33,6 +34,7 @@ const MyClub = () => {
 
   return (
     <div className="my-club__container">
+      <NewExpense />
       <div className="expenses-content">
         <Expenses items={expenses} />
       </div>
