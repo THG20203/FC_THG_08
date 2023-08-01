@@ -13,6 +13,12 @@
       )
       [center-end] minmax(8rem, 1fr) [full-end];
   }
+  &-header {
+    margin-bottom: 2rem;
+  }
+  &-description {
+    color: var(--color-primary-dark);
+  }
 }
 
 .expenses-content {
@@ -20,8 +26,11 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  padding: 5vw;
+  padding: 7vh;
   @media only screen and (max-width: 87.5em) {
     grid-column: full-start / full-end;
+  }
+  @media only screen and (max-width: 20em) {
+    padding: 2vh;
   }
 }

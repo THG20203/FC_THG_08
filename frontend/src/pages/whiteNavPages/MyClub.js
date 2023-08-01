@@ -35,6 +35,15 @@ const MyClub = () => {
   return (
     <div className="my-club__container">
       <div className="expenses-content">
+        <header>
+          <h1 className="heading-1 my-club-header">
+            Club Shop Purchase Survey
+          </h1>
+          <h4 className="heading-4 my-club-description">
+            Help us compare prices by filling out this form with purchases from
+            our club shop
+          </h4>
+        </header>
         <NewExpense />
         <Expenses items={expenses} />
       </div>
