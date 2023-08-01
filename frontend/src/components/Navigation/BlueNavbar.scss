@@ -12,6 +12,9 @@
   &__div {
     margin: 0 2rem;
     cursor: pointer;
+    @media only screen and (max-width: 25em) {
+      margin: 0 1rem;
+    }
     &:hover {
       transform: scale(1.1);
     }
@@ -29,6 +32,9 @@
   }
   &__icon {
     padding: 0 1rem;
+    @media only screen and (max-width: 20em) {
+      padding: 0 0.5rem;
+    }
     color: var(--color-grey-1);
     font-size: 2rem;
   }
