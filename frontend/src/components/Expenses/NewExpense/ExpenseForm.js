@@ -2,12 +2,20 @@ import React from "react";
 import "./ExpenseForm.scss";
 
 const ExpenseForm = () => {
+  const titleChangeHandler = () => {
+    console.log("Title Changed");
+  };
+
   return (
     <form>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label className="heading-4">Club Shop Item</label>
-          <input className="paragraph-text" type="text" />
+          <input
+            className="paragraph-text"
+            type="text"
+            onChange={titleChangeHandler}
+          />
         </div>
         <div className="new-expense__control">
           <label className="heading-4">Amount</label>
