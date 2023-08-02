@@ -5,7 +5,9 @@ import ExpenseForm from "./ExpenseForm";
 const NewExpense = () => {
   return (
     <div className="new-expense">
-      <ExpenseForm />
+      {/* naming it 'on'something cause value for this prop should be a function that will eventually 
+      be triggered when something happens inside of this component -> i.e. when form = submitted. */}
+      <ExpenseForm onSaveExepnseData={} />
     </div>
   );
 };
