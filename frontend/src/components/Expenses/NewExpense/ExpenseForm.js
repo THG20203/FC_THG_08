@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ExpenseForm.scss";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   /* useState -> initial value = empty string */
   /* then use destructuring to get our two elements, currently entered title and 
   following the convention 'setEnteredTitle' (a function for updating the state). */
@@ -35,6 +35,7 @@ const ExpenseForm = () => {
       which will parse that date string, convert it into an object */
       date: new Date(enteredDate),
     };
+    props.onSaveExpenseData(expenseData);
     /* two way binding (value attribute), clear input so empty string when the form = submitted */
     setEnteredTitle("");
     setEnteredAmount("");

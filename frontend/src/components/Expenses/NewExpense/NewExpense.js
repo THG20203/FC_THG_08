@@ -7,9 +7,10 @@ const NewExpense = () => {
   to get this parameter. */
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
+      /* object generated in submit handler = enteredExpenseData */
       /* pull out all the key value pairs and add them to this new object */
       ...enteredExpenseData,
-      /* then add in new key, the id key \and set it to math.random and convert to a string */
+      /* then add in new key, the id key and set it to math.random and convert to a string */
       id: Math.random().toString(),
     };
     console.log(expenseData);
@@ -17,9 +18,10 @@ const NewExpense = () => {
 
   return (
     <div className="new-expense">
-      {/* naming it 'on'something cause value for this prop should be a function that will eventually 
-      be triggered when the form = submitted. */}
-      <ExpenseForm onSaveExepnseData />
+      {/* New prop -> ExpenseForm. I'm aming it 'on'something cause value for this prop 
+      should be a function that will eventually be triggered when the form = submitted. */}
+      {/* onSaveExpenseData prop in custon component recieves the saveExpenseDataHanlder as a value */}
+      <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
     </div>
   );
 };
