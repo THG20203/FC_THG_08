@@ -37,8 +37,10 @@ const ExpenseForm = () => {
       date: new Date(enteredDate),
     };
     /* with two way binding -> the value attribute we added -> can now set things back to 
-    an empty string when the form is submitted */
+    an empty string when the form is submitted, clearing the input. */
     setEnteredTitle("");
+    setEnteredAmount("");
+    setEnteredDate("");
   };
 
   return (
@@ -64,6 +66,7 @@ const ExpenseForm = () => {
             type="number"
             min="0.01"
             step="0.01"
+            value={enteredAmount}
             onChange={amountChangeHandler}
           />
         </div>
@@ -73,6 +76,7 @@ const ExpenseForm = () => {
             className="paragraph-text"
             type="date"
             min="2019-01-01"
+            value={enteredDate}
             onChange={dateChangeHandler}
           />
         </div>
