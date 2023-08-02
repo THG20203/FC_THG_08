@@ -25,17 +25,15 @@ const ExpenseForm = () => {
 
   /* get event object automatically as for change events */
   const submitHandler = (event) => {
-    /* then on object call preventDefault method. Prevent default of request being sent.
-    Since request is not sent the page will not reload, because we stay on the current
-    reloaded page without sending any request, can now continue handling with javascript. */
+    /* then on object call preventDefault method. Prevent default behavior -> request being sent.
+    Since request = sent, the page will not reload. */
     event.preventDefault();
-
     /* now combine all that entered data into one object - cause I used 3 seperate useState */
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
-      /* set new date, constructing a new date with the built in date constructor, to which I then in turn
-      pass the enteredDate, which will parse that date string, convert it into an object */
+      /* construct a new date (built in date constructor) -> in turn pass the enteredDate, 
+      which will parse that date string, convert it into an object */
       date: new Date(enteredDate),
     };
   };
