@@ -10,7 +10,7 @@ const NewExpense = () => {
       /* pull out all the key value pairs and add them to this new object */
       ...enteredExpenseData,
       /* then add in new key, the id key \and set it to math.random and convert to a string */
-      id: Math.random().toString();
+      id: Math.random().toString(),
     };
     console.log(expenseData);
   };
