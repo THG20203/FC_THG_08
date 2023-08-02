@@ -8,19 +8,41 @@ const ExpenseForm = () => {
   const [enteredTitle, setEnteredTitle] = useState("");
   /* you can have multiple states per component */
   const [enteredAmount, setEnteredAmount] = useState("");
+  const [enteredDate, setEnteredDate] = useState("");
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
   };
 
   const amountChangeHandler = (event) => {
+    /* event if its a number like for amount -> value will always be a string */
     setEnteredAmount(event.target.value);
   };
 
-  const dateChangeHandler = (event) => {};
+  const dateChangeHandler = (event) => {
+    setEnteredDate(event.target.date);
+  };
+
+  /* get event object automatically as for change events */
+  const submitHandler = (event) => {
+    /* then on object call preventDefault method. Prevent default of request being sent.
+    Since request is not sent the page will not reload, because we stay on the current
+    reloaded page without sending any request, can now continue handling with javascript. */
+    event.preventDefault();
+
+    /* now combine all that entered data into one object - cause I used 3 seperate useState */
+    const expenseData = {
+      title: enteredTitle,
+      amount: enteredAmount,
+      /* set new date, constructing a new date with the built in date constructor, to which I then in turn
+      pass the enteredDate, which will parse that date string, convert it into an object */
+      date: new Date(enteredDate),
+    };
+  };
 
   return (
-    <form>
+    /* react to any form submission */
+    <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label className="heading-4">Club Shop Item</label>
