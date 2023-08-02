@@ -2,7 +2,7 @@ import React from "react";
 import "./NewExpense.scss";
 import ExpenseForm from "./ExpenseForm";
 
-const NewExpense = () => {
+const NewExpense = (props) => {
   /* name -> parameter 'enteredExpenseData' = my choice, but now make it clear this function expects 
   to get this parameter. */
   const saveExpenseDataHandler = (enteredExpenseData) => {
@@ -13,7 +13,7 @@ const NewExpense = () => {
       /* then add in new key, the id key and set it to math.random and convert to a string */
       id: Math.random().toString(),
     };
-    console.log(expenseData);
+    props.onAddExpense(expenseData);
   };
 
   return (

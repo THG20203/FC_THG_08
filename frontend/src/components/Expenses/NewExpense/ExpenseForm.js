@@ -35,6 +35,9 @@ const ExpenseForm = (props) => {
       which will parse that date string, convert it into an object */
       date: new Date(enteredDate),
     };
+    /* using onSaveExpenseData function inside of our custom component -> execute function */
+    /* Can execute, cause value we get in onSaveExpenseData will be a function, passing in 
+    expenseData as an argument */
     props.onSaveExpenseData(expenseData);
     /* two way binding (value attribute), clear input so empty string when the form = submitted */
     setEnteredTitle("");

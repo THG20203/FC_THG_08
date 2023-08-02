@@ -32,6 +32,11 @@ const MyClub = () => {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log("In App.js");
+    console.log(expense);
+  };
+
   return (
     <div className="my-club__container">
       <div className="expenses-content">
@@ -44,7 +49,7 @@ const MyClub = () => {
             our club shop
           </h4>
         </header>
-        <NewExpense />
+        <NewExpense onAddExpense={addExpenseHandler} />
         <Expenses items={expenses} />
       </div>
       <Contact />
