@@ -25,10 +25,9 @@ const ExpenseForm = () => {
 
   /* get event object automatically as for change events */
   const submitHandler = (event) => {
-    /* then on object call preventDefault method. Prevent default behavior -> request being sent.
-    Since request = sent, the page will not reload. */
+    /* then on object call preventDefault, prevents default behavior -> page will not reload. */
     event.preventDefault();
-    /* now combine all that entered data into one object - cause I used 3 seperate useState */
+    /* now combine all that entered data into one object cause I used 3 seperate useState */
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
@@ -36,8 +35,7 @@ const ExpenseForm = () => {
       which will parse that date string, convert it into an object */
       date: new Date(enteredDate),
     };
-    /* with two way binding -> the value attribute we added -> can now set things back to 
-    an empty string when the form is submitted, clearing the input. */
+    /* two way binding (value attribute), clear input so empty string when the form = submitted */
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
