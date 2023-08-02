@@ -36,6 +36,9 @@ const ExpenseForm = () => {
       which will parse that date string, convert it into an object */
       date: new Date(enteredDate),
     };
+    /* with two way binding -> the value attribute we added -> can now set things back to 
+    an empty string when the form is submitted */
+    setEnteredTitle("");
   };
 
   return (
@@ -47,6 +50,10 @@ const ExpenseForm = () => {
           <input
             className="paragraph-text"
             type="text"
+            /* two way binding because now we don't just listen to changes in the input, to 
+            update our state, but we also feed the state back into the input, so that when we 
+            change the state we also change the input. */
+            value={enteredTitle}
             onChange={titleChangeHandler}
           />
         </div>
