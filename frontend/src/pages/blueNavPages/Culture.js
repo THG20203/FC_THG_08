@@ -32,6 +32,9 @@ const CulturePage = () => {
           a way to add to their club's and city's culture.
         </p>
       </div>
+      {/* Fan Story Submission Form: Allows fans to share their personal stories related to the club, 
+      such as memorable match experiences, encounters with players, or how the club has impacted 
+      their lives. */}
     </div>
   );
 };

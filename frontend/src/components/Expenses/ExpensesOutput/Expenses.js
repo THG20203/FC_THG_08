@@ -2,11 +2,13 @@ import React from "react";
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import "./Expenses.scss";
+import ExpensesFilter from "./ExpensesFilter";
 
 const Expenses = (props) => {
   return (
     <Card className="expenses">
-      {/* dynamically retreive title stored in the first expense item from the parent
+      <ExpensesFilter />
+      {/* dynamically retrieve title stored in the first expense item from the parent
       component -> MyClub.js using props */}
       {/* attribute names up to me, but they equal -> expenses array, [0] is the first item,
       title property of the object within the array. */}
