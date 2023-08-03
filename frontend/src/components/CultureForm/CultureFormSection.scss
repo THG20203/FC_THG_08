@@ -1,0 +1,7 @@
+.culture-form {
+  &__container {
+    background-color: var(--color-primary-dark);
+    display: grid;
+    grid-column: full-start / full-end;
+  }
+}

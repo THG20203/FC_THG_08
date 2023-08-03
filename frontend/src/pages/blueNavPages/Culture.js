@@ -3,7 +3,7 @@ import "./Culture.scss";
 /* images for culture page */
 import underpass from "../../assets/images/graffiti/underpass.png";
 import mural from "../../assets/images/graffiti/mural.png";
-import CultureForm from "../../components/CultureForm/CultureForm";
+import CultureFormSection from "../../components/CultureForm/CultureFormSection";
 
 const CulturePage = () => {
   return (
@@ -36,7 +36,7 @@ const CulturePage = () => {
       {/* Fan Story Submission Form: Allows fans to share their personal stories related to the club, 
       such as memorable match experiences, encounters with players, or how the club has impacted 
       their lives. */}
-      <CultureForm />
+      <CultureFormSection />
     </div>
   );
 };
