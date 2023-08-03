@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import "./CultureForm.scss";
 
 const CultureForm = () => {
+  /* enteredFirstName is a state variable that holds the current value of the 
+  first name input field. It represents the current state of the input field. 
+  When the user types or changes the value in the input field, this state 
+  variable will be updated to reflect the new value. */
+  /* setEnteredFirstName is a function provided by the useState hook. It is used 
+  to update the value of enteredFirstName. When called, this function allows you 
+  to modify the state value of enteredFirstName and trigger a re-render of the 
+  component with the updated value. */
   const [enteredFirstName, setEnteredFirstName] = useState("");
   const [enteredLastName, setEnteredLastName] = useState("");
   const [enteredFanStory, setEnteredFanStory] = useState("");
@@ -16,7 +24,17 @@ const CultureForm = () => {
     setEnteredFanStory(event.target.value);
   };
 
-  const submitHandler = () => {};
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const cultureFormData = {
+      firstName: enteredFirstName,
+      lastName: enteredLastName,
+      fanStory: enteredFanStory,
+    };
+
+    console.log(cultureFormData);
+  };
 
   return (
     <form onSubmit={submitHandler} className="form">
@@ -26,6 +44,7 @@ const CultureForm = () => {
         </label>
         <input
           onChange={firstNameChangeHandler}
+          value={enteredFirstName}
           type="text"
           className="paragraph-text"
         />
@@ -50,6 +69,7 @@ const CultureForm = () => {
           onChange={fanStoryChangeHandler}
           id="message"
           rows="8"
+          type="text"
           className="paragraph-text"
         ></textarea>
       </div>
