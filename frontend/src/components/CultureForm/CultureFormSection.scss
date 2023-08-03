@@ -3,5 +3,9 @@
     background-color: var(--color-primary-dark);
     display: grid;
     grid-column: full-start / full-end;
+    justify-items: center;
+    align-items: center;
+    height: 70vh;
+    max-width: 100%;
   }
 }
