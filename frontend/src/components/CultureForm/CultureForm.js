@@ -3,8 +3,8 @@ import "./CultureForm.scss";
 
 const CultureForm = () => {
   return (
-    <form class="form">
-      <div class="form-group">
+    <form className="form">
+      <div className="form-group">
         <label for="firstName" className="heading-4">
           First Name:
         </label>
@@ -43,7 +43,7 @@ const CultureForm = () => {
         ></textarea>
       </div>
 
-      <button type="submit" class="submit-button btn">
+      <button type="submit" className="submit-button btn">
         Submit
       </button>
     </form>
