@@ -34,6 +34,9 @@ const CultureForm = () => {
     };
 
     console.log(cultureFormData);
+    setEnteredFirstName("");
+    setEnteredLastName("");
+    setEnteredFanStory("");
   };
 
   return (
@@ -56,6 +59,7 @@ const CultureForm = () => {
         </label>
         <input
           onChange={lastNameChangeHandler}
+          value={enteredLastName}
           type="text"
           className="paragraph-text"
         />
@@ -67,6 +71,7 @@ const CultureForm = () => {
         </label>
         <textarea
           onChange={fanStoryChangeHandler}
+          value={enteredFanStory}
           id="message"
           rows="8"
           type="text"
