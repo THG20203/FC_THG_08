@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./CultureForm.scss";
+import Button from "../../components/Button/Button";
 
-const CultureForm = () => {
-  /* enteredFirstName is a state variable that holds the current value of the 
-  first name input field. It represents the current state of the input field. 
-  When the user types or changes the value in the input field, this state 
-  variable will be updated to reflect the new value. */
-  /* setEnteredFirstName is a function provided by the useState hook. It is used 
-  to update the value of enteredFirstName. When called, this function allows you 
-  to modify the state value of enteredFirstName and trigger a re-render of the 
-  component with the updated value. */
+function CultureForm() {
+  /* enteredFirstName is a state variable that holds the current value of the
+    first name input field. It represents the current state of the input field.
+    When the user types or changes the value in the input field, this state
+    variable will be updated to reflect the new value. */
+  /* setEnteredFirstName is a function provided by the useState hook. It is used
+    to update the value of enteredFirstName. When called, this function allows you
+    to modify the state value of enteredFirstName and trigger a re-render of the
+    component with the updated value. */
   const [enteredFirstName, setEnteredFirstName] = useState("");
   const [enteredLastName, setEnteredLastName] = useState("");
   const [enteredFanStory, setEnteredFanStory] = useState("");
@@ -79,11 +80,12 @@ const CultureForm = () => {
         ></textarea>
       </div>
 
-      <button type="submit" className="culture-form__submit btn">
-        Submit
-      </button>
+      {/* <button type="submit" className="culture-form__submit btn">
+              Submit
+        </button> */}
+      <Button />
     </form>
   );
-};
+}
 
 export default CultureForm;
