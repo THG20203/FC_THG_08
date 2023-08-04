@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ExpenseForm.scss";
+import Button from "../../../components/Button/Button";
 
 const ExpenseForm = (props) => {
   /* useState -> initial value = empty string */
@@ -84,9 +85,7 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
-        <button type="submit" className="btn">
-          Add Expense
-        </button>
+        <Button />
       </div>
     </form>
   );

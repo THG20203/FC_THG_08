@@ -5,6 +5,7 @@ const Button = () => {
   return (
     <button type="submit" className="btn">
       Submit
+      <div class="btn__wave"></div>
     </button>
   );
 };

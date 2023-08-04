@@ -47,6 +47,10 @@
   font-size: 1.5rem;
 }
 
+label {
+  color: var(--color-secondary);
+}
+
 //helper classes - mb stands for margin bottom
 .mb-sm {
   margin-bottom: 2rem;

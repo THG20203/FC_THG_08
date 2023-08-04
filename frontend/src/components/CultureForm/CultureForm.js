@@ -67,7 +67,7 @@ function CultureForm() {
       </div>
 
       <div className="form-group">
-        <label type="text" className="culture-form__label heading-4">
+        <label type="text" className="heading-4">
           Your Fan Story
         </label>
         <textarea
