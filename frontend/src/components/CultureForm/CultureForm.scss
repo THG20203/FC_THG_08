@@ -16,8 +16,13 @@
   width: 100%;
 }
 
-label {
-  color: var(--color-secondary);
+.culture-form {
+  &__label {
+    color: var(--color-secondary);
+  }
+  &__submit {
+    justify-self: end;
+  }
 }
 
 input,
@@ -33,8 +38,4 @@ textarea {
   @media only screen and (max-width: 20em) {
     width: 20rem;
   }
-}
-
-.submit-button {
-  justify-self: end;
 }

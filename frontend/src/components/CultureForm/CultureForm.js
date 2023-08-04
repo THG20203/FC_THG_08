@@ -42,7 +42,7 @@ const CultureForm = () => {
   return (
     <form onSubmit={submitHandler} className="form">
       <div className="form-group">
-        <label type="text" className="heading-4">
+        <label type="text" className="culture-form__label heading-4">
           First Name
         </label>
         <input
@@ -54,7 +54,7 @@ const CultureForm = () => {
       </div>
 
       <div className="form-group">
-        <label type="text" className="heading-4">
+        <label type="text" className="culture-form__label heading-4">
           Last Name
         </label>
         <input
@@ -66,7 +66,7 @@ const CultureForm = () => {
       </div>
 
       <div className="form-group">
-        <label type="text" className="heading-4">
+        <label type="text" className="culture-form__label heading-4">
           Your Fan Story
         </label>
         <textarea
@@ -79,7 +79,7 @@ const CultureForm = () => {
         ></textarea>
       </div>
 
-      <button type="submit" className="submit-button btn">
+      <button type="submit" className="culture-form__submit btn">
         Submit
       </button>
     </form>
