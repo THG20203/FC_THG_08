@@ -43,7 +43,7 @@ const CultureForm = () => {
     <form onSubmit={submitHandler} className="form">
       <div className="form-group">
         <label type="text" className="heading-4">
-          First Name:
+          First Name
         </label>
         <input
           onChange={firstNameChangeHandler}
@@ -55,7 +55,7 @@ const CultureForm = () => {
 
       <div className="form-group">
         <label type="text" className="heading-4">
-          Last Name:
+          Last Name
         </label>
         <input
           onChange={lastNameChangeHandler}
@@ -67,7 +67,7 @@ const CultureForm = () => {
 
       <div className="form-group">
         <label type="text" className="heading-4">
-          Your Fan Story:
+          Your Fan Story
         </label>
         <textarea
           onChange={fanStoryChangeHandler}

@@ -6,7 +6,7 @@
   padding: 2rem;
   margin: 2vh;
   border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  background-color: var(--color-grey-1);
   max-width: min-content;
 }
 
@@ -17,7 +17,7 @@
 }
 
 label {
-  font-weight: bold;
+  color: var(--color-secondary);
 }
 
 input,
@@ -37,5 +37,4 @@ textarea {
 
 .submit-button {
   justify-self: end;
-  cursor: pointer;
 }
