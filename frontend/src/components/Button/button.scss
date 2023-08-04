@@ -9,6 +9,7 @@
   cursor: pointer;
   transition: all 0.2s;
   position: relative;
+  justify-self: end;
 
   &:hover {
     background-color: var(--color-primary-dark);

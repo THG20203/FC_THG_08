@@ -3,7 +3,7 @@ import "./Button.scss";
 
 const Button = () => {
   return (
-    <button type="submit" className="culture-form__submit btn">
+    <button type="submit" className="btn">
       Submit
     </button>
   );
