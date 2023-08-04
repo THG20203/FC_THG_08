@@ -10,7 +10,7 @@ function EventsList({ events }) {
             <a href="...">
               <img src={event.image} alt={event.title} />
               <div className="events-list__content">
-                <h2>{event.title}</h2>
+                <h2 className="mb-sm">{event.title}</h2>
                 <time>{event.date}</time>
               </div>
             </a>
