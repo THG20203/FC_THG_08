@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #0c22e8; /* Brighter blue */
-  --color-primary-dark: #0a19a1; /* blue */
+  --color-primary: #0c22e8; /* Brighter blue - rgba(12, 34, 232) */
+  --color-primary-dark: #0a19a1; /* blue - rgba(10, 25, 161) */
 
   --button-blue: #00aeff;
 
