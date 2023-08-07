@@ -1,10 +1,10 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = () => {
+const Button = (props) => {
   return (
     <button type="submit" className="btn">
-      Submit
+      {props.text}
       <div class="btn__wave"></div>
     </button>
   );

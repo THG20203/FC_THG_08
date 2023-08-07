@@ -26,7 +26,7 @@ const WhiteNavbar = () => {
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink to="/" className="nav__link">
+            <NavLink to="latest" className="nav__link">
               Latest
             </NavLink>
           </li>

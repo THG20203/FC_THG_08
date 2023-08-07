@@ -15,6 +15,7 @@ import FaqPage from "./pages/blueNavPages/FAQ";
 import CulturePage from "./pages/blueNavPages/Culture";
 /* Main Navbar Imports (Excluding events) */
 import HomePage from "./pages/whiteNavPages/Home";
+import LatestPage from "./pages/whiteNavPages/Latest";
 import MyClubPage from "./pages/whiteNavPages/MyClub";
 /* Events Page Imports */
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: "latest", element: <LatestPage /> },
       { path: "myclub", element: <MyClubPage /> },
       { path: "history", element: <HistoryPage /> },
       { path: "faqs", element: <FaqPage /> },
