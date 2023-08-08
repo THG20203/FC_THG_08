@@ -42,7 +42,7 @@ function CultureForm() {
 
   return (
     <div className="culture-form__content">
-      <header>
+      <header className="mb-lg">
         <h1 className="heading-1--light mb-sm">Please share your stories</h1>
         <h4 className="heading-4 culture-form__description">
           Submit your memorable moments and heartfelt experiences as a dedicated

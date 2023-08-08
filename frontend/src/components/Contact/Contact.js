@@ -22,7 +22,7 @@ const contacts = [
 const Contact = () => {
   return (
     <div className="contact">
-      <header>
+      <header className="mb-lg">
         <h1 className="heading-1--light contact-header">Contact Information</h1>
         <h4 className="heading-4">
           Details for fans to get in touch with the club for inquiries, support,
