@@ -41,50 +41,55 @@ function CultureForm() {
   };
 
   return (
-    <form onSubmit={submitHandler} className="form">
-      <div className="form-group">
-        <label type="text" className="culture-form__label heading-4">
-          First Name
-        </label>
-        <input
-          onChange={firstNameChangeHandler}
-          value={enteredFirstName}
-          type="text"
-          className="paragraph-text"
-        />
-      </div>
+    <div className="culture-form__content">
+      <h1 className="culture-form__header heading-1--light mb-sm">
+        Please share your stories
+      </h1>
+      <form onSubmit={submitHandler} className="form">
+        <div className="form-group">
+          <label type="text" className="culture-form__label heading-4">
+            First Name
+          </label>
+          <input
+            onChange={firstNameChangeHandler}
+            value={enteredFirstName}
+            type="text"
+            className="paragraph-text"
+          />
+        </div>
 
-      <div className="form-group">
-        <label type="text" className="culture-form__label heading-4">
-          Last Name
-        </label>
-        <input
-          onChange={lastNameChangeHandler}
-          value={enteredLastName}
-          type="text"
-          className="paragraph-text"
-        />
-      </div>
+        <div className="form-group">
+          <label type="text" className="culture-form__label heading-4">
+            Last Name
+          </label>
+          <input
+            onChange={lastNameChangeHandler}
+            value={enteredLastName}
+            type="text"
+            className="paragraph-text"
+          />
+        </div>
 
-      <div className="form-group">
-        <label type="text" className="heading-4">
-          Your Fan Story
-        </label>
-        <textarea
-          onChange={fanStoryChangeHandler}
-          value={enteredFanStory}
-          id="message"
-          rows="8"
-          type="text"
-          className="paragraph-text"
-        ></textarea>
-      </div>
+        <div className="form-group">
+          <label type="text" className="heading-4">
+            Your Fan Story
+          </label>
+          <textarea
+            onChange={fanStoryChangeHandler}
+            value={enteredFanStory}
+            id="message"
+            rows="8"
+            type="text"
+            className="paragraph-text"
+          ></textarea>
+        </div>
 
-      {/* <button type="submit" className="culture-form__submit btn">
+        {/* <button type="submit" className="culture-form__submit btn">
               Submit
         </button> */}
-      <Button text="Submit" />
-    </form>
+        <Button text="Submit" />
+      </form>
+    </div>
   );
 }
 

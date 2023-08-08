@@ -1,3 +1,12 @@
+.culture-form {
+  &__content {
+    padding: 7vh;
+  }
+  &__header {
+    text-align: center;
+  }
+}
+
 .form {
   display: grid;
   grid-template-columns: 1fr;
@@ -8,7 +17,7 @@
   background-image: linear-gradient(
       105deg,
       rgba(255, 255, 255, 0.9) 0%,
-      rgba(10, 25, 161, 0.7) 60%
+      rgba(10, 25, 161, 0.9) 60%
     ),
     url("../../assets/images/graffiti/mural.png");
   background-size: cover;
