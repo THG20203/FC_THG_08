@@ -11,8 +11,8 @@ import NewsCard from "./NewsCard";
 
 const News = (props) => {
   return (
-    <section>
-      <h1 className="heading-1--dark">Latest Headlines</h1>
+    <section className="news-section">
+      <h1 className="heading-1 mb-sm">Latest Headlines</h1>
       <NewsCard /> {/* corporate partner -> link corporate partner */}
       <NewsCard /> {/* match -> link to match report */}
       <NewsCard /> {/* training top -> link to article */}

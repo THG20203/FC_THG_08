@@ -17,7 +17,7 @@ const CulturePage = () => {
       {/* Story Content section */}
       <div className="story__content">
         <h3 className="heading-3 mb-sm">A piece on our distinct culture...</h3>
-        <h2 className="heading-2 mb-md">Graffiti Art</h2>
+        <h1 className="heading-1--dark mb-md">Graffiti Art</h1>
         <p className="story__text paragraph-text">
           Fans of FC THG 08 are known for their strong sense of pride and
           loyalty to the club, which is often reflected in the graffiti they

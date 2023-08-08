@@ -1,0 +1,15 @@
+.news-section {
+  display: grid;
+  grid-column: full-start / full-end;
+  padding: 7vh;
+  text-align: center;
+}
+
+.news-card {
+  &__image {
+  }
+  &__heading {
+  }
+  &__description {
+  }
+}
