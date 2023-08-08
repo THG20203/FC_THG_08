@@ -45,6 +45,7 @@ function CultureForm() {
       <h1 className="culture-form__header heading-1--light mb-sm">
         Please share your stories
       </h1>
+      <h4 className="heading-4 culture-form__description"></h4>
       <form onSubmit={submitHandler} className="form">
         <div className="form-group">
           <label type="text" className="culture-form__label heading-4">

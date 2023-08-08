@@ -42,7 +42,7 @@ const MyClub = () => {
       <div className="expenses-content">
         <header>
           <h1 className="heading-1 mb-sm">Club Shop Purchase Survey</h1>
-          <h4 className="heading-4 my-club-description">
+          <h4 className="heading-4 my-club__description">
             Help us compare prices by filling out this form with purchases from
             our club shop
           </h4>
