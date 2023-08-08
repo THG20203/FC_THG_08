@@ -6,6 +6,13 @@
 }
 
 .news-card {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 6.4rem;
+  }
+  &__content {
+  }
   &__image {
   }
   &__heading {

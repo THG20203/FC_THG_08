@@ -42,13 +42,15 @@ function CultureForm() {
 
   return (
     <div className="culture-form__content">
-      <h1 className="heading-1--light mb-sm">Please share your stories</h1>
-      <h4 className="heading-4 culture-form__description">
-        Submit your memorable moments and heartfelt experiences as a dedicated
-        fan, through our fan story submission form. Share your cherished
-        anecdotes and connect with fellow enthusiasts as we celebrate the
-        unwavering passion that fuels our team's success.
-      </h4>
+      <header>
+        <h1 className="heading-1--light mb-sm">Please share your stories</h1>
+        <h4 className="heading-4 culture-form__description">
+          Submit your memorable moments and heartfelt experiences as a dedicated
+          fan, through our fan story submission form. Share your cherished
+          anecdotes and connect with fellow enthusiasts as we celebrate the
+          unwavering passion that fuels our team's success.
+        </h4>
+      </header>
       <form onSubmit={submitHandler} className="form">
         <div className="form-group">
           <label type="text" className="culture-form__label heading-4">

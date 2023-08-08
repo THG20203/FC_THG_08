@@ -67,3 +67,13 @@ label {
 .mb-hg {
   margin-bottom: 8rem;
 }
+
+/* Text in header elements */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  text-align: center;
+}

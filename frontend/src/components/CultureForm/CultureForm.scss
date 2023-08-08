@@ -2,10 +2,6 @@
   &__content {
     padding: 7vh;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
     @media only screen and (max-width: 62.5em) {
       padding: 4vh;
     }
@@ -13,6 +9,9 @@
   &__description {
     color: var(--color-grey-1);
     max-width: 50vw;
+    @media only screen and (max-width: 62.5em) {
+      max-width: 80vw;
+    }
   }
   &__label {
     text-align: left;
