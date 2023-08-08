@@ -35,7 +35,8 @@ const NewsCards = [
     image: shirtSale,
     alt: "Shirt Sale",
     heading: "Purchase New Seasons Kit here",
-    description: ".",
+    description:
+      "As the anticipation builds for the upcoming season, we are thrilled to present the latest football kit for our beloved team, FC THG 08. A captivating blend of tradition, innovation, and the spirit of competition, this kit encapsulates the essence of who we are and what we strive to achieve on the field.",
   },
   {
     image: playerFlag,
