@@ -1,6 +1,13 @@
 .culture-form {
   &__content {
     padding: 7vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @media only screen and (max-width: 62.5em) {
+      padding: 4vh;
+    }
   }
   &__header {
     text-align: center;
@@ -24,6 +31,15 @@
   box-shadow: 0 1.5 4rem rgba(#000, 0.15);
   border-radius: 6px;
   max-width: min-content;
+  @media only screen and (max-width: 62.5em) {
+    max-width: 90vw;
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(10, 25, 161, 0.9) 80%
+      ),
+      url("../../assets/images/graffiti/mural.png");
+  }
 }
 
 .form-group {
@@ -40,9 +56,6 @@ textarea {
   padding: 1rem;
   border-radius: 6px;
   @media only screen and (max-width: 62.5em) {
-    width: 30rem;
-  }
-  @media only screen and (max-width: 20em) {
-    width: 20rem;
+    width: 60vw;
   }
 }
