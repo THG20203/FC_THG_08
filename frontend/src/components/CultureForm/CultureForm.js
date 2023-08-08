@@ -60,7 +60,7 @@ function CultureForm() {
             onChange={firstNameChangeHandler}
             value={enteredFirstName}
             type="text"
-            className="paragraph-text"
+            className="paragraph-text culture-form__input"
           />
         </div>
 
@@ -72,7 +72,7 @@ function CultureForm() {
             onChange={lastNameChangeHandler}
             value={enteredLastName}
             type="text"
-            className="paragraph-text"
+            className="paragraph-text culture-form__input"
           />
         </div>
 
@@ -86,7 +86,7 @@ function CultureForm() {
             id="message"
             rows="8"
             type="text"
-            className="paragraph-text"
+            className="paragraph-text culture-form__text-area"
           ></textarea>
         </div>
 
