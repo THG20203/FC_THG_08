@@ -3,6 +3,9 @@
   grid-column: full-start / full-end;
   padding: 7vh;
   text-align: center;
+  @media only screen and (max-width: 62.5em) {
+    padding: 4vh;
+  }
 }
 
 .news-card {
@@ -26,11 +29,17 @@
   &__img-div {
     height: 20vh;
     overflow: hidden;
+    @media only screen and (max-width: 62.5em) {
+      height: 25vh;
+    }
   }
   &__image {
     width: 100%;
     min-height: 20vh;
     border-radius: 0.3rem 0.3rem 0 0;
+    @media only screen and (max-width: 62.5em) {
+      height: 25vh;
+    }
   }
   &__heading {
   }
