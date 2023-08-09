@@ -18,10 +18,14 @@
     In this case, it specifies that the track should be at least 25rem (a unit of length in CSS, 
     equivalent to 25 times the size of the root font) wide but can grow (1fr) to take up available space, 
     up to the constraints of the grid container. */
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 5rem;
   }
   &__content {
+  }
+  &__img-div {
+    height: 20vh;
+    overflow: hidden;
   }
   &__image {
     width: 100%;

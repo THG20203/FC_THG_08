@@ -20,7 +20,7 @@ const NewsCards = [
   {
     image: match,
     alt: "Match",
-    heading: "3-0 win over Crimson Pangmere FC",
+    heading: "3-0 win over Crimson Pangmere",
     description:
       "FC THG 04 picked up three points in their first home game of the new season defeating Crimson Pangmere FC 3-0 on Saturday night. Thomas Mahrez (16’), ('75) and  Ishmael Baptiste (90+2’) got the goals for FC THG 08. The visitors finished the game with ten men after defender Mehmet Kaya was red carded.",
   },
@@ -41,14 +41,14 @@ const NewsCards = [
   {
     image: playerFlag,
     alt: "Player Flag",
-    heading: "Fabio Lombardy joins FC THG 08 on Loan",
+    heading: "Fabio Lombardy joins on Loan",
     description:
       "Italian youth international Fabio Lombardy has joined FC THG 08 on a season-long loan. A buy option has also been agreed upon for the 19-year-old attacker. Lombardy scored nine goals and recorded two assists in 20 games in the Regional Liga last season.",
   },
   {
     image: mural,
     alt: "Mural",
-    heading: "Culture in spotlight: Graffiti Art",
+    heading: "Culture in spotlight: Graffiti",
     description:
       "Fans of FC THG 08 are known for their strong sense of pride and loyalty to the club, which is often reflected in the graffiti they create around the stadium and throughout the city. These fans believe that graffiti is a powerful way to express their love for the club and to connect with other fans.",
   },
@@ -57,7 +57,7 @@ const NewsCards = [
 const News = () => {
   return (
     <section className="news-section">
-      <h1 className="heading-1 mb-sm">Headlines</h1>
+      <h1 className="heading-1 mb-md">Headlines</h1>
       <div className="news-card__container">
         <NewsCard
           image={NewsCards[0].image}
