@@ -22,17 +22,25 @@
     equivalent to 25 times the size of the root font) wide but can grow (1fr) to take up available space, 
     up to the constraints of the grid container. */
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
   &__content {
-    background-color: red;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-grey-2),
+      var(--color-grey-1)
+    );
     border-radius: 1rem 1rem 0 0;
   }
   &__img-div {
     height: 20vh;
     overflow: hidden;
     border-radius: 1rem 1rem 0 0;
+    background-color: var(--color-grey-1);
     @media only screen and (max-width: 62.5em) {
+      height: 22vh;
+    }
+    @media only screen and (max-width: 25em) {
       height: 25vh;
     }
   }
@@ -40,6 +48,9 @@
     width: 100%;
     min-height: 20vh;
     @media only screen and (max-width: 62.5em) {
+      height: 22vh;
+    }
+    @media only screen and (max-width: 25em) {
       height: 25vh;
     }
   }
