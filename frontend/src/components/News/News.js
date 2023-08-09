@@ -59,12 +59,48 @@ const News = () => {
     <section className="news-section">
       <h1 className="heading-1 mb-sm">Headlines</h1>
       <div className="news-card__container">
-        <NewsCard /> {/* corporate partner -> link corporate partner */}
-        <NewsCard /> {/* match -> link to match report */}
-        <NewsCard /> {/* training top -> link to article */}
-        <NewsCard /> {/* shirt sale -> link to shop */}
-        <NewsCard /> {/* player-flag -> link to player article*/}
-        <NewsCard /> {/* mural -> link to culture page */}
+        <NewsCard
+          image={NewsCards[0].image}
+          alt={NewsCards[0].alt}
+          heading={NewsCards[0].heading}
+          description={NewsCards[0].description}
+        />
+        {/* corporate partner -> link corporate partner */}
+        <NewsCard
+          image={NewsCards[1].image}
+          alt={NewsCards[1].alt}
+          heading={NewsCards[1].heading}
+          description={NewsCards[1].description}
+        />
+        {/* match -> link to match report */}
+        <NewsCard
+          image={NewsCards[2].image}
+          alt={NewsCards[2].alt}
+          heading={NewsCards[2].heading}
+          description={NewsCards[2].description}
+        />
+        {/* training top -> link to article */}
+        <NewsCard
+          image={NewsCards[3].image}
+          alt={NewsCards[3].alt}
+          heading={NewsCards[3].heading}
+          description={NewsCards[3].description}
+        />
+        {/* shirt sale -> link to shop */}
+        <NewsCard
+          image={NewsCards[4].image}
+          alt={NewsCards[4].alt}
+          heading={NewsCards[4].heading}
+          description={NewsCards[4].description}
+        />
+        {/* player-flag -> link to player article*/}
+        <NewsCard
+          image={NewsCards[5].image}
+          alt={NewsCards[5].alt}
+          heading={NewsCards[5].heading}
+          description={NewsCards[5].description}
+        />
+        {/* mural -> link to culture page */}
       </div>
     </section>
   );
