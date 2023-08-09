@@ -20,7 +20,7 @@ const NewsCards = [
   {
     image: match,
     alt: "Match",
-    heading: "3-0 win over Crimson Pangmere",
+    heading: "Win over Crimson Pangmere",
     description:
       "FC THG 04 picked up three points in their first home game of the new season defeating Crimson Pangmere FC 3-0 on Saturday night. Thomas Mahrez (16’), (75’) and  Ishmael Baptiste (90+2’) got the goals for FC THG 08. The visitors finished the game with ten men after defender Mehmet Kaya was red carded.",
   },

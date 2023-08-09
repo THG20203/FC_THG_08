@@ -1,13 +1,8 @@
 import React from "react";
 import "./History.scss";
-import Progress from "../../components/History/Progress";
 
 const HistoryPage = () => {
-  return (
-    <>
-      <Progress />;
-    </>
-  );
+  return <div>History</div>;
 };
 
 export default HistoryPage;

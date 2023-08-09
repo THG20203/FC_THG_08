@@ -39,7 +39,7 @@
   background-image: linear-gradient(
       105deg,
       rgba(255, 255, 255, 0.9) 0%,
-      rgba(10, 25, 161, 0.9) 60%
+      rgba(10, 25, 161, 0.9) 80%
     ),
     url("../../assets/images/graffiti/mural.png");
   background-size: cover;
@@ -47,12 +47,6 @@
   max-width: min-content;
   @media only screen and (max-width: 62.5em) {
     max-width: 90vw;
-    background-image: linear-gradient(
-        105deg,
-        rgba(255, 255, 255, 0.9) 0%,
-        rgba(10, 25, 161, 0.9) 80%
-      ),
-      url("../../assets/images/graffiti/mural.png");
   }
 }
 

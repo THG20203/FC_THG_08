@@ -25,10 +25,13 @@
     grid-gap: 2rem;
   }
   &__content {
+    background-color: red;
+    border-radius: 1rem 1rem 0 0;
   }
   &__img-div {
     height: 20vh;
     overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
     @media only screen and (max-width: 62.5em) {
       height: 25vh;
     }
@@ -36,13 +39,14 @@
   &__image {
     width: 100%;
     min-height: 20vh;
-    border-radius: 0.3rem 0.3rem 0 0;
     @media only screen and (max-width: 62.5em) {
       height: 25vh;
     }
   }
   &__heading {
+    padding: 0 1rem;
   }
   &__description {
+    padding: 1rem;
   }
 }
