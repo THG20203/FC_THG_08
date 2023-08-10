@@ -3,8 +3,8 @@
   grid-column: full-start / full-end;
   padding: 7vh;
   text-align: center;
-  @media only screen and (max-width: 62.5em) {
-    padding: 4vh;
+  @media only screen and (max-width: 87.5em) {
+    padding: 7vh 10vw;
   }
 }
 
@@ -41,11 +41,11 @@
     overflow: hidden;
     border-radius: 1rem 1rem 0 0;
     background-color: var(--color-grey-1);
-    @media only screen and (max-width: 62.5em) {
-      height: 22vh;
+    @media only screen and (max-width: 37.5em) {
+      height: 30vh;
     }
-    @media only screen and (max-width: 25em) {
-      height: 25vh;
+    @media only screen and (max-width: 20em) {
+      height: 40vh;
     }
   }
   &__image {
@@ -55,11 +55,11 @@
     &:hover {
       transform: scale(1.1);
     }
-    @media only screen and (max-width: 62.5em) {
-      height: 22vh;
+    @media only screen and (max-width: 37.5em) {
+      height: 30vh;
     }
-    @media only screen and (max-width: 25em) {
-      height: 25vh;
+    @media only screen and (max-width: 20em) {
+      height: 40vh;
     }
   }
   &__heading {

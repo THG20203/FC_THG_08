@@ -28,6 +28,9 @@
       width: 400vw;
       animation: slideshowSmallViewport 20s infinite;
     }
+    @media only screen and (max-width: 20em) {
+      max-height: calc(100vh - 16rem);
+    }
   }
 }
 
@@ -66,15 +69,19 @@
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    width: max-content;
     z-index: 4;
-    @media only screen and (max-width: 62.5em) {
-      width: 50vw;
-      text-align: center;
+    width: 100vw;
+    text-align: center;
+    @media only screen and (max-width: 87.5em) {
+      font-size: 6rem;
+      top: 75%;
+      padding: 5vw;
     }
     @media only screen and (max-width: 37.5em) {
       top: 70%;
-      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 25em) {
+      top: 60%;
     }
   }
   &__btn {
@@ -90,29 +97,32 @@
     transform: translateX(-50%);
     /* want to put the buttons on top of the slideshow */
     z-index: 2;
+    @media only screen and (max-width: 37.5em) {
+      top: 85%;
+    }
     /* position absolute will put one button on top of another so need to move them individually */
     &--1 {
       left: 35%;
       @media only screen and (max-width: 62.5em) {
-        left: 20%;
+        left: 20vw;
       }
     }
     &--2 {
       left: 45%;
       @media only screen and (max-width: 62.5em) {
-        left: 40%;
+        left: 40vw;
       }
     }
     &--3 {
       left: 55%;
       @media only screen and (max-width: 62.5em) {
-        left: 60%;
+        left: 60vw;
       }
     }
     &--4 {
       left: 65%;
       @media only screen and (max-width: 62.5em) {
-        left: 80%;
+        left: 80vw;
       }
     }
   }
