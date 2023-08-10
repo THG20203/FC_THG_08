@@ -31,6 +31,10 @@
       var(--color-grey-1)
     );
     border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+    @media only screen and (max-width: 20em) {
+      max-width: 80vw;
+    }
   }
   &__img-div {
     height: 20vh;
@@ -56,8 +60,12 @@
   }
   &__heading {
     padding: 0 1rem;
+    color: var(--color-primary-dark);
   }
   &__description {
     padding: 1rem;
+    &:hover {
+      color: var(--color-primary-dark);
+    }
   }
 }

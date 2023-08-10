@@ -1,21 +1,21 @@
 import React from "react";
 import "./News.scss";
 /* image files */
-import corporatePartner from "../../assets/images/news/corporate-partner.png";
+import conference from "../../assets/images/news/conference.png";
 import match from "../../assets/images/news/match.png";
 import trainingTop from "../../assets/images/banners/training-top.png";
 import shirtSale from "../../assets/images/news/shirt-sale.png";
-import playerFlag from "../../assets/images/news/player-flag.png";
+import corporatePartner from "../../assets/images/news/corporate-partner.png";
 import mural from "../../assets/images/graffiti/mural.png";
 import NewsCard from "./NewsCard";
 
 const NewsCards = [
   {
-    image: corporatePartner,
-    alt: "Corporate Partner",
-    heading: "New Corporate partner e-Payel",
+    image: conference,
+    alt: "Conference",
+    heading: "Next fixture previewed",
     description:
-      "Introducing e-Payel Payments, the dynamic and innovative corporate partner that has joined forces with our club. With a shared passion for excellence and a commitment to pushing boundaries, this collaboration marks a significant milestone in the journey towards success both on and off the field.",
+      "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation. 'Every match presents a unique set of challenges,' he noted, 'This upcoming fixture is no different. Our focus is on understanding our opponent's strengths and weaknesses, and adjusting our tactics accordingly.'",
   },
   {
     image: match,
@@ -39,11 +39,11 @@ const NewsCards = [
       "As the anticipation builds for the upcoming season, we are thrilled to present the latest football kit for our beloved team, FC THG 08. A captivating blend of tradition, innovation, and the spirit of competition, this kit encapsulates the essence of who we are and what we strive to achieve on the field.",
   },
   {
-    image: playerFlag,
-    alt: "Player Flag",
-    heading: "Fabio Lombardy joins on Loan",
+    image: corporatePartner,
+    alt: "Corporate Partner",
+    heading: "New Corporate partner e-Payel",
     description:
-      "Italian youth international Fabio Lombardy has joined FC THG 08 on a season-long loan. A buy option has also been agreed upon for the 19-year-old attacker. Lombardy scored nine goals and recorded two assists in 20 games in the Regional Liga last season.",
+      "Introducing e-Payel Payments, the dynamic and innovative corporate partner that has joined forces with our club. With a shared passion for excellence and a commitment to pushing boundaries, this collaboration marks a significant milestone in the journey towards success both on and off the field.",
   },
   {
     image: mural,
