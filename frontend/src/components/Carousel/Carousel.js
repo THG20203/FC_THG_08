@@ -7,18 +7,18 @@ import mural from "../../assets/images/graffiti/mural.png";
 import SlideItem from "./SlideItem";
 
 const slide = [
-  { image: trainingTop, alt: "Training Top", heading: "New training facility" },
+  {
+    image: mural,
+    alt: "Mural",
+    heading: "Example 3",
+  },
+  {
+    image: mural,
+    alt: "Mural",
+    heading: "Graffiti Culture",
+  },
+  { image: trainingTop, alt: "Training Top", heading: "New Training Facility" },
   { image: yearsBanner, alt: "Years Banner", heading: "130 years of our club" },
-  {
-    image: mural,
-    alt: "Mural",
-    heading: "Example 3",
-  },
-  {
-    image: mural,
-    alt: "Mural",
-    heading: "Example 3",
-  },
 ];
 
 const Carousel = () => {

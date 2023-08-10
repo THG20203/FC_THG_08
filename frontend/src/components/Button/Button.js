@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <button type="submit" className="btn">
       {props.text}
-      <div class="btn__wave"></div>
+      <div className="btn__wave"></div>
     </button>
   );
 };

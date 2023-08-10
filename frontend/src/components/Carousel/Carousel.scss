@@ -33,13 +33,28 @@
 
 .slide {
   position: relative;
+  cursor: pointer;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 25, 161, 0.5) 0%,
+      rgba(10, 25, 161, 0) 40%,
+      rgba(10, 25, 161, 1) 100%
+    );
+    pointer-events: none;
+  }
   &__image {
     height: 100%;
     /* want the width to be half the viewport hence 50vw */
     width: 50vw;
     /* image keeps its aspect ratio (so not stretched) and fills the given dimension. Image = clipped to fit */
     object-fit: cover;
-    position: relative;
     @media only screen and (max-width: 87.5em) {
       /* want images to span whole viewport width smaller devices */
       width: 100vw;
@@ -52,6 +67,7 @@
     right: 50%;
     transform: translate(-50%, -50%);
     width: max-content;
+    z-index: 4;
     @media only screen and (max-width: 62.5em) {
       width: 50vw;
       text-align: center;
