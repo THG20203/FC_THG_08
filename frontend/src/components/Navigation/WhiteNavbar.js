@@ -8,7 +8,12 @@ const WhiteNavbar = () => {
   return (
     <div className="nav__container">
       {/* logo of the football team */}
-      <img className="nav__badge" src={footballBadge} alt="badge" />
+      <div>
+        {" "}
+        <NavLink to="/">
+          <img className="nav__badge" src={footballBadge} alt="badge" />
+        </NavLink>
+      </div>
       {/* styled burger menu for smaller devices */}
       <input type="checkbox" className="nav__checkbox" id="navi--toggle" />
       <label htmlFor="navi--toggle" className="nav__button">
