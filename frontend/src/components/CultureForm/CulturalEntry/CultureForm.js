@@ -11,15 +11,15 @@ const CultureForm = (props) => {
     to update the value of enteredFirstName. When called, this function allows you
     to modify the state value of enteredFirstName and trigger a re-render of the
     component with the updated value. */
-  const [enteredFirstName, setEnteredFirstName] = useState("");
-  const [enteredLastName, setEnteredLastName] = useState("");
+  const [enteredFullName, setEnteredFullName] = useState("");
+  const [enteredStoryTitle, setEnteredStoryTitle] = useState("");
   const [enteredFanStory, setEnteredFanStory] = useState("");
 
-  const firstNameChangeHandler = (event) => {
-    setEnteredFirstName(event.target.value);
+  const fullNameChangeHandler = (event) => {
+    setEnteredFullName(event.target.value);
   };
-  const lastNameChangeHandler = (event) => {
-    setEnteredLastName(event.target.value);
+  const storyTitleChangeHandler = (event) => {
+    setEnteredStoryTitle(event.target.value);
   };
   const fanStoryChangeHandler = (event) => {
     setEnteredFanStory(event.target.value);
@@ -29,8 +29,8 @@ const CultureForm = (props) => {
     event.preventDefault();
 
     const cultureFormData = {
-      firstName: enteredFirstName,
-      lastName: enteredLastName,
+      fullName: enteredFullName,
+      storyTitle: enteredStoryTitle,
       fanStory: enteredFanStory,
     };
 
@@ -43,8 +43,8 @@ const CultureForm = (props) => {
     /* pass cultureFormData which you generate in CultureForm (this component) as an argument. 
     That parameter is being passed up towards CultureFromSection -> child to parent */
     props.onSaveCultureData(cultureFormData);
-    setEnteredFirstName("");
-    setEnteredLastName("");
+    setEnteredFullName("");
+    setEnteredStoryTitle("");
     setEnteredFanStory("");
   };
 
@@ -62,12 +62,12 @@ const CultureForm = (props) => {
       <form onSubmit={submitHandler} className="form">
         <div className="form-group">
           <label type="text" className="culture-form__label heading-4">
-            First Name
+            Full Name
           </label>
           <input
-            onChange={firstNameChangeHandler}
+            onChange={fullNameChangeHandler}
             /* passing a value back into input to reset, change the input programmatically */
-            value={enteredFirstName}
+            value={enteredFullName}
             type="text"
             className="paragraph-text culture-form__input"
           />
@@ -75,11 +75,11 @@ const CultureForm = (props) => {
 
         <div className="form-group">
           <label type="text" className="culture-form__label heading-4">
-            Last Name
+            Story Title
           </label>
           <input
-            onChange={lastNameChangeHandler}
-            value={enteredLastName}
+            onChange={storyTitleChangeHandler}
+            value={enteredStoryTitle}
             type="text"
             className="paragraph-text culture-form__input"
           />
