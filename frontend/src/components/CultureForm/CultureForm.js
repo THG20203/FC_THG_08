@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CultureForm.scss";
 import Button from "../../components/Button/Button";
 
-function CultureForm() {
+const CultureForm = (props) => {
   /* enteredFirstName is a state variable that holds the current value of the
     first name input field. It represents the current state of the input field.
     When the user types or changes the value in the input field, this state
@@ -34,7 +34,13 @@ function CultureForm() {
       fanStory: enteredFanStory,
     };
 
-    console.log(cultureFormData);
+    /* executing onSaveCultureData -> that I wrote in CultureFormSection */
+    /* Can execute it cause the value I get on the 'onSaveCultureData' will be a function */
+    /* so its the saveCultureDataHandler defined in the CultureFormSection component, that I'll
+    now execute in a different component (CultureForm component). I can execute the function -> (even
+    though it's not defined inside of CultureForm component) because we are passing a pointer at it
+    through the 'onSaveCultureData' prop. */
+    props.onSaveCultureData();
     setEnteredFirstName("");
     setEnteredLastName("");
     setEnteredFanStory("");
@@ -98,6 +104,6 @@ function CultureForm() {
       </form>
     </div>
   );
-}
+};
 
 export default CultureForm;

@@ -8,12 +8,14 @@ const CultureFormSection = () => {
     const cultureFormData = {
       /* pulling out all the key value pairs */
       ...enteredCultureData,
+      id: Math.random().toString(),
     };
+    console.log(cultureFormData);
   };
 
   return (
     <div className="culture-form__container">
-      <CultureForm onSaveCultureData />
+      <CultureForm onSaveCultureData={saveCultureDataHandler} />
     </div>
   );
 };
