@@ -1,5 +1,4 @@
 import React from "react";
-import "./CultureFormSection.scss";
 import CultureForm from "./CultureForm";
 
 const CultureFormSection = () => {
@@ -14,9 +13,9 @@ const CultureFormSection = () => {
   };
 
   return (
-    <div className="culture-form__container">
+    <>
       <CultureForm onSaveCultureData={saveCultureDataHandler} />
-    </div>
+    </>
   );
 };
 
