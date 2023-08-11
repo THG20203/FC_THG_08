@@ -58,6 +58,7 @@ function CultureForm() {
           </label>
           <input
             onChange={firstNameChangeHandler}
+            /* passing a value back into input to reset, change the input programmatically */
             value={enteredFirstName}
             type="text"
             className="paragraph-text culture-form__input"
