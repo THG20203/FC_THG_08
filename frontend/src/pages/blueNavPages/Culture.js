@@ -3,7 +3,7 @@ import "./Culture.scss";
 /* images for culture page */
 import underpass from "../../assets/images/graffiti/underpass.png";
 import mural from "../../assets/images/graffiti/mural.png";
-import CultureFormSection from "../../components/CultureForm/CultureFormSection";
+import CultureFormSection from "../../components/CultureForm/CulturalEntry/CultureFormSection";
 
 const CulturePage = () => {
   return (

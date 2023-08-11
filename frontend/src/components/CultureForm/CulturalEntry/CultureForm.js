@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CultureForm.scss";
-import Button from "../../components/Button/Button";
+import Button from "../../Button/Button";
 
 const CultureForm = (props) => {
   /* enteredFirstName is a state variable that holds the current value of the
