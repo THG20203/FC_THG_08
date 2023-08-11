@@ -5,8 +5,10 @@ const StoryItem = (props) => {
   return (
     <div className="story-item__card">
       <div className="story-item__face1">
+        <div className="story-item__name">
+          <h3 className="heading-4">Full Name</h3>
+        </div>
         <div className="story-item__title">
-          <h3 className="heading-3">Full Name</h3>
           <h3 className="heading-3">Fan Story Title</h3>
         </div>
       </div>
