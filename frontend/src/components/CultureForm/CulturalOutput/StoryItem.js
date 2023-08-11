@@ -3,7 +3,7 @@ import "./StoryItem.scss";
 
 const StoryItem = (props) => {
   return (
-    <div className="story-item__card">
+    <div className="story-item__card mb-sm">
       <div className="story-item__face1">
         <div className="story-item__name">
           <h3 className="heading-4">Full Name</h3>
