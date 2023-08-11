@@ -40,7 +40,9 @@ const CultureForm = (props) => {
     now execute in a different component (CultureForm component). I can execute the function -> (even
     though it's not defined inside of CultureForm component) because we are passing a pointer at it
     through the 'onSaveCultureData' prop. */
-    props.onSaveCultureData();
+    /* pass cultureFormData which you generate in CultureForm (this component) as an argument. 
+    That parameter is being passed up towards CultureFromSection -> child to parent */
+    props.onSaveCultureData(cultureFormData);
     setEnteredFirstName("");
     setEnteredLastName("");
     setEnteredFanStory("");
