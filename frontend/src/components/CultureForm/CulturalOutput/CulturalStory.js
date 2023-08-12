@@ -8,13 +8,6 @@ const CulturalStory = (props) => {
       <StoryItem />
       <StoryItem />
       <StoryItem />
-      <StoryItem />
-      <StoryItem />
-      <StoryItem />
-      <StoryItem />
-      <StoryItem />
-      <StoryItem />
-      <StoryItem />
     </div>
   );
 };
