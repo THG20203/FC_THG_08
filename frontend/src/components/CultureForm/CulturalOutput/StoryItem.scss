@@ -1,11 +1,15 @@
 .story-item {
   &__card {
     position: relative;
-    width: 30rem;
-    min-height: 50vh;
+    width: 45rem;
+    min-height: 55vh;
     background: var(--color-grey-1);
     transition: 0.5s;
     cursor: pointer;
+    @media screen and (max-width: 37.5em) {
+      min-height: 70vh;
+      max-width: 90vw;
+    }
   }
   &__heading {
     color: var(--color-grey-1);
@@ -32,9 +36,7 @@
 .face1 {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  padding: 2rem;
+  padding: 10vh 2rem 5vh;
 }
 
 .face2 {
@@ -47,10 +49,9 @@
 }
 
 .story-item__card:hover .face2 {
-  width: 8vh;
-  height: 8vh;
-  border-radius: 50%;
-  top: 3rem;
+  width: min-content;
+  height: 5rem;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;

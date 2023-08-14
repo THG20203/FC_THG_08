@@ -94,7 +94,7 @@ const CultureForm = (props) => {
             value={enteredFanStory}
             id="message"
             rows="4"
-            maxlength="400"
+            maxlength="350"
             type="text"
             className="paragraph-text culture-form__text-area"
           ></textarea>

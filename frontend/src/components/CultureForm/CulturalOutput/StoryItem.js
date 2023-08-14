@@ -12,7 +12,7 @@ const StoryItem = (props) => {
           Lorem ipsum test text. Lorem ipsum test text. Lorem ipsum test text.
           Lorem ipsum test text. Lorem ipsum test text. Lorem ipsum test text.
           Lorem ipsum test text. Lorem ipsum test text. Lorem ipsum test text.
-          Lorem ipsum test text. Lorem ipsum test text. Lorem ips
+          Lorem
         </p>
       </div>
       <div className="story-item__face face2">
