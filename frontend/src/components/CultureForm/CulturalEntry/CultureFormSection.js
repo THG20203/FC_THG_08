@@ -9,7 +9,7 @@ const CultureFormSection = (props) => {
       ...enteredCultureData,
       id: Math.random().toString(),
     };
-    props.onAddStory();
+    props.onAddStory(cultureFormData);
   };
 
   return (
