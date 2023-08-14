@@ -3,20 +3,20 @@ import "./CultureForm.scss";
 import Button from "../../Button/Button";
 
 const CultureForm = (props) => {
-  /* enteredFirstName is a state variable that holds the current value of the
+  /* enteredName is a state variable that holds the current value of the
     first name input field. It represents the current state of the input field.
     When the user types or changes the value in the input field, this state
     variable will be updated to reflect the new value. */
-  /* setEnteredFirstName is a function provided by the useState hook. It is used
-    to update the value of enteredFirstName. When called, this function allows you
-    to modify the state value of enteredFirstName and trigger a re-render of the
+  /* setEnteredName is a function provided by the useState hook. It is used
+    to update the value of enteredName. When called, this function allows you
+    to modify the state value of enteredName and trigger a re-render of the
     component with the updated value. */
-  const [enteredFullName, setEnteredFullName] = useState("");
+  const [enteredName, setEnteredName] = useState("");
   const [enteredStoryTitle, setEnteredStoryTitle] = useState("");
   const [enteredFanStory, setEnteredFanStory] = useState("");
 
-  const fullNameChangeHandler = (event) => {
-    setEnteredFullName(event.target.value);
+  const nameChangeHandler = (event) => {
+    setEnteredName(event.target.value);
   };
   const storyTitleChangeHandler = (event) => {
     setEnteredStoryTitle(event.target.value);
@@ -29,7 +29,7 @@ const CultureForm = (props) => {
     event.preventDefault();
 
     const cultureFormData = {
-      fullName: enteredFullName,
+      name: enteredName,
       storyTitle: enteredStoryTitle,
       fanStory: enteredFanStory,
     };
@@ -43,7 +43,7 @@ const CultureForm = (props) => {
     /* pass cultureFormData which you generate in CultureForm (this component) as an argument. 
     That parameter is being passed up towards CultureFromSection -> child to parent */
     props.onSaveCultureData(cultureFormData);
-    setEnteredFullName("");
+    setEnteredName("");
     setEnteredStoryTitle("");
     setEnteredFanStory("");
   };
@@ -62,12 +62,12 @@ const CultureForm = (props) => {
       <form onSubmit={submitHandler} className="form">
         <div className="form-group">
           <label type="text" className="culture-form__label heading-4">
-            Full Name
+            Name
           </label>
           <input
-            onChange={fullNameChangeHandler}
+            onChange={nameChangeHandler}
             /* passing a value back into input to reset, change the input programmatically */
-            value={enteredFullName}
+            value={enteredName}
             type="text"
             className="paragraph-text culture-form__input"
           />
