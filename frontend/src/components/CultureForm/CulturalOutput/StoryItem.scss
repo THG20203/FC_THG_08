@@ -7,8 +7,10 @@
     transition: 0.5s;
     cursor: pointer;
     @media screen and (max-width: 37.5em) {
-      min-height: 70vh;
       max-width: 90vw;
+    }
+    @media screen and (max-width: 25em) {
+      min-height: 70vh;
     }
   }
   &__heading {
