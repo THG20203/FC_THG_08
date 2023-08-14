@@ -1,9 +1,15 @@
-.card {
-  position: relative;
-  width: 30vh;
-  height: 40vh;
-  background: var(--color-grey-1);
-  transition: 0.5s;
+.story-item {
+  &__card {
+    position: relative;
+    width: 30vh;
+    height: 40vh;
+    background: var(--color-grey-1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  &__heading {
+    color: var(--color-grey-1);
+  }
 }
 
 .face {
@@ -15,24 +21,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.face1 h2 {
-  margin-top: 80px;
+  background-color: var(--color-secondary);
 }
 
 .face2 {
-  background-color: #013d4a;
-  transition: 3s ease;
+  background-color: var(--color-primary-dark);
+  transition: 2s ease;
 }
 
 .face2 h2 {
-  font-size: 120px;
-  color: white;
   transition: 0.5s;
 }
 
-.card:hover .face2 {
+.story-item__card:hover .face2 {
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -40,5 +41,5 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
-  border: 2px solid #013d4a;
+  border: 0.2rem solid var(--color-grey-1);
 }
