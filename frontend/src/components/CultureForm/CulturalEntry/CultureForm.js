@@ -93,7 +93,8 @@ const CultureForm = (props) => {
             onChange={fanStoryChangeHandler}
             value={enteredFanStory}
             id="message"
-            rows="8"
+            rows="4"
+            maxlength="400"
             type="text"
             className="paragraph-text culture-form__text-area"
           ></textarea>
