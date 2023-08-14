@@ -4,7 +4,6 @@ import CultureContent from "../../components/CultureContent/CultureContent";
 import CultureFormSection from "../../components/CultureForm/CulturalEntry/CultureFormSection";
 import CulturalStory from "../../components/CultureForm/CulturalOutput/CulturalStory";
 
-
 const CulturePage = () => {
   const stories = [
     {
@@ -29,8 +28,12 @@ const CulturePage = () => {
       name: "Becky",
     },
   ];
-  
-  const addStoryHandler =  
+
+  const addStoryHandler = (story) => {
+    console.log("In Culture.js");
+    console.log(story);
+  };
+
   return (
     <div className="culture-container">
       <CultureContent />
@@ -38,8 +41,8 @@ const CulturePage = () => {
       such as memorable match experiences, encounters with players, or how the club has impacted 
       their lives. */}
       <div className="culture-form__container">
-        <CultureFormSection />
-        <CulturalStory story={stories} />
+        <CultureFormSection onAddStory={addStoryHandler} />
+        <CulturalStory contributions={stories} />
       </div>
     </div>
   );

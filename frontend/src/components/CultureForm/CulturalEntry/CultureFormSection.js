@@ -1,7 +1,7 @@
 import React from "react";
 import CultureForm from "./CultureForm";
 
-const CultureFormSection = () => {
+const CultureFormSection = (props) => {
   const saveCultureDataHandler = (enteredCultureData) => {
     /* cultureFormData = object I generate in the submit handler */
     const cultureFormData = {
@@ -9,7 +9,7 @@ const CultureFormSection = () => {
       ...enteredCultureData,
       id: Math.random().toString(),
     };
-    console.log(cultureFormData);
+    props.onAddStory();
   };
 
   return (

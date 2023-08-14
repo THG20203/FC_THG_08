@@ -69,7 +69,7 @@ const CultureForm = (props) => {
             /* passing a value back into input to reset, change the input programmatically */
             value={enteredName}
             type="text"
-            maxlength="20"
+            maxLength="20"
             className="paragraph-text culture-form__input"
           />
         </div>
@@ -82,7 +82,7 @@ const CultureForm = (props) => {
             onChange={storyTitleChangeHandler}
             value={enteredStoryTitle}
             type="text"
-            maxlength="30"
+            maxLength="30"
             className="paragraph-text culture-form__input"
           />
         </div>
@@ -96,7 +96,7 @@ const CultureForm = (props) => {
             value={enteredFanStory}
             id="message"
             rows="4"
-            maxlength="350"
+            maxLength="350"
             type="text"
             className="paragraph-text culture-form__text-area"
           ></textarea>
