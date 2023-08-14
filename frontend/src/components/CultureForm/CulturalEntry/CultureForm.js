@@ -62,13 +62,14 @@ const CultureForm = (props) => {
       <form onSubmit={submitHandler} className="form">
         <div className="form-group">
           <label type="text" className="culture-form__label heading-4">
-            Name
+            First Name
           </label>
           <input
             onChange={nameChangeHandler}
             /* passing a value back into input to reset, change the input programmatically */
             value={enteredName}
             type="text"
+            maxlength="20"
             className="paragraph-text culture-form__input"
           />
         </div>
@@ -81,6 +82,7 @@ const CultureForm = (props) => {
             onChange={storyTitleChangeHandler}
             value={enteredStoryTitle}
             type="text"
+            maxlength="30"
             className="paragraph-text culture-form__input"
           />
         </div>
