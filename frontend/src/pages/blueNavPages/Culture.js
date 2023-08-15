@@ -7,22 +7,22 @@ import CulturalStory from "../../components/CultureForm/CulturalOutput/CulturalS
 const DUMMY_STORIES = [
   {
     id: "s1",
-    title: "Miracle Comeback",
-    story:
+    storyTitle: "Miracle Comeback",
+    fanStory:
       "Down 3-0, the team rallied in the final minutes. Fans witnessed a jaw-dropping turnaround, erupting in euphoria. Unforgettable victory.",
     name: "Tristan",
   },
   {
     id: "s2",
-    title: "Stadium Roar",
-    story:
+    storyTitle: "Stadium Roar",
+    fanStory:
       "The stadium quaked as a last-minute goal secured the championship. Deafening cheers resonated, echoing the team's triumph.",
     name: "Harry",
   },
   {
     id: "s3",
-    title: "Historic Triumph",
-    story:
+    storyTitle: "Historic Triumph",
+    fanStory:
       "FC THG 08 claimed the league title after decades. The city painted in team colors, streets celebrating a long-awaited victory parade.",
     name: "Becky",
   },
