@@ -7,7 +7,7 @@ const CulturalStory = (props) => {
     <div className="story-item__container">
       {props.contributions.map(
         /* story, which is passed as a parameter into the function below, 
-        automatically (cause thats hosw map works) that story is used to extract
+        automatically (cause thats how map works) that story is used to extract
         the title, story, date etc below. */
         (story) => (
           <StoryItem
