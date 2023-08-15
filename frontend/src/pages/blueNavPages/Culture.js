@@ -29,11 +29,16 @@ const DUMMY_STORIES = [
 ];
 
 const CulturePage = () => {
+  /* using desctructuring to get access to stories and the setStories updating state function */
   const [stories, setStories] = useState(DUMMY_STORIES);
 
   const addStoryHandler = (story) => {
-    console.log("In Culture.js");
-    console.log(story);
+    /* Can now call setStories, set our stories array to a new array, which includes a new story */
+    /* So to setStories, pass a new array, add a new expense as the first item in the array. */
+    /* use story as first item in the array, then use ... (the spread operator) for stories to 
+    add to the rest of the existing stories. This is by pulling out all of the existing array elements,
+    and populating the rest of this new array with those existing elements. */
+    setStories([story, ...stories]);
   };
 
   return (

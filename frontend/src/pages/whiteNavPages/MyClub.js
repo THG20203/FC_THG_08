@@ -35,8 +35,7 @@ const MyClub = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseHandler = (expense) => {
-    console.log("In App.js");
-    console.log(expense);
+    setExepenses([expense, ...expenses]);
   };
 
   return (
