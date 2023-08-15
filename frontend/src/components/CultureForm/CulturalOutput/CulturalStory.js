@@ -12,26 +12,11 @@ const CulturalStory = (props) => {
         (story) => (
           <StoryItem
             title={story.title}
-            story={story.title}
-            date={story.expense}
+            story={story.story}
+            name={story.name}
           />
         )
       )}
-      <StoryItem
-        title={props.contributions[0].title}
-        story={props.contributions[0].story}
-        name={props.contributions[0].name}
-      />
-      <StoryItem
-        title={props.contributions[1].title}
-        story={props.contributions[1].story}
-        name={props.contributions[1].name}
-      />
-      <StoryItem
-        title={props.contributions[2].title}
-        story={props.contributions[2].story}
-        name={props.contributions[2].name}
-      />
     </div>
   );
 };
