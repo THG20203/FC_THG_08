@@ -20,6 +20,7 @@ const Expenses = (props) => {
       {/* Rendering lists of data */}
       {props.items.map((expense) => (
         <ExpenseItem
+          key={expense.id}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}

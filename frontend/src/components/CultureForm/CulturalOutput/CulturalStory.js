@@ -11,6 +11,7 @@ const CulturalStory = (props) => {
         the title, story, date etc below. */
         (story) => (
           <StoryItem
+            key={story.id}
             title={story.storyTitle}
             story={story.fanStory}
             name={story.name}
