@@ -26,15 +26,20 @@ const Expenses = (props) => {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      {/* Rendering lists of data. Only want to map filtered Expenses based on year selected. */}
-      {filteredExpenses.map((expense) => (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-        />
-      ))}
+
+      {filteredExpenses.length === 0 ? (
+        <p className="paragraph-text">No expenses found.</p>
+      ) : (
+        /* Rendering lists of data. Only want to map filtered Expenses based on year selected. */
+        filteredExpenses.map((expense) => (
+          <ExpenseItem
+            key={expense.id}
+            title={expense.title}
+            amount={expense.amount}
+            date={expense.date}
+          />
+        ))
+      )}
     </Card>
   );
 };
