@@ -17,10 +17,9 @@ const Expenses = (props) => {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      {/* dynamically retrieve title stored in the first expense item from the parent
-      component -> MyClub.js using props */}
-      {/* attribute names up to me, but they equal -> expenses array, [0] is the first item,
-      title property of the object within the array. */}
+      {props.items.map((expense) => (
+        <ExpenseItem />
+      ))}
       <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}

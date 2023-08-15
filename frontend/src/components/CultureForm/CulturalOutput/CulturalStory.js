@@ -5,6 +5,18 @@ import StoryItem from "./StoryItem.js";
 const CulturalStory = (props) => {
   return (
     <div className="story-item__container">
+      {props.contributions.map(
+        /* story, which is passed as a parameter into the function below, 
+        automatically (cause thats hosw map works) that story is used to extract
+        the title, story, date etc below. */
+        (story) => (
+          <StoryItem
+            title={story.title}
+            story={story.title}
+            date={story.expense}
+          />
+        )
+      )}
       <StoryItem
         title={props.contributions[0].title}
         story={props.contributions[0].story}
