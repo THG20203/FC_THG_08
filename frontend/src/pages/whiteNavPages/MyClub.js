@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./MyClub.scss";
-import Expenses from "../../components/Expenses/ExpensesOutput/Expenses";
-import NewExpense from "../../components/Expenses/NewExpense/NewExpense";
+
+import NewExpense from "./components/NewExpense/NewExpense";
+import Expenses from "./components/Expenses/Expenses";
 import Contact from "../../components/Contact/Contact";
+import "./MyClub.scss";
 
 const DUMMY_EXPENSES = [
   {
@@ -15,7 +16,7 @@ const DUMMY_EXPENSES = [
     id: "e2",
     title: "Overhead Hoodie",
     amount: 40.0,
-    date: new Date(2022, 2, 12),
+    date: new Date(2022, 1, 12),
   },
   {
     id: "e3",

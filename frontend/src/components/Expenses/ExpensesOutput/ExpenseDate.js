@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./ExpenseDate.scss";
 
 const ExpenseDate = (props) => {
@@ -8,10 +7,10 @@ const ExpenseDate = (props) => {
     how specifically that day should be formatted, i.e. month or day. */
   }
   {
-    /* ExpneseDate needs the date prop to extract that date and format it -> extract month, day, year */
+    /* ExpenseDate needs the date prop to extract that date and format it -> extract month, day, year */
   }
-  const month = props.date.toLocaleString("en-GB", { month: "long" });
   const day = props.date.toLocaleString("en-GB", { day: "2-digit" });
+  const month = props.date.toLocaleString("en-GB", { month: "long" });
   const year = props.date.getFullYear();
 
   return (
