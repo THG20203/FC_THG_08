@@ -21,7 +21,7 @@ const ExpenseForm = (props) => {
   };
 
   const dateChangeHandler = (event) => {
-    setEnteredDate(event.target.date);
+    setEnteredDate(event.target.value);
   };
 
   /* get event object automatically as for change events */
