@@ -11,14 +11,23 @@ const Expenses = (props) => {
     setFilteredYear(selectedYear);
   };
 
+  /* filter returns new array. In that array, either keep or remove items. But original
+  array is not touched. */
+  const filteredExpenses = props.items.filter((expense) => {
+    /* toString method to convert it to a string, compare to filteredYear. */
+    /* This expression will return true if year stored in the date is the same
+    year as selected in the filter (see the useState above), and will return false otherwise. */
+    return expense.date.getFullYear().toString() === filteredYear;
+  });
+
   return (
     <Card className="expenses">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      {/* Rendering lists of data */}
-      {props.items.map((expense) => (
+      {/* Rendering lists of data. Only want to map filtered Expenses based on year selected. */}
+      {filteredExpenses.map((expense) => (
         <ExpenseItem
           key={expense.id}
           title={expense.title}
