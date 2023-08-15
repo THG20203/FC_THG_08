@@ -29,6 +29,8 @@ const DUMMY_STORIES = [
 ];
 
 const CulturePage = () => {
+  const [stories, setStories] = useState(DUMMY_STORIES);
+
   const addStoryHandler = (story) => {
     console.log("In Culture.js");
     console.log(story);
