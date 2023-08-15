@@ -33,12 +33,14 @@ const CulturePage = () => {
   const [stories, setStories] = useState(DUMMY_STORIES);
 
   const addStoryHandler = (story) => {
-    /* Can now call setStories, set our stories array to a new array, which includes a new story */
-    /* So to setStories, pass a new array, add a new expense as the first item in the array. */
-    /* use story as first item in the array, then use ... (the spread operator) for stories to 
-    add to the rest of the existing stories. This is by pulling out all of the existing array elements,
-    and populating the rest of this new array with those existing elements. */
-    setStories([story, ...stories]);
+    /* If I update my state based on the previous state (or the previous snapshot of this state), 
+    should use special function form for this state updating function. */
+    /* Pass a function as an argument to this state updating function. That function will automatically 
+    receive the latest state snapshot. */
+    setStories((prevStories) => {
+      /* we add story, which we're getting as a parameter at the start of this addStoryHandler function */
+      return [story, ...prevStories];
+    });
   };
 
   return (
