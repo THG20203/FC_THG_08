@@ -31,7 +31,7 @@ const ExpenseForm = (props) => {
     /* now combine all that entered data into one object cause I used 3 seperate useState */
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       /* construct a new date (built in date constructor) -> in turn pass the enteredDate, 
       which will parse that date string, convert it into an object */
       date: new Date(enteredDate),
