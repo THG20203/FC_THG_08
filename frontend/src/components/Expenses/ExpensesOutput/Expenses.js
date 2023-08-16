@@ -20,26 +20,29 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
 
+  /* Cut jsx code down with variables for && operator conditiional statement below */
+  let expensesContent = <p className="paragraph-text">No expenses found.</p>;
+
+  /* if logic -> if length of filteredExpenses length is greater than one, expensesContent
+  should be as below in the logic */
+  if (filteredExpenses.length > 0) {
+    expensesContent = filteredExpenses.map((expense) => (
+      <ExpenseItem
+        key={expense.id}
+        title={expense.title}
+        amount={expense.amount}
+        date={expense.date}
+      />
+    ));
+  }
+
   return (
     <Card className="expenses">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      {/* && -> if first condition is met, moves onto the part after the && operator,
-      returns that value. */}
-      {filteredExpenses.length === 0 && (
-        <p className="paragraph-text">No expenses found.</p>
-      )}
-      {filteredExpenses.length > 0 &&
-        filteredExpenses.map((expense) => (
-          <ExpenseItem
-            key={expense.id}
-            title={expense.title}
-            amount={expense.amount}
-            date={expense.date}
-          />
-        ))}
+      {expensesContent}
     </Card>
   );
 };
