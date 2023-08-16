@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import "./Expenses.scss";
 import ExpensesFilter from "./ExpensesFilter";
+import ExpensesList from "./ExpensesList";
 
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
@@ -20,29 +20,15 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
 
-  /* Cut jsx code down with variables for && operator conditiional statement below */
-  let expensesContent = <p className="paragraph-text">No expenses found.</p>;
-
-  /* if logic -> if length of filteredExpenses length is greater than one, expensesContent
-  should be as below in the logic */
-  if (filteredExpenses.length > 0) {
-    expensesContent = filteredExpenses.map((expense) => (
-      <ExpenseItem
-        key={expense.id}
-        title={expense.title}
-        amount={expense.amount}
-        date={expense.date}
-      />
-    ));
-  }
-
   return (
     <Card className="expenses">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      {expensesContent}
+      {/* filteredExpenses passed to ExpensesList using the items prop, which I'm using inside of 
+      ExpensesList */}
+      <ExpensesList items={filteredExpenses} />
     </Card>
   );
 };
