@@ -3,7 +3,7 @@ import "./Button.scss";
 
 const Button = (props) => {
   return (
-    <button type="submit" className="btn">
+    <button className="btn">
       {props.text}
       <div className="btn__wave"></div>
     </button>

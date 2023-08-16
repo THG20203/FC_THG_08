@@ -105,7 +105,7 @@ const CultureForm = (props) => {
         {/* <button type="submit" className="culture-form__submit btn">
               Submit
         </button> */}
-        <Button text="Submit" />
+        <Button type="submit" text="Submit" />
       </form>
     </div>
   );
