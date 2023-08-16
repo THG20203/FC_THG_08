@@ -19,6 +19,7 @@ const NewExpense = (props) => {
       id: Math.random().toString(),
     };
     props.onAddExpense(expenseData);
+    /* Also want to close form if it is submitted, so in saveExpenseDataHandler, setIsEditing to false. */
     setIsEditing(false);
   };
 
@@ -47,6 +48,7 @@ const NewExpense = (props) => {
       {isEditing && (
         <ExpenseForm
           onSaveExpenseData={saveExpenseDataHandler}
+          /* stopEditingHandler -> is passed as a value to the onCancel prop in the ExpenseForm component. */
           onCancel={stopEditingHandler}
         />
       )}

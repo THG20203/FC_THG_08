@@ -86,7 +86,9 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
-        <Button type="button" text="Cancel" />
+        {/* stopEditingHandler -> (recieved on the onCancel prop) is forwarded to the onClick 
+        prop of the button */}
+        <Button type="button" text="Cancel" onClick={props.onCancel} />
         <Button type="submit" text="Add Expense" />
       </div>
     </form>
