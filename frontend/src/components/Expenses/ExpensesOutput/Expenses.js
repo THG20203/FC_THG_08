@@ -26,20 +26,19 @@ const Expenses = (props) => {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-
-      {filteredExpenses.length === 0 ? (
+      {/* && -> if first condition is met, moves onto the part after the && operator,
+      returns that value. */}
+      {filteredExpenses.length === 0 && (
         <p className="paragraph-text">No expenses found.</p>
-      ) : (
-        /* Rendering lists of data. Only want to map filtered Expenses based on year selected. */
-        filteredExpenses.map((expense) => (
-          <ExpenseItem
-            key={expense.id}
-            title={expense.title}
-            amount={expense.amount}
-            date={expense.date}
-          />
-        ))
       )}
+      {filteredExpenses.map((expense) => (
+        <ExpenseItem
+          key={expense.id}
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+        />
+      ))}
     </Card>
   );
 };
