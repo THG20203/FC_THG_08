@@ -3,19 +3,23 @@ import "./FAQ.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-/* introduced the activeIndex state variable using the useState hook to keep track of 
-the active FAQ box. When a user clicks on a FAQ box, the toggleFaqBox function is 
-called with the index of that box as an argument, and it toggles the active state by 
-updating the activeIndex. */
-/* Also conditionally apply the "active" class to the FAQ box based on whether its 
-index matches the activeIndex state. Similarly, we show/hide the chevron and times 
-icons based on the active state using the "hidden" class. */
-
+/* const [activeIndex, setActiveIndex]: This line uses the useState hook to 
+create a piece of state named activeIndex and a corresponding function 
+setActiveIndex to update it. */
 const FaqPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-
+  /* toggleFaqBox is a function that takes an index parameter, which
+  represents the index of the clicked FAQ box. */
   const toggleFaqBox = (index) => {
+    /* This function uses the setActiveIndex function to update the 
+    activeIndex state. */
     setActiveIndex((prevActiveIndex) =>
+      /* If the clicked FAQ box is already active (i.e., prevActiveIndex === index), it 
+    sets activeIndex to null, collapsing the box. */
+      /* Why? Think about the functionality! -> if click on the white background of expanded box,
+    it collapses. */
+      /* If the clicked FAQ box is not active, it sets activeIndex to the clicked box's 
+    index, expanding the box. */
       prevActiveIndex === index ? null : index
     );
   };
@@ -29,6 +33,11 @@ const FaqPage = () => {
       <div className="faq-container">
         {/* FAQ question 1 */}
         <div
+          /* activeIndex state is either 0 (indicating that the FAQ box at index 0 is active 
+        or expanded) or null (indicating that no FAQ box is active or expanded). */
+          /* 0 as an index in the code is arbitrary and not tied to an array 
+        or any particular data structure. It's just used as a way to represent 
+        the first FAQ box (or element) in this specific user interface. */
           className={`faq-box ${activeIndex === 0 ? "active" : ""}`}
           onClick={() => toggleFaqBox(0)}
         >
