@@ -7,7 +7,7 @@ const ExpensesList = (props) => {
   not just a part of it */
   if (props.items.length === 0) {
     return (
-      <h2 className="expenses-list__fallback heading-2 mb-sm">
+      <h2 className="expenses-list__fallback heading-2 mb-md">
         Found no expenses.
       </h2>
     );
