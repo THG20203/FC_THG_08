@@ -291,4 +291,19 @@
     top: 0;
     transform: rotate(-135deg);
   }
+
+  // Functionality when menu is open
+  &.menu-open {
+    &__background {
+      /* transforms the background from 120 times size (line 230) to 1 */
+      transform: scale(1);
+    }
+
+    &__icon::before,
+    &__icon::after {
+      /* resets before and after elements from cross back to three lines */
+      top: 0;
+      transform: rotate(0);
+    }
+  }
 }
