@@ -22,6 +22,9 @@
     &:hover {
       transform: scale(1.1);
     }
+    @media only screen and (max-width: 62.5em) {
+      display: none;
+    }
   }
   /* inner being the links and the hamburger menu */
   &__content {
