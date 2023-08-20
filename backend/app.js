@@ -5,6 +5,7 @@ const express = require("express");
 /* It imports the route handler for the /events endpoint from the 
 ./routes/events file. */
 const eventRoutes = require("./routes/events");
+const authRoutes = require("./routes/auth");
 
 /*  initializes the Express application by calling express(), 
 which creates an instance of the Express application. */
@@ -25,6 +26,8 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   next();
 });
+
+app.use(authRoutes);
 
 /* It registers the /events route handler using app.use("/events", eventRoutes). 
 This means that any requests to the /events endpoint will be handled by the 

@@ -8,6 +8,14 @@ class NotFoundError {
   }
 }
 
+class NotAuthError {
+  constructor(message) {
+    this.message = message;
+    this.status = 401;
+  }
+}
+
 /* The NotFoundError class is then exported using exports.NotFoundError, which 
 suggests that this code is intended for use in a Node.js environment. */
 exports.NotFoundError = NotFoundError;
+exports.NotAuthError = NotAuthError;

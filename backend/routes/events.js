@@ -6,6 +6,7 @@ The functions being imported are getAll, get, add, replace, and remove
 from the file "../data/event", and isValidText, isValidDate, and 
 isValidImageUrl from the file "../util/validation". */
 const { getAll, get, add, replace, remove } = require("../data/event");
+const { checkAuth } = require("../util/auth");
 const {
   isValidText,
   isValidDate,
@@ -75,6 +76,8 @@ router.get("/:id", async (req, res, next) => {
     next(error);
   }
 });
+
+router.use(checkAuth);
 
 // POST REQUEST code:
 /* The code defines a POST route handler for the root path ("/"). 
