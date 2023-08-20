@@ -13,6 +13,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    @media only screen and (max-width: 62.5em) {
+      min-width: 2vw;
+    }
   }
   &__fill {
     background-color: var(--color-primary-dark);
