@@ -10,6 +10,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
 /* BlueNavBar Imports */
+import ShopPage from "./pages/blueNavPages/Shop";
 import HistoryPage from "./pages/blueNavPages/History";
 import FaqPage from "./pages/blueNavPages/FAQ";
 import CulturePage from "./pages/blueNavPages/Culture";
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "latest", element: <LatestPage /> },
       { path: "myclub", element: <MyClubPage /> },
+      { path: "shop", element: <ShopPage /> },
       { path: "history", element: <HistoryPage /> },
       { path: "faqs", element: <FaqPage /> },
       { path: "culture", element: <CulturePage /> },

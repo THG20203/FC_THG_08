@@ -16,7 +16,7 @@ const BlueNavbar = () => {
     <div className="blue-navbar__container">
       {/* Shopping div */}
       <div className="blue-navbar__div">
-        <NavLink to="#" className="blue-navbar__link">
+        <NavLink to="/shop" className="blue-navbar__link">
           <FontAwesomeIcon
             className="blue-navbar__icon"
             icon={faCartShopping}
