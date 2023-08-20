@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 
 import NewExpense from "../../components/Expenses/NewExpense/NewExpense";
 import Expenses from "../../components/Expenses/ExpensesOutput/Expenses";
@@ -42,20 +42,22 @@ const MyClub = () => {
   };
 
   return (
-    <div className="my-club__container">
-      <div className="expenses-content">
-        <header>
-          <h1 className="heading-1 mb-sm">Club Shop Purchase Survey</h1>
-          <h4 className="heading-4 my-club__description">
-            Help us compare prices by filling out this form with purchases from
-            our club shop
-          </h4>
-        </header>
-        <NewExpense onAddExpense={addExpenseHandler} />
-        <Expenses items={expenses} />
+    <Fragment>
+      <div className="my-club__container">
+        <div className="expenses-content">
+          <header>
+            <h1 className="heading-1 mb-sm">Club Shop Purchase Survey</h1>
+            <h4 className="heading-4 my-club__description">
+              Help us compare prices by filling out this form with purchases
+              from our club shop
+            </h4>
+          </header>
+          <NewExpense onAddExpense={addExpenseHandler} />
+          <Expenses items={expenses} />
+        </div>
+        <Contact />
       </div>
-      <Contact />
-    </div>
+    </Fragment>
   );
 };
 
