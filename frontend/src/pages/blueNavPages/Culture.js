@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Culture.scss";
-import CultureContent from "../../components/CultureContent/CultureContent";
-import CultureFormSection from "../../components/CultureForm/CulturalEntry/CultureFormSection";
-import CulturalStory from "../../components/CultureForm/CulturalOutput/CulturalStory";
+import CultureContent from "../../components/Culture/CultureContent/CultureContent";
+import CultureFormSection from "../../components/Culture/CultureForm/CulturalEntry/CultureFormSection";
+import CulturalStory from "../../components/Culture/CultureForm/CulturalOutput/CulturalStory";
 
 const DUMMY_STORIES = [
   {
