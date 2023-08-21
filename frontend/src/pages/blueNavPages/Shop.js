@@ -4,9 +4,9 @@ import ShopHeader from "../../components/Shop/Layout/ShopHeader";
 
 const ShopPage = () => {
   return (
-    <Fragment>
+    <div className="shop-page__container">
       <ShopHeader />
-    </Fragment>
+    </div>
   );
 };
 
