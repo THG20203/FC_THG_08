@@ -2,7 +2,7 @@ import "./ShopSummary.scss";
 
 const ShopSummary = () => {
   return (
-    <section className={classes.summary}>
+    <section className="shop-summary">
       <h2>Delicious Food, Delivered To You</h2>
       <p>
         Choose your favorite meal from our broad selection of available meals
