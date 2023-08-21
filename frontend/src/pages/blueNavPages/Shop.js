@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./Shop.scss";
+import ShopHeader from "../../components/Shop/Layout/ShopHeader";
 
 const ShopPage = () => {
   return (
-    <div>
-      <div>Shop</div>
-    </div>
+    <Fragment>
+      <ShopHeader />
+    </Fragment>
   );
 };
 
