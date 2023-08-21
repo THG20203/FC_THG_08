@@ -1,21 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./ShopHeader.scss";
 import shopBanner from "../../../assets/images/shop/shop-banner.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import ShopHeaderCartButton from "./ShopHeaderCartButton";
 
 const ShopHeader = (props) => {
   return (
     <div className="shop-header">
       <section className="shop-header__content">
         <h1 className="heading-2">Shop Items</h1>
-        <button className="btn">
-          <FontAwesomeIcon
-            className="shop-header__icon"
-            icon={faCartShopping}
-          ></FontAwesomeIcon>
-          Cart<div className="btn__wave"></div>
-        </button>
+        <ShopHeaderCartButton />
       </section>
       <div className="shop-header__image--content">
         <img
