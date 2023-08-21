@@ -10,7 +10,7 @@ const ShopHeaderCartButton = (props) => {
         className="shop-header__icon"
         icon={faCartShopping}
       ></FontAwesomeIcon>
-      Cart<div className="btn__wave"></div>
+      Your Cart<div className="btn__wave"></div>
     </button>
   );
 };

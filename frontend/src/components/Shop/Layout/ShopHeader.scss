@@ -8,7 +8,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 3vh 3vw;
-    position: relative;
+  }
+  &__title {
+    @media screen and (max-width: 50em) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 25em) {
+      font-size: 2rem;
+    }
   }
   &__image--content {
     width: 100vw;
@@ -17,7 +24,7 @@
     align-items: center;
   }
   &__image {
-    width: 65vw;
+    width: 60vw;
     @media screen and (max-width: 62.5em) {
       width: 100vw;
     }

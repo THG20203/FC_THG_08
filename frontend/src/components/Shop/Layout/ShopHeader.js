@@ -7,7 +7,7 @@ const ShopHeader = (props) => {
   return (
     <div className="shop-header">
       <section className="shop-header__content">
-        <h1 className="heading-2">Shop Items</h1>
+        <h2 className="shop-header__title heading-2">Shop Items</h2>
         <ShopHeaderCartButton />
       </section>
       <div className="shop-header__image--content">
