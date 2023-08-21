@@ -1,21 +1,23 @@
 .shop-header {
   grid-column: full-start / full-end;
+  display: grid;
   position: relative;
   overflow: hidden;
   &__content {
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     background-color: var(--color-primary-dark);
     color: var(--color-grey-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5vw;
     position: relative;
   }
   &__image--content {
-    width: 100vw;
-    height: auto;
-    display: block;
+    margin: auto;
+  }
+  &__image {
+    width: 60vw;
   }
 }
