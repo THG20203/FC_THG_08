@@ -1,26 +1,26 @@
 const DUMMY_ITEMS = [
   {
     id: "i1",
-    name: "Sushi",
-    description: "Finest fish and veggies",
-    price: 22.99,
+    name: "Terrace Scarf",
+    description: "Cozy Club Emblem",
+    price: 20.0,
   },
   {
     id: "i2",
-    name: "Schnitzel",
-    description: "A german specialty!",
-    price: 16.5,
+    name: "Match Kit",
+    description: "Authentic Player Attire",
+    price: 80.0,
   },
   {
     id: "i3",
-    name: "Barbecue Burger",
-    description: "American, raw, meaty",
-    price: 12.99,
+    name: "Champion Keychain",
+    description: "Symbolic Triumph Reminder",
+    price: 10.0,
   },
   {
     id: "i4",
-    name: "Green Bowl",
-    description: "Healthy...and green...",
-    price: 18.99,
+    name: "Victory Mug",
+    description: "Supporters' Brew Mug",
+    price: 8.0,
   },
 ];
