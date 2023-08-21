@@ -1,9 +1,9 @@
 import React from "react";
 import "./Carousel.scss";
 /* can import images like css files in react */
-import trainingTop from "../../assets/images/banners/training-top.png";
-import yearsBanner from "../../assets/images/banners/130-years-banner.png";
-import mural from "../../assets/images/graffiti/mural.png";
+import trainingTop from "../../../assets/images/banners/training-top.png";
+import yearsBanner from "../../../assets/images/banners/130-years-banner.png";
+import mural from "../../../assets/images/graffiti/mural.png";
 import SlideItem from "./SlideItem";
 
 const slide = [
