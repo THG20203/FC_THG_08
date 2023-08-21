@@ -11,15 +11,14 @@
     position: relative;
   }
   &__image--content {
-    width: 100vw;
+    width: 60vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  &__image {
-    width: 65vw;
     @media screen and (max-width: 62.5em) {
       width: 100vw;
     }
+  }
+  &__image {
+    width: 100%;
   }
 }
