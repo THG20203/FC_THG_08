@@ -1,4 +1,4 @@
-.cart-items {
+.shop-cart--items {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   overflow: auto;
 }
 
-.total {
+.shop-total {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +15,7 @@
   margin: 1rem 0;
 }
 
-.actions {
+.shop-actions {
   text-align: right;
 }
 
