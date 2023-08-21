@@ -22,4 +22,10 @@
       width: 100vw;
     }
   }
+  &__icon {
+    transform: translateY(0.2vh);
+    padding-right: 1vw;
+    color: var(--color-grey-1);
+    font-size: 2rem;
+  }
 }
