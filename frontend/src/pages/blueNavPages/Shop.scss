@@ -10,7 +10,7 @@
       )
       [center-end] minmax(6rem, 1fr) [full-end];
     @media only screen and (max-width: 87.5em) {
-      grid-template-rows: min-content min-content;
+      grid-template-rows: min-content;
     }
   }
 }

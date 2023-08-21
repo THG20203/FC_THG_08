@@ -1,23 +1,25 @@
 .shop-header {
-  grid-column: full-start / full-end;
-  display: grid;
-  position: relative;
-  overflow: hidden;
   &__content {
     width: 100vw;
     height: min-content;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
     color: var(--color-grey-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5vw;
+    padding: 3vh 3vw;
     position: relative;
   }
   &__image--content {
-    margin: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__image {
-    width: 60vw;
+    width: 65vw;
+    @media screen and (max-width: 62.5em) {
+      width: 100vw;
+    }
   }
 }
