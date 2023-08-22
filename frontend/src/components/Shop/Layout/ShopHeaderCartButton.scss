@@ -1,20 +1,13 @@
-.shop-icon {
-  width: 1.35rem;
-  height: 1.35rem;
-  margin-right: 0.5rem;
-}
-
-.shop-badge {
-  background-color: #b94517;
-  padding: 0.25rem 1rem;
-  border-radius: 25px;
-  margin-left: 1rem;
-  font-weight: bold;
-}
-
-.shop-button:hover .badge,
-.shop-button:active .badge {
-  background-color: #92320c;
+.shop-cart {
+  &__icon {
+    transform: translateY(0.2vh);
+    padding-right: 1vw;
+    color: var(--color-grey-1);
+    font-size: 2rem;
+  }
+  &__badge {
+    padding-left: 1vw;
+  }
 }
 
 .shop-bump {

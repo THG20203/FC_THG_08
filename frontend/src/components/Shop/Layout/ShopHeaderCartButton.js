@@ -7,10 +7,11 @@ const ShopHeaderCartButton = (props) => {
   return (
     <button className="btn">
       <FontAwesomeIcon
-        className="shop-header__icon"
+        className="shop-cart__icon"
         icon={faCartShopping}
       ></FontAwesomeIcon>
       Your Cart<div className="btn__wave"></div>
+      <span className="shop-cart__badge">3</span>
     </button>
   );
 };
