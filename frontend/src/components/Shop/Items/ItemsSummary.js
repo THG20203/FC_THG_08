@@ -1,8 +1,8 @@
-import "./ShopSummary.scss";
+import "./ItemsSummary.scss";
 
-const ShopSummary = () => {
+const ItemsSummary = () => {
   return (
-    <section className="shop-summary">
+    <section className="items-summary">
       <h2>Delicious Food, Delivered To You</h2>
       <p>
         Choose your favorite meal from our broad selection of available meals
@@ -16,4 +16,4 @@ const ShopSummary = () => {
   );
 };
 
-export default ShopSummary;
+export default ItemsSummary;

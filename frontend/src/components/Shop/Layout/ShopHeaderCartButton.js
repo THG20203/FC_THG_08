@@ -5,7 +5,7 @@ import "./ShopHeaderCartButton.scss";
 
 const ShopHeaderCartButton = (props) => {
   return (
-    <button className="btn">
+    <button className="btn shop-cart__button">
       <FontAwesomeIcon
         className="shop-cart__icon"
         icon={faCartShopping}

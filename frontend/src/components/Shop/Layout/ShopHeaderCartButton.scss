@@ -1,4 +1,7 @@
 .shop-cart {
+  &__button:hover {
+    background-color: var(--color-primary-dark);
+  }
   &__icon {
     transform: translateY(0.2vh);
     margin-right: 1rem;
@@ -15,7 +18,6 @@
     margin-left: 1rem;
     padding: 0.5rem 1rem;
     border: 0.2rem solid var(--color-grey-1);
-    background-color: var(--color-primary-dark);
     @media screen and (max-width: 25em) {
       padding: 0 0.5rem;
     }
