@@ -1,7 +1,17 @@
 .items-summary {
-  text-align: center;
-  background-color: red;
-  color: var(--color-grey-1);
-  width: 50vw;
-  height: min-content;
+  &__container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  &__content {
+    text-align: center;
+    background-color: red;
+    color: var(--color-grey-1);
+    height: min-content;
+    width: 60vw;
+    @media screen and (max-width: 62.5em) {
+      width: 100vw;
+    }
+  }
 }
