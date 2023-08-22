@@ -11,7 +11,6 @@ const ShopHeaderCartButton = (props) => {
         icon={faCartShopping}
       ></FontAwesomeIcon>
       <div className="shop-cart__text">Your Cart</div>
-      <div className="btn__wave"></div>
       <span className="shop-cart__badge">3</span>
     </button>
   );
