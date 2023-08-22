@@ -3,12 +3,12 @@ import "./ItemsSummary.scss";
 const ItemsSummary = () => {
   return (
     <section className="items-summary">
-      <h2>Delicious Food, Delivered To You</h2>
-      <p>
+      <h2 className="heading-2">Delicious Food, Delivered To You</h2>
+      <p className="paragraph-text">
         Choose your favorite meal from our broad selection of available meals
         and enjoy a delicious lunch or dinner at home.
       </p>
-      <p>
+      <p className="paragraph-text">
         All our meals are cooked with high-quality ingredients, just-in-time and
         of course by experienced chefs!
       </p>
