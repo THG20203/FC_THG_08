@@ -1,14 +1,12 @@
-import { Fragment } from "react";
-
 import ItemsSummary from "./ItemsSummary";
 import AvailableItems from "./AvailableItems";
 
 const ShopItems = () => {
   return (
-    <Fragment>
+    <div className="shop-items">
       <ItemsSummary />
       <AvailableItems />
-    </Fragment>
+    </div>
   );
 };
 

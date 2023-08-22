@@ -1,4 +1,5 @@
 .shop-header {
+  grid-column: full-start / full-end;
   &__content {
     width: 100vw;
     height: min-content;
