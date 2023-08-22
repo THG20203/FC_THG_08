@@ -31,12 +31,12 @@ const DUMMY_ITEMS = [
 const AvailableItems = () => {
   /* keeing JSX code lean, only include what I need -> hence map function here */
   /* for every item, want to return a JSX element which represents the item. */
-  const mealsList = DUMMY_MEALS.map((item) => {
+  const itemsList = DUMMY_ITEMS.map((item) => {
     <li>{item.name}</li>;
   });
   return (
     <section className="available-items">
-      <ul className="available-items__list">{mealsList}</ul>
+      <ul className="available-items__list">{itemsList}</ul>
     </section>
   );
 };
