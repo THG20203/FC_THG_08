@@ -1,12 +1,23 @@
 .shop-cart {
   &__icon {
     transform: translateY(0.2vh);
-    padding-right: 1vw;
+    margin-right: 1rem;
     color: var(--color-grey-1);
     font-size: 2rem;
   }
+  &__text {
+    display: inline-block;
+    @media screen and (max-width: 20em) {
+      padding-bottom: 0.5rem;
+    }
+  }
   &__badge {
-    padding-left: 1vw;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: 0.2rem solid var(--color-grey-1);
+    @media screen and (max-width: 25em) {
+      padding: 0 0.5rem;
+    }
   }
 }
 

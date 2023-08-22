@@ -15,6 +15,9 @@
   justify-self: end;
   overflow: hidden;
   margin-left: 1vw;
+  @media screen and (max-width: 25em) {
+    padding: 10px 20px;
+  }
   &__wave {
     position: absolute;
     width: 100%;
