@@ -1,5 +1,5 @@
 .available-items {
-  max-width: 60rem;
+  width: 60rem;
   width: 90%;
   margin: 2rem auto;
   animation: items-appear 1s ease-out forwards;
@@ -7,10 +7,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    color: red;
   }
 }
 
-@keyframes itms-appear {
+@keyframes items-appear {
   from {
     opacity: 0;
     transform: translateY(3rem);
