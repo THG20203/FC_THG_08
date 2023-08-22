@@ -7,7 +7,9 @@ const ShopPage = () => {
   return (
     <div className="shop-page__container">
       <ShopHeader />
-      <ShopItems />
+      <main>
+        <ShopItems />
+      </main>
     </div>
   );
 };

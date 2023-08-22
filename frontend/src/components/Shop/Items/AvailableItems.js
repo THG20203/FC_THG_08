@@ -34,6 +34,7 @@ const AvailableItems = () => {
   const itemsList = DUMMY_ITEMS.map((item) => {
     <li>{item.name}</li>;
   });
+
   return (
     <section className="available-items">
       <ul className="available-items__list">{itemsList}</ul>
