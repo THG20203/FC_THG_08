@@ -3,16 +3,19 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
   }
   &__content {
     text-align: center;
-    padding: 2rem;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
     color: var(--color-grey-1);
     height: min-content;
     width: 60vw;
-    @media screen and (max-width: 62.5em) {
-      width: 100vw;
-    }
+  }
+  &__title {
+    margin: 2rem;
+  }
+  &__text {
+    margin: 0 2rem;
   }
 }
