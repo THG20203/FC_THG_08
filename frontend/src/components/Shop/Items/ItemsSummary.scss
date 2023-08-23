@@ -6,7 +6,8 @@
   }
   &__content {
     text-align: center;
-    background-color: red;
+    padding: 2rem;
+    background-color: var(--color-primary-dark);
     color: var(--color-grey-1);
     height: min-content;
     width: 60vw;

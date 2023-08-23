@@ -4,14 +4,12 @@ const ItemsSummary = () => {
   return (
     <div className="items-summary__container">
       <section className="items-summary__content">
-        <h4 className="heading-4">Delicious Food, Delivered To You</h4>
+        <h2 className="heading-2 mb-sm">Shop Official Mechandise</h2>
         <p className="paragraph-text">
-          Choose your favorite meal from our broad selection of available meals
-          and enjoy a delicious lunch or dinner at home.
-        </p>
-        <p className="paragraph-text">
-          All our meals are cooked with high-quality ingredients, just-in-time
-          and of course by experienced chefs!
+          Explore our exclusive collection of official merchandise from FC THG
+          08. From kits to accessories, find it all here within our online club
+          shop. Whether you're at the stadium or watching from home, wear our
+          colours with pride and be a true part of the FC THG 08 community.
         </p>
       </section>
     </div>
