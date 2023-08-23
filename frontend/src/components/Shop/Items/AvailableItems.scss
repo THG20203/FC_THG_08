@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   &__list {
+    width: 60vw;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 2rem;
     color: var(--color-grey-1);
     background-color: var(--color-secondary);
   }

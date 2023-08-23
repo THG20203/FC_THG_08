@@ -7,15 +7,12 @@
   }
   &__content {
     text-align: center;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary-dark);
     color: var(--color-grey-1);
     height: min-content;
     width: 60vw;
   }
   &__title {
     margin: 2rem;
-  }
-  &__text {
-    margin: 0 2rem;
   }
 }
