@@ -1,3 +1,5 @@
+import "./ShopItem.scss";
+
 /* get props, cause are rendering dummy items in array in available items */
 const ShopItem = (props) => {
   /* dollar sign -> to inject dynamic content into this template literal */
@@ -5,10 +7,10 @@ const ShopItem = (props) => {
   const price = `£${props.price.toFixed(2)}`;
   return (
     <li>
-      <div>
+      <div className="shop-item">
         <h3>{props.name}</h3>
-        <div>{props.description}</div>
-        <div>{price}</div>
+        <div className="shop-description">{props.description}</div>
+        <div className="shop-price">{price}</div>
       </div>
       <div></div>
     </li>
