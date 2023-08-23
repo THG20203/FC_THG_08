@@ -9,6 +9,9 @@
     padding: 2rem;
     color: var(--color-grey-1);
     background-color: var(--color-secondary);
+    @media screen and (max-width: 62.5em) {
+      width: 100vw;
+    }
   }
 }
 
