@@ -1,6 +1,7 @@
 .shop-page {
   &__container {
     max-width: 100vw;
+    overflow-x: hidden;
     box-sizing: border-box;
     display: grid;
     /* comments for the grid-template-rows */

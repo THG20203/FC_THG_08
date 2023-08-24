@@ -5,12 +5,16 @@
   justify-content: center;
   &__list {
     list-style: none;
-    padding: 2rem;
     color: var(--color-grey-1);
     background-color: var(--color-secondary);
     width: 60vw;
+    padding: 2rem;
     @media screen and (max-width: 62.5em) {
       width: 100vw;
+      padding: 1rem;
+    }
+    @media screen and (max-width: 20em) {
+      padding: 0;
     }
   }
 }
