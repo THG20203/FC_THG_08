@@ -1,11 +1,5 @@
 import "./ShopInput.scss";
 
-/* So if input object has type: text, then it'll be added below to input because of 
-the destructuring. */
-{
-  type: "text";
-}
-
 const ShopInput = (props) => {
   return (
     <div className="shop-input">
