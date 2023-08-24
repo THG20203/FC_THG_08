@@ -3,10 +3,7 @@ import "./ShopInput.scss";
 const ShopInput = (props) => {
   return (
     <div className="shop-input">
-      <label
-        className="shop-input__label paragraph-text"
-        htmlFor={props.input.id}
-      >
+      <label className="shop-input__label heading-4" htmlFor={props.input.id}>
         {props.label}
       </label>
       {/* using spread operator to spread props.input. This ensures that all the key value
