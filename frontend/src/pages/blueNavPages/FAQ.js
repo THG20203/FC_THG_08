@@ -45,8 +45,8 @@ const FaqPage = () => {
             Where can I buy a season ticket?
           </h3>
           <p className="faq-box__text paragraph-text">
-            You can buy your 2023-24 season ticket online at . You will need to
-            be registered on and be in possession of a membership card.
+            You can buy your season ticket online at . You will need to be
+            registered on and be in possession of a membership card.
             Alternatively, you can go to the Stadium Office.
           </p>
           <button className="faq-toggle">
@@ -74,8 +74,7 @@ const FaqPage = () => {
             What games are included in the season ticket?
           </h3>
           <p className="faq-box__text paragraph-text">
-            The season ticket includes all home games in the 2023-24 league
-            season.
+            The season ticket includes all home games in the next league season.
           </p>
           <button className="faq-toggle">
             <FontAwesomeIcon
