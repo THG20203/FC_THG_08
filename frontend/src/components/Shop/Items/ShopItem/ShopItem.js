@@ -19,7 +19,7 @@ const ShopItem = (props) => {
           as a value, then the expression inside input is a javascript object, hence the second set of
           curly braces. */}
           <ShopInput
-            label="amount"
+            label="Amount"
             input={{
               id: "amount",
               type: "number",
@@ -29,7 +29,9 @@ const ShopItem = (props) => {
               defaultValue: "1",
             }}
           />
-          <button className="btn">+ Add</button>
+          <button className="btn">
+            + Add<div className="btn__wave"></div>
+          </button>
         </form>
       </div>
     </li>
