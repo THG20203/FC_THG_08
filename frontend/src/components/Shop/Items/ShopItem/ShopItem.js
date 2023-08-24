@@ -1,4 +1,5 @@
 import "./ShopItem.scss";
+import ShopInput from "../../UI/ShopInput";
 
 /* get props, cause are rendering dummy items in array in available items */
 const ShopItem = (props) => {
@@ -14,7 +15,20 @@ const ShopItem = (props) => {
       </div>
       <div>
         <form className="shop-form">
-          <input />
+          {/* One pair of curly braces to evaluate a javascript expression which is passed in 
+          as a value, then the expression inside input is a javascript object, hence the second set of
+          curly braces. */}
+          <ShopInput
+            label="amount"
+            input={{
+              id: "amount",
+              type: "number",
+              min: "1",
+              max: "5",
+              step: "1",
+              defaultValue: "1",
+            }}
+          />
           <button className="btn">+ Add</button>
         </form>
       </div>
