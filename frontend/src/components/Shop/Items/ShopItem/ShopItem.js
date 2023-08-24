@@ -6,13 +6,18 @@ const ShopItem = (props) => {
   /* toFixed(2) -> always render two decimal places */
   const price = `£${props.price.toFixed(2)}`;
   return (
-    <li>
-      <div className="shop-item">
+    <li className="shop-item">
+      <div>
         <h4 className="heading-4">{props.name}</h4>
         <p className="paragraph-text">{props.description}</p>
         <p className="paragraph-text">{price}</p>
       </div>
-      <div></div>
+      <div>
+        <form className="shop-form">
+          <input />
+          <button className="btn">+ Add</button>
+        </form>
+      </div>
     </li>
   );
 };
