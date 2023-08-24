@@ -9,9 +9,9 @@ const ShopItem = (props) => {
   return (
     <li className="shop-item">
       <div>
-        <h4 className="heading-4">{props.name}</h4>
+        <h3 className="heading-3--light">{props.name}</h3>
         <p className="paragraph-text">{props.description}</p>
-        <p className="paragraph-text">{price}</p>
+        <h4 className="heading-4">{price}</h4>
       </div>
       <div>
         <form className="shop-form">
