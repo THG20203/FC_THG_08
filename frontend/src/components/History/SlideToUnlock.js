@@ -5,7 +5,7 @@ import "./SlideToUnlock.scss";
 function SlideToUnlock() {
   return (
     <div className="slide-unlock__container">
-      <LockSlider width={"30vw"} />
+      <LockSlider width={"40vw"} />
     </div>
   );
 }

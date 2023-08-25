@@ -6,7 +6,7 @@ const LockSlider = ({ handleInput, sliderValue, width }) => {
     appearance: "none",
     /* if no width 50rem, otherwise provide width value */
     width: !width ? "50vw" : width,
-    height: "5vh",
+    height: "2vh",
     cursor: "pointer",
     borderRadius: "20px",
     background: "linear-gradient(to right, #0c22e8, #0a19a1)",

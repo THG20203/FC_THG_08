@@ -1,7 +1,12 @@
 .slide-unlock {
   &__container {
-    text-align: center;
+    width: 100vw;
+    overflow-x: hidden;
+    height: calc(100vh - 16rem);
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10vh;
+    align-items: center;
   }
 }
