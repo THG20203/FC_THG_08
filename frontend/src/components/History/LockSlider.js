@@ -1,10 +1,11 @@
 import React from "react";
 import "./LockSlider.scss";
 
-function LockSlider() {
+const LockSlider = ({ handleInput, sliderValue, width }) => {
   let sliderStyle = {
     appearance: "none",
-    width: "50rem",
+    /* if no width 50rem, otherwise provide width value */
+    width: !width ? "50rem" : width,
     height: "10vh",
     cursor: "pointer",
     background: "rgba(249, 247, 246, 0.5)",
@@ -12,9 +13,16 @@ function LockSlider() {
   };
 
   return (
-    /* On input because when changing the slider we are changing a value */
-    <input type="range" className="lockSlider" style={sliderStyle} onInput={}></input>
+    <input
+      type="range"
+      className="lockSlider"
+      style={sliderStyle}
+      /* On input because when changing the slider we are changing a value */
+      onInput={handleInput}
+      /* Want a value to find out how far along the slider is */
+      value={sliderValue}
+    ></input>
   );
-}
+};
 
 export default LockSlider;
