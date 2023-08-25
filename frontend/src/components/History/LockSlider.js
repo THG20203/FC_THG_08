@@ -5,17 +5,16 @@ const LockSlider = ({ handleInput, sliderValue, width }) => {
   let sliderStyle = {
     appearance: "none",
     /* if no width 50rem, otherwise provide width value */
-    width: !width ? "50rem" : width,
+    width: !width ? "50vw" : width,
     height: "10vh",
     cursor: "pointer",
-    background: "rgba(249, 247, 246, 0.5)",
     borderRadius: "12px",
   };
 
   return (
     <input
       type="range"
-      className="lockSlider"
+      className="lock-slider"
       style={sliderStyle}
       /* On input because when changing the slider we are changing a value */
       onInput={handleInput}
