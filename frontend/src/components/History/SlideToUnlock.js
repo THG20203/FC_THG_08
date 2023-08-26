@@ -3,7 +3,7 @@ import LockSlider from "./LockSlider.js";
 import "./SlideToUnlock.scss";
 import { AiFillUnlock } from "react-icons/ai";
 
-//const [showLockSlider, setShowLockSlider] = useState(0);
+const [showLockSlider, setShowLockSlider] = useState(0);
 
 function SlideToUnlock() {
   return (
