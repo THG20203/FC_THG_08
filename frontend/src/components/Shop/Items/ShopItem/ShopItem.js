@@ -11,7 +11,7 @@ const ShopItem = (props) => {
       <div>
         <h3 className="heading-3--light">{props.name}</h3>
         <p className="paragraph-text">{props.description}</p>
-        <h4 className="heading-4">{price}</h4>
+        <h4 className="heading-4--light">{price}</h4>
       </div>
       <div>
         <form className="shop-form">

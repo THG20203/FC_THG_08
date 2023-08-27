@@ -51,6 +51,12 @@
   color: var(--color-primary-dark);
 }
 
+.heading-4--dark {
+  @extend %heading;
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+}
+
 .heading-4--light {
   @extend %heading;
   font-size: 1.8rem;

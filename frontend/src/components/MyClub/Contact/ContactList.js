@@ -7,7 +7,7 @@ import React from "react";
 const ContactList = (props) => {
   return (
     <li className="contact-list">
-      <h4 className="heading-4">{props.title}</h4>
+      <h4 className="heading-4--light">{props.title}</h4>
       <p className="paragraph-text">{props.description}</p>
     </li>
   );

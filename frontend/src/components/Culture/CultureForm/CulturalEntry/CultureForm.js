@@ -61,7 +61,7 @@ const CultureForm = (props) => {
       </header>
       <form onSubmit={submitHandler} className="form">
         <div className="form-group">
-          <label type="text" className="culture-form__label heading-4">
+          <label type="text" className="culture-form__label heading-4--dark">
             First Name
           </label>
           <input
@@ -75,7 +75,7 @@ const CultureForm = (props) => {
         </div>
 
         <div className="form-group">
-          <label type="text" className="culture-form__label heading-4">
+          <label type="text" className="culture-form__label heading-4--dark">
             Story Title
           </label>
           <input
@@ -88,7 +88,7 @@ const CultureForm = (props) => {
         </div>
 
         <div className="form-group">
-          <label type="text" className="heading-4 culture-form__label">
+          <label type="text" className="culture-form__label heading-4--dark">
             Your Fan Story
           </label>
           <textarea

@@ -51,7 +51,7 @@ const ExpenseForm = (props) => {
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
-          <label className="heading-4">Club Shop Item</label>
+          <label className="heading-4--dark">Club Shop Item</label>
           <input
             className="paragraph-text"
             type="text"
@@ -63,7 +63,7 @@ const ExpenseForm = (props) => {
           />
         </div>
         <div className="new-expense__control">
-          <label className="heading-4">Amount</label>
+          <label className="heading-4--dark">Amount</label>
           <input
             className="paragraph-text"
             type="number"
@@ -74,7 +74,7 @@ const ExpenseForm = (props) => {
           />
         </div>
         <div className="new-expense__control">
-          <label className="heading-4">Date of Purchase</label>
+          <label className="heading-4--dark">Date of Purchase</label>
           <input
             className="paragraph-text"
             type="date"
