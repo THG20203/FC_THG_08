@@ -12,6 +12,13 @@ function SlideToUnlock() {
   });
 
   const [showLockSlider, setShowLockSlider] = useState(true);
+  const [lockSliderValue, setLockSliderValue] = useState(0);
+
+  const handleLockSliderInput = (event) => {
+    // want to set the lockSliderValue to the target value
+    setLockSliderValue(event.target.value);
+    console.log(event.target.value);
+  };
 
   return (
     <div
@@ -22,7 +29,13 @@ function SlideToUnlock() {
         {uiLockScreenProps.uiText}
       </h1>
       {showLockSlider ? (
-        <LockSlider width={"40vw"} />
+        <LockSlider
+          width={"40vw"}
+          /* handleInput a parameter into the LockSlider const on LockSlider.js */
+          handleInput={handleLockSliderInput}
+          /* look for the value is how far along the slider you are, event.target.value */
+          value={lockSliderValue}
+        />
       ) : (
         <AiFillUnlock className="slide-unlock__icon" />
       )}
