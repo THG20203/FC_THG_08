@@ -1,9 +1,17 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./ProgressBars.scss";
 /* curly brackets -> importing a function rather than a component */
 import { ProgressBar } from "./ProgressBar";
 
+const progressBarData = [
+  { bgColor: "var(--color-primary)", completed: 57 },
+  { bgColor: "var(--color-primary-dark)", completed: 23 },
+  { bgColor: "var(--color-primary-secondary)", completed: 2 },
+];
+
 const ProgressBars = () => {
+  const [completedProgressBar, setCompletedProgressBar] = useState(0);
+
   const uiProgressInput = useRef(null);
 
   /* when it loads, the ui input */
@@ -69,7 +77,10 @@ const ProgressBars = () => {
         </li>
       </ul>
       {/* Progress Bars */}
-      <ProgressBar />
+      <ProgressBar
+        bgColor={progressBarData[0].bgColor}
+        completed={progressBarData[0].completed}
+      />
     </div>
   );
 };

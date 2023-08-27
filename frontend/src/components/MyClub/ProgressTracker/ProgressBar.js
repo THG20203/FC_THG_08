@@ -19,7 +19,6 @@ export const ProgressBar = ({ bgColor, completed }) => {
   const labelStyles = {
     padding: 15,
     margin: 10,
-    fontWeight: "bold",
   };
   return (
     <div style={containerStyles}>
