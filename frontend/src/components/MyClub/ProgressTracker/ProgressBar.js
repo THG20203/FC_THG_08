@@ -1,4 +1,4 @@
-export const ProgressBar = () => {
+export const ProgressBar = ({ bgColor, completed }) => {
   const containerStyles = {
     height: 25,
     backgroundColor: "var(--color-grey-2)",
@@ -13,13 +13,20 @@ export const ProgressBar = () => {
     width: `${completed}`,
     /* border radius inherited from parent element, containerStyles */
     borderRadius: "inherit",
+    textAlign: "right",
+    transition: "width 1s ease-in-out",
   };
-  const labelStyles = {};
+  const labelStyles = {
+    padding: 15,
+    margin: 10,
+    fontWeight: "bold",
+  };
   return (
     <div style={containerStyles}>
       <div style={fillerStyles}>
         <span className="paragraph-text" style={labelStyles}>
-          {"Completed"}
+          {/* template literal */}
+          {`${completed}%`}
         </span>
       </div>
     </div>
