@@ -3,6 +3,7 @@ import React, { useState, Fragment } from "react";
 import NewExpense from "../../components/Expenses/NewExpense/NewExpense";
 import Expenses from "../../components/Expenses/ExpensesOutput/Expenses";
 import Contact from "../../components/MyClub/Contact/Contact";
+import ProgressBars from "../../components/MyClub/ProgressTracker/ProgressBars";
 import "./MyClub.scss";
 
 const DUMMY_EXPENSES = [
@@ -56,6 +57,7 @@ const MyClub = () => {
           <Expenses items={expenses} />
         </div>
         <Contact />
+        <ProgressBars />
       </div>
     </Fragment>
   );

@@ -4,7 +4,7 @@
     color: var(--color-grey-1);
     display: grid;
     /* comments for the grid-template-rows */
-    grid-template-rows: min-content max-content;
+    grid-template-rows: min-content max-content min-content;
     position: relative;
     grid-template-columns:
       [full-start] minmax(8rem, 1fr) [center-start] repeat(
