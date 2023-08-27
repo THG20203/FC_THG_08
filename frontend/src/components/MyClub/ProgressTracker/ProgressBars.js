@@ -4,6 +4,9 @@ import "./ProgressBars.scss";
 const ProgressBars = () => {
   const uiProgressInput = useRef(null);
 
+  /* when it loads, the ui input */
+  useEffect;
+
   return (
     <div className="progress-bars__container">
       <header className="mb-lg">
@@ -25,6 +28,7 @@ const ProgressBars = () => {
           <input
             className="progress-bars__input paragraph-text"
             type="number"
+            ref={uiProgressInput}
             value={""}
             onChange={(event) => console.log(event.target.value)}
           ></input>
@@ -36,6 +40,7 @@ const ProgressBars = () => {
           <input
             className="progress-bars__input paragraph-text"
             type="number"
+            ref={uiProgressInput}
             value={""}
             onChange={(event) => console.log(event.target.value)}
           ></input>
@@ -47,6 +52,7 @@ const ProgressBars = () => {
           <input
             className="progress-bars__input paragraph-text"
             type="number"
+            ref={uiProgressInput}
             value={""}
             onChange={(event) => console.log(event.target.value)}
           ></input>
