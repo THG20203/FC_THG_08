@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LockSlider from "./LockSlider.js";
 import "./SlideToUnlock.scss";
 import { AiFillUnlock } from "react-icons/ai";
@@ -11,7 +11,9 @@ function SlideToUnlock() {
     uiBg: `url(${yearsBanner}) center/cover no-repeat`,
   });
 
+  /* initial state should be to show the lock slider */
   const [showLockSlider, setShowLockSlider] = useState(true);
+  /* the inital state of lockSlider should be 0. If set at 50 the toggle would be halfway across the page */
   const [lockSliderValue, setLockSliderValue] = useState(0);
 
   const handleLockSliderInput = (event) => {
@@ -30,6 +32,16 @@ function SlideToUnlock() {
   };
 
   /* when the screen is unlocked */
+  useEffect(() => {
+    /* check if the screen is locked */
+    if (lockSliderValue === "100") {
+      setShowLockSlider(false);
+      setUiLockScreenProps({
+        uiText: "We have 130 years of history",
+        uiBg: `#f9f7f6`,
+      });
+    }
+  });
 
   return (
     <div
@@ -48,7 +60,8 @@ function SlideToUnlock() {
           value={lockSliderValue}
         />
       ) : (
-        <AiFillUnlock className="slide-unlock__icon" />
+        /* If you click on the lock icon, it'll lock the screen with onClick function. */
+        <AiFillUnlock className="slide-unlock__icon" onClick={lockScreen} />
       )}
     </div>
   );
