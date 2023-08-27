@@ -8,7 +8,10 @@ const ProgressBars = () => {
         <div className="heading-1 mb-sm">Club Priorities</div>
         <h4 className="heading-4">
           Please enter how important you consider these topics in terms of your
-          fan experience. Your rating will be 0 - 100%, with 100% meaning very
+          fan experience.
+        </h4>
+        <h4 className="heading-4">
+          Your rating will be 0 - 100% with a higher percentage meaning more
           important.
         </h4>
       </header>

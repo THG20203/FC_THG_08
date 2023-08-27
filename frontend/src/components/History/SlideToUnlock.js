@@ -37,7 +37,7 @@ function SlideToUnlock() {
     if (lockSliderValue === "100") {
       setShowLockSlider(false);
       setUiLockScreenProps({
-        uiText: "We have 130 years of history",
+        uiText: "We have 130 years of passion and pride",
         uiBg: `#f9f7f6`,
       });
     }
@@ -53,7 +53,6 @@ function SlideToUnlock() {
       </h1>
       {showLockSlider ? (
         <LockSlider
-          width={"40vw"}
           /* handleInput a parameter into the LockSlider const on LockSlider.js */
           handleInput={handleLockSliderInput}
           /* look for the value is how far along the slider you are */
