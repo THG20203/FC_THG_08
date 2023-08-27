@@ -6,7 +6,14 @@ export const ProgressBar = () => {
     margin: 50,
     width: "100%",
   };
-  const fillerStyles = {};
+  const fillerStyles = {
+    backgroundColor: bgColor,
+    height: "100%",
+    /* this value will be affected by the input value hence backticks */
+    width: `${completed}`,
+    /* border radius inherited from parent element, containerStyles */
+    borderRadius: "inherit",
+  };
   const labelStyles = {};
   return (
     <div style={containerStyles}>
