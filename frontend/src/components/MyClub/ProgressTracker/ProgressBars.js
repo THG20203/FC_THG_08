@@ -34,6 +34,7 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
+            value={""}
             ref={uiProgressInput}
             onChange={(event) => console.log(event.target.value)}
           ></input>
@@ -47,6 +48,7 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
+            value={""}
             ref={uiProgressInput}
             onChange={(event) => console.log(event.target.value)}
           ></input>
@@ -60,6 +62,7 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
+            value={""}
             ref={uiProgressInput}
             onChange={(event) => console.log(event.target.value)}
           ></input>
