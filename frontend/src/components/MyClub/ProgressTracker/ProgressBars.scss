@@ -1,9 +1,14 @@
 .progress-bars {
   &__container {
-    grid-column: full-start / full-end;
-    margin: auto;
+    grid-column: center-start / center-end;
     text-align: center;
     padding: 7vh;
+    @media screen and (max-width: 37.5em) {
+      grid-column: full-start / full-end;
+    }
+  }
+  &__description {
+    color: var(--color-secondary);
   }
   &__label-input {
     display: inline-block;

@@ -23,11 +23,10 @@ const ProgressBars = () => {
     <div className="progress-bars__container">
       <header className="mb-lg">
         <div className="heading-1 mb-sm">Club Priorities</div>
-        <h4 className="heading-4">
+        <h4 className="heading-4 progress-bars__description">
           Please enter how important you consider these topics in terms of your
           fan experience.
-        </h4>
-        <h4 className="heading-4">
+          <br />
           Your rating will be 0 - 100% with a higher percentage meaning more
           important.
         </h4>
