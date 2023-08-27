@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./ProgressBars.scss";
 
 const ProgressBars = () => {
+  const uiProgressInput = useRef(null);
+
   return (
     <div className="progress-bars__container">
       <header className="mb-lg">
@@ -23,7 +25,31 @@ const ProgressBars = () => {
           <input
             className="progress-bars__input paragraph-text"
             type="number"
-          />
+            value={""}
+            onChange={(event) => console.log(event.target.value)}
+          ></input>
+        </li>
+        <li>
+          <h4 className="progress-bars__label-input heading-4--dark">
+            Club Identity and Tradition
+          </h4>
+          <input
+            className="progress-bars__input paragraph-text"
+            type="number"
+            value={""}
+            onChange={(event) => console.log(event.target.value)}
+          ></input>
+        </li>
+        <li>
+          <h4 className="progress-bars__label-input heading-4--dark">
+            Fan Community and Atmosphere
+          </h4>
+          <input
+            className="progress-bars__input paragraph-text"
+            type="number"
+            value={""}
+            onChange={(event) => console.log(event.target.value)}
+          ></input>
         </li>
       </ul>
     </div>
