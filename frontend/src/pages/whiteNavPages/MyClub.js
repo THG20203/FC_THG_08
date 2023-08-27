@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react";
 
 import NewExpense from "../../components/Expenses/NewExpense/NewExpense";
 import Expenses from "../../components/Expenses/ExpensesOutput/Expenses";
-import Contact from "../../components/Contact/Contact";
+import Contact from "../../components/MyClub/Contact/Contact";
 import "./MyClub.scss";
 
 const DUMMY_EXPENSES = [
