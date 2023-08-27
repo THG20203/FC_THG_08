@@ -1,11 +1,15 @@
 import React, { useRef, useEffect } from "react";
 import "./ProgressBars.scss";
+/* curly brackets -> importing a function rather than a component */
+import { ProgressBar } from "./ProgressBar";
 
 const ProgressBars = () => {
   const uiProgressInput = useRef(null);
 
   /* when it loads, the ui input */
-  useEffect;
+  useEffect(() => {
+    uiProgressInput.current.focus();
+  });
 
   return (
     <div className="progress-bars__container">
@@ -28,6 +32,8 @@ const ProgressBars = () => {
           <input
             className="progress-bars__input paragraph-text"
             type="number"
+            min={0}
+            max={100}
             ref={uiProgressInput}
             value={""}
             onChange={(event) => console.log(event.target.value)}
@@ -40,6 +46,8 @@ const ProgressBars = () => {
           <input
             className="progress-bars__input paragraph-text"
             type="number"
+            min={0}
+            max={100}
             ref={uiProgressInput}
             value={""}
             onChange={(event) => console.log(event.target.value)}
@@ -52,12 +60,16 @@ const ProgressBars = () => {
           <input
             className="progress-bars__input paragraph-text"
             type="number"
+            min={0}
+            max={100}
             ref={uiProgressInput}
             value={""}
             onChange={(event) => console.log(event.target.value)}
           ></input>
         </li>
       </ul>
+      {/* Progress Bars */}
+      <ProgressBar />
     </div>
   );
 };
