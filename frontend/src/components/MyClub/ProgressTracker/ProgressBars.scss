@@ -5,4 +5,15 @@
     text-align: center;
     padding: 7vh;
   }
+  &__label-input {
+    display: inline-block;
+    margin-right: 0.5vw;
+  }
+  &__input {
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 10rem;
+    max-width: 100%;
+  }
 }
