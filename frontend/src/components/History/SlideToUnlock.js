@@ -17,8 +17,19 @@ function SlideToUnlock() {
   const handleLockSliderInput = (event) => {
     // want to set the lockSliderValue to the target value
     setLockSliderValue(event.target.value);
-    console.log(event.target.value);
   };
+
+  /* what we want to see when the screen is locked */
+  const lockScreen = () => {
+    setLockSliderValue(0);
+    setShowLockSlider(true);
+    setUiLockScreenProps({
+      uiText: "Explore our History",
+      uiBg: `url(${yearsBanner}) center/cover no-repeat`,
+    });
+  };
+
+  /* when the screen is unlocked */
 
   return (
     <div
@@ -33,7 +44,7 @@ function SlideToUnlock() {
           width={"40vw"}
           /* handleInput a parameter into the LockSlider const on LockSlider.js */
           handleInput={handleLockSliderInput}
-          /* look for the value is how far along the slider you are, event.target.value */
+          /* look for the value is how far along the slider you are */
           value={lockSliderValue}
         />
       ) : (
