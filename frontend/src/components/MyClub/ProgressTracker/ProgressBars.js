@@ -5,6 +5,8 @@ import { ProgressBar } from "./ProgressBar";
 
 const ProgressBars = () => {
   const uiProgressInput = useRef(null);
+  const uiProgressInput2 = useRef(null);
+  const uiProgressInput3 = useRef(null);
 
   /* when it loads, the ui input */
   useEffect(() => {
@@ -35,7 +37,6 @@ const ProgressBars = () => {
             min={0}
             max={100}
             ref={uiProgressInput}
-            value={""}
             onChange={(event) => console.log(event.target.value)}
           ></input>
         </li>
@@ -48,8 +49,7 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
-            ref={uiProgressInput}
-            value={""}
+            ref={uiProgressInput2}
             onChange={(event) => console.log(event.target.value)}
           ></input>
         </li>
@@ -62,8 +62,7 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
-            ref={uiProgressInput}
-            value={""}
+            ref={uiProgressInput3}
             onChange={(event) => console.log(event.target.value)}
           ></input>
         </li>

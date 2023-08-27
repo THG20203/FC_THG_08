@@ -1,3 +1,9 @@
 export const ProgressBar = () => {
-  return <div>Progressbar</div>;
+  return (
+    <div>
+      <div>
+        <span></span>
+      </div>
+    </div>
+  );
 };
