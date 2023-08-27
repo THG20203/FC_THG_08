@@ -6,7 +6,7 @@ import { ProgressBar } from "./ProgressBar";
 const progressBarData = [
   { bgColor: "var(--color-primary)", completed: 57 },
   { bgColor: "var(--color-primary-dark)", completed: 23 },
-  { bgColor: "var(--color-primary-secondary)", completed: 2 },
+  { bgColor: "var(--color-secondary)", completed: 25 },
 ];
 
 const ProgressBars = () => {
@@ -77,10 +77,9 @@ const ProgressBars = () => {
         </li>
       </ul>
       {/* Progress Bars */}
-      <ProgressBar
-        bgColor={progressBarData[0].bgColor}
-        completed={progressBarData[0].completed}
-      />
+      {progressBarData.map((data) => (
+        <ProgressBar bgColor={data.bgColor} completed={data.completed} />
+      ))}
     </div>
   );
 };
