@@ -5,7 +5,9 @@ export const ProgressBar = () => {
   return (
     <div style={containerStyles}>
       <div style={fillerStyles}>
-        <span style={labelStyle}></span>
+        <span className="heading-4--dark" style={labelStyles}>
+          {"Completed"}
+        </span>
       </div>
     </div>
   );
