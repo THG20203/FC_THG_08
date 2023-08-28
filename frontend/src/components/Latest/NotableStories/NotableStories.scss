@@ -63,11 +63,15 @@
       }
     }
     &-image {
-      height: 10vh;
-      width: 10vh;
+      height: 12vh;
+      width: 12vh;
       border-radius: 50%;
       border: 0.2rem solid var(--color-primary-dark);
       margin-right: 1.5rem;
+      @media screen and (max-width: 20em) {
+        height: 10vh;
+        width: 10vh;
+      }
     }
     &-box {
       margin-right: auto;

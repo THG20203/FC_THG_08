@@ -9,6 +9,7 @@ const Feature = (props) => {
         className="feature__icon"
         icon={props.icon}
       ></FontAwesomeIcon>
+
       <h4 className="heading-4--dark">{props.title}</h4>
       <p className="paragraph-text">{props.description}</p>
     </div>

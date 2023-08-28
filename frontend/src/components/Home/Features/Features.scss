@@ -29,8 +29,8 @@
   //Again, no need to define rows - just columns
 
   &__icon {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     // -1 only works with an explicit grid, but we didn't define grid rows so have to do span 2
     // span 2 makes the icon span the first row and the second.
     // This means the main body of text will shift to the bottom right
