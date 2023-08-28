@@ -31,42 +31,46 @@ const NotableStories = () => {
   return (
     <div className="notable-stories__container">
       {/* First figure box */}
-      <figure className="notable-stories__review">
+      <figure className="notable-stories__review paragraph-text">
         <blockquote className="notable-stories__review-text">
           Early days on the pitch have been a test, but your support has been
           amazing. Our fans are like our secret weapon, pushing us on.
         </blockquote>
-        <img
-          src={player1}
-          alt="Player 1 Image"
-          className="notable-stories__review-image"
-        ></img>
-        <div className="notable-stories__review-box">
-          <p className="notable-stories__review-user">Ishmael Baptiste</p>
-          <p className="notable-stories__review-date">
-            {formattedThreeDaysAgo}
-          </p>
-        </div>
-        <div className="notable-stories__review-position">Forward</div>
+        <figcaption className="">
+          <img
+            src={player1}
+            alt="Player 1 Image"
+            className="notable-stories__review-image"
+          ></img>
+          <div className="notable-stories__review-box">
+            <p className="notable-stories__review-user">Ishmael Baptiste</p>
+            <p className="notable-stories__review-date">
+              {formattedThreeDaysAgo}
+            </p>
+          </div>
+          <div className="notable-stories__review-position">Forward</div>
+        </figcaption>
       </figure>
       {/* Second figure box */}
-      <figure className="notable-stories__review">
-        <blockquote className="notable-stories__review-text">
-          The gaffer's been a great man manager, keeping us motivated. Every
-          tackle we put in and every goal we chase is for the badge.
-        </blockquote>
-        <img
-          src={player2}
-          alt="Player 2 Image"
-          className="notable-stories__review-image"
-        ></img>
-        <div className="notable-stories__review-box">
-          <p className="notable-stories__review-user">Frank Carter</p>
-          <p className="notable-stories__review-date">
-            {formattedEightDaysAgo}
-          </p>
-        </div>
-        <div className="notable-stories__review-position">Midfielder</div>
+      <figure className="notable-stories__review paragraph-text">
+        <figcaption className="">
+          <blockquote className="notable-stories__review-text">
+            The gaffer's been a great man manager, keeping us motivated. Every
+            tackle we put in and every goal we chase is for the badge.
+          </blockquote>
+          <img
+            src={player2}
+            alt="Player 2 Image"
+            className="notable-stories__review-image"
+          ></img>
+          <div className="notable-stories__review-box">
+            <p className="notable-stories__review-user">Frank Carter</p>
+            <p className="notable-stories__review-date">
+              {formattedEightDaysAgo}
+            </p>
+          </div>
+          <div className="notable-stories__review-position">Midfielder</div>
+        </figcaption>
       </figure>
     </div>
   );
