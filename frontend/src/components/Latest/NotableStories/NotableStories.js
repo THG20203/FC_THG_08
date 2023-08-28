@@ -47,12 +47,13 @@ const NotableStories = () => {
             {formattedThreeDaysAgo}
           </p>
         </div>
+        <div className="notable-stories__review-position">Forward</div>
       </figure>
       {/* Second figure box */}
       <figure className="notable-stories__review">
         <blockquote className="notable-stories__review-text">
-          The gaffer's been like our tactical wizard, keeping us motivated.
-          Every tackle we put in and every goal we chase is for the badge.
+          The gaffer's been a great man manager, keeping us motivated. Every
+          tackle we put in and every goal we chase is for the badge.
         </blockquote>
         <img
           src={player2}
@@ -65,6 +66,7 @@ const NotableStories = () => {
             {formattedEightDaysAgo}
           </p>
         </div>
+        <div className="notable-stories__review-position">Midfielder</div>
       </figure>
     </div>
   );

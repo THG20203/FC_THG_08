@@ -1,4 +1,30 @@
-.notable-stories__container {
-  background-color: var(--color-secondary);
-  grid-column: full-start / col-start 4;
+.notable-stories {
+  &__container {
+    background-color: var(--color-secondary);
+    grid-column: full-start / col-start 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__review {
+    background-color: var(--color-grey-1);
+    height: 50%;
+    padding: 3rem;
+    margin: 4vh;
+    &-text {
+    }
+    &-image {
+      height: 6rem;
+      width: 6rem;
+    }
+    &-box {
+    }
+    &-user {
+    }
+    &-date {
+    }
+    &-position {
+    }
+  }
 }
