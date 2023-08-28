@@ -31,7 +31,7 @@ const ProgressBars = () => {
   /* when it loads, the ui input */
   useEffect(() => {
     uiProgressInput.current.focus();
-  });
+  }, []);
 
   return (
     <div className="progress-bars__container">
@@ -76,9 +76,14 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
-            value={""}
+            value={statusProgressBar.clubIdentity}
             ref={uiProgressInput}
-            onChange={(event) => console.log(event.target.value)}
+            onChange={(event) =>
+              setStatusProgressBar({
+                ...statusProgressBar,
+                clubIdentity: event.target.value,
+              })
+            }
           ></input>
         </li>
         <li>
@@ -90,9 +95,14 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
-            value={""}
+            value={statusProgressBar.fanCommunity}
             ref={uiProgressInput}
-            onChange={(event) => console.log(event.target.value)}
+            onChange={(event) =>
+              setStatusProgressBar({
+                ...statusProgressBar,
+                fanCommunity: event.target.value,
+              })
+            }
           ></input>
         </li>
       </ul>

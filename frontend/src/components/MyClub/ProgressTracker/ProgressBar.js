@@ -3,7 +3,6 @@ export const ProgressBar = ({ bgColor, completed }) => {
     height: 30,
     backgroundColor: "var(--color-grey-2)",
     borderRadius: 50,
-
     marginTop: 25,
     marginBottom: 25,
     width: "100%",
