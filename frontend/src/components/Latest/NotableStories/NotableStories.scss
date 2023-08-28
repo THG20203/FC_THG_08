@@ -71,18 +71,27 @@
     }
     &-box {
       margin-right: auto;
+      width: 40%;
     }
     &-player {
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       margin-bottom: 0.4rem;
+      @media screen and (max-width: 20em) {
+        font-size: 1.4rem;
+      }
     }
     &-date {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     &-position {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      color: var(--color-primary-dark);
+      @media screen and (max-width: 20em) {
+        text-align: center;
+        font-size: 2rem;
+      }
     }
   }
 }
