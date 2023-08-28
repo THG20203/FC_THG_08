@@ -55,9 +55,16 @@ const ProgressBars = () => {
             type="number"
             min={0}
             max={100}
-            value={""}
+            value={statusProgressBar.teamSuccess}
             ref={uiProgressInput}
-            onChange={(event) => console.log(event.target.value)}
+            onChange={(event) =>
+              setStatusProgressBar({
+                /* use destructuring -> spread operator to get original statusProgressBar value, then 
+                setStatusProgressBar to event.target.value, i.e. whatever was typed in. */
+                ...statusProgressBar,
+                teamSuccess: event.target.value,
+              })
+            }
           ></input>
         </li>
         <li>
