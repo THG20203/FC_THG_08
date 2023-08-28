@@ -13,7 +13,7 @@ export const ProgressBar = ({ bgColor, completed }) => {
     backgroundColor: bgColor,
     height: "100%",
     /* this value will be affected by the input value hence backticks */
-    width: `${completed}`,
+    width: `${completed}%`,
     /* border radius inherited from parent element, containerStyles */
     borderRadius: "inherit",
     transition: "width 1s ease-in-out",

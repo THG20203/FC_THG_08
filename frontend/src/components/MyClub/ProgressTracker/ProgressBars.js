@@ -16,8 +16,14 @@ const ProgressBars = () => {
       bgColor: "var(--color-primary)",
       completed: statusProgressBar.teamSuccess,
     },
-    { bgColor: "var(--color-primary-dark)", completed: completedProgressBar },
-    { bgColor: "var(--color-secondary)", completed: completedProgressBar },
+    {
+      bgColor: "var(--color-primary-dark)",
+      completed: statusProgressBar.clubIdentity,
+    },
+    {
+      bgColor: "var(--color-secondary)",
+      completed: statusProgressBar.fanCommunity,
+    },
   ];
 
   const uiProgressInput = useRef(null);
