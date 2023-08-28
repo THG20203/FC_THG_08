@@ -48,7 +48,7 @@ function SlideToUnlock() {
       style={{ background: uiLockScreenProps.uiBg }}
       className="slide-unlock__container"
     >
-      <h1 className="heading-1 slide-unlock__title">
+      <h1 className="heading-1--dark slide-unlock__title">
         {uiLockScreenProps.uiText}
       </h1>
       {showLockSlider ? (
