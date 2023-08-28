@@ -46,7 +46,7 @@ const ProgressBars = () => {
         </h4>
       </header>
       <ul>
-        <li>
+        <li className="progress-bars__list-item">
           <h4 className="progress-bars__label-input heading-4--dark">
             Team Success and Performance
           </h4>
@@ -67,7 +67,7 @@ const ProgressBars = () => {
             }
           ></input>
         </li>
-        <li>
+        <li className="progress-bars__list-item">
           <h4 className="progress-bars__label-input heading-4--dark">
             Club Identity and Tradition
           </h4>
@@ -86,7 +86,7 @@ const ProgressBars = () => {
             }
           ></input>
         </li>
-        <li>
+        <li className="progress-bars__list-item">
           <h4 className="progress-bars__label-input heading-4--dark">
             Fan Community and Atmosphere
           </h4>
