@@ -5,10 +5,17 @@ import { ProgressBar } from "./ProgressBar";
 
 const ProgressBars = () => {
   const [completedProgressBar, setCompletedProgressBar] = useState(0);
-  const [statusProgressBar, setStatusProgressBar] = useState({});
+  const [statusProgressBar, setStatusProgressBar] = useState({
+    teamSuccess: 55,
+    clubIdentity: 34,
+    fanCommunity: 86,
+  });
 
   const progressBarData = [
-    { bgColor: "var(--color-primary)", completed: completedProgressBar },
+    {
+      bgColor: "var(--color-primary)",
+      completed: statusProgressBar.teamSuccess,
+    },
     { bgColor: "var(--color-primary-dark)", completed: completedProgressBar },
     { bgColor: "var(--color-secondary)", completed: completedProgressBar },
   ];
