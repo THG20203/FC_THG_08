@@ -31,7 +31,7 @@ const NotableStories = () => {
   return (
     <div className="notable-stories__container">
       {/* First figure box */}
-      <figure className="notable-stories__review notable-stories__review--1 paragraph-text">
+      <figure className="notable-stories__review notable-stories__review--1">
         <blockquote className="notable-stories__review-text">
           Early days on the pitch have been a test, but your support has been
           amazing. Our fans are like our secret weapon, pushing us on.
@@ -43,16 +43,16 @@ const NotableStories = () => {
             className="notable-stories__review-image"
           ></img>
           <div className="notable-stories__review-box">
-            <p className="notable-stories__review-user">Ishmael Baptiste</p>
+            <p className="notable-stories__review-player">Ishmael Baptiste</p>
             <p className="notable-stories__review-date">
               {formattedThreeDaysAgo}
             </p>
           </div>
-          <div className="notable-stories__review-position">Forward</div>
+          <div className="notable-stories__review-position">No. 9</div>
         </figcaption>
       </figure>
       {/* Second figure box */}
-      <figure className="notable-stories__review notable-stories__review--2 paragraph-text">
+      <figure className="notable-stories__review notable-stories__review--2">
         <blockquote className="notable-stories__review-text">
           The gaffer's been a great man manager, keeping us motivated. Every
           tackle we put in and every goal we chase is for the badge.
@@ -64,12 +64,12 @@ const NotableStories = () => {
             className="notable-stories__review-image"
           ></img>
           <div className="notable-stories__review-box">
-            <p className="notable-stories__review-user">Frank Carter</p>
+            <p className="notable-stories__review-player">Frank Carter</p>
             <p className="notable-stories__review-date">
               {formattedEightDaysAgo}
             </p>
           </div>
-          <div className="notable-stories__review-position">Midfielder</div>
+          <div className="notable-stories__review-position">No. 8</div>
         </figcaption>
       </figure>
     </div>
