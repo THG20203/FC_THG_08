@@ -57,7 +57,7 @@ const News = (props) => {
 
   return (
     <section className="news-section">
-      <h1 className="heading-1 mb-md">Headlines</h1>
+      <h1 className="heading-1--dark mb-md">More Headlines</h1>
       <div className="news-card__container">
         <NewsCard
           image={NewsCards[0].image}

@@ -36,7 +36,7 @@ const ProgressBars = () => {
   return (
     <div className="progress-bars__container">
       <header className="mb-lg">
-        <div className="heading-1 mb-sm">Club Priorities</div>
+        <div className="heading-1--dark mb-sm">Club Priorities</div>
         <h4 className="heading-4 progress-bars__description">
           Please enter how important you consider these topics in terms of your
           fan experience.
