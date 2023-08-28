@@ -1,8 +1,8 @@
 import React from "react";
 import "./NotableStories.scss";
 /* player images */
-import player1 from "../../../assets/images/playerImgs/Player1";
-import player2 from "../../../assets/images/playerImgs/Player2";
+import player1 from "../../../assets/images/playerImgs/Player1.png";
+import player2 from "../../../assets/images/playerImgs/Player2.png";
 
 const NotableStories = () => {
   return (
@@ -17,6 +17,9 @@ const NotableStories = () => {
           alt="Player 1 Image"
           className="notable-stories__review-image"
         ></img>
+        <div className="notable-stories__review-box">
+          <p className="notable-stories__review-user">Ishmael </p>
+        </div>
       </figure>
       <figure className="notable-stories__review">
         <blockquote className="notable-stories__review-text">
