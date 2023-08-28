@@ -3,14 +3,15 @@ import "./ProgressBars.scss";
 /* curly brackets -> importing a function rather than a component */
 import { ProgressBar } from "./ProgressBar";
 
-const progressBarData = [
-  { bgColor: "var(--color-primary)", completed: 57 },
-  { bgColor: "var(--color-primary-dark)", completed: 23 },
-  { bgColor: "var(--color-secondary)", completed: 25 },
-];
-
 const ProgressBars = () => {
   const [completedProgressBar, setCompletedProgressBar] = useState(0);
+  const [statusProgressBar, setStatusProgressBar] = useState({});
+
+  const progressBarData = [
+    { bgColor: "var(--color-primary)", completed: completedProgressBar },
+    { bgColor: "var(--color-primary-dark)", completed: completedProgressBar },
+    { bgColor: "var(--color-secondary)", completed: completedProgressBar },
+  ];
 
   const uiProgressInput = useRef(null);
 
