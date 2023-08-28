@@ -35,20 +35,32 @@
     }
     &--1 {
       margin: 5vh;
+      @media screen and (max-width: 20em) {
+        margin: 3vh;
+      }
     }
     &--2 {
       margin: 0 5vh 5vh;
+      @media screen and (max-width: 20em) {
+        margin: 0 3vh 3vh;
+      }
     }
     &-text {
       margin: 2vh 0 4vh;
       font-size: 1.7rem;
       position: relative;
       z-index: 2;
+      @media only screen and (max-width: 87.5em) {
+        margin-bottom: 2vh;
+      }
     }
     &-content {
       display: flex;
       align-items: center;
       margin: 0 2vh;
+      @media screen and (max-width: 37.5em) {
+        margin: 0;
+      }
     }
     &-image {
       height: 10vh;
