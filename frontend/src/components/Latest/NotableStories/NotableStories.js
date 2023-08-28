@@ -31,12 +31,12 @@ const NotableStories = () => {
   return (
     <div className="notable-stories__container">
       {/* First figure box */}
-      <figure className="notable-stories__review paragraph-text">
+      <figure className="notable-stories__review notable-stories__review--1 paragraph-text">
         <blockquote className="notable-stories__review-text">
           Early days on the pitch have been a test, but your support has been
           amazing. Our fans are like our secret weapon, pushing us on.
         </blockquote>
-        <figcaption className="">
+        <figcaption className="notable-stories__review-content">
           <img
             src={player1}
             alt="Player 1 Image"
@@ -52,12 +52,12 @@ const NotableStories = () => {
         </figcaption>
       </figure>
       {/* Second figure box */}
-      <figure className="notable-stories__review paragraph-text">
-        <figcaption className="">
-          <blockquote className="notable-stories__review-text">
-            The gaffer's been a great man manager, keeping us motivated. Every
-            tackle we put in and every goal we chase is for the badge.
-          </blockquote>
+      <figure className="notable-stories__review notable-stories__review--2 paragraph-text">
+        <blockquote className="notable-stories__review-text">
+          The gaffer's been a great man manager, keeping us motivated. Every
+          tackle we put in and every goal we chase is for the badge.
+        </blockquote>
+        <figcaption className="notable-stories__review-content">
           <img
             src={player2}
             alt="Player 2 Image"
