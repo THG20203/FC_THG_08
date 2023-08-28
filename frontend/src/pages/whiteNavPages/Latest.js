@@ -1,6 +1,6 @@
 import React from "react";
 import "./Latest.scss";
-import News from "../../components/News/News";
+import News from "../../components/Latest/News/News";
 
 const LatestPage = () => {
   return (
