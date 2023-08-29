@@ -1,6 +1,10 @@
 .history-text {
   &__container {
     grid-column: col-start 5 / full-end;
-    background-color: red;
+    background-color: var(--color-secondary);
+    height: calc(100vh - 16rem);
+    @media screen and (max-width: 62.5em) {
+      grid-column: full-start / full-end;
+    }
   }
 }
