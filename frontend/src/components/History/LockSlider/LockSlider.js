@@ -5,7 +5,7 @@ const LockSlider = ({ handleInput, sliderValue, width }) => {
   let sliderStyle = {
     appearance: "none",
     width: "40vw",
-    height: "2vh",
+    height: "1.5vh",
     cursor: "pointer",
     borderRadius: "20px",
     background: "linear-gradient(to right, #0c22e8, #0a19a1)",
