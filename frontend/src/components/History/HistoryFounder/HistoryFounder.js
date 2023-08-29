@@ -14,11 +14,24 @@ const HistoryFounder = () => {
           the game and the palpable sense of unity they observed among the
           dockworkers.
         </p>
-        <p className="history-founder__text paragraph-text">
+        <p className="history-founder__text paragraph-text mb-sm">
           As the founding members of FC THG 08, their names reflected the
           mingling of British and German heritage, embodying the cross-cultural
           spirit of the port city.
         </p>
+        <p className="history-founder__text paragraph-text mb-sm">
+          The founders:
+        </p>
+        <ul className="history-founder__list">
+          <li className="history-founder__list--item">William Hartmann</li>
+          <li className="history-founder__list--item">Edward Becker</li>
+          <li className="history-founder__list--item">Tristan Griffiths</li>
+          <li className="history-founder__list--item">Henry Schmidt</li>
+          <li className="history-founder__list--item">Charles Müller</li>
+          <li className="history-founder__list--item">James Klein</li>
+          <li className="history-founder__list--item">Richard Schneider</li>
+          <li className="history-founder__list--item">John Fischer</li>
+        </ul>
       </div>
     </div>
   );
