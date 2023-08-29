@@ -8,7 +8,7 @@ const HistoryBadge = () => {
       <img className="history-badge__image" src={badge} alt="Badge" />
       <div className="history-badge__caption">
         <h2 className="heading-2">Caption</h2>
-        <p className="paragraph-text">test</p>
+        <p className="paragraph-text history-badge__caption-paragraph">test</p>
       </div>
     </div>
   );
