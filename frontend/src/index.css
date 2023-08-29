@@ -19,7 +19,8 @@
   --font-display: "Lato", sans-serif;
 
   /* RESPONSIVE BREAKPOINTS */
-  /* largest breakpoint: 87.5em; 1400px divided by 16 (16 -> default font-size for a browser) */
+  /* largest breakpoint: 94em; 1500px divided by 16 */
+  /* larger breakpoint: 87.5em; 1400px divided by 16 (16 -> default font-size for a browser) */
   /* large breakpoint: 62.5em; 1000px divided by 16 */
   /* medium breakpoint: 50em; 800px divided by 16 */
   /* small breakpoint: 37.5em; 600px divided by 16 */

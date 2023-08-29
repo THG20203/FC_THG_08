@@ -47,24 +47,24 @@
 
 .heading-4 {
   @extend %heading;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   color: var(--color-primary-dark);
 }
 
 .heading-4--dark {
   @extend %heading;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   color: var(--color-secondary);
 }
 
 .heading-4--light {
   @extend %heading;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   color: var(--color-grey-1);
 }
 
 .paragraph-text {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 label {

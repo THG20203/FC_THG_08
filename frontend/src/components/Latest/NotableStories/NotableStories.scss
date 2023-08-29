@@ -1,12 +1,12 @@
 .notable-stories {
   &__container {
     background-color: var(--color-grey-2);
-    grid-column: full-start / col-start 3;
+    grid-column: full-start / col-start 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 62.5em) {
+    @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
   }
@@ -47,7 +47,6 @@
     }
     &-text {
       margin: 2vh 0 4vh;
-      font-size: 1.7rem;
       position: relative;
       z-index: 2;
       @media only screen and (max-width: 87.5em) {

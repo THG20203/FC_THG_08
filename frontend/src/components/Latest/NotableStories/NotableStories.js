@@ -32,7 +32,7 @@ const NotableStories = () => {
     <div className="notable-stories__container">
       {/* First figure box */}
       <figure className="notable-stories__review notable-stories__review--1">
-        <blockquote className="notable-stories__review-text">
+        <blockquote className="notable-stories__review-text paragraph-text">
           Early days on the pitch have been a test, but your support has been
           amazing. Our fans are like our secret weapon, pushing us on.
         </blockquote>
@@ -53,7 +53,7 @@ const NotableStories = () => {
       </figure>
       {/* Second figure box */}
       <figure className="notable-stories__review notable-stories__review--2">
-        <blockquote className="notable-stories__review-text">
+        <blockquote className="notable-stories__review-text paragraph-text">
           The gaffer's been a great man manager, keeping us motivated. Every
           tackle we put in and every goal we chase is for the badge.
         </blockquote>

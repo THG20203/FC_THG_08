@@ -12,11 +12,9 @@ const HistoryText = () => {
             1893 - 1920
           </h4>
           <p className="paragraph-text history-text__description">
-            The club's early years were marked by gritty determination as
-            players battled it out on the rugged pitches of their time. From
+            The club's early years were marked by gritty determination. From
             local leagues to regional tournaments, FC THG 08 quickly gained a
-            reputation for its tenacity and skill, earning respect from
-            opponents and fans alike.
+            reputation for its tenacity and skill.
           </p>
         </div>
         <div className="history-text__two-column">
@@ -46,10 +44,9 @@ const HistoryText = () => {
           </h4>
           <p className="paragraph-text history-text__description">
             Since 1982, FC THG 08 has enjoyed a meteoric rise, clinching an
-            impressive streak of 8 consecutive league titles, solidifying their
-            status as a global powerhouse. This remarkable run of success has
-            firmly established FC THG 08 as a beacon of excellence on the
-            international football stage.
+            impressive streak of 8 consecutive league titles. This remarkable
+            run of success has firmly established FC THG 08 on the international
+            football stage.
           </p>
         </div>
       </div>

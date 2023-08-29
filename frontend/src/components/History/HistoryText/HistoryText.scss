@@ -3,28 +3,28 @@
     grid-column: col-start 5 / full-end;
     background-color: var(--color-secondary);
     height: calc(100vh - 16rem);
-    @media screen and (max-width: 62.5em) {
+    @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       height: min-content;
     }
   }
   &__content {
     padding: 7vh;
-    @media screen and (max-width: 62.5em) {
+    @media screen and (max-width: 94em) {
       padding: 4vh;
     }
   }
   &__two-column {
     color: var(--color-grey-1);
     display: flex;
-    margin-bottom: 2rem;
-    @media screen and (max-width: 62.5em) {
+    margin-bottom: 1rem;
+    @media screen and (max-width: 94em) {
       flex-direction: column;
     }
   }
   &__description {
     width: 50%;
-    @media screen and (max-width: 62.5em) {
+    @media screen and (max-width: 94em) {
       width: 100%;
     }
   }

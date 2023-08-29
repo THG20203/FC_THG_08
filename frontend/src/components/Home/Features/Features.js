@@ -20,7 +20,7 @@ const feature = [
   },
   {
     icon: faSoccerBall,
-    title: "Official Supporters Clubs",
+    title: "Supporters Clubs",
     description:
       "We are proud to have 225 Official Supporters' Clubs in countries all over the world, including England, Italy, USA and Germany.",
   },
