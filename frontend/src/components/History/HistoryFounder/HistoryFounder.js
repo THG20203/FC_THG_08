@@ -19,6 +19,7 @@ const HistoryFounder = () => {
           mingling of British and German heritage, embodying the cross-cultural
           spirit of the port city.
         </p>
+        <p className="paragraph-text history-founder__title">Founders:</p>
         <ul className="history-founder__list">
           <li className="history-founder__list--item paragraph-text">
             William Harmann

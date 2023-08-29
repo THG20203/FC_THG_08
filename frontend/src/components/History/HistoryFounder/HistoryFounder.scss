@@ -16,13 +16,16 @@
     margin: 5vh;
     @media screen and (max-width: 37.5em) {
       margin: 2vh;
-      padding: 1vh;
+      padding: 2vh;
     }
+  }
+  &__title {
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--color-grey-2);
   }
   &__list {
     list-style: none;
     padding: 2rem 0;
-    border-top: 1px solid var(--color-grey-2);
     display: flex;
     flex-wrap: wrap;
     &--item {
@@ -30,6 +33,18 @@
       we want to have two elements side by side */
       flex: 0 0 50%;
       margin-bottom: 0.7rem;
+      @media screen and (max-width: 37.5em) {
+        flex: 0 0 100%;
+      }
+    }
+    &--item::before {
+      content: "";
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.7rem;
+      background-image: url("../../../assets/svg/chevron-thin-right.svg");
+      background-size: cover;
     }
   }
 }
