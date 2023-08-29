@@ -19,10 +19,9 @@ const HistoryFounder = () => {
           mingling of British and German heritage, embodying the cross-cultural
           spirit of the port city.
         </p>
-        <p className="history-founder__founders paragraph-text">Founders:</p>
         <ul className="history-founder__list">
           <li className="history-founder__list--item paragraph-text">
-            William Hartmann
+            William Harmann
           </li>
           <li className="history-founder__list--item paragraph-text">
             Edward Becker
