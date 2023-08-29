@@ -1,11 +1,11 @@
 import React from "react";
 import "./HistoryBadge.scss";
-import "../../../assets/images/identity/football-badge.png";
+import badge from "../../../assets/images/identity/football-badge.png";
 
 const HistoryBadge = () => {
   return (
     <div className="history-badge__container">
-      <div>Test</div>
+      <img src={badge} alt="Badge" />
     </div>
   );
 };
