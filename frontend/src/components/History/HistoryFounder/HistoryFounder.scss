@@ -1,0 +1,6 @@
+.history-founder {
+  &__container {
+    grid-column: full-start / col-end 4;
+    background-color: var(--color-grey-3);
+  }
+}
