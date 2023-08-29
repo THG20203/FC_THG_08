@@ -8,27 +8,27 @@
   @extend %heading;
   font-size: 4rem;
   color: var(--color-primary-dark);
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .heading-1--light {
   @extend %heading;
   font-size: 4rem;
   color: var(--color-grey-1);
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .heading-1--dark {
   @extend %heading;
   font-size: 4rem;
   color: var(--color-secondary);
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .heading-2 {
   @extend %heading;
   font-size: 3rem;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .heading-3 {

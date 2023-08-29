@@ -7,7 +7,7 @@ import yearsBanner from "../../../assets/images/banners/130-years-banner.png";
 function SlideToUnlock() {
   /* useState for uiLockScreenProps pass in an object -> key value pairs. */
   const [uiLockScreenProps, setUiLockScreenProps] = useState({
-    uiText: "Explore our History",
+    uiText: "Explore our long and succesful history",
     uiBg: `url(${yearsBanner}) center/cover no-repeat`,
   });
 
@@ -26,7 +26,7 @@ function SlideToUnlock() {
     setLockSliderValue(0);
     setShowLockSlider(true);
     setUiLockScreenProps({
-      uiText: "Explore our History",
+      uiText: "Explore our long and successful history",
       uiBg: `url(${yearsBanner}) center/cover no-repeat`,
     });
   };
