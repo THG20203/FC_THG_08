@@ -1,6 +1,6 @@
 .history-founder {
   &__container {
-    grid-column: full-start / col-end 6;
+    grid-column: full-start / col-end 8;
     background-color: var(--color-grey-3);
     @media screen and (max-width: 87.5em) {
       grid-column: full-start / full-end;
