@@ -4,6 +4,7 @@ import "./ProgressBars.scss";
 import { ProgressBar } from "./ProgressBar";
 
 const ProgressBars = () => {
+  /* this line of code to set it to 0 if nothing is present in the input */
   const [completedProgressBar, setCompletedProgressBar] = useState(0);
   const [statusProgressBar, setStatusProgressBar] = useState({
     teamSuccess: 55,

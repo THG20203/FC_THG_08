@@ -1,11 +1,14 @@
-import React, { Fragment } from "react";
-import SlideToUnlock from "../../components/History/SlideToUnlock";
+import React from "react";
+import SlideToUnlock from "../../components/History/LockSlider/SlideToUnlock";
+import HistoryText from "../../components/History/HistoryText/HistoryText";
+import "./History.scss";
 
 const HistoryPage = () => {
   return (
-    <Fragment>
+    <div className="history-container">
       <SlideToUnlock />
-    </Fragment>
+      <HistoryText />
+    </div>
   );
 };
 

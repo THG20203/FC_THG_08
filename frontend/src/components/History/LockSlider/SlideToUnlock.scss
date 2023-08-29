@@ -1,12 +1,15 @@
 .slide-unlock {
   &__container {
-    width: 100vw;
+    grid-column: full-start / col-end 4;
     overflow-x: hidden;
     height: calc(100vh - 16rem);
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
+    @media screen and (max-width: 62.5em) {
+      width: 100vw;
+      grid-column: full-start / full-end;
+    }
   }
   &__title {
     position: absolute;

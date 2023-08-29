@@ -1,0 +1,6 @@
+.history-text {
+  &__container {
+    grid-column: col-start 5 / full-end;
+    background-color: red;
+  }
+}
