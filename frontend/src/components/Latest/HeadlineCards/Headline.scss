@@ -5,16 +5,32 @@
     padding: 5vh;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
+      height: 60vh;
+    }
+    @media screen and (max-width: 37.5em) {
+      height: 180vh;
     }
   }
   &__col {
     width: calc((100% - 1 * 2rem) / 3);
+    @media screen and (max-width: 37.5em) {
+      width: 100%;
+    }
+    &--1 {
+      margin-right: 1rem;
+    }
+    &--3 {
+      margin-left: 1rem;
+    }
   }
   &__row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    @media screen and (max-width: 37.5em) {
+      flex-direction: column;
+    }
   }
   &__card {
     /* perspective has to be defined on the parent */
@@ -22,12 +38,11 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    margin: 1rem;
     &-side {
       background-color: red;
       color: #fff;
       font-size: 2rem;
-      height: 50rem;
+      height: 50vh;
       width: 100%;
       backface-visibility: hidden;
       position: absolute;

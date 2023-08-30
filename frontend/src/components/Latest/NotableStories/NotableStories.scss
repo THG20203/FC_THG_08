@@ -46,7 +46,7 @@
       }
     }
     &-text {
-      margin: 2vh 0 4vh;
+      margin: 2vh 0;
       position: relative;
       z-index: 2;
       @media only screen and (max-width: 87.5em) {
@@ -62,8 +62,8 @@
       }
     }
     &-image {
-      height: 12vh;
-      width: 12vh;
+      height: 8vh;
+      width: 8vh;
       border-radius: 50%;
       border: 0.2rem solid var(--color-primary-dark);
       margin-right: 1.5rem;

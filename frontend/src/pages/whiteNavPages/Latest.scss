@@ -6,8 +6,8 @@
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(8rem, 1fr) [tram-end] 10vw [full-end];
-  grid-template-rows: calc(100vh - 16rem) min-content;
-  @media only screen and (max-width: 87.5em) {
+  grid-template-rows: 60vh min-content;
+  @media only screen and (max-width: 94em) {
     grid-template-rows: min-content min-content;
   }
 }
