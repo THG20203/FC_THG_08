@@ -6,13 +6,19 @@ const Headline = () => {
     <section className="headline-cards__section">
       <div className="headline-cards__row">
         <div className="headline-cards__col-1">
-          <div className="headline-cards__card">Card</div>
+          <div className="headline-cards__card">
+            <div className="headline-cards__card--side">Card</div>
+          </div>
         </div>
         <div className="headline-cards__col-2">
-          <div className="headline-cards__card">Card</div>
+          <div className="headline-cards__card">
+            <div className="headline-cards__card--side">Card</div>
+          </div>
         </div>
         <div className="headline-cards__col-3">
-          <div className="headline-cards__card">Card</div>
+          <div className="headline-cards__card">
+            <div className="headline-cards__card--side">Card</div>
+          </div>
         </div>
       </div>
     </section>
