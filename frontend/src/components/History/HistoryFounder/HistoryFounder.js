@@ -19,6 +19,13 @@ const HistoryFounder = () => {
           mingling of British and German heritage, embodying the cross-cultural
           spirit of the port city.
         </p>
+        <p className="paragraph-text mb-sm">
+          These individuals, hailing from diverse backgrounds, saw football as a
+          bridge that could transcend societal boundaries. The founding members
+          included names like William Hartmann, Edward Becker, and Thomas
+          Wagner, signifying the fusion of identities that defined the city's
+          vibrant tapestry.
+        </p>
         <p className="paragraph-text history-founder__title">Founders:</p>
         <ul className="history-founder__list">
           <li className="history-founder__list--item paragraph-text">
