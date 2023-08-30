@@ -13,12 +13,13 @@
   }
   &__card {
     /* perspective has to be defined on the parent */
+    /* lower value, more volatile the effect, hence 150rem for perspective */
     perspective: 150rem;
     -moz-perspective: 150rem;
-    &:hover &--side {
+    &:hover &-side {
       transform: rotateY(180deg);
     }
-    &--side {
+    &-side {
       background-color: red;
       color: #fff;
       font-size: 2rem;

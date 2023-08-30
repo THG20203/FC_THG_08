@@ -7,17 +7,20 @@ const Headline = () => {
       <div className="headline-cards__row">
         <div className="headline-cards__col-1">
           <div className="headline-cards__card">
-            <div className="headline-cards__card--side">Card</div>
+            <div className="headline-cards__card-side--front">Card</div>
+            <div className="headline-cards__card-side--back">back</div>
           </div>
         </div>
         <div className="headline-cards__col-2">
           <div className="headline-cards__card">
-            <div className="headline-cards__card--side">Card</div>
+            <div className="headline-cards__card-side--front">Card</div>
+            <div className="headline-cards__card-side--back">back</div>
           </div>
         </div>
         <div className="headline-cards__col-3">
           <div className="headline-cards__card">
-            <div className="headline-cards__card--side">Card</div>
+            <div className="headline-cards__card-side--front">Card</div>
+            <div className="headline-cards__card-side--back">back</div>
           </div>
         </div>
       </div>
