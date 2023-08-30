@@ -15,15 +15,17 @@
     /* perspective has to be defined on the parent */
     perspective: 150rem;
     -moz-perspective: 150rem;
+    &:hover &--side {
+      transform: rotateY(180deg);
+    }
     &--side {
       background-color: red;
+      color: #fff;
+      font-size: 2rem;
       width: 30rem;
       height: 50rem;
       cursor: pointer;
       transition: all 1s;
-      &:hover {
-        transform: rotateY(180deg);
-      }
     }
   }
 }
