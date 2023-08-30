@@ -2,6 +2,7 @@
   &__container {
     grid-column: col-end 7 / full-end;
     position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     background: linear-gradient(
@@ -14,6 +15,9 @@
     }
     @media screen and (max-width: 37.5em) {
       grid-column: full-start / full-end;
+    }
+    &:hover img {
+      transform: scale(1.2) rotate(30deg);
     }
   }
   &__image {
@@ -31,13 +35,14 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    z-index: 2;
     color: var(--color-grey-1);
     /* make transition happen smoothly */
     transition: all 0.5s;
+    background: rgba(0, 0, 0, 0);
     cursor: pointer;
     &:hover {
       opacity: 1;
+      background: rgba(0, 0, 0, 0.5);
     }
     &-title {
       margin-bottom: 1rem;

@@ -8,9 +8,11 @@ const HistoryBadge = () => {
       <img className="history-badge__image" src={badge} alt="Badge" />
       <div className="history-badge__caption">
         <h1 className="heading-1--light history-badge__caption-heading">
-          Caption
+          Sea Serpents
         </h1>
-        <p className="paragraph-text history-badge__caption-paragraph">test</p>
+        <p className="paragraph-text history-badge__caption-paragraph">
+          Since 1893
+        </p>
       </div>
     </div>
   );
