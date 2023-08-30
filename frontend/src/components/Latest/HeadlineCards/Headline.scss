@@ -10,6 +10,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    max-width: 50vw;
   }
   &__card {
     /* perspective has to be defined on the parent */
