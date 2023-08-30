@@ -1,7 +1,7 @@
 .sea-serpent {
   &__container {
     background-color: var(--color-secondary);
-    grid-column: full-start / full-end;
+    grid-column: tram-start / tram-end;
     padding: 7vh;
     display: flex;
     justify-content: center;
