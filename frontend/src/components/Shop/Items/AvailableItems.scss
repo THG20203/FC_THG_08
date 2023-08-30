@@ -1,9 +1,9 @@
 .available-items {
   animation: items-appear 1s ease-out forwards;
   display: flex;
-  justify-content: center;
   &__list {
     list-style: none;
+    width: 80vw;
     color: var(--color-grey-1);
     background-color: var(--color-secondary);
     padding: 2rem;
