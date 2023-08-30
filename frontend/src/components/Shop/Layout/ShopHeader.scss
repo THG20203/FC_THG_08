@@ -1,8 +1,6 @@
 .shop-header {
   grid-column: tram-start / tram-end;
-  @media screen and (max-width: 94em) {
-    grid-column: full-start / full-end;
-  }
+
   &__content {
     grid-column: tram-start / tram-end;
     @media screen and (max-width: 94em) {

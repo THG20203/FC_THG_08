@@ -1,16 +1,15 @@
 .items-summary {
   &__container {
-    width: 100vw;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    grid-column: tram-start / tram-end;
   }
   &__content {
     text-align: center;
     background-color: var(--color-primary-dark);
     color: var(--color-grey-1);
     height: min-content;
-    width: 80vw;
     @media screen and (max-width: 94em) {
       width: 100vw;
     }

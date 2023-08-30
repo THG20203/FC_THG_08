@@ -11,10 +11,13 @@
 
 .contact {
   display: grid;
-  grid-column: full-start / full-end;
+  grid-column: tram-start / tram-end;
   padding: 7vh;
   background-color: var(--color-secondary);
   color: var(--color-grey-1);
+  @media only screen and (max-width: 94em) {
+    grid-column: full-start / full-end;
+  }
   @media only screen and (max-width: 20em) {
     padding: 2vh;
   }

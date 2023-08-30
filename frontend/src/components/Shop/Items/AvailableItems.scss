@@ -1,13 +1,11 @@
 .available-items {
   animation: items-appear 1s ease-out forwards;
-  width: 100vw;
   display: flex;
   justify-content: center;
   &__list {
     list-style: none;
     color: var(--color-grey-1);
     background-color: var(--color-secondary);
-    width: 80vw;
     padding: 2rem;
     @media screen and (max-width: 94em) {
       width: 100vw;
