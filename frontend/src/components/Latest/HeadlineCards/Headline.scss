@@ -2,7 +2,7 @@
   &__section {
     grid-column: col-start 4 / full-end;
     background-color: var(--color-grey-3);
-    padding: 7vh;
+    padding: 5vh;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
@@ -10,5 +10,15 @@
   &__row {
     display: flex;
     justify-content: space-between;
+  }
+  &__card {
+    background-color: red;
+    width: 30rem;
+    height: 50rem;
+    cursor: pointer;
+    transition: all 1s;
+    &:hover {
+      transform: rotateY(180deg);
+    }
   }
 }
