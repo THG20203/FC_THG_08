@@ -7,10 +7,14 @@
       grid-column: full-start / full-end;
     }
   }
+  &__col {
+    width: calc((100% - 1 * 2rem) / 3);
+  }
   &__row {
     display: flex;
-    justify-content: space-between;
-    max-width: 50vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
   }
   &__card {
     /* perspective has to be defined on the parent */
@@ -18,18 +22,19 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
+    margin: 1rem;
     &-side {
       background-color: red;
       color: #fff;
       font-size: 2rem;
       height: 50rem;
-      width: 10vw;
+      width: 100%;
       backface-visibility: hidden;
       position: absolute;
       top: 0;
       left: 0;
       cursor: pointer;
-      transition: all 1s;
+      transition: all 2s ease;
       &--front {
         background-color: red;
       }
