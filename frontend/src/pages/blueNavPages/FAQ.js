@@ -25,102 +25,105 @@ const FaqPage = () => {
   };
 
   return (
-    <section className="faq__section">
-      <h1 className="faq__header heading-1--dark">
-        Frequently Asked Questions
-      </h1>
+    <div className="faq__container">
+      <section className="faq__section">
+        <h1 className="faq__header heading-1--dark">
+          Frequently Asked Questions
+        </h1>
 
-      <div className="faq-container">
-        {/* FAQ question 1 */}
-        <div
-          /* activeIndex state is either 0 (indicating that the FAQ box at index 0 is active 
+        <div className="faq-container">
+          {/* FAQ question 1 */}
+          <div
+            /* activeIndex state is either 0 (indicating that the FAQ box at index 0 is active 
         or expanded) or null (indicating that no FAQ box is active or expanded). */
-          /* 0 as an index in the code is arbitrary and not tied to an array 
+            /* 0 as an index in the code is arbitrary and not tied to an array 
         or any particular data structure. It's just used as a way to represent 
         the first FAQ box (or element) in this specific user interface. */
-          className={`faq-box ${activeIndex === 0 ? "active" : ""}`}
-          onClick={() => toggleFaqBox(0)}
-        >
-          <h3 className="faq-box__title heading-3 mb-sm">
-            Where can I buy a season ticket?
-          </h3>
-          <p className="faq-box__text paragraph-text">
-            You can buy your season ticket online at . You will need to be
-            registered on and be in possession of a membership card.
-            Alternatively, you can go to the Stadium Office.
-          </p>
-          <button className="faq-toggle">
-            <FontAwesomeIcon
-              className={`faq-toggle__chevron-down ${
-                activeIndex === 0 ? "hidden" : ""
-              }`}
-              icon={faChevronDown}
-            ></FontAwesomeIcon>
-            <FontAwesomeIcon
-              className={`faq-toggle__times ${
-                activeIndex === 0 ? "" : "hidden"
-              }`}
-              icon={faTimes}
-            ></FontAwesomeIcon>
-          </button>
-        </div>
+            className={`faq-box ${activeIndex === 0 ? "active" : ""}`}
+            onClick={() => toggleFaqBox(0)}
+          >
+            <h3 className="faq-box__title heading-3 mb-sm">
+              Where can I buy a season ticket?
+            </h3>
+            <p className="faq-box__text paragraph-text">
+              You can buy your season ticket online at . You will need to be
+              registered on and be in possession of a membership card.
+              Alternatively, you can go to the Stadium Office.
+            </p>
+            <button className="faq-toggle">
+              <FontAwesomeIcon
+                className={`faq-toggle__chevron-down ${
+                  activeIndex === 0 ? "hidden" : ""
+                }`}
+                icon={faChevronDown}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className={`faq-toggle__times ${
+                  activeIndex === 0 ? "" : "hidden"
+                }`}
+                icon={faTimes}
+              ></FontAwesomeIcon>
+            </button>
+          </div>
 
-        {/* FAQ question 2 */}
-        <div
-          className={`faq-box ${activeIndex === 1 ? "active" : ""}`}
-          onClick={() => toggleFaqBox(1)}
-        >
-          <h3 className="faq-box__title heading-3 mb-sm">
-            What games are included in the season ticket?
-          </h3>
-          <p className="faq-box__text paragraph-text">
-            The season ticket includes all home games in the next league season.
-          </p>
-          <button className="faq-toggle">
-            <FontAwesomeIcon
-              className={`faq-toggle__chevron-down ${
-                activeIndex === 1 ? "hidden" : ""
-              }`}
-              icon={faChevronDown}
-            ></FontAwesomeIcon>
-            <FontAwesomeIcon
-              className={`faq-toggle__times ${
-                activeIndex === 1 ? "" : "hidden"
-              }`}
-              icon={faTimes}
-            ></FontAwesomeIcon>
-          </button>
-        </div>
+          {/* FAQ question 2 */}
+          <div
+            className={`faq-box ${activeIndex === 1 ? "active" : ""}`}
+            onClick={() => toggleFaqBox(1)}
+          >
+            <h3 className="faq-box__title heading-3 mb-sm">
+              What games are included in the season ticket?
+            </h3>
+            <p className="faq-box__text paragraph-text">
+              The season ticket includes all home games in the next league
+              season.
+            </p>
+            <button className="faq-toggle">
+              <FontAwesomeIcon
+                className={`faq-toggle__chevron-down ${
+                  activeIndex === 1 ? "hidden" : ""
+                }`}
+                icon={faChevronDown}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className={`faq-toggle__times ${
+                  activeIndex === 1 ? "" : "hidden"
+                }`}
+                icon={faTimes}
+              ></FontAwesomeIcon>
+            </button>
+          </div>
 
-        {/* FAQ question 3 */}
-        <div
-          className={`faq-box ${activeIndex === 2 ? "active" : ""}`}
-          onClick={() => toggleFaqBox(2)}
-        >
-          <h3 className="faq-box__title heading-3 mb-sm">
-            How do I sign up as a club member?
-          </h3>
-          <p className="faq-box__text paragraph-text">
-            For information and how to purchase a club membership, please visit
-            the sign-up page.
-          </p>
-          <button className="faq-toggle">
-            <FontAwesomeIcon
-              className={`faq-toggle__chevron-down ${
-                activeIndex === 2 ? "hidden" : ""
-              }`}
-              icon={faChevronDown}
-            ></FontAwesomeIcon>
-            <FontAwesomeIcon
-              className={`faq-toggle__times ${
-                activeIndex === 2 ? "" : "hidden"
-              }`}
-              icon={faTimes}
-            ></FontAwesomeIcon>
-          </button>
+          {/* FAQ question 3 */}
+          <div
+            className={`faq-box ${activeIndex === 2 ? "active" : ""}`}
+            onClick={() => toggleFaqBox(2)}
+          >
+            <h3 className="faq-box__title heading-3 mb-sm">
+              How do I sign up as a club member?
+            </h3>
+            <p className="faq-box__text paragraph-text">
+              For information and how to purchase a club membership, please
+              visit the sign-up page.
+            </p>
+            <button className="faq-toggle">
+              <FontAwesomeIcon
+                className={`faq-toggle__chevron-down ${
+                  activeIndex === 2 ? "hidden" : ""
+                }`}
+                icon={faChevronDown}
+              ></FontAwesomeIcon>
+              <FontAwesomeIcon
+                className={`faq-toggle__times ${
+                  activeIndex === 2 ? "" : "hidden"
+                }`}
+                icon={faTimes}
+              ></FontAwesomeIcon>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
