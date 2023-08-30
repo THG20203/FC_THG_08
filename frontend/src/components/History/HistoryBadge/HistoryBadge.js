@@ -10,9 +10,7 @@ const HistoryBadge = () => {
         <h1 className="heading-1--light history-badge__caption-heading">
           Sea Serpents
         </h1>
-        <p className="paragraph-text history-badge__caption-paragraph">
-          Since 1893
-        </p>
+        <p className="paragraph-text history-badge__caption-paragraph">1893</p>
       </div>
     </div>
   );

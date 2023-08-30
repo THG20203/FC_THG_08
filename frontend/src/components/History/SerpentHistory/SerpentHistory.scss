@@ -1,0 +1,14 @@
+.sea-serpent {
+  &__container {
+    background-color: red;
+    grid-column: full-start / full-end;
+    @media screen and (max-width: 87.5em) {
+      grid-column: full-start / col-end 4;
+      grid-row: 4 / 5;
+    }
+    @media screen and (max-width: 37.5em) {
+      grid-column: full-start / full-end;
+      grid-row: 5 / 6;
+    }
+  }
+}
