@@ -30,5 +30,8 @@
   }
   &__dates {
     margin-bottom: 0.5rem;
+    & span {
+      max-width: min-content;
+    }
   }
 }

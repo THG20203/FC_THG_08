@@ -9,7 +9,7 @@ const HistoryText = () => {
         </h1>
         <div className="history-text__two-column">
           <h4 className="heading-4--light history-text__description history-text__dates">
-            1893 - 1920
+            <span>1893 - 1920</span>
           </h4>
           <p className="paragraph-text history-text__description">
             The club's early years were marked by gritty determination. From
@@ -19,7 +19,7 @@ const HistoryText = () => {
         </div>
         <div className="history-text__two-column">
           <h4 className="heading-4--light history-text__description history-text__dates">
-            1920 - 1977
+            <span>1920 - 1977</span>
           </h4>
           <p className="paragraph-text history-text__description">
             FC THG 08 secured an impressive 10 league titles from 1920 to 1977.
@@ -29,7 +29,7 @@ const HistoryText = () => {
         </div>
         <div className="history-text__two-column">
           <h4 className="heading-4--light history-text__description history-text__dates">
-            1977 - 1995
+            <span>1977 - 1995</span>
           </h4>
           <p className="paragraph-text history-text__description">
             Financial problems gripped the club in late 70's and 80's, but
@@ -40,7 +40,7 @@ const HistoryText = () => {
         </div>
         <div className="history-text__two-column">
           <h4 className="heading-4--light history-text__description history-text__dates">
-            1995 - present
+            <span>1995 - present</span>
           </h4>
           <p className="paragraph-text history-text__description">
             Since 1982, FC THG 08 has enjoyed a meteoric rise, clinching an
