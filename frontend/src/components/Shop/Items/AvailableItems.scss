@@ -7,9 +7,9 @@
     list-style: none;
     color: var(--color-grey-1);
     background-color: var(--color-secondary);
-    width: 60vw;
+    width: 80vw;
     padding: 2rem;
-    @media screen and (max-width: 62.5em) {
+    @media screen and (max-width: 94em) {
       width: 100vw;
       padding: 1rem;
     }

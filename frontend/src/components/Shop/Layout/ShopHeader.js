@@ -7,16 +7,14 @@ const ShopHeader = (props) => {
   return (
     <div className="shop-header">
       <section className="shop-header__content">
-        <h2 className="shop-header__title heading-2">Shop Items</h2>
+        <h4 className="shop-header__title heading-4--light">Shop Items</h4>
         <ShopHeaderCartButton />
       </section>
-      <div className="shop-header__image--content">
-        <img
-          className="shop-header__image"
-          src={shopBanner}
-          alt="shopBannerImage"
-        />
-      </div>
+      <img
+        className="shop-header__image"
+        src={shopBanner}
+        alt="shopBannerImage"
+      />
     </div>
   );
 };
