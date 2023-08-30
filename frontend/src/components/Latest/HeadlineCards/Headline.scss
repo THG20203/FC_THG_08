@@ -1,4 +1,14 @@
-.headline-cards__row {
-  grid-column: col-start 4 / full-end;
-  background-color: var(--color-grey-3);
+.headline-cards {
+  &__section {
+    grid-column: col-start 4 / full-end;
+    background-color: var(--color-grey-3);
+    padding: 7vh;
+    @media screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
 }
