@@ -16,9 +16,6 @@
     /* lower value, more volatile the effect, hence 150rem for perspective */
     perspective: 150rem;
     -moz-perspective: 150rem;
-    &:hover &-side {
-      transform: rotateY(180deg);
-    }
     &-side {
       background-color: red;
       color: #fff;
@@ -27,6 +24,19 @@
       height: 50rem;
       cursor: pointer;
       transition: all 1s;
+      &--front {
+        background-color: red;
+      }
+      &--back {
+        background-color: blue;
+        transform: rotateY(180deg);
+      }
+    }
+    &:hover &-side--front {
+      transform: rotateY(180deg);
+    }
+    &:hover &-side--back {
+      transform: rotateY(0);
     }
   }
 }
