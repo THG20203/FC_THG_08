@@ -16,12 +16,17 @@
     /* lower value, more volatile the effect, hence 150rem for perspective */
     perspective: 150rem;
     -moz-perspective: 150rem;
+    position: relative;
     &-side {
       background-color: red;
       color: #fff;
       font-size: 2rem;
-      width: 30rem;
       height: 50rem;
+      width: 10vw;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
       cursor: pointer;
       transition: all 1s;
       &--front {
