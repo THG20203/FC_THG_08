@@ -1,10 +1,13 @@
 .blue-navbar {
   &__container {
     background-color: var(--color-primary-dark);
-    height: 6rem;
+    grid-column: tram-start / tram-end;
     display: flex;
     justify-content: end;
     align-items: center;
+    @media only screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
+    }
     @media only screen and (max-width: 62.5em) {
       justify-content: center;
     }

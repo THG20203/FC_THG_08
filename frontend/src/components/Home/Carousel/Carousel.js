@@ -3,17 +3,17 @@ import "./Carousel.scss";
 /* can import images like css files in react */
 import trainingTop from "../../../assets/images/banners/training-top.png";
 import yearsBanner from "../../../assets/images/banners/130-years-banner.png";
-import mural from "../../../assets/images/graffiti/mural.png";
+import muralBanner from "../../../assets/images/banners/mural-banner.png";
 import SlideItem from "./SlideItem";
 
 const slide = [
   {
-    image: mural,
+    image: muralBanner,
     alt: "Mural",
-    heading: "Example 3",
+    heading: "Example",
   },
   {
-    image: mural,
+    image: muralBanner,
     alt: "Mural",
     heading: "Graffiti Culture",
   },

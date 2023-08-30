@@ -6,8 +6,10 @@
     /* make second nav a grid */
     display: grid;
     /* ensure second nav is full width across the page */
-    grid-column: full-start / full-end;
-    height: 10rem;
+    grid-column: tram-start / tram-end;
+    @media only screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
+    }
   }
   &__badge {
     /* take the first column of the second nav grid */

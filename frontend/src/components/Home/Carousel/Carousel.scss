@@ -1,7 +1,7 @@
 .carousel {
   /* col-end 4 - halfway across the page */
-  grid-column: full-start / col-end 4;
-  @media only screen and (max-width: 87.5em) {
+  grid-column: tram-start / col-end 4;
+  @media only screen and (max-width: 94em) {
     /* want it to span whole page on smaller devices */
     grid-column: full-start / full-end;
   }
@@ -24,7 +24,7 @@
     /* define animation property for wrapper as slideshow with the duration of 15 seconds */
     // we want animation to be played infinitely, hence animation iteration 'infinite'
     animation: slideshow 20s infinite;
-    @media only screen and (max-width: 87.5em) {
+    @media only screen and (max-width: 94em) {
       width: 400vw;
       animation: slideshowSmallViewport 20s infinite;
     }
@@ -58,7 +58,7 @@
     width: 50vw;
     /* image keeps its aspect ratio (so not stretched) and fills the given dimension. Image = clipped to fit */
     object-fit: cover;
-    @media only screen and (max-width: 87.5em) {
+    @media only screen and (max-width: 94em) {
       /* want images to span whole viewport width smaller devices */
       width: 100vw;
     }
@@ -66,13 +66,13 @@
   &__header {
     position: absolute;
     top: 80%;
-    left: 50%;
-    right: 50%;
+    left: 20vw;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 100vw;
     text-align: center;
-    @media only screen and (max-width: 87.5em) {
+    @media only screen and (max-width: 94em) {
+      left: 50vw;
       font-size: 6rem;
       top: 75%;
       padding: 5vw;
@@ -222,7 +222,7 @@
   animation: none;
   /* when we focus on second button, we need to display second image */
   left: -50vw;
-  @media only screen and (max-width: 87.5em) {
+  @media only screen and (max-width: 94em) {
     /* viewport width of images is npw 100vw - so to click through each one need -100vw */
     left: -100vw;
   }
@@ -233,7 +233,7 @@
   animation: none;
   /* when we focus on third button, we need to display third image */
   left: -100vw;
-  @media only screen and (max-width: 87.5em) {
+  @media only screen and (max-width: 94em) {
     left: -200vw;
   }
 }
@@ -243,7 +243,7 @@
   animation: none;
   /* when we focus on fourth button, we need to display fourth image */
   left: -150vw;
-  @media only screen and (max-width: 87.5em) {
+  @media only screen and (max-width: 94em) {
     left: -300vw;
   }
 }
