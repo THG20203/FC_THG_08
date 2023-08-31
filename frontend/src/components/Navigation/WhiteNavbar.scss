@@ -2,7 +2,7 @@
   &__container {
     /* ensure the background-color of the overall bar is light grey */
     background-color: var(--color-grey-1);
-    border: 0.1rem solid var(--color-primary-dark);
+    border-bottom: 0.1rem solid var(--color-primary-dark);
 
     /* make second nav a grid */
     display: grid;
