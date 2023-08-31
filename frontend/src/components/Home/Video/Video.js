@@ -43,6 +43,10 @@ const Video = () => {
   };
   return (
     <div className="video__container">
+      <div className="video__text">
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+        Lorem ipsum Lorem ipsum Lorem ipsum.
+      </div>
       <div className="video__content">
         {/* The videoRef variable holds a reference to the object returned by the useRef hook.
         This object has a property named current, which initially holds the value null. */}

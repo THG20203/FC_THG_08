@@ -1,18 +1,32 @@
 .video {
   &__container {
     grid-column: col-start 5 / tram-end;
+    @media only screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
+    }
     background-color: var(--color-grey-3);
-    display: grid;
-    grid-template-columns: 1fr video-start 1fr video-end;
+    display: flex;
+    @media only screen and (max-width: 62.5em) {
+      flex-direction: column;
+    }
   }
-  @media only screen and (max-width: 94em) {
-    grid-column: full-start / full-end;
+  &__text {
+    margin: 2rem;
+    width: 50%;
+    @media only screen and (max-width: 62.5em) {
+      width: 100%;
+      margin: 0;
+    }
   }
   &__content {
     height: 46rem;
     position: relative;
-    grid-column: video-start / video-end;
     margin: 2rem;
+    width: 50%;
+    @media only screen and (max-width: 62.5em) {
+      width: 100%;
+      margin: 0;
+    }
   }
   &__player {
     position: absolute;
@@ -22,6 +36,9 @@
   }
   &__button {
     margin-top: 39rem;
+    @media only screen and (max-width: 62.5em) {
+      margin-left: 3rem;
+    }
   }
 
   &__icon {
