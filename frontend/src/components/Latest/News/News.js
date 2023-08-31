@@ -14,9 +14,11 @@ const News = (props) => {
     {
       image: conference,
       alt: "Conference",
-      heading: "Next fixture previewed",
+      heading: "Next league fixture previewed",
       description:
         "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation. 'Every match presents a unique set of challenges,' he noted, 'This upcoming fixture is no different. Our focus is on understanding our opponent's strengths and weaknesses, and adjusting our tactics accordingly.'",
+      topic: "Team",
+      date: "3 days ago",
     },
     {
       image: match,
@@ -57,37 +59,49 @@ const News = (props) => {
 
   return (
     <section className="news-section">
-      <h1 className="heading-1--dark mb-md">More Headlines</h1>
+      <h1 className="heading-1--dark mb-md news-section__title">
+        More Headlines
+      </h1>
       <div className="news-card__container">
         <NewsCard
           image={NewsCards[0].image}
           alt={NewsCards[0].alt}
           heading={NewsCards[0].heading}
           description={NewsCards[0].description}
+          topic={NewsCards[0].topic}
+          date={NewsCards[0].date}
         />
         <NewsCard
           image={NewsCards[1].image}
           alt={NewsCards[1].alt}
           heading={NewsCards[1].heading}
           description={NewsCards[1].description}
+          topic={NewsCards[1].topic}
+          date={NewsCards[1].date}
         />
         <NewsCard
           image={NewsCards[2].image}
           alt={NewsCards[2].alt}
           heading={NewsCards[2].heading}
           description={NewsCards[2].description}
+          topic={NewsCards[2].topic}
+          date={NewsCards[2].date}
         />
         <NewsCard
           image={NewsCards[3].image}
           alt={NewsCards[3].alt}
           heading={NewsCards[3].heading}
           description={NewsCards[3].description}
+          topic={NewsCards[3].topic}
+          date={NewsCards[3].date}
         />
         <NewsCard
           image={NewsCards[4].image}
           alt={NewsCards[4].alt}
           heading={NewsCards[4].heading}
           description={NewsCards[4].description}
+          topic={NewsCards[4].topic}
+          date={NewsCards[4].date}
         />
         <NewsCard
           image={NewsCards[5].image}
