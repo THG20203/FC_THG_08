@@ -1,6 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./Video.scss";
 import trainingVideo from "../../../assets/videos/training-video.mp4";
+/* For font awesome icons */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 
 const Video = () => {
   /* useState false cause initially not playing */
@@ -46,9 +49,13 @@ const Video = () => {
         <video ref={videoRef} className="video__player" onClick={togglePlay}>
           <source src={trainingVideo} type="video/mp4"></source>
         </video>
-        <button className="video__button" onClick={togglePlay}>
+        <button className="btn video__button" onClick={togglePlay}>
           {/* if isPlaying is true display text Pause, if isn't -> display Play */}
-          {isPlaying ? "Pause" : "Play"}
+          <FontAwesomeIcon
+            className="video__icon"
+            icon={isPlaying ? faPause : faPlay}
+          ></FontAwesomeIcon>
+          <div className="btn__wave"></div>
         </button>
       </div>
     </div>

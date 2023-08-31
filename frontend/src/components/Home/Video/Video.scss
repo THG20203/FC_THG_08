@@ -1,7 +1,7 @@
 .video {
   &__container {
     grid-column: col-start 5 / tram-end;
-    background-color: var(--color-primary);
+    background-color: var(--color-grey-3);
     display: grid;
     grid-template-columns: 1fr video-start 1fr video-end;
   }
@@ -21,9 +21,12 @@
     object-fit: cover;
   }
   &__button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 39rem;
+  }
+
+  &__icon {
+    width: 2vh;
+    height: 2vh;
+    color: white;
   }
 }
