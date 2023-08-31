@@ -24,10 +24,10 @@ const Contact = () => {
     <div className="contact">
       <header className="mb-lg">
         <h1 className="heading-1--light mb-sm">Contact Information</h1>
-        <h4 className="heading-4--light">
+        <p className="paragraph-text">
           Details for fans to get in touch with the club for inquiries, support,
           or other matters.
-        </h4>
+        </p>
       </header>
       <ul id="contacts">
         <ContactList

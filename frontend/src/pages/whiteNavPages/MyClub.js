@@ -48,10 +48,10 @@ const MyClub = () => {
         <div className="expenses-content">
           <header>
             <h1 className="heading-1--dark mb-sm">Club Shop Purchase Survey</h1>
-            <h4 className="heading-4 expenses-content__description">
+            <p className="paragraph-text expenses-content__description">
               Help us compare prices by filling out this form with purchases
-              from our club shop
-            </h4>
+              from our club shop.
+            </p>
           </header>
           <NewExpense onAddExpense={addExpenseHandler} />
           <Expenses items={expenses} />
