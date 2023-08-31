@@ -24,16 +24,6 @@ const BlueNavbar = () => {
           <span>Shop</span>
         </NavLink>
       </div>
-      {/* Videos div */}
-      <div className="blue-navbar__div">
-        <NavLink to="#" className="blue-navbar__link">
-          <FontAwesomeIcon
-            className="blue-navbar__icon"
-            icon={faCirclePlay}
-          ></FontAwesomeIcon>
-          <span>Videos</span>
-        </NavLink>
-      </div>
       {/* History div */}
       <div className="blue-navbar__div">
         <NavLink to="/history" className="blue-navbar__link">
