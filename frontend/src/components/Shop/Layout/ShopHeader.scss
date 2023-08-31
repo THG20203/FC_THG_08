@@ -1,11 +1,11 @@
 .shop-header {
   grid-column: tram-start / tram-end;
-  width: 80vw;
   @media screen and (max-width: 94em) {
     grid-column: full-start / full-end;
     width: 100vw;
   }
   &__content {
+    grid-column: tram-start / tram-end;
     height: min-content;
     background-color: var(--color-secondary);
     color: var(--color-grey-1);
@@ -26,11 +26,10 @@
     display: flex;
     grid-column: tram-start / tram-end;
     @media screen and (max-width: 94em) {
-      grid-column: full-start / full-end;
+      width: 100vw;
     }
   }
   &__image {
-    grid-column: tram-start / tram-end;
     width: 100%;
   }
 }
