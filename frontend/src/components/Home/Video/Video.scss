@@ -1,0 +1,9 @@
+.video {
+  &__container {
+    grid-column: col-start 5 / tram-end;
+    background-color: red;
+  }
+  @media only screen and (max-width: 94em) {
+    grid-column: full-start / full-end;
+  }
+}
