@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
   faQuestionCircle,
-  faCirclePlay,
   faHistory,
   faEarthEurope,
+  faCamera,
 } from "@fortawesome/free-solid-svg-icons";
 
 const BlueNavbar = () => {
@@ -52,6 +52,16 @@ const BlueNavbar = () => {
             icon={faEarthEurope}
           ></FontAwesomeIcon>
           <span>Culture</span>
+        </NavLink>
+      </div>
+      {/* */}
+      <div className="blue-navbar__div">
+        <NavLink to="/history" className="blue-navbar__link">
+          <FontAwesomeIcon
+            className="blue-navbar__icon"
+            icon={faCamera}
+          ></FontAwesomeIcon>
+          <span>Gallery</span>
         </NavLink>
       </div>
     </div>
