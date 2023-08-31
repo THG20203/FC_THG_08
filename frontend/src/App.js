@@ -14,6 +14,7 @@ import ShopPage from "./pages/blueNavPages/Shop";
 import HistoryPage from "./pages/blueNavPages/History";
 import FaqPage from "./pages/blueNavPages/FAQ";
 import CulturePage from "./pages/blueNavPages/Culture";
+import GalleryPage from "./pages/blueNavPages/Gallery";
 /* Main Navbar Imports (Excluding events) */
 import HomePage from "./pages/whiteNavPages/Home";
 import LatestPage from "./pages/whiteNavPages/Latest";
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "history", element: <HistoryPage /> },
       { path: "faqs", element: <FaqPage /> },
       { path: "culture", element: <CulturePage /> },
+      { path: "gallery", element: <GalleryPage /> },
     ],
   },
 ]);

@@ -56,7 +56,7 @@ const BlueNavbar = () => {
       </div>
       {/* */}
       <div className="blue-navbar__div">
-        <NavLink to="/history" className="blue-navbar__link">
+        <NavLink to="/gallery" className="blue-navbar__link">
           <FontAwesomeIcon
             className="blue-navbar__icon"
             icon={faCamera}
