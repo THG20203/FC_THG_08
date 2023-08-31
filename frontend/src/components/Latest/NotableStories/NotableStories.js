@@ -1,8 +1,8 @@
 import React from "react";
 import "./NotableStories.scss";
 /* player images */
-import player1 from "../../../assets/images/playerImgs/Player1.png";
-import player2 from "../../../assets/images/playerImgs/Player2.png";
+import player1 from "../../../assets/images/players/Player1.png";
+import player2 from "../../../assets/images/players/Player2.png";
 
 /* takes date object as a parameter because it needs to format that date 
 to dd.mm.yy. By passing date object as a parameter, the function can access the 

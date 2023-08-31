@@ -24,12 +24,13 @@
   }
   &__banner {
     display: flex;
-  }
-  &__image {
     grid-column: tram-start / tram-end;
-    width: 60vw;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
+  }
+  &__image {
+    grid-column: tram-start / tram-end;
+    width: 100%;
   }
 }

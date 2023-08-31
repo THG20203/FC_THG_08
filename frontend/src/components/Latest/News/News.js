@@ -14,7 +14,7 @@ const News = (props) => {
     {
       image: conference,
       alt: "Conference",
-      heading: "Next league fixture previewed",
+      heading: "Manager previews next league fixture",
       description:
         "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation. 'Every match presents a unique set of challenges,' he noted, 'This upcoming fixture is no different. Our focus is on understanding our opponent's strengths and weaknesses, and adjusting our tactics accordingly.'",
       topic: "Team",
@@ -23,7 +23,7 @@ const News = (props) => {
     {
       image: match,
       alt: "Match",
-      heading: "Win over Crimson Pangmere",
+      heading: "Win over Crimson Pangmere FC",
       description:
         "FC THG 04 picked up three points in their first home game of the new season defeating Crimson Pangmere FC 3-0 on Saturday night. Thomas Mahrez (16’), (75’) and  Ishmael Baptiste (90+2’) got the goals for FC THG 08. The visitors finished the game with ten men after defender Mehmet Kaya was red carded.",
       topic: "Team",
