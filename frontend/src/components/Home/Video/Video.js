@@ -47,7 +47,7 @@ const Video = () => {
           <source src={trainingVideo} type="video/mp4"></source>
         </video>
         <button className="video__button" onClick={togglePlay}>
-          {/* if isPlaying is true display text Pause, if isn't -> display Pay */}
+          {/* if isPlaying is true display text Pause, if isn't -> display Play */}
           {isPlaying ? "Pause" : "Play"}
         </button>
       </div>
