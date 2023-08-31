@@ -1,9 +1,23 @@
 .video {
   &__container {
     grid-column: col-start 5 / tram-end;
-    background-color: red;
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-columns: 1fr video-start 1fr video-end;
   }
   @media only screen and (max-width: 94em) {
     grid-column: full-start / full-end;
+  }
+  &__content {
+    height: 46rem;
+    position: relative;
+    grid-column: video-start / video-end;
+    margin: 2rem;
+  }
+  &__player {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
