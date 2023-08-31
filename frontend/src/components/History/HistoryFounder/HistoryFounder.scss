@@ -4,6 +4,9 @@
     background-color: var(--color-grey-3);
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 94em) {
+      grid-column: full-start / col-end 6;
+    }
     @media screen and (max-width: 87.5em) {
       grid-column: full-start / full-end;
     }

@@ -8,6 +8,7 @@
     align-items: center;
     flex-direction: column;
     @media screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
       padding: 4vh;
     }
     @media screen and (max-width: 87.5em) {
