@@ -10,11 +10,13 @@ const ShopHeader = (props) => {
         <h4 className="shop-header__title heading-4--light">Shop Items</h4>
         <ShopHeaderCartButton />
       </section>
-      <img
-        className="shop-header__image"
-        src={shopBanner}
-        alt="shopBannerImage"
-      />
+      <div className="shop-header__banner">
+        <img
+          className="shop-header__image"
+          src={shopBanner}
+          alt="shopBannerImage"
+        />
+      </div>
     </div>
   );
 };

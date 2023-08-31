@@ -22,9 +22,12 @@
       font-size: 2rem;
     }
   }
+  &__banner {
+    display: flex;
+  }
   &__image {
     grid-column: tram-start / tram-end;
-    width: 100%;
+    width: 60vw;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }

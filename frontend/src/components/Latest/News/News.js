@@ -18,7 +18,7 @@ const News = (props) => {
       description:
         "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation. 'Every match presents a unique set of challenges,' he noted, 'This upcoming fixture is no different. Our focus is on understanding our opponent's strengths and weaknesses, and adjusting our tactics accordingly.'",
       topic: "Team",
-      date: "3 days ago",
+      date: "7 days ago",
     },
     {
       image: match,
@@ -26,6 +26,8 @@ const News = (props) => {
       heading: "Win over Crimson Pangmere",
       description:
         "FC THG 04 picked up three points in their first home game of the new season defeating Crimson Pangmere FC 3-0 on Saturday night. Thomas Mahrez (16’), (75’) and  Ishmael Baptiste (90+2’) got the goals for FC THG 08. The visitors finished the game with ten men after defender Mehmet Kaya was red carded.",
+      topic: "Team",
+      date: "8 days ago",
     },
     {
       image: trainingTop,
@@ -33,6 +35,8 @@ const News = (props) => {
       heading: "State of the Art Academy Facility",
       description:
         "Step into the future of football excellence at our state-of-the-art Academy Facility. This cutting-edge complex is a harmonious fusion of innovation and technology, designed to nurture raw talent of the furture from youth training to the first team.",
+      topic: "Club",
+      date: "11 days ago",
     },
     {
       image: shirtSale,
@@ -40,6 +44,8 @@ const News = (props) => {
       heading: "Purchase New Seasons Kit here",
       description:
         "As the anticipation builds for the upcoming season, we are thrilled to present the latest football kit for our beloved team, FC THG 08. A captivating blend of tradition, innovation, and the spirit of competition, this kit encapsulates the essence of who we are and what we strive to achieve on the field.",
+      topic: "Club",
+      date: "13 days ago",
     },
     {
       image: corporatePartner,
@@ -47,6 +53,8 @@ const News = (props) => {
       heading: "New Corporate partner e-Payel",
       description:
         "Introducing e-Payel Payments, the dynamic and innovative corporate partner that has joined forces with our club. With a shared passion for excellence and a commitment to pushing boundaries, this collaboration marks a significant milestone in the journey towards success both on and off the field.",
+      topic: "Club",
+      date: "20 days ago",
     },
     {
       image: mural,
@@ -54,6 +62,8 @@ const News = (props) => {
       heading: "Culture in spotlight: Graffiti",
       description:
         "Fans of FC THG 08 are known for their strong sense of pride and loyalty to the club, which is often reflected in the graffiti they create around the stadium and throughout the city. These fans believe that graffiti is a powerful way to express their love for the club and to connect with other fans.",
+      topic: "Club",
+      date: "25 days ago",
     },
   ];
 
@@ -108,6 +118,8 @@ const News = (props) => {
           alt={NewsCards[5].alt}
           heading={NewsCards[5].heading}
           description={NewsCards[5].description}
+          topic={NewsCards[5].topic}
+          date={NewsCards[5].date}
         />
       </div>
     </section>
