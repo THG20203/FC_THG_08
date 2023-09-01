@@ -2,8 +2,21 @@
   &__container {
     grid-column: tram-start / tram-end;
     background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
+  }
+  &__content {
+    white-space: no-wrap;
+    &:after {
+      content: "";
+    }
+  }
+  &__image {
+    padding: 20px;
+    width: 8vw;
   }
 }
