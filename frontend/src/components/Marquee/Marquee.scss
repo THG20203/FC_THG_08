@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    height: 8rem;
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
@@ -13,7 +14,6 @@
     white-space: nowrap;
     color: var(--color-grey-1);
     font-size: 2.5rem;
-    padding: 2.5rem 0;
     animation: marquee 30s infinite linear;
     &:after {
       content: " Center midfielder Fabio Lombardy signs a permanent deal following a successful loan spell last season.";
