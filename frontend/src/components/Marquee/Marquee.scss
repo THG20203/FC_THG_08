@@ -1,0 +1,9 @@
+.marquee {
+  &__container {
+    grid-column: tram-start / tram-end;
+    background-color: red;
+    @media only screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
+    }
+  }
+}
