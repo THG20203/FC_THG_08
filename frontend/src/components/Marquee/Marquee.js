@@ -4,7 +4,10 @@ import "./Marquee.scss";
 const Marquee = () => {
   return (
     <div className="marquee__container">
-      <div className="marquee__content">has to be text</div>
+      <div className="marquee__content">
+        Center Midfielder Fabio Lombardy signs a permanent deal following a
+        successful loan spell last season.
+      </div>
     </div>
   );
 };
