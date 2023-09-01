@@ -10,7 +10,7 @@ const HomePage = () => {
     <div className="home-container">
       <Carousel />
       <Video />
-      <Marquee />
+      // <Marquee />
       <Features />
     </div>
   );
