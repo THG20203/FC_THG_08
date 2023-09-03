@@ -1,0 +1,10 @@
+.next-match {
+  &__container {
+    background: linear-gradient(to right, #dad5d5, #ededf1);
+    grid-column: col-start 7 / tram-end;
+    @media only screen and (max-width: 62.5em) {
+      grid-column: full-start / full-end;
+      background: linear-gradient(to bottom, #ededf1, #dad5d5);
+    }
+  }
+}
