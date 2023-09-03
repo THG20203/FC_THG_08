@@ -31,18 +31,18 @@
   line-height: 1.1;
 }
 
+.heading-2--light {
+  @extend %heading;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: var(--color-grey-1);
+}
+
 .heading-3 {
   @extend %heading;
   font-size: 2rem;
   text-transform: uppercase;
   color: var(--color-secondary);
-}
-
-.heading-3--light {
-  @extend %heading;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: var(--color-grey-1);
 }
 
 .heading-3--lowercase {

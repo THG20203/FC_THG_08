@@ -1,0 +1,7 @@
+.match-timer {
+  &__container {
+    background-color: var(--color-primary-dark);
+    grid-column: col-start 3 / col-end 6;
+    margin: 0.2rem;
+  }
+}

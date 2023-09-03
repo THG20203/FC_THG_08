@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Countdown.scss";
 
 const Countdown = () => {
   /* useState hook is being used create a state variable timeLeft and a function setTimeLeft
@@ -128,10 +129,13 @@ const Countdown = () => {
   // at 3 PM. When the component unmounts, it clears the timer to prevent memory leaks.
 
   return (
-    <div>
-      <h3 className="heading-3--lowercase">
-        {days} days, {hours} hours, {minutes} minutes, {seconds} seconds
+    <div className="countdown__content">
+      <h3 className="heading-3 countdown__subheading">
+        Countdown to next fixture:
       </h3>
+      <h2 className="heading-2--light">
+        {days} days, {hours} hours, {minutes} minutes, {seconds} seconds
+      </h2>
     </div>
   );
 };

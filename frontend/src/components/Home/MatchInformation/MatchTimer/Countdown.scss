@@ -1,0 +1,16 @@
+.countdown {
+  &__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 100%;
+  }
+  &__subheading {
+    color: var(--color-grey-2);
+    position: relative;
+    margin-bottom: 1vh;
+  }
+}
