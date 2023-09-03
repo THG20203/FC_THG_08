@@ -1,5 +1,5 @@
 .match-timer {
   &__container {
-    grid-column: tram-start / tram-end;
+    grid-column: col-end 4 / tram-end;
   }
 }

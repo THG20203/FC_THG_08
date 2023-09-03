@@ -129,9 +129,9 @@ const Countdown = () => {
 
   return (
     <div>
-      <p>
+      <h3 className="heading-3--lowercase">
         {days} days, {hours} hours, {minutes} minutes, {seconds} seconds
-      </p>
+      </h3>
     </div>
   );
 };
