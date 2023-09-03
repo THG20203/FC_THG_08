@@ -6,8 +6,16 @@ const LastMatch = () => {
   return (
     <div className="last-match__container">
       <p>Last Match</p>
-      <img src={blueBadge} alt="FC THG 08 Badge" />
-      <img src={redBadge} alt="Crimson Pangmere Badge" />
+      <img
+        className="last-match__badge--blue"
+        src={blueBadge}
+        alt="FC THG 08 Badge"
+      />
+      <img
+        className="last-match__badge--crimson"
+        src={redBadge}
+        alt="Crimson Pangmere Badge"
+      />
     </div>
   );
 };
