@@ -44,19 +44,15 @@ const Video = () => {
   return (
     <div className="video__container">
       <div className="video__text">
-        <h4 className="heading-4--dark mb-sm">
+        <h3 className="heading-3--lowercase mb-smlst">
           A Glimpse of Youth Team Excellence
-        </h4>
+        </h3>
         <p className="paragraph-text video__description mb-smlst">
           The video demonstrates dedication and skill that defines our young
           athletes as they strive for excellence on the football pitch.
         </p>
         <p className="paragraph-text video__description mb-smlst">
-          This footage was taken at our state-of-the-art training facility, a
-          testament to the clubs commitment to providing the best possible
-          environment for our young athletes' development.
-        </p>
-        <p className="paragraph-text video__description">
+          This footage was taken at our state-of-the-art training facility.
           Brand new pitches, modern training equipment and high tech analyst
           suites ensure that our players have everything they need to excel.
         </p>
