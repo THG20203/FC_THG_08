@@ -58,8 +58,7 @@ const Video = () => {
         </p>
         <p className="paragraph-text video__description">
           Brand new pitches, modern training equipment and high tech analyst
-          suites ensure that our players have everything they need to excel in a
-          supportive and inspiring setting.
+          suites ensure that our players have everything they need to excel.
         </p>
       </div>
       <div className="video__content">
