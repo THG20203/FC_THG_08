@@ -2,15 +2,42 @@
   &__container {
     background: linear-gradient(to right, #dad5d5, #ededf1);
     grid-column: col-start 7 / tram-end;
+    @media only screen and (max-width: 94em) {
+      grid-column: col-start 7 / full-end;
+    }
     @media only screen and (max-width: 62.5em) {
       grid-column: full-start / full-end;
       background: linear-gradient(to bottom, #ededf1, #dad5d5);
     }
   }
   &__badge--blue {
-    width: 10rem;
+    width: 8rem;
   }
   &__badge--eagle {
-    width: 12rem;
+    width: 8rem;
+  }
+}
+
+.fixture {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 62.5em) {
+      padding-bottom: 2vh;
+    }
+  }
+  &__score {
+    padding: 0 2vw;
+    color: var(--color-secondary);
+    @media only screen and (max-width: 94em) {
+      padding: 0 0.5vw;
+    }
+    @media only screen and (max-width: 62.5em) {
+      padding: 0 5vw;
+    }
+  }
+  &__title {
+    padding: 0.5vw 0 1vw 1vw;
   }
 }

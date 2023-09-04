@@ -2,15 +2,18 @@
   &__container {
     background: linear-gradient(to right, #ededf1, #dad5d5);
     grid-column: tram-start / col-end 2;
+    @media only screen and (max-width: 94em) {
+      grid-column: full-start / col-end 2;
+    }
     @media only screen and (max-width: 62.5em) {
       grid-column: full-start / full-end;
       background: linear-gradient(to bottom, #ededf1, #dad5d5);
     }
   }
   &__badge--blue {
-    width: 10rem;
+    width: 8rem;
   }
   &__badge--crimson {
-    width: 10rem;
+    width: 8rem;
   }
 }

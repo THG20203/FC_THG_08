@@ -5,17 +5,20 @@ import redBadge from "../../../../assets/images/matchBadges/football-badge-red.p
 const LastMatch = () => {
   return (
     <div className="last-match__container">
-      <p>Last Match</p>
-      <img
-        className="last-match__badge--blue"
-        src={blueBadge}
-        alt="FC THG 08 Badge"
-      />
-      <img
-        className="last-match__badge--crimson"
-        src={redBadge}
-        alt="Crimson Pangmere Badge"
-      />
+      <h5 className="heading-5 fixture__title">Last Match: Wednesday 12pm</h5>
+      <div className="fixture__content">
+        <img
+          className="last-match__badge--blue"
+          src={blueBadge}
+          alt="FC THG 08 Badge"
+        />
+        <h1 className="heading-1 fixture__score">3 : 0</h1>
+        <img
+          className="last-match__badge--crimson"
+          src={redBadge}
+          alt="Crimson Pangmere Badge"
+        />
+      </div>
     </div>
   );
 };
