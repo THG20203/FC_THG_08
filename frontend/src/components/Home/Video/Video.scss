@@ -16,6 +16,7 @@
     @media only screen and (max-width: 62.5em) {
       width: 100%;
       margin: 0;
+      padding: 3rem;
     }
   }
   &__content {
@@ -28,6 +29,7 @@
       margin: 0;
     }
   }
+
   &__player {
     position: absolute;
     width: 100%;
@@ -45,5 +47,14 @@
     width: 2vh;
     height: 2vh;
     color: white;
+  }
+  &__description::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.7rem;
+    background-image: url("../../../assets/svg/chevron-thin-right.svg");
+    background-size: cover;
   }
 }

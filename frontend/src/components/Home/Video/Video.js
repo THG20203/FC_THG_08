@@ -44,8 +44,18 @@ const Video = () => {
   return (
     <div className="video__container">
       <div className="video__text">
-        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-        Lorem ipsum Lorem ipsum Lorem ipsum.
+        <h4 className="heading-4--dark mb-md">
+          A Glimpse of Youth Team Excellence
+        </h4>
+        <p className="paragraph-text video__description mb-sm">
+          The video demonstrates dedication and skill that defines our young
+          athletes as they strive for excellence on the football pitch.
+        </p>
+        <p className="paragraph-text video__description">
+          This footage was taken at our state-of-the-art training facility, a
+          testament to the clubs commitment to providing the best possible
+          environment for our young athletes' development.
+        </p>
       </div>
       <div className="video__content">
         {/* The videoRef variable holds a reference to the object returned by the useRef hook.

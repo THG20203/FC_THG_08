@@ -5,7 +5,7 @@ import eagleBadge from "../../../../assets/images/matchBadges/eagle-badge.png";
 const NextMatch = () => {
   return (
     <div className="next-match__container">
-      <h5 className="heading-5 fixture__title">Next Match: Saturday 3pm</h5>
+      <h4 className="heading-4 fixture__title">Next Match: Saturday 3pm</h4>
       <div className="fixture__content">
         <img
           className="next-match__badge--blue"
