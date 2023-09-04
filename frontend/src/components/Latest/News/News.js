@@ -18,16 +18,16 @@ const News = (props) => {
       description:
         "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation. 'Every match presents a unique set of challenges,' he noted, 'This upcoming fixture is no different. Our focus is on understanding our opponent's strengths and weaknesses, and adjusting our tactics accordingly.'",
       topic: "Team",
-      date: "7 days ago",
+      date: "1 days ago",
     },
     {
       image: match,
       alt: "Match",
       heading: "Win over Crimson Pangmere FC",
       description:
-        "FC THG 04 picked up three points in their first home game of the new season defeating Crimson Pangmere FC 3-0 on Saturday night. Thomas Mahrez (16’), (75’) and  Ishmael Baptiste (90+2’) got the goals for FC THG 08. The visitors finished the game with ten men after defender Mehmet Kaya was red carded.",
+        "FC THG 04 picked up three points in their first home game of the new season defeating Crimson Pangmere FC 3-0 on Wendesday night. Thomas Mahrez (16’), (75’) and  Ishmael Baptiste (90+2’) got the goals for FC THG 08. The visitors finished the game with ten men after defender Mehmet Kaya was red carded.",
       topic: "Team",
-      date: "8 days ago",
+      date: "2 days ago",
     },
     {
       image: trainingTop,
@@ -36,7 +36,7 @@ const News = (props) => {
       description:
         "Step into the future of football excellence at our state-of-the-art Academy Facility. This cutting-edge complex is a harmonious fusion of innovation and technology, designed to nurture raw talent of the furture from youth training to the first team.",
       topic: "Club",
-      date: "11 days ago",
+      date: "4 days ago",
     },
     {
       image: shirtSale,
@@ -45,7 +45,7 @@ const News = (props) => {
       description:
         "As the anticipation builds for the upcoming season, we are thrilled to present the latest football kit for our beloved team, FC THG 08. A captivating blend of tradition, innovation, and the spirit of competition, this kit encapsulates the essence of who we are and what we strive to achieve on the field.",
       topic: "Club",
-      date: "13 days ago",
+      date: "6 days ago",
     },
     {
       image: corporatePartner,
@@ -54,7 +54,7 @@ const News = (props) => {
       description:
         "Introducing e-Payel Payments, the dynamic and innovative corporate partner that has joined forces with our club. With a shared passion for excellence and a commitment to pushing boundaries, this collaboration marks a significant milestone in the journey towards success both on and off the field.",
       topic: "Club",
-      date: "20 days ago",
+      date: "8 days ago",
     },
     {
       image: mural,
@@ -63,7 +63,7 @@ const News = (props) => {
       description:
         "Fans of FC THG 08 are known for their strong sense of pride and loyalty to the club, which is often reflected in the graffiti they create around the stadium and throughout the city. These fans believe that graffiti is a powerful way to express their love for the club and to connect with other fans.",
       topic: "Club",
-      date: "25 days ago",
+      date: "10 days ago",
     },
   ];
 

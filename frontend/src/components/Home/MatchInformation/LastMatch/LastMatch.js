@@ -5,7 +5,7 @@ import redBadge from "../../../../assets/images/matchBadges/football-badge-red.p
 const LastMatch = () => {
   return (
     <div className="last-match__container">
-      <h4 className="heading-4 fixture__title">Last Match: Wednesday 12pm</h4>
+      <h4 className="heading-4 fixture__title">Last Match: Wednesday 8pm</h4>
       <div className="fixture__content">
         <img
           className="last-match__badge--blue"
