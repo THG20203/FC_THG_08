@@ -48,7 +48,7 @@ const NotableStories = () => {
               {formattedThreeDaysAgo}
             </p>
           </div>
-          <div className="notable-stories__review-position">No. 9</div>
+          <div className="notable-stories__review-position">No. 19</div>
         </figcaption>
       </figure>
       {/* Second figure box */}
