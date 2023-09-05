@@ -1,0 +1,9 @@
+.gallery {
+  &__content {
+    grid-column: tram-start / tram-end;
+    background-color: var(--color-secondary);
+    @media screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
+    }
+  }
+}

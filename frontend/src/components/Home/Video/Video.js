@@ -44,9 +44,7 @@ const Video = () => {
   return (
     <div className="video__container">
       <div className="video__text">
-        <h3 className="heading-3--lowercase mb-smlst">
-          A Glimpse of Youth Team Excellence
-        </h3>
+        <h1 className="heading-1--dark mb-md">Training</h1>
         <p className="paragraph-text video__description mb-smlst">
           The video demonstrates dedication and skill that defines our young
           athletes as they strive for excellence on the football pitch.

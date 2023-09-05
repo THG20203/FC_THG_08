@@ -1,6 +1,6 @@
 .headline-cards {
   &__section {
-    grid-column: col-start 6 / tram-end;
+    grid-column: col-start 5 / tram-end;
     background-color: var(--color-grey-3);
     padding: 5vh;
     @media screen and (max-width: 94em) {
