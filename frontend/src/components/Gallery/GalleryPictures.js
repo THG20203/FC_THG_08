@@ -13,7 +13,11 @@ import stadium from "../../assets/images/gallery/gallery-image-stadium.png";
 import training from "../../assets/images/gallery/gallery-image-training.png";
 import trainingPitch from "../../assets/images/gallery/gallery-image-trainingPitch.png";
 import waveBadge from "../../assets/images/gallery/gallery-image-waveBadge.png";
-import mural2 from "../../assets/images/gallery/gallery-image-mural-2.png";
+import mural2 from "../../assets/images/gallery/gallery-image-mural2.png";
+import shirt from "../../assets/images/gallery/gallery-image-shirt.png";
+import graffiti from "../../assets/images/gallery/gallery-image-graffiti.png";
+import badge from "../../assets/images/gallery/gallery-image-badge.png";
+import trainingNight from "../../assets/images/gallery/gallery-image-trainingNight.png";
 
 const GalleryPictures = () => {
   return (
@@ -42,10 +46,10 @@ const GalleryPictures = () => {
         <img src={match} alt="Match Gallery Image" className="gallery__img" />
       </figure>
       <figure className="gallery__item gallery__item--6">
-        <img src={mural} alt="Mural Gallery Image" className="gallery__img" />
+        <img src={nets} alt="Nets Gallery Image" className="gallery__img" />
       </figure>
       <figure className="gallery__item gallery__item--7">
-        <img src={nets} alt="Nets Gallery Image" className="gallery__img" />
+        <img src={mural} alt="Mural Gallery Image" className="gallery__img" />
       </figure>
       <figure className="gallery__item gallery__item--8">
         <img
@@ -59,15 +63,15 @@ const GalleryPictures = () => {
       </figure>
       <figure className="gallery__item gallery__item--10">
         <img
-          src={stadium}
-          alt="Stadium Gallery Image"
+          src={training}
+          alt="Training Gallery Image"
           className="gallery__img"
         />
       </figure>
       <figure className="gallery__item gallery__item--11">
         <img
-          src={training}
-          alt="Training Gallery Image"
+          src={stadium}
+          alt="Stadium Gallery Image"
           className="gallery__img"
         />
       </figure>
@@ -87,8 +91,32 @@ const GalleryPictures = () => {
       </figure>
       <figure className="gallery__item gallery__item--14">
         <img
+          src={shirt}
+          alt="Shirt Mural Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--15">
+        <img
           src={mural2}
           alt="Second Mural Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--16">
+        <img
+          src={graffiti}
+          alt="Graffiti Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--17">
+        <img src={badge} alt="Badge Gallery Image" className="gallery__img" />
+      </figure>
+      <figure className="gallery__item gallery__item--18">
+        <img
+          src={trainingNight}
+          alt="Training Night Gallery Image"
           className="gallery__img"
         />
       </figure>
