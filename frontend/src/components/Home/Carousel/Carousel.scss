@@ -23,7 +23,7 @@
     position: relative;
     /* define animation property for wrapper as slideshow with the duration of 15 seconds */
     // we want animation to be played infinitely, hence animation iteration 'infinite'
-    // animation: slideshow 20s infinite;
+    animation: slideshow 20s infinite;
     @media only screen and (max-width: 94em) {
       width: 400vw;
       animation: slideshowSmallViewport 20s infinite;
@@ -45,7 +45,7 @@
     height: 100%;
     background: linear-gradient(
       to bottom,
-      rgba(10, 25, 161, 0.2) 0%,
+      rgba(10, 25, 161, 0.1) 0%,
       rgba(10, 25, 161, 0) 30%,
       rgba(10, 25, 161, 1) 100%
     );
