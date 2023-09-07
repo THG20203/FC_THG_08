@@ -14,5 +14,11 @@
   &__item {
   }
   &__img {
+    /* if image is not block -> is treated like an inline element like text */
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* add it on the image. Need to manually set width & height */
+    object-fit: cover;
   }
 }
