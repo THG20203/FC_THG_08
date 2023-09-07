@@ -3,8 +3,16 @@
     grid-column: tram-start / tram-end;
     background-color: var(--color-secondary);
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
+  }
+  &__item {
+  }
+  &__img {
   }
 }

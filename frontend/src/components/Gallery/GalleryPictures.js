@@ -18,20 +18,80 @@ import mural2 from "../../assets/images/gallery/gallery-image-mural-2.png";
 const GalleryPictures = () => {
   return (
     <div className="gallery__content">
-      <img src={cones} alt="Cones Gallery Image" />
-      <img src={flag} alt="Flag Gallery Image" />
-      <img src={floodlights} alt="Floodlights Gallery Image" />
-      <img src={football} alt="Football Gallery Image" />
-      <img src={match} alt="Match Gallery Image" />
-      <img src={mural} alt="Mural Gallery Image" />
-      <img src={nets} alt="Nets Gallery Image" />
-      <img src={players} alt="Players Gallery Image" />
-      <img src={seats} alt="Seats Gallery Image" />
-      <img src={stadium} alt="Stadium Gallery Image" />
-      <img src={training} alt="Training Gallery Image" />
-      <img src={trainingPitch} alt="Training Pitch Gallery Image" />
-      <img src={waveBadge} alt="Wave Badge Gallery Image" />
-      <img src={mural2} alt="Second Mural Gallery Image" />
+      <figure className="gallery__item gallery__item--1">
+        <img src={cones} alt="Cones Gallery Image" className="gallery__img" />
+      </figure>
+      <figure className="gallery__item gallery__item--2">
+        <img src={flag} alt="Flag Gallery Image" className="gallery__img" />
+      </figure>
+      <figure className="gallery__item gallery__item--3">
+        <img
+          src={floodlights}
+          alt="Floodlights Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--4">
+        <img
+          src={football}
+          alt="Football Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--5">
+        <img src={match} alt="Match Gallery Image" className="gallery__img" />
+      </figure>
+      <figure className="gallery__item gallery__item--6">
+        <img src={mural} alt="Mural Gallery Image" className="gallery__img" />
+      </figure>
+      <figure className="gallery__item gallery__item--7">
+        <img src={nets} alt="Nets Gallery Image" className="gallery__img" />
+      </figure>
+      <figure className="gallery__item gallery__item--8">
+        <img
+          src={players}
+          alt="Players Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--9">
+        <img src={seats} alt="Seats Gallery Image" className="gallery__img" />
+      </figure>
+      <figure className="gallery__item gallery__item--10">
+        <img
+          src={stadium}
+          alt="Stadium Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--11">
+        <img
+          src={training}
+          alt="Training Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--12">
+        <img
+          src={trainingPitch}
+          alt="Training Pitch Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--13">
+        <img
+          src={waveBadge}
+          alt="Wave Badge Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
+      <figure className="gallery__item gallery__item--14">
+        <img
+          src={mural2}
+          alt="Second Mural Gallery Image"
+          className="gallery__img"
+        />
+      </figure>
     </div>
   );
 };
