@@ -62,8 +62,28 @@
         background-color: red;
       }
       &--back {
-        background-color: blue;
         transform: rotateY(180deg);
+        &-1 {
+          background-image: linear-gradient(
+            to right bottom,
+            rgb(10, 25, 161),
+            rgb(16, 29, 44)
+          );
+        }
+        &-2 {
+          background-image: linear-gradient(
+            to right bottom,
+            rgba(12, 34, 232),
+            rgb(16, 29, 44)
+          );
+        }
+        &-3 {
+          background-image: linear-gradient(
+            to right bottom,
+            rgb(16, 29, 44),
+            rgb(10, 25, 161)
+          );
+        }
       }
     }
     &:hover &-side--front {
@@ -72,12 +92,18 @@
     &:hover &-side--back {
       transform: rotateY(0);
     }
+    /* Front side styling */
     &--picture {
+      background-size: cover;
+      height: 30%;
       &--1 {
+        background-image: url("../../../assets/images/latestCards/huddle.png");
       }
       &--2 {
+        background-image: url("../../../assets/images/latestCards/player-flag.png");
       }
       &--3 {
+        background-image: url("../../../assets/images/latestCards/player-stadium.png");
       }
     }
     &--heading {
