@@ -72,7 +72,17 @@
     &:hover &-side--back {
       transform: rotateY(0);
     }
+    &--picture {
+      &--1 {
+      }
+      &--2 {
+      }
+      &--3 {
+      }
+    }
     &--heading {
+    }
+    &--details {
     }
   }
 }
