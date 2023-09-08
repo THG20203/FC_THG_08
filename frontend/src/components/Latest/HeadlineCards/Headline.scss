@@ -59,7 +59,11 @@
       cursor: pointer;
       transition: all 1s ease;
       &--front {
-        background-color: red;
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(16, 29, 44),
+          rgb(10, 25, 161)
+        );
       }
       &--back {
         transform: rotateY(180deg);
