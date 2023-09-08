@@ -63,27 +63,11 @@
       }
       &--back {
         transform: rotateY(180deg);
-        &-1 {
-          background-image: linear-gradient(
-            to right bottom,
-            rgb(10, 25, 161),
-            rgb(16, 29, 44)
-          );
-        }
-        &-2 {
-          background-image: linear-gradient(
-            to right bottom,
-            rgba(12, 34, 232),
-            rgb(16, 29, 44)
-          );
-        }
-        &-3 {
-          background-image: linear-gradient(
-            to right bottom,
-            rgb(16, 29, 44),
-            rgb(10, 25, 161)
-          );
-        }
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(10, 25, 161),
+          rgba(12, 34, 232)
+        );
       }
     }
     &:hover &-side--front {
@@ -96,14 +80,30 @@
     &--picture {
       background-size: cover;
       height: 30%;
+      background-blend-mode: screen;
       &--1 {
-        background-image: url("../../../assets/images/latestCards/huddle.png");
+        background-image: linear-gradient(
+            to right bottom,
+            rgb(10, 25, 161),
+            rgb(16, 29, 44)
+          ),
+          url("../../../assets/images/latestCards/huddle.png");
       }
       &--2 {
-        background-image: url("../../../assets/images/latestCards/player-flag.png");
+        background-image: linear-gradient(
+            to right bottom,
+            rgb(10, 25, 161),
+            rgb(16, 29, 44)
+          ),
+          url("../../../assets/images/latestCards/player-flag.png");
       }
       &--3 {
-        background-image: url("../../../assets/images/latestCards/player-stadium.png");
+        background-image: linear-gradient(
+            to right bottom,
+            rgb(10, 25, 161),
+            rgb(16, 29, 44)
+          ),
+          url("../../../assets/images/latestCards/player-stadium.png");
       }
     }
     &--heading {

@@ -15,7 +15,7 @@ const Headline = () => {
                 <div className="headline-cards__card--heading">Heading</div>
                 <div className="headline-cards__card--details">Details</div>
               </div>
-              <div className="headline-cards__card-side headline-cards__card-side--back headline-cards__card-side--back-1">
+              <div className="headline-cards__card-side headline-cards__card-side--back">
                 back
               </div>
             </div>
@@ -29,7 +29,7 @@ const Headline = () => {
                 <div className="headline-cards__card--heading">Heading</div>
                 <div className="headline-cards__card--details">Details</div>
               </div>
-              <div className="headline-cards__card-side headline-cards__card-side--back headline-cards__card-side--back-2">
+              <div className="headline-cards__card-side headline-cards__card-side--back">
                 back
               </div>
             </div>
@@ -43,7 +43,7 @@ const Headline = () => {
                 <div className="headline-cards__card--heading">Heading</div>
                 <div className="headline-cards__card--details">Details</div>
               </div>
-              <div className="headline-cards__card-side headline-cards__card-side--back headline-cards__card-side--back-3">
+              <div className="headline-cards__card-side headline-cards__card-side--back">
                 back
               </div>
             </div>
