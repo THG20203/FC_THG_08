@@ -29,8 +29,8 @@ const Headline = () => {
                 </div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
-                Exciting but challenging fixtures lie ahead, promising
-                significant tests for the team's aspirations.
+                Exciting but challenging league and cup fixtures lie ahead,
+                promising significant tests for the team's aspirations.
               </div>
             </div>
           </div>
