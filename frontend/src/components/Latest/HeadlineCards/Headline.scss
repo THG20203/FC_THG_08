@@ -47,8 +47,6 @@
     -moz-perspective: 150rem;
     position: relative;
     &-side {
-      background-color: red;
-      color: #fff;
       font-size: 2rem;
       height: 50vh;
       width: 100%;
@@ -112,6 +110,10 @@
       }
     }
     &--heading {
+      position: absolute;
+      top: 12rem;
+      right: 2rem;
+      text-align: right;
     }
     &--details {
     }

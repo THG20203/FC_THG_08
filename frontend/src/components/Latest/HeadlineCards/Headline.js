@@ -12,7 +12,9 @@ const Headline = () => {
                 <div className="headline-cards__card--picture headline-cards__card--picture--1">
                   &nbsp;
                 </div>
-                <div className="headline-cards__card--heading">Heading</div>
+                <h4 className="headline-cards__card--heading heading-4--light">
+                  Team spirit everything
+                </h4>
                 <div className="headline-cards__card--details">Details</div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
@@ -26,7 +28,9 @@ const Headline = () => {
                 <div className="headline-cards__card--picture headline-cards__card--picture--2">
                   &nbsp;
                 </div>
-                <div className="headline-cards__card--heading">Heading</div>
+                <h4 className="headline-cards__card--heading heading-4--light">
+                  Fabio Lombardy Loan
+                </h4>
                 <div className="headline-cards__card--details">Details</div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
@@ -40,7 +44,9 @@ const Headline = () => {
                 <div className="headline-cards__card--picture headline-cards__card--picture--3">
                   &nbsp;
                 </div>
-                <div className="headline-cards__card--heading">Heading</div>
+                <h4 className="headline-cards__card--heading heading-4--light">
+                  Big Pressure Moments
+                </h4>
                 <div className="headline-cards__card--details">Details</div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
