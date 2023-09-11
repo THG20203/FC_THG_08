@@ -13,7 +13,9 @@ const Headline = () => {
                   &nbsp;
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
-                  Team spirit everything
+                  <span className="headline-cards__span headline-cards__span-1">
+                    Team spirit everything
+                  </span>
                 </h4>
                 <div className="headline-cards__card--details">Details</div>
               </div>
@@ -29,7 +31,9 @@ const Headline = () => {
                   &nbsp;
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
-                  Fabio Lombardy Loan
+                  <span className="headline-cards__span headline-cards__span-2">
+                    Fabio Lombardy Loan
+                  </span>
                 </h4>
                 <div className="headline-cards__card--details">Details</div>
               </div>
@@ -45,7 +49,9 @@ const Headline = () => {
                   &nbsp;
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
-                  Big Pressure Moments
+                  <span className="headline-cards__span headline-cards__span-3">
+                    Big Pressure Moments
+                  </span>
                 </h4>
                 <div className="headline-cards__card--details">Details</div>
               </div>
