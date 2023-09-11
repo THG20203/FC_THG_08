@@ -81,7 +81,7 @@
     /* Front side styling */
     &--picture {
       background-size: cover;
-      height: 30%;
+      height: 15rem;
       background-blend-mode: screen;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       &--1 {
@@ -111,7 +111,7 @@
     }
     &--heading {
       position: absolute;
-      top: 8rem;
+      top: 12rem;
       right: 2rem;
       text-align: right;
       width: 75%;
@@ -132,15 +132,15 @@
     &-2 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(249, 247, 246, 0.5),
-        rgba(237, 237, 241, 0.5)
+        rgba(249, 247, 246, 0.9),
+        rgba(237, 237, 241, 0.9)
       );
     }
     &-3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba(249, 247, 246, 0.5),
-        rgba(237, 237, 241, 0.5)
+        rgba(249, 247, 246, 0.9),
+        rgba(237, 237, 241, 0.9)
       );
     }
   }
