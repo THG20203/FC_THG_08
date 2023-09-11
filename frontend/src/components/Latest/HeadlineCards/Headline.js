@@ -18,10 +18,13 @@ const Headline = () => {
                   </span>
                 </h4>
                 <div className="headline-cards__card--details">
-                  <ul>
-                    <li>example</li>
-                    <li>example</li>
-                    <li>example</li>
+                  <ul className="headline-cards__list">
+                    <li className="headline-cards__list--item">
+                      Manager looks to big tests
+                    </li>
+                    <li className="headline-cards__list--item">
+                      Players preparing for challenges
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -42,10 +45,13 @@ const Headline = () => {
                   </span>
                 </h4>
                 <div className="headline-cards__card--details">
-                  <ul>
-                    <li>example</li>
-                    <li>example</li>
-                    <li>example</li>
+                  <ul className="headline-cards__list">
+                    <li className="headline-cards__list--item">
+                      League & Cup fixtures re-arranged
+                    </li>
+                    <li className="headline-cards__list--item">
+                      4 of our clubs games affected
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -62,14 +68,17 @@ const Headline = () => {
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
                   <span className="headline-cards__span headline-cards__span-3">
-                    Fabio Lombardy Loan
+                    Fabio Lombardy Deal
                   </span>
                 </h4>
                 <div className="headline-cards__card--details">
-                  <ul>
-                    <li>example</li>
-                    <li>example</li>
-                    <li>example</li>
+                  <ul className="headline-cards__list">
+                    <li className="headline-cards__list--item">
+                      2 year permanent contract
+                    </li>
+                    <li className="headline-cards__list--item">
+                      Center midfiled depth improved
+                    </li>
                   </ul>
                 </div>
               </div>

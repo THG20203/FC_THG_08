@@ -110,12 +110,14 @@
     }
     &--heading {
       position: absolute;
-      top: 10rem;
+      top: 9rem;
       right: 2rem;
       text-align: right;
       width: 85%;
     }
     &--details {
+      padding: 4rem 3rem;
+      height: 15rem;
     }
   }
   &__span {
@@ -141,6 +143,17 @@
         rgba(12, 34, 232, 0.9),
         rgba(10, 25, 161, 0.9)
       );
+    }
+  }
+  &__list {
+    list-style: none;
+    &--item {
+      text-align: center;
+      font-size: 1.6rem;
+      padding: 1rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid #aba3a3;
+      }
     }
   }
 }
