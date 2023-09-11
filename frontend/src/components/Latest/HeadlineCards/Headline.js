@@ -14,7 +14,7 @@ const Headline = () => {
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
                   <span className="headline-cards__span headline-cards__span-1">
-                    Team Spirit Everything
+                    Big Pressure Moments
                   </span>
                 </h4>
                 <div className="headline-cards__card--details">Details</div>
@@ -31,9 +31,7 @@ const Headline = () => {
                   &nbsp;
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
-                  <span className="headline-cards__span headline-cards__span-2">
-                    Fabio Lombardy Loan
-                  </span>
+                  <span className="headline-cards__span headline-cards__span-2"></span>
                 </h4>
                 <div className="headline-cards__card--details">Details</div>
               </div>
@@ -50,7 +48,7 @@ const Headline = () => {
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
                   <span className="headline-cards__span headline-cards__span-3">
-                    Big Pressure Moments
+                    Fabio Lombardy Loan
                   </span>
                 </h4>
                 <div className="headline-cards__card--details">Details</div>
