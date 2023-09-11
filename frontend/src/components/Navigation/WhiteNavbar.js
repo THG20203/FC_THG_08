@@ -69,6 +69,15 @@ const WhiteNavbar = () => {
             </NavLink>
           </li>
           <li className="nav__item">
+            <NavLink
+              to="myclub"
+              className="nav__link"
+              onClick={handleLinkClick}
+            >
+              My Club
+            </NavLink>
+          </li>
+          <li className="nav__item">
             <NavLink to="#" className="nav__link" onClick={handleLinkClick}>
               Events
             </NavLink>
@@ -76,15 +85,6 @@ const WhiteNavbar = () => {
           <li className="nav__item">
             <NavLink to="#" className="nav__link" onClick={handleLinkClick}>
               Newsletter
-            </NavLink>
-          </li>
-          <li className="nav__item">
-            <NavLink
-              to="myclub"
-              className="nav__link"
-              onClick={handleLinkClick}
-            >
-              My Club
             </NavLink>
           </li>
           <li className="nav__item">
