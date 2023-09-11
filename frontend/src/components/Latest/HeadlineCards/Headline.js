@@ -17,7 +17,13 @@ const Headline = () => {
                     Big Pressure Moments
                   </span>
                 </h4>
-                <div className="headline-cards__card--details">Details</div>
+                <div className="headline-cards__card--details">
+                  <ul>
+                    <li>example</li>
+                    <li>example</li>
+                    <li>example</li>
+                  </ul>
+                </div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
                 back
@@ -31,9 +37,17 @@ const Headline = () => {
                   &nbsp;
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
-                  <span className="headline-cards__span headline-cards__span-2"></span>
+                  <span className="headline-cards__span headline-cards__span-2">
+                    Fixture List Updated
+                  </span>
                 </h4>
-                <div className="headline-cards__card--details">Details</div>
+                <div className="headline-cards__card--details">
+                  <ul>
+                    <li>example</li>
+                    <li>example</li>
+                    <li>example</li>
+                  </ul>
+                </div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
                 back
@@ -51,7 +65,13 @@ const Headline = () => {
                     Fabio Lombardy Loan
                   </span>
                 </h4>
-                <div className="headline-cards__card--details">Details</div>
+                <div className="headline-cards__card--details">
+                  <ul>
+                    <li>example</li>
+                    <li>example</li>
+                    <li>example</li>
+                  </ul>
+                </div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
                 back
