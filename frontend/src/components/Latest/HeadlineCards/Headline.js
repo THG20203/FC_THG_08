@@ -29,7 +29,8 @@ const Headline = () => {
                 </div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
-                back
+                Exciting but challenging fixtures lie ahead, promising
+                significant tests for the team's aspirations.
               </div>
             </div>
           </div>
@@ -56,7 +57,9 @@ const Headline = () => {
                 </div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
-                back
+                Schedule changes will affect four upcoming matches, including
+                three league games and one cup fixture, potentially impacting
+                team dynamics and player availability.
               </div>
             </div>
           </div>
