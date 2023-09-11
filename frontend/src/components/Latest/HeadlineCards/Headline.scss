@@ -69,6 +69,12 @@
       }
       &--back {
         transform: rotateY(180deg);
+        color: var(--color-grey-1);
+        font-size: 1.8rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
         background-image: linear-gradient(
           to right bottom,
           rgb(10, 25, 161),
@@ -89,16 +95,16 @@
       background-blend-mode: screen;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       @media screen and (max-width: 94em) {
-        height: 17rem;
+        height: 16rem;
       }
       @media screen and (max-width: 62.5em) {
-        height: 18rem;
+        height: 17rem;
       }
       @media screen and (max-width: 50em) {
-        height: 20rem;
+        height: 19rem;
       }
       @media screen and (max-width: 37.5em) {
-        height: 23rem;
+        height: 22rem;
       }
       &--1 {
         background-image: linear-gradient(

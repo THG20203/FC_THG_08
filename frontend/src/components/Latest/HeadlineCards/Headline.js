@@ -83,7 +83,9 @@ const Headline = () => {
                 </div>
               </div>
               <div className="headline-cards__card-side headline-cards__card-side--back">
-                back
+                Fabio Lombardy has officially signed a two-year contract. The
+                talented mildfielder is set to join up with the FC THG 08 in 2
+                days time.
               </div>
             </div>
           </div>
