@@ -111,19 +111,37 @@
     }
     &--heading {
       position: absolute;
-      top: 12rem;
+      top: 8rem;
       right: 2rem;
       text-align: right;
+      width: 75%;
     }
     &--details {
     }
   }
   &__span {
+    padding: 0.5rem;
+    line-height: 1.8;
     &-1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(249, 247, 246, 0.9),
+        rgba(237, 237, 241, 0.9)
+      );
     }
     &-2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(249, 247, 246, 0.5),
+        rgba(237, 237, 241, 0.5)
+      );
     }
     &-3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(249, 247, 246, 0.5),
+        rgba(237, 237, 241, 0.5)
+      );
     }
   }
 }
