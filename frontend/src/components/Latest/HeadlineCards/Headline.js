@@ -20,7 +20,7 @@ const Headline = () => {
                 <div className="headline-cards__card--details">
                   <ul className="headline-cards__list">
                     <li className="headline-cards__list--item">
-                      Manager looks to big tests
+                      Manager looks ahead to bigger tests
                     </li>
                     <li className="headline-cards__list--item">
                       Players preparing for challenges
@@ -47,7 +47,7 @@ const Headline = () => {
                 <div className="headline-cards__card--details">
                   <ul className="headline-cards__list">
                     <li className="headline-cards__list--item">
-                      League & Cup fixtures re-arranged
+                      League and Cup fixtures re-arranged
                     </li>
                     <li className="headline-cards__list--item">
                       4 of our clubs games affected
@@ -74,10 +74,10 @@ const Headline = () => {
                 <div className="headline-cards__card--details">
                   <ul className="headline-cards__list">
                     <li className="headline-cards__list--item">
-                      2 year permanent contract
+                      Lombardy signs 2 year permanent contract
                     </li>
                     <li className="headline-cards__list--item">
-                      Center midfiled depth improved
+                      Center midfield depth improved
                     </li>
                   </ul>
                 </div>

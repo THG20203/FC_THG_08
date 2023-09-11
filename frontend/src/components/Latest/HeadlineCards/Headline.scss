@@ -3,12 +3,14 @@
     grid-column: col-start 5 / tram-end;
     background-color: var(--color-grey-3);
     padding: 5vh;
+    height: 50vh;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       height: 60vh;
     }
     @media screen and (max-width: 37.5em) {
       height: 201vh;
+      padding: 2vh;
     }
   }
   &__col {
@@ -48,7 +50,7 @@
     position: relative;
     &-side {
       font-size: 2rem;
-      height: 50vh;
+      height: 40vh;
       width: 100%;
       backface-visibility: hidden;
       position: absolute;
@@ -56,8 +58,14 @@
       left: 0;
       cursor: pointer;
       transition: all 1s ease;
+      @media screen and (max-width: 94em) {
+        height: 50vh;
+      }
       @media screen and (max-width: 37.5em) {
         height: 60vh;
+      }
+      @media screen and (max-width: 20em) {
+        height: 65vh;
       }
       &--front {
         background-color: var(--color-grey-1);
@@ -80,9 +88,12 @@
     /* Front side styling */
     &--picture {
       background-size: cover;
-      height: 13rem;
+      height: 15rem;
       background-blend-mode: screen;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      @media screen and (max-width: 37.5em) {
+        height: 25rem;
+      }
       &--1 {
         background-image: linear-gradient(
             to right bottom,
@@ -110,13 +121,16 @@
     }
     &--heading {
       position: absolute;
-      top: 9rem;
+      top: 10rem;
       right: 2rem;
       text-align: right;
       width: 85%;
+      @media screen and (max-width: 37.5em) {
+        top: 20rem;
+      }
     }
     &--details {
-      padding: 4rem 3rem;
+      padding: 2rem;
       height: 15rem;
     }
   }
