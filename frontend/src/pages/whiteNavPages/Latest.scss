@@ -6,7 +6,7 @@
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [tram-end] 10vw [full-end];
-  grid-template-rows: 50vh min-content;
+  grid-template-rows: 55vh min-content;
   @media only screen and (max-width: 94em) {
     grid-template-rows: min-content min-content;
   }

@@ -20,6 +20,9 @@
     position: relative;
     box-shadow: 0 2px 5px rgb(168, 162, 162, 0.6);
     overflow: hidden;
+    @media screen and (max-width: 20em) {
+      padding: 2vh;
+    }
     &::before {
       content: "\201C";
       position: absolute;
@@ -36,13 +39,13 @@
     &--1 {
       margin: 5vh;
       @media screen and (max-width: 20em) {
-        margin: 3vh;
+        margin: 2vh;
       }
     }
     &--2 {
       margin: 0 5vh 5vh;
       @media screen and (max-width: 20em) {
-        margin: 0 3vh 3vh;
+        margin: 0 2vh 2vh;
       }
     }
     &-text {
@@ -62,8 +65,8 @@
       }
     }
     &-image {
-      height: 8vh;
-      width: 8vh;
+      height: 7vh;
+      width: 7vh;
       border-radius: 50%;
       border: 0.2rem solid var(--color-primary-dark);
       margin-right: 1.5rem;

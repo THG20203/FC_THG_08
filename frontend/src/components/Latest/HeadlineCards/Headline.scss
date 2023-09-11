@@ -3,13 +3,13 @@
     grid-column: col-start 5 / tram-end;
     background-color: var(--color-grey-3);
     padding: 5vh;
-    height: 50vh;
+    height: 55vh;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       height: 60vh;
     }
     @media screen and (max-width: 37.5em) {
-      height: 201vh;
+      height: 195vh;
       padding: 2vh;
     }
   }
@@ -64,9 +64,6 @@
       @media screen and (max-width: 37.5em) {
         height: 60vh;
       }
-      @media screen and (max-width: 20em) {
-        height: 65vh;
-      }
       &--front {
         background-color: var(--color-grey-1);
       }
@@ -92,7 +89,7 @@
       background-blend-mode: screen;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       @media screen and (max-width: 37.5em) {
-        height: 25rem;
+        height: 22rem;
       }
       &--1 {
         background-image: linear-gradient(
@@ -126,12 +123,21 @@
       text-align: right;
       width: 85%;
       @media screen and (max-width: 37.5em) {
-        top: 20rem;
+        top: 18rem;
+      }
+      @media screen and (max-width: 20em) {
+        top: 15rem;
       }
     }
     &--details {
-      padding: 2rem;
+      padding: 3rem;
       height: 15rem;
+      @media screen and (max-width: 94em) {
+        padding: 2rem;
+      }
+      @media screen and (max-width: 20em) {
+        padding: 0.5rem;
+      }
     }
   }
   &__span {
