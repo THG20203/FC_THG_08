@@ -68,7 +68,7 @@ const Headline = () => {
                 </div>
                 <h4 className="headline-cards__card--heading heading-4--light">
                   <span className="headline-cards__span headline-cards__span-3">
-                    Fabio Lombardy Deal
+                    Lombardy Deal
                   </span>
                 </h4>
                 <div className="headline-cards__card--details">

@@ -50,7 +50,7 @@
     position: relative;
     &-side {
       font-size: 2rem;
-      height: 40vh;
+      height: 45vh;
       width: 100%;
       backface-visibility: hidden;
       position: absolute;
@@ -88,8 +88,17 @@
       height: 15rem;
       background-blend-mode: screen;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      @media screen and (max-width: 94em) {
+        height: 17rem;
+      }
+      @media screen and (max-width: 62.5em) {
+        height: 18rem;
+      }
+      @media screen and (max-width: 50em) {
+        height: 20rem;
+      }
       @media screen and (max-width: 37.5em) {
-        height: 22rem;
+        height: 23rem;
       }
       &--1 {
         background-image: linear-gradient(
@@ -118,10 +127,16 @@
     }
     &--heading {
       position: absolute;
-      top: 10rem;
+      top: 9rem;
       right: 2rem;
       text-align: right;
       width: 85%;
+      @media screen and (max-width: 94em) {
+        top: 12rem;
+      }
+      @media screen and (max-width: 62.5em) {
+        top: 13rem;
+      }
       @media screen and (max-width: 37.5em) {
         top: 18rem;
       }
