@@ -5,7 +5,7 @@
     padding: 5vh;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
-      height: 90vh;
+      height: 60vh;
     }
     @media screen and (max-width: 37.5em) {
       height: 201vh;
@@ -56,9 +56,6 @@
       left: 0;
       cursor: pointer;
       transition: all 1s ease;
-      @media screen and (max-width: 94em) {
-        height: 80vh;
-      }
       @media screen and (max-width: 37.5em) {
         height: 60vh;
       }
@@ -83,12 +80,9 @@
     /* Front side styling */
     &--picture {
       background-size: cover;
-      height: 19rem;
+      height: 13rem;
       background-blend-mode: screen;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      @media screen and (max-width: 50em) {
-        height: 15rem;
-      }
       &--1 {
         background-image: linear-gradient(
             to right bottom,
@@ -116,7 +110,7 @@
     }
     &--heading {
       position: absolute;
-      top: 12rem;
+      top: 10rem;
       right: 2rem;
       text-align: right;
       width: 75%;
