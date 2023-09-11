@@ -16,7 +16,7 @@ const News = (props) => {
       alt: "Conference",
       heading: "Manager previews next league fixture",
       description:
-        "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation. 'Every match presents a unique set of challenges,' he noted, 'This upcoming fixture is no different. Our focus is on understanding our opponent's strengths and weaknesses, and adjusting our tactics accordingly.'",
+        "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation, fitness and tactics. 'Every match presents a unique set of challenges to overcome, but we feel we have enough to cause them problems.' he noted.",
       topic: "Team",
       date: "1 days ago",
     },
@@ -59,7 +59,7 @@ const News = (props) => {
     {
       image: mural,
       alt: "Mural",
-      heading: "Culture in spotlight: Graffiti",
+      heading: "Culture in spotlight: Club Graffiti",
       description:
         "Fans of FC THG 08 are known for their strong sense of pride and loyalty to the club, which is often reflected in the graffiti they create around the stadium and throughout the city. These fans believe that graffiti is a powerful way to express their love for the club and to connect with other fans.",
       topic: "Club",
