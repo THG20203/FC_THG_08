@@ -1,0 +1,11 @@
+.players {
+  &__container {
+    height: 55vh;
+    grid-column: tram-start / col-end 4;
+    background: #0a19a1;
+    display: grid;
+    @media screen and (max-width: 94em) {
+      grid-column: full-start / full-end;
+    }
+  }
+}

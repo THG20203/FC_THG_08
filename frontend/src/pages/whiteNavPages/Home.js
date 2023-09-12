@@ -6,6 +6,7 @@ import LastMatch from "../../components/Home/MatchInformation/LastMatch/LastMatc
 import MatchTimer from "../../components/Home/MatchInformation/MatchTimer/MatchTimer";
 import NextMatch from "../../components/Home/MatchInformation/NextMatch/NextMatch";
 import Marquee from "../../components/Marquee/Marquee";
+import Players from "../../components/Home/Players/Players";
 import Headline from "../../components/Latest/HeadlineCards/Headline";
 import Features from "../../components/Home/Features/Features";
 
@@ -18,6 +19,7 @@ const HomePage = () => {
       <MatchTimer />
       <NextMatch />
       <Marquee />
+      <Players />
       <Headline />
       <Features />
     </div>
