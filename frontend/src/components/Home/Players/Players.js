@@ -7,6 +7,7 @@ import Player3 from "../../../assets/images/players/Player3.png";
 const Players = () => {
   return (
     <div className="players__container">
+      <div className="heading-3 players__title">Top Goalscorers:</div>
       <div className="players__list">
         <img className="players__img" src={Player1} alt="Ishmael Baptiste" />
         <div className="players__details">
