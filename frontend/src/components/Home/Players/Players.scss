@@ -7,8 +7,11 @@
     display: grid;
     align-content: center;
     justify-content: center;
+    grid-row-gap: 2rem;
+    justify-items: center;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
+      height: min-content;
     }
   }
   &__title {
@@ -22,6 +25,9 @@
     grid-column-gap: 20px;
     grid-row-gap: 5vh;
     align-items: center;
+    @media screen and (max-width: 94em) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
   }
   &__img {
     width: 7.5rem;
