@@ -3,18 +3,24 @@
     height: 55vh;
     grid-column: tram-start / col-end 4;
     background: #0a19a1;
-    display: grid;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
   }
   &__list {
+    display: grid;
+    /* min-content for the img, max content for the text */
+    grid-template-columns: min-content max-content;
+    /* spacing */
+    grid-column-gap: 20px;
+    grid-row-gap: 5vh;
   }
   &__img {
-    width: 7rem;
+    width: 7.5rem;
     border-radius: 50%;
     display: block;
   }
   &__stats {
+    color: var(--color-grey-1);
   }
 }
