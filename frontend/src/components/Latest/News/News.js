@@ -14,7 +14,7 @@ const News = (props) => {
     {
       image: conference,
       alt: "Conference",
-      heading: "Manager previews next league fixture",
+      heading: "Manager previews next fixture",
       description:
         "Addressing the fixture with confidence and respect for the opposition, the manager highlighted the significance of preparation, fitness and tactics. 'Every match presents a unique set of challenges to overcome, but we feel we have enough to cause them problems.' he noted.",
       topic: "Team",

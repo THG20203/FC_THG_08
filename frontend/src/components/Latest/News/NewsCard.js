@@ -3,7 +3,7 @@ import React from "react";
 const NewsCard = (props) => {
   return (
     <div className="news-card__content">
-      <div className="news-card__img-div mb-sm">
+      <div className="news-card__img-div">
         <img className="news-card__image" src={props.image} alt={props.alt} />
       </div>
       <div className="news-card__text">

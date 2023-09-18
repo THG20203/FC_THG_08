@@ -12,8 +12,7 @@
       height: 60vh;
     }
     @media screen and (max-width: 37.5em) {
-      height: 195vh;
-      padding: 2vh;
+      height: 205vh;
     }
   }
   &__col {
@@ -42,7 +41,7 @@
     width: 100%;
     @media screen and (max-width: 37.5em) {
       flex-direction: column;
-      height: 195vh;
+      height: 205vh;
     }
   }
   &__card {
