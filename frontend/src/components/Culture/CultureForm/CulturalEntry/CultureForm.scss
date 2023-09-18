@@ -1,7 +1,10 @@
 .culture-form {
   &__content {
-    padding: 7vh;
     display: grid;
+    padding: 2vh 7vh;
+    @media only screen and (max-width: 125em) {
+      padding: 7vh;
+    }
     @media only screen and (max-width: 62.5em) {
       padding: 4vh;
     }

@@ -1,11 +1,15 @@
 .story-item {
   &__card {
     position: relative;
-    width: 40rem;
-    min-height: 55vh;
     background: var(--color-grey-1);
     transition: 0.5s;
     cursor: pointer;
+    width: 50rem;
+    height: 50rem;
+    @media screen and (max-width: 125em) {
+      min-height: 55vh;
+      width: 40rem;
+    }
     @media screen and (max-width: 37.5em) {
       max-width: 90vw;
     }
