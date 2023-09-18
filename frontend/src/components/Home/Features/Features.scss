@@ -1,6 +1,5 @@
 .features {
-  /* features go from center-start to center-end - beginning to end of centre 8 grid */
-  grid-column: center-start / center-end;
+  grid-column: tram-start / tram-end;
   margin: 5vw;
   /* making features grid item a grid container */
   display: grid;
@@ -11,6 +10,9 @@
   grid-gap: 6rem;
   /* align text to be at the top of the boxes within the grid */
   align-items: start;
+  @media screen and (max-width: 125em) {
+    grid-column: center-start / center-end;
+  }
   @media screen and (max-width: 37.5em) {
     grid-column: full-start / full-end;
     margin: 10vw;
