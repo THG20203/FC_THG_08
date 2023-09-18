@@ -1,6 +1,5 @@
 .players {
   &__container {
-    height: 55vh;
     grid-column: tram-start / col-end 4;
     background: #0a19a1;
     padding: 3rem;
@@ -9,6 +8,10 @@
     justify-content: center;
     grid-row-gap: 2rem;
     justify-items: center;
+    height: 40vh;
+    @media screen and (max-width: 125em) {
+      height: 55vh;
+    }
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       height: min-content;
