@@ -18,10 +18,12 @@
     }
   }
   &__content {
-    height: 46rem;
     position: relative;
     margin: 2rem;
     width: 50%;
+    @media only screen and (max-width: 125em) {
+      height: 46rem;
+    }
     @media only screen and (max-width: 62.5em) {
       width: 100%;
       margin: 0;
