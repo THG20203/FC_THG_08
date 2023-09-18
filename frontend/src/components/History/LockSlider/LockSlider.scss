@@ -1,6 +1,7 @@
 .lock-slider {
   position: absolute;
   top: 65vh;
+  z-index: 2;
   @media screen and (max-width: 94em) {
     top: 60vh;
   }

@@ -42,7 +42,7 @@
       /* ensure the links don't push too far down the page on smaller viewports */
       grid-row: 1 / 2;
       /* put the list above the rest of content */
-      z-index: 3;
+      z-index: 1;
       /* make z-index value work*/
       position: relative;
       /* hide the links from view on smaller viewports if hamburger isn't clicked */
@@ -193,7 +193,6 @@
       width: 6rem;
       height: 6rem;
     }
-
     &:hover {
       background-color: var(--color-primary-dark);
     }
@@ -217,10 +216,10 @@
       var(--color-primary),
       var(--color-grey-2)
     );
+    transition: transform 0.8s;
     /* needs to be be above general content but below the hamburger 
       - remember z-index: 2 for navigation buttons on slider */
     z-index: 3;
-    transition: transform 0.8s;
     @media only screen and (max-width: 20em) {
       height: 5rem;
       width: 5rem;
@@ -237,6 +236,7 @@
     /* when click on checkbox - want sibling element content (i.e. the links be visible cause opacity and width was set as 0) */
     opacity: 1;
     width: 100%;
+    z-index: 3;
   }
 
   //ICON
