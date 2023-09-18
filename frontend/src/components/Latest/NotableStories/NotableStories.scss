@@ -26,7 +26,10 @@
     &::before {
       content: "\201C";
       position: absolute;
-      top: -4vh;
+      top: -2rem;
+      @media screen and (max-width: 125em) {
+        top: -4rem;
+      }
       left: 0vw;
       line-height: 1;
       overflow: hidden;
@@ -65,8 +68,8 @@
       }
     }
     &-image {
-      height: 7vh;
-      width: 7vh;
+      height: 6.5vh;
+      width: 6.5vh;
       border-radius: 50%;
       border: 0.2rem solid var(--color-primary-dark);
       margin-right: 1.5rem;
