@@ -28,9 +28,13 @@
   overflow: hidden;
   /* want smooth transition when open / close or expand and collapse */
   transition: 0.3s ease;
-  margin: 4rem auto;
-  padding: 4rem;
+  margin: 6rem auto;
+  padding: 6rem;
   cursor: pointer;
+  @media only screen and (max-width: 125em) {
+    margin: 4rem auto;
+    padding: 4rem;
+  }
   @media only screen and (max-width: 50em) {
     margin: 4rem;
   }
