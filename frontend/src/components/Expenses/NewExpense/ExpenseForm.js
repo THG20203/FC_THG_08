@@ -48,7 +48,7 @@ const ExpenseForm = (props) => {
 
   return (
     /* react to any form submission */
-    <form onSubmit={submitHandler}>
+    <form className="new-expense__form" onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label className="heading-4--dark">Club Shop Item</label>
