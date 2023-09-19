@@ -5,11 +5,10 @@
     padding: 2vh;
     height: 40vh;
     @media screen and (max-width: 125em) {
-      height: 55vh;
+      height: 60vh;
     }
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
-      height: 60vh;
     }
     @media screen and (max-width: 37.5em) {
       height: 175vh;
@@ -61,7 +60,7 @@
       cursor: pointer;
       transition: all 1s ease;
       @media screen and (max-width: 125em) {
-        height: 51vh;
+        height: 56vh;
       }
       @media screen and (max-width: 94em) {
         height: 54vh;
@@ -168,8 +167,8 @@
     list-style: none;
     &--item {
       text-align: center;
-      font-size: 1.6rem;
-      padding: 1rem;
+      font-size: 1.5rem;
+      padding: 0.5rem;
       &:not(:last-child) {
         border-bottom: 1px solid #aba3a3;
       }

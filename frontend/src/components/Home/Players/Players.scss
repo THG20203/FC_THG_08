@@ -6,11 +6,11 @@
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
     justify-items: center;
     height: 40vh;
     @media screen and (max-width: 125em) {
-      height: 55vh;
+      height: 60vh;
     }
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
@@ -29,7 +29,7 @@
     grid-template-columns: min-content max-content;
     /* spacing */
     grid-column-gap: 20px;
-    grid-row-gap: 5vh;
+    grid-row-gap: 3vh;
     align-items: center;
     @media screen and (max-width: 94em) {
       grid-template-columns: repeat(3, min-content max-content);
@@ -39,7 +39,7 @@
     }
   }
   &__img {
-    width: 7.5rem;
+    width: 6rem;
     border-radius: 50%;
     display: block;
     @media screen and (max-width: 20em) {

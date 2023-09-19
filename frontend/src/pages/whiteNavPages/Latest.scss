@@ -8,7 +8,7 @@
     [center-end] minmax(6rem, 1fr) [tram-end] 10vw [full-end];
   grid-template-rows: 40vh min-content;
   @media screen and (max-width: 125em) {
-    grid-template-rows: 55vh min-content;
+    grid-template-rows: 60vh min-content;
   }
   @media only screen and (max-width: 94em) {
     grid-template-rows: min-content min-content;
