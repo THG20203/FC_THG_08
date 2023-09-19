@@ -1,0 +1,9 @@
+.latest-feature {
+  &__container {
+    grid-column: tram-start / col-end 5;
+    background-color: red;
+    display: grid;
+    @media screen and (max-width: 125em) {
+    }
+  }
+}
