@@ -33,9 +33,7 @@
     cursor: pointer;
     margin-bottom: 2rem;
     transition: all 0.2s;
-    @media screen and (max-width: 125em) {
-      top: 65vh;
-    }
+    top: 65vh;
     @media screen and (max-width: 94em) {
       top: 60vh;
     }
