@@ -1,9 +1,12 @@
 .history-founder {
   &__container {
-    grid-column: tram-start / col-end 6;
     background-color: var(--color-grey-3);
     display: flex;
     justify-content: center;
+    grid-column: tram-start / col-end 9;
+    @media screen and (max-width: 125em) {
+      grid-column: tram-start / col-end 6;
+    }
     @media screen and (max-width: 94em) {
       grid-column: full-start / col-end 6;
     }

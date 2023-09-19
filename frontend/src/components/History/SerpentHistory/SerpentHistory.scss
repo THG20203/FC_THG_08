@@ -2,11 +2,14 @@
   &__container {
     background-color: var(--color-secondary);
     grid-column: tram-start / tram-end;
-    padding: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 4vh;
+    @media screen and (max-width: 125em) {
+      padding: 7vh;
+    }
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       padding: 4vh;

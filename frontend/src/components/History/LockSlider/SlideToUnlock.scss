@@ -2,11 +2,14 @@
   &__container {
     grid-column: tram-start / col-end 4;
     overflow-x: hidden;
-    height: calc(100vh - 16rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    height: 75vh;
+    @media screen and (max-width: 125em) {
+      height: calc(100vh - 16rem);
+    }
     @media screen and (max-width: 94em) {
       width: 100vw;
       grid-column: full-start / full-end;
@@ -24,13 +27,15 @@
   &__icon {
     z-index: 2;
     position: absolute;
-    top: 65vh;
     font-size: 8rem;
     color: var(--color-secondary);
     //color: rgba(240, 240, 240, 0.3);
     cursor: pointer;
     margin-bottom: 2rem;
     transition: all 0.2s;
+    @media screen and (max-width: 125em) {
+      top: 65vh;
+    }
     @media screen and (max-width: 94em) {
       top: 60vh;
     }

@@ -19,6 +19,13 @@ const HistoryFounder = () => {
           mingling of British and German heritage, embodying the cross-cultural
           spirit of the port city.
         </p>
+        <p className="paragraph-text mb-sm">
+          These visionary founders, with names like William Schmidt, James
+          Smithson, Heinrich Brown, and Charles Müller, envisioned a football
+          club that would not only excel on the field but also foster
+          camaraderie and cultural exchange among the diverse communities that
+          called the bustling port city home.
+        </p>
         <p className="paragraph-text history-founder__title">Founders:</p>
         <ul className="history-founder__list">
           <li className="history-founder__list--item paragraph-text">

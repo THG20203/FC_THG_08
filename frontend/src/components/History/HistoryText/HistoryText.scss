@@ -2,7 +2,10 @@
   &__container {
     grid-column: col-start 5 / tram-end;
     background-color: var(--color-secondary);
-    height: calc(100vh - 16rem);
+    height: 75vh;
+    @media screen and (max-width: 125em) {
+      height: calc(100vh - 16rem);
+    }
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       height: min-content;

@@ -1,6 +1,5 @@
 .history-badge {
   &__container {
-    grid-column: col-end 6 / tram-end;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -10,6 +9,10 @@
       rgb(10, 25, 161),
       rgba(12, 34, 232)
     );
+    grid-column: col-end 9 / tram-end;
+    @media screen and (max-width: 125em) {
+      grid-column: col-end 6 / tram-end;
+    }
     @media screen and (max-width: 94em) {
       grid-column: col-end 6 / full-end;
     }
