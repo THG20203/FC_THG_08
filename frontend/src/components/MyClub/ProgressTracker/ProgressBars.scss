@@ -2,13 +2,13 @@
   &__container {
     grid-column: center-start / center-end;
     text-align: center;
-    padding: 7vh 0;
+    padding: 7vh 2vw;
     @media screen and (max-width: 125em) {
-      padding: 7vh 10vw;
+      padding: 7vh 15vw;
     }
     @media screen and (max-width: 62.5em) {
       grid-column: full-start / full-end;
-      padding: 7vh 4rem;
+      padding: 7vh;
     }
   }
   &__list-item {
