@@ -32,8 +32,7 @@ const HistoryText = () => {
           </h4>
           <p className="paragraph-text history-text__description">
             The club played in Europe for the first time in the late 50's and
-            early 60's, challenging the continents best for international
-            honours.
+            early 60's, challenging the continents best.
           </p>
         </div>
         <div className="history-text__two-column">

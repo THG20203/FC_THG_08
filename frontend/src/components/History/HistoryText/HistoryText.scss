@@ -1,6 +1,6 @@
 .history-text {
   &__container {
-    grid-column: col-start 5 / tram-end;
+    grid-column: col-start 6 / tram-end;
     background-color: var(--color-secondary);
     height: 75vh;
     @media screen and (max-width: 125em) {
