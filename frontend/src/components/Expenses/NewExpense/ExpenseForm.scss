@@ -35,3 +35,12 @@
     text-align: center;
   }
 }
+
+.new-expense__cancel {
+  @media screen and (max-width: 37.5em) {
+    margin-right: 1rem;
+  }
+  @media screen and (max-width: 20em) {
+    margin-bottom: 1rem;
+  }
+}

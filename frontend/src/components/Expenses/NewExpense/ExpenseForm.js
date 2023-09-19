@@ -88,7 +88,11 @@ const ExpenseForm = (props) => {
       <div className="new-expense__actions">
         {/* stopEditingHandler -> (recieved on the onCancel prop) is forwarded to the onClick 
         prop of the button */}
-        <button className="btn" type="button" onClick={props.onCancel}>
+        <button
+          className="new-expense__cancel btn"
+          type="button"
+          onClick={props.onCancel}
+        >
           Cancel
           <div className="btn__wave"></div>
         </button>
