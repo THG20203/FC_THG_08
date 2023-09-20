@@ -3,6 +3,7 @@ import LockSlider from "./LockSlider.js";
 import "./SlideToUnlock.scss";
 import { AiFillUnlock } from "react-icons/ai";
 import yearsBanner from "../../../assets/images/banners/130-years-banner.png";
+import oldStadium from "../../../assets/images/history/old-stadium.png";
 
 function SlideToUnlock() {
   /* useState for uiLockScreenProps pass in an object -> key value pairs. */
@@ -37,8 +38,8 @@ function SlideToUnlock() {
     if (lockSliderValue === "100") {
       setShowLockSlider(false);
       setUiLockScreenProps({
-        uiText: "We have 130 years of passion and pride",
-        uiBg: `#f9f7f6`,
+        uiText: "We have 130 years of passion",
+        uiBg: `url(${oldStadium}) center no-repeat`,
       });
     }
   });

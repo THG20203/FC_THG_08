@@ -2,20 +2,14 @@
   &__container {
     grid-column: col-start 6 / tram-end;
     background-color: var(--color-secondary);
-    height: 75vh;
-    @media screen and (max-width: 125em) {
-      height: calc(100vh - 16rem);
-    }
+    height: 65vh;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       height: min-content;
     }
   }
   &__content {
-    padding: 7vh;
-    @media screen and (max-width: 94em) {
-      padding: 4vh;
-    }
+    padding: 3rem;
   }
   &__two-column {
     color: var(--color-grey-1);

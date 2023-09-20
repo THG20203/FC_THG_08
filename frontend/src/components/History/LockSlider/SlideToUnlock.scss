@@ -6,10 +6,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 75vh;
-    @media screen and (max-width: 125em) {
-      height: calc(100vh - 16rem);
-    }
+    height: 65vh;
     @media screen and (max-width: 94em) {
       width: 100vw;
       grid-column: full-start / full-end;
@@ -17,29 +14,20 @@
   }
   &__title {
     position: absolute;
-    top: 7vh;
-    padding: 0 10vw;
+    top: 3rem;
+    padding: 0 5vw;
     text-align: center;
-    @media screen and (max-width: 94em) {
-      top: 4vh;
-    }
   }
   &__icon {
     z-index: 2;
     position: absolute;
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--color-secondary);
     //color: rgba(240, 240, 240, 0.3);
     cursor: pointer;
     margin-bottom: 2rem;
     transition: all 0.2s;
-    top: 65vh;
-    @media screen and (max-width: 94em) {
-      top: 60vh;
-    }
-    @media screen and (max-width: 37.5em) {
-      top: 55vh;
-    }
+    top: 55vh;
     &:hover {
       // color: var(--color-grey-1);
       color: var(--color-primary-dark);

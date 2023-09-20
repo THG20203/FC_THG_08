@@ -1,13 +1,7 @@
 .lock-slider {
   position: absolute;
-  top: 65vh;
+  top: 55vh;
   z-index: 2;
-  @media screen and (max-width: 94em) {
-    top: 60vh;
-  }
-  @media screen and (max-width: 37.5em) {
-    top: 55vh;
-  }
   &::-webkit-slider-thumb {
     appearance: none;
     width: 4vh;

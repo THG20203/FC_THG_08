@@ -8,6 +8,6 @@
     )
     [center-end] minmax(6rem, 1fr) [tram-end] 10vw [full-end];
   @media screen and (max-width: 125em) {
-    grid-template-rows: calc(100vh - 16rem) min-content min-content;
+    grid-template-rows: 65vh min-content min-content;
   }
 }
