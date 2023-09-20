@@ -1,18 +1,17 @@
 .sea-serpent {
   &__container {
     background-color: var(--color-secondary);
-    grid-column: tram-start / tram-end;
     display: flex;
+    grid-column: col-end 9 / tram-end;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 4vh;
+    padding: 4vh 0;
     @media screen and (max-width: 125em) {
-      padding: 7vh;
+      grid-column: col-end 6 / tram-end;
     }
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
-      padding: 4vh;
     }
     @media screen and (max-width: 87.5em) {
       grid-column: full-start / col-end 4;
