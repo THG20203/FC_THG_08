@@ -1,6 +1,6 @@
 .history-container {
   display: grid;
-  grid-template-rows: min-content 100rem min-content;
+  grid-template-rows: min-content min-content 100rem min-content;
   grid-template-columns:
     [full-start] 10vw [tram-start] minmax(8rem, 1fr) [center-start] repeat(
       10,
@@ -8,6 +8,6 @@
     )
     [center-end] minmax(6rem, 1fr) [tram-end] 10vw [full-end];
   @media screen and (max-width: 125em) {
-    grid-template-rows: 65vh min-content min-content;
+    grid-template-rows: 65vh min-content min-content min-content;
   }
 }
