@@ -1,15 +1,14 @@
 .history-text {
   &__container {
-    grid-column: col-start 6 / tram-end;
     background-color: var(--color-secondary);
-    height: 65vh;
+    height: min-content;
+    grid-column: tram-start / tram-end;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
-      height: min-content;
     }
   }
   &__content {
-    padding: 3rem;
+    padding: 7vh;
   }
   &__two-column {
     color: var(--color-grey-1);

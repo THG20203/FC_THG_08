@@ -14,7 +14,7 @@
   }
   &__title {
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     padding: 0 5vw;
     text-align: center;
   }
@@ -27,7 +27,7 @@
     cursor: pointer;
     margin-bottom: 2rem;
     transition: all 0.2s;
-    top: 50vh;
+    top: 45vh;
     &:hover {
       // color: var(--color-grey-1);
       color: var(--color-primary-dark);
