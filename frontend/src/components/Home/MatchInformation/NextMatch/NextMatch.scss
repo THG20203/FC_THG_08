@@ -1,6 +1,6 @@
 .next-match {
   &__container {
-    background: linear-gradient(rgba(10, 25, 161, 0.3), rgba(12, 34, 232, 0.7)),
+    background: linear-gradient(rgba(10, 25, 161, 0.3), rgba(12, 34, 232, 0.8)),
       url("../../../../assets/images/homeScores/home-scores.png") center/cover;
     grid-column: col-start 7 / tram-end;
     @media only screen and (max-width: 94em) {

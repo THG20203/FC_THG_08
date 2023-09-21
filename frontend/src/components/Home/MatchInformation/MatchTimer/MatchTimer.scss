@@ -1,9 +1,19 @@
 .match-timer {
   &__container {
     background: radial-gradient(circle at 50% 50%, #0a19a1 0%, #0c22e8 100%);
+    border: 0.2rem solid var(--color-grey-1);
     grid-column: col-start 3 / col-end 6;
+    height: 108%;
+    position: relative;
+    bottom: 4%;
     @media only screen and (max-width: 62.5em) {
       grid-column: full-start / full-end;
+      height: 100%;
+      bottom: 0;
+      border-top: 0.2rem solid var(--color-grey-1);
+      border-bottom: 0.2rem solid var(--color-grey-1);
+      border-left: none;
+      border-right: none;
     }
   }
 }
