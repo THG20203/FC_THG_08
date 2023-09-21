@@ -6,9 +6,9 @@
 
   --color-secondary: #101d2c;
 
-  --color-grey-1: #f9f7f6;
-  --color-grey-2: #dad5d5;
-  --color-grey-3: #ededf1;
+  --color-grey-1: #f9f7f6; /* rgba(249,247,246) */
+  --color-grey-2: #dad5d5; /* rgba(218,213,213) */
+  --color-grey-3: #ededf1; /* rgba(237,237,241) */
 
   --line-border-empty: #383838;
   --line-border-bottom: #aba3a3;

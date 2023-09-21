@@ -1,13 +1,13 @@
 .last-match {
   &__container {
-    background: linear-gradient(to right, #ededf1, #dad5d5);
+    background: linear-gradient(rgba(10, 25, 161, 0.3), rgba(12, 34, 232, 0.3)),
+      url("../../../../assets/images/homeScores/home-scores.png") center/cover;
     grid-column: tram-start / col-end 2;
     @media only screen and (max-width: 94em) {
       grid-column: full-start / col-end 2;
     }
     @media only screen and (max-width: 62.5em) {
       grid-column: full-start / full-end;
-      background: linear-gradient(to bottom, #ededf1, #dad5d5);
     }
   }
   &__badge--blue {
