@@ -17,7 +17,7 @@ const NextMatch = () => {
           />
           <p className="fixture__club--name paragraph-text">FC THG 08</p>
         </div>
-        <h1 className="heading-1 fixture__score next-match__score">- : -</h1>
+        <h1 className="heading-1 fixture__score">- : -</h1>
         <div className="fixture__club">
           <img
             className="next-match__badge--eagle"
