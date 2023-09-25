@@ -28,8 +28,10 @@ const HistoryText = () => {
             <span>1977 - 1995</span>
           </h4>
           <p className="paragraph-text history-text__description">
-            Financial problems gripped the club in late 70's and 80's, but
-            several cup triumphs were highlights.
+            Financial problems gripped the club in the late 70s and 80s, but
+            several cup triumphs were highlights that not only lifted the
+            spirits of the fans, but also demonstrated the resilience of the
+            team during challenging times.
           </p>
         </div>
         <div className="history-text__two-column">
