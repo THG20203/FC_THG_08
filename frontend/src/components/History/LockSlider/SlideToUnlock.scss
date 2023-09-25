@@ -1,6 +1,6 @@
 .slide-unlock {
   &__container {
-    grid-column: tram-start / col-end 2;
+    grid-column: tram-start / col-end 3;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@
     top: 3vh;
     padding: 0 2vw;
     text-align: center;
+    color: var(--color-grey-1);
   }
   &__icon {
     z-index: 2;
@@ -27,7 +28,7 @@
     cursor: pointer;
     margin-bottom: 2rem;
     transition: all 0.2s;
-    top: 23rem;
+    top: 18rem;
     &:hover {
       // color: var(--color-grey-1);
       color: var(--color-primary-dark);

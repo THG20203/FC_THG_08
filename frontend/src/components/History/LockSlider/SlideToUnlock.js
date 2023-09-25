@@ -27,7 +27,7 @@ function SlideToUnlock() {
     setLockSliderValue(0);
     setShowLockSlider(true);
     setUiLockScreenProps({
-      uiText: "Explore our long and successful history",
+      uiText: "Explore our successful history",
       uiBg: `url(${yearsBanner}) center/cover no-repeat`,
     });
   };
@@ -38,8 +38,8 @@ function SlideToUnlock() {
     if (lockSliderValue === "100") {
       setShowLockSlider(false);
       setUiLockScreenProps({
-        uiText: "We have 130 years of passion",
-        uiBg: `url(${oldStadium}) center no-repeat`,
+        uiText: "130 years of passion",
+        uiBg: `url(${oldStadium}) center/cover no-repeat`,
       });
     }
   });

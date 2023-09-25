@@ -2,7 +2,7 @@
   &__container {
     background-color: var(--color-secondary);
     height: min-content;
-    grid-column: col-end 2 / col-end 7;
+    grid-column: col-end 3 / col-end 7;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
