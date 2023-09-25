@@ -1,12 +1,12 @@
 .slide-unlock {
   &__container {
-    grid-column: tram-start / col-end 5;
+    grid-column: tram-start / col-end 2;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 65vh;
+    height: 30rem;
     @media screen and (max-width: 94em) {
       width: 100vw;
       grid-column: full-start / full-end;
@@ -14,8 +14,8 @@
   }
   &__title {
     position: absolute;
-    top: 7vh;
-    padding: 0 5vw;
+    top: 3vh;
+    padding: 0 2vw;
     text-align: center;
   }
   &__icon {
@@ -27,7 +27,7 @@
     cursor: pointer;
     margin-bottom: 2rem;
     transition: all 0.2s;
-    top: 45vh;
+    top: 23rem;
     &:hover {
       // color: var(--color-grey-1);
       color: var(--color-primary-dark);

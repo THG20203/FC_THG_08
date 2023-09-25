@@ -4,7 +4,7 @@ import "./LockSlider.scss";
 const LockSlider = ({ handleInput, sliderValue, width }) => {
   let sliderStyle = {
     appearance: "none",
-    width: "35vh",
+    width: "30vh",
     height: "1.5vh",
     cursor: "pointer",
     borderRadius: "20px",

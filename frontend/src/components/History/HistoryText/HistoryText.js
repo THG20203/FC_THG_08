@@ -4,9 +4,6 @@ const HistoryText = () => {
   return (
     <div className="history-text__container">
       <div className="history-text__content">
-        <h1 className="heading-1--light mb-md">
-          <em>Traditions of FC THG 08:</em> Forging a Legacy on the Pitch
-        </h1>
         <div className="history-text__two-column">
           <h4 className="heading-4--light history-text__description history-text__dates">
             <span>1893 - 1919</span>

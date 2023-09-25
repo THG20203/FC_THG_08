@@ -2,13 +2,13 @@
   &__container {
     background-color: var(--color-secondary);
     height: min-content;
-    grid-column: tram-start / tram-end;
+    grid-column: col-end 2 / col-end 7;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
   }
   &__content {
-    padding: 7vh;
+    padding: 3vh;
   }
   &__two-column {
     color: var(--color-grey-1);
