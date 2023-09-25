@@ -6,16 +6,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 4vh 0;
+    padding: 4vh;
     @media screen and (max-width: 125em) {
-      grid-column: col-end 6 / tram-end;
+      grid-column: tram-start / tram-end;
     }
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
     @media screen and (max-width: 87.5em) {
       grid-column: full-start / col-end 4;
-      grid-row: 4 / 5;
+      grid-row: 3 / 4;
     }
     @media screen and (max-width: 37.5em) {
       grid-column: full-start / full-end;

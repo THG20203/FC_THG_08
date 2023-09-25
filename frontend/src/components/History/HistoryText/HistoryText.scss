@@ -5,6 +5,9 @@
     grid-column: col-end 3 / tram-end;
     overflow: hidden;
     @media screen and (max-width: 94em) {
+      grid-column: col-end 3 / full-end;
+    }
+    @media screen and (max-width: 37.5em) {
       grid-column: full-start / full-end;
     }
   }
@@ -20,7 +23,8 @@
     justify-content: center;
     padding: 10rem;
     @media screen and (max-width: 94em) {
-      flex-direction: column;
+      padding: 7vh;
+      align-content: center;
     }
   }
   &__description {

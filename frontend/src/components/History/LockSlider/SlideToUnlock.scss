@@ -8,7 +8,9 @@
     position: relative;
     height: 30rem;
     @media screen and (max-width: 94em) {
-      width: 100vw;
+      grid-column: full-start / col-end 3;
+    }
+    @media screen and (max-width: 37.5em) {
       grid-column: full-start / full-end;
     }
   }

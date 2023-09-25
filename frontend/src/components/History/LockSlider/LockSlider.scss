@@ -4,8 +4,8 @@
   z-index: 2;
   &::-webkit-slider-thumb {
     appearance: none;
-    width: 4vh;
-    height: 4vh;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     border: 0.2rem solid var(--color-grey-1);
     background: var(--color-primary-dark);
