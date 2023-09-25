@@ -3,7 +3,7 @@ import "./HistoryText.scss";
 const HistoryText = () => {
   return (
     <div className="history-text__container">
-      <div className="history-text__content">
+      <div className="history-text__carousel">
         <div className="history-text__two-column">
           <h4 className="heading-4--light history-text__description history-text__dates">
             <span>1893 - 1919</span>

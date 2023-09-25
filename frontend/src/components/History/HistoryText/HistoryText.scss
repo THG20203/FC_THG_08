@@ -1,19 +1,24 @@
 .history-text {
   &__container {
     background-color: var(--color-secondary);
-    height: min-content;
-    grid-column: col-end 3 / col-end 7;
+    height: 30rem;
+    grid-column: col-end 3 / tram-end;
+    overflow: hidden;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
   }
-  &__content {
-    padding: 3vh;
+  &__carousel {
+    animation: history-carousel 8s ease-in-out infinite;
   }
   &__two-column {
     color: var(--color-grey-1);
     display: flex;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    height: 30rem;
+    align-content: center;
+    justify-content: center;
+    padding: 10rem;
     @media screen and (max-width: 94em) {
       flex-direction: column;
     }
@@ -25,9 +30,27 @@
     }
   }
   &__dates {
-    margin-bottom: 0.5rem;
     & span {
       max-width: min-content;
     }
+  }
+}
+
+@keyframes history-carousel {
+  0%,
+  25% {
+    transform: translateY(0);
+  }
+  30%,
+  55% {
+    transform: translatey(-30rem);
+  }
+  60%,
+  85% {
+    transform: translatey(-60rem);
+  }
+  90%,
+  100% {
+    transform: translatey(-90rem);
   }
 }
