@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import LockSlider from "./LockSlider.js";
 import "./SlideToUnlock.scss";
 import { AiFillUnlock } from "react-icons/ai";
-import yearsBanner from "../../../assets/images/banners/130-years-banner.png";
+import yearsBanner from "../../../assets/images/history/130-years.png";
 import oldStadium from "../../../assets/images/history/old-stadium.png";
 
 function SlideToUnlock() {
