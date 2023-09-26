@@ -11,6 +11,9 @@
     }
   }
   &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     padding: 3rem;
     width: 50%;
     @media only screen and (max-width: 62.5em) {
