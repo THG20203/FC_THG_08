@@ -1,6 +1,6 @@
 .history-text {
   &__container {
-    background-color: var(--color-secondary);
+    background: radial-gradient(circle at 50% 50%, #0a19a1 0%, #0c22e8 100%);
     height: 30rem;
     grid-column: col-end 3 / tram-end;
     overflow: hidden;

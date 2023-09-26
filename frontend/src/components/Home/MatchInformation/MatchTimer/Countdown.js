@@ -133,7 +133,7 @@ const Countdown = () => {
       <h3 className="heading-3 countdown__subheading">
         Countdown to next fixture:
       </h3>
-      <h2 className="heading-2--light">
+      <h2 className="heading-2">
         {days} days, {hours} hours, {minutes} minutes, {seconds} seconds
       </h2>
     </div>
