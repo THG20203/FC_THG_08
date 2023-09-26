@@ -4,20 +4,17 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    background: linear-gradient(
-      to right bottom,
-      rgb(10, 25, 161),
-      rgba(12, 34, 232)
-    );
+    background: linear-gradient(rgba(10, 25, 161, 0.7), rgba(12, 34, 232, 0.9)),
+      url("../../../assets/images/banners/mural-banner.png") center/cover;
     grid-column: col-end 9 / tram-end;
     @media screen and (max-width: 125em) {
-      grid-column: col-end 6 / tram-end;
+      grid-column: col-end 7 / tram-end;
     }
     @media screen and (max-width: 94em) {
-      grid-column: col-end 6 / full-end;
+      grid-column: col-end 7 / full-end;
     }
     @media screen and (max-width: 87.5em) {
-      grid-column: col-end 4 / full-end;
+      grid-column: col-end 6 / full-end;
     }
     @media screen and (max-width: 37.5em) {
       grid-column: full-start / full-end;

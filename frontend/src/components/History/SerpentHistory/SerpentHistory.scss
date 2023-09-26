@@ -1,25 +1,28 @@
 .sea-serpent {
   &__container {
-    background-color: var(--color-secondary);
+    background: linear-gradient(rgba(10, 25, 161, 0.7), rgba(12, 34, 232, 0.9)),
+      url("../../../assets/images/history/history-stadium.png") center/cover;
     display: flex;
-    grid-column: col-end 9 / tram-end;
+    grid-column: tram-start / tram-end;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 4vh;
-    @media screen and (max-width: 125em) {
-      grid-column: tram-start / tram-end;
-    }
+    padding: 4vh 15vh 4vh 4vh;
+    position: relative;
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
     @media screen and (max-width: 87.5em) {
-      grid-column: full-start / col-end 4;
       grid-row: 3 / 4;
+      padding: 4vh 12vh 4vh 4vh;
     }
     @media screen and (max-width: 37.5em) {
       grid-column: full-start / full-end;
       grid-row: 5 / 6;
+      padding: 2vh 8vh 2vh 2vh;
+    }
+    @media screen and (max-width: 25em) {
+      padding: 1vh 6vh 1vh 1vh;
     }
   }
   &__content {
@@ -33,6 +36,5 @@
   }
   &__description {
     color: var(--color-grey-1);
-    text-align: center;
   }
 }

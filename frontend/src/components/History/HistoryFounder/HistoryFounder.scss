@@ -5,10 +5,10 @@
     justify-content: center;
     grid-column: tram-start / col-end 9;
     @media screen and (max-width: 125em) {
-      grid-column: tram-start / col-end 6;
+      grid-column: tram-start / col-end 7;
     }
     @media screen and (max-width: 94em) {
-      grid-column: full-start / col-end 6;
+      grid-column: full-start / col-end 7;
     }
     @media screen and (max-width: 87.5em) {
       grid-column: full-start / full-end;
@@ -20,8 +20,8 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 5px rgb(168, 162, 162, 0.6);
-    margin: 5vh;
-    @media screen and (max-width: 37.5em) {
+    margin: 3vh;
+    @media screen and (max-width: 87.5em) {
       margin: 2vh;
       padding: 2vh;
     }

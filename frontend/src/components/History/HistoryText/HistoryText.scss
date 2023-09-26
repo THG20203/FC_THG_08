@@ -26,6 +26,10 @@
       padding: 7vh;
       align-content: center;
     }
+    @media screen and (max-width: 50em) {
+      padding: 4vh;
+      align-content: center;
+    }
   }
   &__description {
     width: 50%;
