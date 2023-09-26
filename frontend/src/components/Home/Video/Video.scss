@@ -1,7 +1,7 @@
 .video {
   &__container {
     grid-column: col-start 5 / tram-end;
-    background-color: var(--color-grey-1);
+    background-color: var(--color-primary);
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
