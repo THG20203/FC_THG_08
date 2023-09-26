@@ -7,6 +7,9 @@
     justify-content: center;
     padding: 2rem;
     height: 100%;
+    @media screen and (max-width: 87.5em) {
+      padding: 6rem 2rem;
+    }
   }
   &__subheading {
     margin-bottom: 1vh;

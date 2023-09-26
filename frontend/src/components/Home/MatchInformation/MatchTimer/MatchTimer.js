@@ -6,7 +6,9 @@ import footballPitch from "../../../../assets/images/footballPitch/football-pitc
 const MatchTimer = () => {
   return (
     <div className="match-timer__container">
-      <img className="match-timer__image" src={footballPitch} alt="Pitch" />
+      <div className="match-timer__image-div">
+        <img className="match-timer__img" src={footballPitch} alt="Pitch" />
+      </div>
       <Countdown />
     </div>
   );
