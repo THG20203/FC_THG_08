@@ -4,6 +4,7 @@ import trainingVideo from "../../../assets/videos/training-video.mp4";
 /* For font awesome icons */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+import playerBlue from "../../../assets/images/homeVideo/playerBlue.png";
 
 const Video = () => {
   /* useState false cause initially not playing */
@@ -64,6 +65,9 @@ const Video = () => {
           ></FontAwesomeIcon>
           <div className="btn__wave"></div>
         </button>
+      </div>
+      <div className="video__image-container">
+        <img className="video__img" src={playerBlue} alt="Player Blue" />
       </div>
     </div>
   );

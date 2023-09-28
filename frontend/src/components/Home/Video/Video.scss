@@ -1,7 +1,7 @@
 .video {
   &__container {
     grid-column: col-start 5 / tram-end;
-    background-color: var(--color-primary);
+    background-color: var(--color-grey-1);
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
@@ -60,5 +60,8 @@
     margin-right: 0.7rem;
     background-image: url("../../../assets/svg/chevron-thin-right.svg");
     background-size: cover;
+  }
+  &__img {
+    width: 15rem;
   }
 }
