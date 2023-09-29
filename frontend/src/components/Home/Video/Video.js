@@ -50,9 +50,9 @@ const Video = () => {
           athletes as they strive for excellence on the football pitch.
         </p>
         <p className="paragraph-text video__description mb-smlst">
-          This footage was taken at our state-of-the-art training facility.
-          Brand new pitches, modern training equipment and high tech analyst
-          suites ensure that our players have everything they need.
+          Footage was taken at our state-of-the-art training facility. Brand new
+          pitches, training equipment and analyst suites ensure our players have
+          everything they need.
         </p>
       </div>
       <div className="video__content">
