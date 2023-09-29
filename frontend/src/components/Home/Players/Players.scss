@@ -1,13 +1,11 @@
 .players {
   &__container {
     grid-column: tram-start / col-end 4;
-    background: #0a19a1;
-    padding: 3rem;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    grid-row-gap: 1rem;
-    justify-items: center;
+    background: linear-gradient(to bottom, #0c22e8, #0a19a1);
+    overflow: hidden;
+    padding: 3vh;
+    display: flex;
+    align-items: center;
     height: 40vh;
     @media screen and (max-width: 125em) {
       height: 60vh;
@@ -15,13 +13,21 @@
     @media screen and (max-width: 94em) {
       grid-column: full-start / full-end;
       height: min-content;
+      flex-direction: column;
     }
     @media screen and (max-width: 62.5em) {
       padding: 5rem;
     }
+    &-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__title {
     color: var(--color-grey-2);
+    margin-bottom: 1vh;
   }
   &__list {
     display: grid;
@@ -29,7 +35,7 @@
     grid-template-columns: min-content max-content;
     /* spacing */
     grid-column-gap: 20px;
-    grid-row-gap: 1rem;
+    grid-row-gap: 2vh;
     align-items: center;
     @media screen and (max-width: 94em) {
       grid-template-columns: repeat(3, min-content max-content);
@@ -39,11 +45,11 @@
     }
   }
   &__img {
-    width: 5.5rem;
+    width: 7.5vh;
     border-radius: 50%;
     display: block;
-    @media screen and (max-width: 20em) {
-      width: 6rem;
+    @media screen and (max-width: 37.5em) {
+      width: 8vh;
     }
   }
   &__stats {
