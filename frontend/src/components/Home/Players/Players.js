@@ -3,6 +3,7 @@ import "./Players.scss";
 import Player1 from "../../../assets/images/players/Player1.png";
 import Player2 from "../../../assets/images/players/Player2.png";
 import Player3 from "../../../assets/images/players/Player3.png";
+import playerBlue from "../../../assets/images/players/playerBlue.png";
 
 const Players = () => {
   return (
@@ -27,7 +28,13 @@ const Players = () => {
           </div>
         </div>
       </div>
-      <div className="players__container-column"></div>
+      <div className="players__container-column">
+        <img
+          className="players__striker"
+          src={playerBlue}
+          alt="Player Striking Ball"
+        />
+      </div>
     </div>
   );
 };
