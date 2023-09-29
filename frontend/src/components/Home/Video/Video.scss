@@ -23,14 +23,13 @@
   &__content {
     position: relative;
     margin: 2rem;
-    height: 46vh;
+    height: 50vh;
     grid-column: 5 / -1;
     grid-row: 1 / -1;
     @media only screen and (max-width: 62.5em) {
       grid-column: 1 / -1;
       grid-row: 6 / -1;
       margin: 0;
-      height: 50vh;
     }
   }
 
