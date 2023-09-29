@@ -4,12 +4,12 @@
     background-color: var(--color-grey-1);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 5rem);
+    grid-template-rows: repeat(10, 5vh);
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
     @media only screen and (max-width: 62.5em) {
-      grid-template-rows: repeat(10, 10rem);
+      grid-template-rows: repeat(10, 10vh);
     }
   }
   &__text {
@@ -17,13 +17,12 @@
     grid-column: 1 / 4;
     grid-row: 1 / 4;
     @media only screen and (max-width: 62.5em) {
-      grid-column: 1 / 7;
+      grid-column: 1 / -1;
     }
   }
   &__content {
     position: relative;
-    margin: 2rem;
-    height: 46rem;
+    margin: 2vh;
     grid-column: 5 / -1;
     grid-row: 1 / -1;
     @media only screen and (max-width: 62.5em) {
@@ -59,16 +58,5 @@
     margin-right: 0.7rem;
     background-image: url("../../../assets/svg/chevron-thin-right.svg");
     background-size: cover;
-  }
-  &__image-container {
-    grid-column: 3 / 5;
-    grid-row: 5 / -1;
-    z-index: 2;
-    @media only screen and (max-width: 62.5em) {
-      grid-column: 7 / -1;
-    }
-  }
-  &__img {
-    width: 20rem;
   }
 }
