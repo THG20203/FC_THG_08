@@ -1,38 +1,35 @@
 .video {
   &__container {
     grid-column: col-start 5 / tram-end;
-    background-color: var(--color-grey-1);
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 5vh);
-    @media only screen and (max-width: 125em) {
-      grid-template-rows: repeat(10, 5rem);
-    }
+    background-color: var(--color-grey-3);
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
+    display: flex;
     @media only screen and (max-width: 62.5em) {
-      grid-template-rows: repeat(10, 10rem);
+      flex-direction: column;
     }
   }
   &__text {
     padding: 2rem;
-    grid-column: 1 / 5;
-    grid-row: 1 / 4;
+    width: 50%;
     @media only screen and (max-width: 62.5em) {
-      grid-column: 1 / -1;
+      width: 100%;
     }
   }
   &__content {
     position: relative;
-    margin: 2vh;
-    grid-column: 5 / -1;
-    grid-row: 1 / -1;
+    margin: 2rem;
+    width: 50%;
+    @media only screen and (max-width: 125em) {
+      height: 46rem;
+    }
     @media only screen and (max-width: 62.5em) {
-      grid-column: 1 / -1;
-      grid-row: 6 / -1;
+      width: 100%;
+      margin: 0;
     }
   }
+
   &__player {
     position: absolute;
     width: 100%;
@@ -46,6 +43,7 @@
     transform: translate(-50%, -50%);
     margin: 0;
   }
+
   &__icon {
     width: 2rem;
     height: 2rem;
