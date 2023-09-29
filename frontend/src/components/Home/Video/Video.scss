@@ -4,12 +4,12 @@
     background-color: var(--color-grey-1);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 5vh);
+    grid-template-rows: repeat(10, 5rem);
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
     @media only screen and (max-width: 62.5em) {
-      grid-template-rows: repeat(10, 10vh);
+      grid-template-rows: repeat(10, 10rem);
     }
   }
   &__text {
@@ -23,13 +23,12 @@
   &__content {
     position: relative;
     margin: 2rem;
-    height: 50vh;
+    height: 46rem;
     grid-column: 5 / -1;
     grid-row: 1 / -1;
     @media only screen and (max-width: 62.5em) {
       grid-column: 1 / -1;
       grid-row: 6 / -1;
-      margin: 0;
     }
   }
 
@@ -70,6 +69,6 @@
     }
   }
   &__img {
-    width: 15rem;
+    width: 20rem;
   }
 }
