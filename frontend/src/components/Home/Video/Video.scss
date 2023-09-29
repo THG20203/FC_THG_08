@@ -5,16 +5,19 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 5vh);
+    @media only screen and (max-width: 125em) {
+      grid-template-rows: repeat(10, 5rem);
+    }
     @media only screen and (max-width: 94em) {
       grid-column: full-start / full-end;
     }
     @media only screen and (max-width: 62.5em) {
-      grid-template-rows: repeat(10, 10vh);
+      grid-template-rows: repeat(10, 10rem);
     }
   }
   &__text {
-    padding: 3rem;
-    grid-column: 1 / 4;
+    padding: 2rem;
+    grid-column: 1 / 5;
     grid-row: 1 / 4;
     @media only screen and (max-width: 62.5em) {
       grid-column: 1 / -1;
@@ -30,7 +33,6 @@
       grid-row: 6 / -1;
     }
   }
-
   &__player {
     position: absolute;
     width: 100%;
@@ -44,7 +46,6 @@
     transform: translate(-50%, -50%);
     margin: 0;
   }
-
   &__icon {
     width: 2rem;
     height: 2rem;

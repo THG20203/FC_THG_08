@@ -49,6 +49,11 @@ const Video = () => {
           The video demonstrates dedication and skill that defines our young
           athletes as they strive for excellence on the football pitch.
         </p>
+        <p className="paragraph-text video__description mb-smlst">
+          This footage was taken at our state-of-the-art training facility.
+          Brand new pitches, modern training equipment and high tech analyst
+          suites ensure that our players have everything they need to excel.
+        </p>
       </div>
       <div className="video__content">
         {/* The videoRef variable holds a reference to the object returned by the useRef hook.
