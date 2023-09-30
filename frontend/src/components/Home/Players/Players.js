@@ -28,10 +28,10 @@ const Players = () => {
           </div>
         </div>
       </div>
-      <div className="players__container-column">
+      <div className="players__container-column players__striker--container">
         <div className="players__shape"></div>
         <img
-          className="players__striker"
+          className="players__striker--image"
           src={playerBlue}
           alt="Player Striking Ball"
         />
