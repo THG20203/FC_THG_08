@@ -29,13 +29,12 @@ const Players = () => {
         </div>
       </div>
       <div className="players__container-column">
-        <div className="players__shape">
-          <img
-            className="players__striker"
-            src={playerBlue}
-            alt="Player Striking Ball"
-          />
-        </div>
+        <div className="players__shape"></div>
+        <img
+          className="players__striker"
+          src={playerBlue}
+          alt="Player Striking Ball"
+        />
       </div>
     </div>
   );
