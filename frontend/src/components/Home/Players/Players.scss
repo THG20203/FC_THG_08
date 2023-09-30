@@ -64,9 +64,9 @@
     }
   }
   &__shape {
-    border-left: 100px solid rosybrown;
-    border-right: 100px solid royalblue;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
     border-top: 100px solid lightblue;
-    border-bottom: 100px solid lightgreen;
+    border-bottom: 100px solid transparent;
   }
 }
