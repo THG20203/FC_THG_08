@@ -11,7 +11,7 @@ const slide = [
   {
     image: stadiumBanner,
     alt: "Stadium",
-    heading: "Pressure Moments",
+    heading: "Port Identity",
   },
   {
     image: muralBanner,
