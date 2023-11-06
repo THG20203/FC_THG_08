@@ -1,0 +1,29 @@
+@keyframes rotate {
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: translateX(200px);
+  }
+}
+
+@-moz-keyframes rotate {
+  100% {
+    -moz-transform: translateX(200px);
+  }
+}
+
+@-ms-keyframes rotate {
+  100% {
+    -ms-transform: translateX(200px);
+  }
+}
+
+/* Usage of keyframes animation on an element */
+.element {
+  animation: rotate 2s linear infinite;
+  /* You can add other necessary properties here */
+}
