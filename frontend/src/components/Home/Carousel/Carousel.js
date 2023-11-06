@@ -9,11 +9,6 @@ import SlideItem from "./SlideItem";
 
 const slide = [
   {
-    image: stadiumBanner,
-    alt: "Stadium",
-    heading: "Pressure Moments",
-  },
-  {
     image: muralBanner,
     alt: "Mural",
     heading: "Graffiti Culture",
@@ -30,7 +25,6 @@ const Carousel = () => {
         <button className="slide__btn slide__btn--1"></button>
         <button className="slide__btn slide__btn--2"></button>
         <button className="slide__btn slide__btn--3"></button>
-        <button className="slide__btn slide__btn--4"></button>
 
         {/* slideshow images */}
         <div className="slideshow__wrapper">
@@ -48,11 +42,6 @@ const Carousel = () => {
             image={slide[2].image}
             alt={slide[2].alt}
             heading={slide[2].heading}
-          />
-          <SlideItem
-            image={slide[3].image}
-            alt={slide[3].alt}
-            heading={slide[3].heading}
           />
         </div>
       </div>

@@ -45,8 +45,8 @@
     height: 100%;
     background: linear-gradient(
       to bottom,
-      rgba(10, 25, 161, 0.1) 0%,
-      rgba(10, 25, 161, 0) 30%,
+      rgba(10, 25, 161, 0.5) 0%,
+      rgba(10, 25, 161, 0) 50%,
       rgba(10, 25, 161, 1) 100%
     );
     pointer-events: none;
@@ -102,27 +102,21 @@
     }
     /* position absolute will put one button on top of another so need to move them individually */
     &--1 {
-      left: 35%;
+      left: 40%;
       @media only screen and (max-width: 62.5em) {
-        left: 20vw;
+        left: 25vw;
       }
     }
     &--2 {
-      left: 45%;
+      left: 50%;
       @media only screen and (max-width: 62.5em) {
-        left: 40vw;
+        left: 50vw;
       }
     }
     &--3 {
-      left: 55%;
+      left: 60%;
       @media only screen and (max-width: 62.5em) {
-        left: 60vw;
-      }
-    }
-    &--4 {
-      left: 65%;
-      @media only screen and (max-width: 62.5em) {
-        left: 80vw;
+        left: 75vw;
       }
     }
   }
@@ -135,35 +129,27 @@
   0% {
     left: 0;
   }
-  5% {
+  20% {
     left: 0;
   }
   /* after 0-5% of animation time, want image to be moved to the left by its width - 50vw */
   /* this'll mean first image is entirely hidden and the second one is displayed */
-  10% {
+  25% {
     left: -50vw;
   }
   /* second image displayed from 10% to 30% */
-  30% {
+  45% {
     left: -50vw;
   }
   /* need we need to hide second image and display the third one - hence -100vw */
-  35% {
+  50% {
     left: -100vw;
   }
   /* third image displayed from 35% to 55% */
-  55% {
+  70% {
     left: -100vw;
   }
-  /* need to hide third image and display fourth one - hence -150vw */
-  60% {
-    left: -150vw;
-  }
-  /* fourth image displayed from 60% to 80% */
-  80% {
-    left: -150vw;
-  }
-  85% {
+  75% {
     left: 0vw;
   }
   100% {
@@ -235,15 +221,5 @@
   left: -100vw;
   @media only screen and (max-width: 94em) {
     left: -200vw;
-  }
-}
-
-.slide__btn--4:focus ~ .slideshow__wrapper {
-  /* in order to stop animation - need to write animation none */
-  animation: none;
-  /* when we focus on fourth button, we need to display fourth image */
-  left: -150vw;
-  @media only screen and (max-width: 94em) {
-    left: -300vw;
   }
 }
