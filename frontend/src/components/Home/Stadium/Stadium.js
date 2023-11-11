@@ -1,6 +1,6 @@
 import React from "react";
 import "./Stadium.scss";
-import mural from "../../../assets/images/stadium/stadium.png";
+import stadium from "../../../assets/images/stadium/stadium.png";
 /* logo imports */
 import ePayel from "../../../assets/images/logos/e-payel.png";
 import foliole from "../../../assets/images/logos/foliole.png";
@@ -12,7 +12,9 @@ import ultramarine from "../../../assets/images/logos/ultramarine.png";
 const Stadium = () => {
   return (
     <div className="stadium__container">
-      <div className="stadium__sponsors"></div>
+      <div className="stadium__sponsors">
+        <img className="stadium__sponsor--img" src={ePayel} alt="ePayel" />
+      </div>
     </div>
   );
 };
