@@ -1,0 +1,9 @@
+.stadium {
+  &__container {
+    grid-column: col-end 3 / tram-end;
+    @media only screen and (max-width: 94em) {
+      /* want it to span whole page on smaller devices */
+      grid-column: full-start / full-end;
+    }
+  }
+}
