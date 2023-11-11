@@ -1,6 +1,6 @@
 .home-container {
   display: grid;
-  grid-template-rows: 35vh min-content min-content min-content min-content;
+  grid-template-rows: 35vh min-content min-content min-content min-content min-content;
   grid-template-columns:
     [full-start] 10vw [tram-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
@@ -11,12 +11,12 @@
   /* why only name the columns and not the rows? in overall layout focus is generally on the columns 
   and not the rows - columns more important */
   @media only screen and (max-width: 125em) {
-    grid-template-rows: 50rem min-content min-content 60vh min-content;
+    grid-template-rows: 50rem min-content min-content min-content 60vh min-content;
   }
   @media only screen and (max-width: 94em) {
-    grid-template-rows: 60rem min-content min-content min-content min-content min-content min-content;
+    grid-template-rows: 60rem min-content min-content min-content min-content min-content min-content min-content;
   }
   @media only screen and (max-width: 20em) {
-    grid-template-rows: calc(100vh - 16rem) min-content min-content min-content min-content min-content min-content;
+    grid-template-rows: calc(100vh - 16rem) min-content min-content min-content min-content min-content min-content min-content;
   }
 }
