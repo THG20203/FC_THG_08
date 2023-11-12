@@ -14,6 +14,19 @@ const Stadium = () => {
     <div className="stadium__container">
       <div className="stadium__sponsors">
         <img className="stadium__sponsor--img" src={ePayel} alt="ePayel" />
+        <img className="stadium__sponsor--img" src={foliole} alt="foliole" />
+        <img
+          className="stadium__sponsor--img"
+          src={shalbourne}
+          alt="shalbourne"
+        />
+        <img className="stadium__sponsor--img" src={subiro} alt="subiro" />
+        <img className="stadium__sponsor--img" src={sword} alt="sword" />
+        <img
+          className="stadium__sponsor--img"
+          src={ultramarine}
+          alt="ultramarine"
+        />
       </div>
     </div>
   );
